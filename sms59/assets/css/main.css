@@ -353,7 +353,7 @@ figure p{
     justify-content: space-between;
     width: 100%;
 }
-.about-text {
+.about-text p{
     font:300 18px/30px 'Open Sans';
     margin-bottom: 60px;
 }
