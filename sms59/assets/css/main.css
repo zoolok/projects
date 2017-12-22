@@ -261,15 +261,24 @@ figure p{
     justify-content: space-between;
 }
 .catalog-list-item{
-    background: #fff;
-}
+     background: #fff;
+     margin-right: 18px;
+ }
+.catalog-list-item:last-child{
+     margin-right: 0px;
+ }
 .catalog-list-item p{
     font:800 14px/24px 'Open Sans';
     margin-top: 15px;
     margin-bottom: 53px;
+    text-transform: uppercase;
+    padding:0 30px;
 }
 .catalog-list-item a{
     font:400 18px/24px 'Open Sans';
     color: #fc0000;
     margin-bottom: 33px;
+}
+.catalog-list-item img  {
+    width: 100%;
 }
