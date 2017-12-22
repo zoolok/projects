@@ -381,10 +381,10 @@ figure p{
 .map{
     width: 100%;
     background: url(../images/map.jpg) 0 0 no-repeat;
-    margin-top: 50px;
+    margin-top: -15px;
 }
 .map p{
-    font:800 30px/30px 'BanderaProBold';
+    font:300 30px/30px 'BanderaProBold';
     text-transform: uppercase;
     text-align: center;
     padding:90px 0;
