@@ -346,4 +346,16 @@ figure p{
 }
 .about h2 {
     font:800 48px/30px 'BanderaProBold';
+    margin-bottom: 55px;
 }
+.about-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.about-text {
+    font:300 18px/30px 'Open Sans';
+    margin-bottom: 60px;
+}
+.about-text p span{
+    font-weight:700;
