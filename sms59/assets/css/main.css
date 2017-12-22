@@ -251,14 +251,16 @@ figure p{
     background: #fff url(../images/middle-bg.png) center -508px no-repeat;
 }
 .catalog{
-    padding-top: 178px;
+    padding-top: 120px;
 }
 .catalog h2 {
     font:800 48px/30px 'BanderaProBold';
 }
+
 .catalog-list{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 120px;
 }
 .catalog-list-item{
     background: #fff;
@@ -341,4 +343,7 @@ figure p{
     -ms-transition: background-color ease 0.3s;
     -o-transition: background-color ease 0.3s;
     transition: background-color ease 0.3s;
+}
+.about h2 {
+    font:800 48px/30px 'BanderaProBold';
 }
