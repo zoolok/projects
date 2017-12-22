@@ -273,15 +273,16 @@ figure p{
 .catalog-list-item p{
     font:800 14px/24px 'Open Sans';
     margin-top: 15px;
-    margin-bottom: 53px;
+    margin-bottom: 95px;
     text-transform: uppercase;
-    padding:0 15px;
+    padding:0 29px;
 }
 .catalog-list-item a{
     font:400 18px/24px 'Open Sans';
     color: #fc0000;
-    margin-bottom: 33px;
-    padding:0 15px;
+    position: absolute;
+    bottom:35px;
+    padding:0 29px;
 }
 .catalog-list-item img  {
     width: 100%;
