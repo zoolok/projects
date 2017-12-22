@@ -356,6 +356,20 @@ figure p{
 .about-text p{
     font:300 18px/30px 'Open Sans';
     margin-bottom: 60px;
+    padding-right: 145px;
 }
-.about-text p span{
-    font-weight:700;
+.about-text p span {
+    font-weight: 700;
+}
+.about-img{
+    position: relative;
+    top: -83px;
+}
+.about-img img{
+    width: 100%;
+    position: relative;
+}
+.about-img img:before{
+    content: '';
+    position: absolute;
+}
