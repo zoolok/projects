@@ -389,3 +389,7 @@ figure p{
     text-align: center;
     padding:90px 0;
 }
+.letters h2 {
+    font:800 48px/30px 'BanderaProBold';
+    margin-bottom: 55px;
+}
