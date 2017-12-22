@@ -366,10 +366,9 @@ figure p{
     top: -83px;
 }
 .about-img img{
-    width: 100%;
     position: relative;
 }
-.about-img img:before{
+.about-img:before{
     content: '';
     position: absolute;
 }
