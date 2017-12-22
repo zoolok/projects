@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "BanderaProBold";
+    src: url("../fonts/BanderaPro-Bold.otf");
+}
+@font-face {
+    font-family: "BanderaPro";
+    src: url("../fonts/BanderaPro.otf");
+}
+:-moz-placeholder{
+    font-family:  'Open Sans';
+    color: #868686;
+    font-size: 14px;
+
+}
+:-ms-input-placeholder{
+    font-family:  'Open Sans';
+    color: #868686;
+    font-size: 14px;
+
+}
+::-webkit-input-placeholder{
+    font-family:  'Open Sans';
+    color: #868686;
+    font-size: 14px;
+
+}
+::placeholder{
+    font-family:  'Open Sans';
+    color: #868686;
+    font-size: 14px;
+
+}
+
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+p, figure{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+list-style-type: none
+}
+button{
+    cursor: pointer;
+}
+.top-red{
+    color: #e60000;
+    font: 800 12px/22px 'Open sans';
+}
+.top-addr{
+    font-weight: 700;
+}
+.phone{
+    font-size: 32px;
+    font-weight: 600;
+}
+.phone span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #e60000;
+}
+.container{
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+body{
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family:'Open Sans';
+
+}
+
+.top-search{
+    display: flex;
+}
+input{
+    height: 46px;
+    width: 155px;
+    background-color: #f2f2f2;
+    border:none;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #999;
+    padding:0 10px;
+    transition: 0.3s;
+}
+input:focus, input:hover{
+    transition: 0.3s;
+    -webkit-box-shadow: inset 0 0 4px 0px #ccc;
+    -moz-box-shadow: inset 0  0 4px 0px #ccc ;
+    box-shadow: inset 0 0 4px 0px #ccc;
+}
+button.search{
+    width: 47px;
+    height: 48px;
+    background: #f2f2f2 url('../images/search-lupa.png') 50% 50% no-repeat;
+    border:none;
+    border: 1px solid #e0e0e0;
+    border-right: 0;
+    transition: 0.3s;
+}
+button.search:hover{
+    background: #f0f0f0 url('../images/search-lupa.png') 50% 50% no-repeat;
+    transition: 0.3s;
+}
+a.top-email{
+    font-size: 14px;
+    text-decoration: underline;
+    color: #000;
+    margin-bottom: 10px;
+}
+button.modal-form{
+    border:none;
+    font-size: 18px;
+    color: #fff;
+    width: 179px;
+    height: 47px;
+    background-color: #e60000;
+    -webkit-box-shadow: 0 8px 13px #ff0000;
+    -moz-box-shadow:  0 8px 13px #ff0000;
+    box-shadow:  0 8px 13px #ff0000;
+    transition: 0.3s;
+}
+button.modal-form:hover{
+    background-color: #e60000;
+    -webkit-box-shadow: 0 4px 13px #ff0000;
+    -moz-box-shadow:  0 4px 13px #ff0000;
+    box-shadow:  0 4px 13px #ff0000;
+    transition: 0.3s;
+}
+button.modal-form.big{
+    width: 217px;
+    height: 57px;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    position: relative;
+    top: 6px;
+}
+.main-section{
+    width: 100%;
+    height:auto;
+    background: transparent url(../images/bg-crane.jpg) center -90px no-repeat;
+}
+.main-section nav{
+    background-color: rgba(24,88,152, 0.95);
+    box-shadow: 0px 0 24px 1px rgba(0,0,0,0.24);
+}
+.main-section ul {
+    display: flex;
+    justify-content:space-between;
+    font:600 12px/50px 'Open Sans';
+    text-transform: uppercase;
+    color: #fff;
+}
+.main-section ul li a:hover{
+    text-decoration: underline;
+}
+.main-section h1{
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 145px;
+}
+.main-section h1 span{
+    font-size: 48px;
+    color: #000;
+    font-family: "BanderaProBold";
+}
+.main-text{
+    font:300 18px/30px 'Open Sans';
+}
+.main-content{
+    width: 59%;
+}
+.main-content button{
+    margin-bottom: 130px;
+}
+.main-icon{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+    margin-bottom: 38px;
+}
+.main-icon img{
+    float: left;
+    margin-right: 15px;
+}
+figure p{
+    font:700 14px/18px 'Open Sans';
+    padding-top: 10px;
+}
+
+.main-icon figure:first-child p{
+    width: 89%;
+    padding-top: 0;
+}
+.preim {
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    width: 1200px;
+    justify-content: space-around;
+    padding: 34px 0;
+    transform: skew(-25deg);
+    left: 35px;
+    bottom: -85px;
+    -webkit-box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
+    box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
+}
+.preim img{
+    transform: skew(25deg);
+}
+.middle-section{
+    width: 100%;
+    height: 2500px;
+    background: #fff url(../images/middle-bg.png) center -508px no-repeat;
+}
+.catalog{
+    padding-top: 178px;
+}
+.catalog h2 {
+    font:800 48px/30px 'BanderaProBold';
+}
