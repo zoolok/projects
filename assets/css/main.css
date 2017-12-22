@@ -145,11 +145,11 @@ button.modal-form{
     transition: 0.3s;
 }
 button.modal-form:hover{
-    background-color: #e60000;
+/*     background-color: #e60000; */
     -webkit-box-shadow: 0 4px 13px #ff0000;
     -moz-box-shadow:  0 4px 13px #ff0000;
     box-shadow:  0 4px 13px #ff0000;
-    transition: 0.3s;
+/*     transition: 0.3s; */
 }
 .fade {
     transition: background-color 1000ms;
