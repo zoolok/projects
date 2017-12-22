@@ -319,7 +319,7 @@ figure p{
     margin-bottom: 55px;
     text-align: center;
     color: #fff;
-    text-transform: capitalize;
+    text-transform: unset;
     padding: 0 60px;
 }
 .hover-content a {
@@ -330,14 +330,15 @@ figure p{
     border:1px solid #fff;
 }
 .hover-content a:hover {
-    color:rgba(24,88,152, 0.95);
+    color:#ff0000;
+    background-color: fff;
     padding: 20px 60px;
     left: 20%;
     bottom:85px;
     border:1px solid rgba(24,88,152, 0.95);
-    -webkit-transition: color ease 0.3s ;
-    -moz-transition: color ease 0.3s;
-    -ms-transition: color ease 0.3s;
-    -o-transition: color ease 0.3s;
-    transition: color ease 0.3s;
+    -webkit-transition: background-color ease 0.3s ;
+    -moz-transition: background-color ease 0.3s;
+    -ms-transition: background-color ease 0.3s;
+    -o-transition: background-color ease 0.3s;
+    transition: background-color ease 0.3s;
 }
