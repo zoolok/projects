@@ -279,7 +279,7 @@ figure p{
 }
 .catalog-list-item a{
     font:400 18px/24px 'Open Sans';
-    color: #fc0000;
+    color: #ff0000;
     position: absolute;
     bottom:35px;
     padding:0 29px;
@@ -292,4 +292,24 @@ figure p{
 }
 .catalog-list-item img  {
     width: 100%;
+}
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff0000;
+}
+.hover-content h3 {
+    font: 400 30px/48px 'BanderaPro';
+    text-transform: uppercase;
+    margin-top: 105px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+.hover-content p {
+    font: 400 18px/24px 'BanderaPro';
+    margin-bottom: 55px;
+    text-align: center;
+    color: #fff;
 }
