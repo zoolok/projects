@@ -283,6 +283,12 @@ figure p{
     position: absolute;
     bottom:35px;
     padding:0 29px;
+    transition: 0.3s;
+}
+.catalog-list-item a:hover{
+    text-decoration: underline;
+    color: rgba(24,88,152, 0.95);
+    transition: 0.3s;
 }
 .catalog-list-item img  {
     width: 100%;
