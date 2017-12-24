@@ -563,6 +563,49 @@ figure p{
     color: #000;
     margin-bottom: 25px;
 }
+footer{
+    background: #000;
+    color: #fff;
+    padding:40px 0;
+}
+footer .contact{
+    margin-top: 25px;
+}
+footer a.phone{
+    font: 600 24px/40px 'Open Sans';
+    display: block;
+}
+footer a.top-email{
+    font: 400 15px/18px 'Open Sans';
+    color: #fff;
+    display: block;
+}
+footer .container{
+    display: flex;
+}
+footer .menu{
+    margin-left: 255px;
+}
+footer .menu p{
+    font: 800 18px/24px 'Open Sans';
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+footer .menu ul li{
+    font: 600 12px/30px 'Open Sans';
+    text-transform: uppercase;
+}
+footer .copiright{
+    margin-left: 360px;
+}
+footer .copiright a{
+    font: 400 11px/18px 'Open Sans';
+    color: #ffcc33;
+}
+footer .copiright p{
+    font: 400 11px/18px 'Open Sans';
+    margin-bottom: 30px;
+}
 .modal{
     position: fixed;
     top: 0;
