@@ -394,8 +394,9 @@ figure p{
     margin-bottom: 55px;
     margin-top: 60px;
 }
-.img-letter{
-    float: left;
+.letters .item{
+    display: flex;
+    justify-content:center;
 }
 .img-letter img{
     border: 10px solid #000;
