@@ -481,6 +481,7 @@ figure p{
 .news{
     background: #f8f8f8;
     margin-top: -60px;
+    padding-bottom: 90px;
 }
 .news h2 {
     font:800 48px/30px 'BanderaProBold';
@@ -490,12 +491,15 @@ figure p{
 #news-list .owl-nav{
     display: none;
 }
+#news-list .owl-stage-outer{
+    overflow: visible;
+}
 .news-item{
     display: block;
     background: #fff;
     padding: 40px 25px;
     box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.37);
-    min-height:320px;
+    min-height:240px;
 }
 .news-date{
     font: 300 14px/30px 'Open Sans';
@@ -509,4 +513,18 @@ figure p{
 .news-annons{
     font: 300 14px/24px 'Open Sans';
     color: #666;
+    margin-top: 15px;
+}
+.news-item a.more-button{
+    width: 60px;
+    height: 60px;
+    background: #006699 url(../images/more-arrow.png) 50% 50% no-repeat;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    transition: background 0.3s;
+}
+.news-item a.more-button:hover{
+    background: #ff0000 url(../images/more-arrow.png) 50% 50% no-repeat;
+    transition: background 0.3s;
 }
