@@ -22,13 +22,29 @@ $('document').ready(function () {
         navText:[]
 
     });
+    $('#news-list').owlCarousel({
+        items:3,
+        margin:25,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
 
+    });
     var startSlide = 1;
     var slides = $('#letters .owl-item');
     var slideCount = slides.length;
 
 
-    $('.owl-prev').after('<div class="slide-number"><span>0' + startSlide + '</span> <sup>/' + slideCount + '</sup></div>');
+    $('#letters .owl-prev').after('<div class="slide-number"><span>0' + startSlide + '</span> <sup>/' + slideCount + '</sup></div>');
 
 
     $('.owl-prev, .owl-next').click(function () {
