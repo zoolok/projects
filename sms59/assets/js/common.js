@@ -61,16 +61,13 @@ $('document').ready(function () {
         $('.slide-number').html('<span>0' + sl_number + '</span> <sup>/' + slideCount + '</sup>');
     });
 
+    $('.modal-form').click(function () {
+        $('#modal').toggleClass('md-show');
+    });
 
-$('.vopros').click(function () {
-    var modal = $('.modal');
-    modal.css('display','flex')
-    modal.fadeIn();
-})
     $('.close').click(function () {
-        var modal = $('.modal');
-        modal.fadeOut();
-        modal.css('display','none')
+        var modal = $('#modal');
+        modal.removeClass('md-show');
     })
 
     $('#vopros').submit(function () {
