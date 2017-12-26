@@ -57,6 +57,7 @@ ul{
 button{
     cursor: pointer;
 }
+
 .top-red{
     color: #e60000;
     font: 800 12px/22px 'Open sans';
@@ -737,4 +738,82 @@ footer .copiright p{
 #vopros button{
     text-transform: uppercase;
     color: #fff;
+}
+/* Mobile */
+
+@media only screen and (max-width : 768px) {
+    .mobile-none{
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    header {
+        margin-bottom: 10px;
+    }
+    .logo img{
+        max-width: 165px;
+    }.main-content {
+         width: 100%;
+     }
+    .main-content button {
+        margin-bottom: 45px;
+    }
+    .main-section {
+        background: transparent url(../images/BG-crane.jpg) -355px -130px no-repeat;
+    }
+    .main-section h1 {
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 40px;
+        margin-top: 0;
+    }
+    .main-section h1 span {
+        font-size: 36px;
+    }
+    .main-icon {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        flex-direction: column;
+    }
+    .main-icon figure:first-child p {
+        width: 100%;
+        padding-top: 0;
+    }
+    .main-icon img {
+        margin-right: 10px;
+    }
+    figure  {
+        margin-bottom: 30px;
+    }
+    figure p {
+        padding-top: 0px;
+    }
+    .preim {
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+        transform: unset;
+        left: unset;
+        bottom: unset;
+        -webkit-box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
+        box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .preim img{
+        display: block;
+        margin: 30px auto;
+        transform: unset;
+    }
 }
