@@ -33,14 +33,14 @@ $('document').ready(function () {
 
     });
     $('#news-list').owlCarousel({
-        items:3,
         margin:25,
         nav: false,
+        responsiveClass:true,
         responsive: {
             0: {
                 items: 1
             },
-            600: {
+            768: {
                 items: 1
             },
             1000: {
@@ -48,6 +48,7 @@ $('document').ready(function () {
             }
         }
     });
+
     var startSlide = 1;
     var slides = $('#letters .owl-item');
     var slideCount = slides.length;
