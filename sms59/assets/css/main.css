@@ -228,7 +228,6 @@ button.modal-form.big{
     display: none;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
     background: #e60000;
     z-index: 100;
     align-items: center;
@@ -237,10 +236,10 @@ button.modal-form.big{
     transition: all 0.3s ease;
 }
 .mob-menu-button span{
-    width: 30px;
+    width: 20px;
     height: 2px;
     background-color: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     transition: all 0.3s ease;
 
 }
@@ -900,10 +899,10 @@ footer .copiright p{
     .mob-menu-button {
         display: flex;
         position: fixed;
-        top: 15px;
+        top: 25px;
         right: 15px;
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 50px;
     }
     .preim {
         position: relative;
