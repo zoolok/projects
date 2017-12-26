@@ -173,6 +173,7 @@ button.modal-form.big{
 .mob-menu-button{
     display: none;
     justify-content: space-between;
+    flex-direction: column;
     padding: 10px;
     background:  #e60000;
 }
