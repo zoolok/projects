@@ -15,11 +15,21 @@ $('document').ready(function () {
         }
     });
 
-
     $('#letters').owlCarousel({
         items:1,
         nav:true,
-        navText:[]
+        navText:[],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
 
     });
     $('#news-list').owlCarousel({
@@ -37,7 +47,6 @@ $('document').ready(function () {
                 items: 3
             }
         }
-
     });
     var startSlide = 1;
     var slides = $('#letters .owl-item');
@@ -87,8 +96,10 @@ $('document').ready(function () {
     });
     $('#phone').mask("+7 (999) 999-99-99");
 
-    $('.mb-button').click(function () {
-        $('#mobile-menu').toggleClass('active');
+    $('.mob-menu-button').click(function () {
+        $('.mob-menu').toggleClass('visible');
+        $('.content-wrap').toggleClass('blured');
+
     });
 
 
