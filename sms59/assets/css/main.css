@@ -989,7 +989,7 @@ footer .copiright p{
     }
     .owl-nav {
         right: 30%;
-        bottom: 12px;
+        bottom: 30px;
         top:unset;
     }
     .item-letter {
@@ -998,7 +998,7 @@ footer .copiright p{
     .text-otzyw {
         padding: 60px 20px 100px 20px;
         top: 0;
-        margin-bottom: 90px;
+        margin-bottom: 100px;
         max-width: 100%;
     }
     .about, .catalog, footer {
