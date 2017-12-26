@@ -181,7 +181,11 @@ button.modal-form.big{
     width: 30px;
     height: 2px;
     background-color: #fff;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
+
+}
+.mob-menu-button span:last-child{
+    margin-bottom: 0px;
 
 }
 .main-section{
