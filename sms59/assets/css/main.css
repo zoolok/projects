@@ -1034,9 +1034,10 @@ footer .copiright p{
     }
     footer .container {
         flex-direction: column;
-        padding-top: 10px;
+        padding-top: 45px;
     }
     footer .copiright {
         margin-left: 0px;
+        margin-top: 70px;
     }
 }
