@@ -844,24 +844,23 @@ footer .copiright p{
     }
     .container {
         width: 100%;
-    }
-    .container {
-        padding-right: 10px;
-        padding-left: 10px;
         margin-right: auto;
         margin-left: auto;
     }
     header {
         margin-bottom: 10px;
     }
+
     .logo img {
         max-width: 165px;
+        margin-left: 10px;
     }
     .main-content {
         width: 100%;
     }
     .main-content button {
         margin-bottom: 45px;
+        margin-left: 10px;
     }
     .main-section {
         background: transparent url(../images/BG-crane.jpg) -355px -130px no-repeat;
@@ -871,6 +870,7 @@ footer .copiright p{
         font-weight: 300;
         padding-top: 40px;
         margin-top: 0;
+        padding-left: 10px;
     }
     .main-section h1 span {
         font-size: 36px;
@@ -889,9 +889,13 @@ footer .copiright p{
     }
     figure {
         margin-bottom: 30px;
+        margin-left: 10px;
     }
     figure p {
         padding-top: 0;
+    }
+    .main-text {
+        padding-left: 10px;
     }
     .mob-menu-button {
         display: flex;
@@ -916,7 +920,7 @@ footer .copiright p{
         box-shadow: 29px 26px 46px 0 rgba(0, 0, 0, 0.22);
         flex-direction: column;
         flex-wrap: wrap;
-        margin-left: -10px;
+
     }
     .preim img {
         display: block;
@@ -969,7 +973,7 @@ footer .copiright p{
     }
     .map {
         width: 100%;
-        background: url(../images/map-mobile.jpg) 0 0 no-repeat;
+        background: url(../images/map-mobile.jpg) center center no-repeat;
         margin-top: 100px;
         padding-bottom: 360px;
     }
@@ -981,6 +985,7 @@ footer .copiright p{
         font: 800 30px/30px 'BanderaProBold';
         margin-bottom: 35px;
         margin-top: 55px;
+        padding-left: 10px;
     }
     .owl-nav {
         right: 30%;
@@ -994,12 +999,23 @@ footer .copiright p{
         padding: 60px 20px 100px 20px;
         top: 0;
         margin-bottom: 90px;
+        max-width: 100%;
+    }
+    .about, .catalog, footer {
+        padding: 0 10px;
     }
     .img-letter {
         margin-bottom: 0;
+        width: 100%;
+    }
+    .img-letter img {
+        max-width: calc(100% - 20px);
+        height: auto;
+        display: block;
     }
     .news {
         margin-top: 0;
+        padding: 80px 10px;
     }
     .news h2 {
         font: 800 30px/30px 'BanderaProBold';
@@ -1009,5 +1025,18 @@ footer .copiright p{
         position: relative;
         width: 100%;
         overflow: hidden;
+    }
+    #news-list .owl-nav {
+        /*display: block;*/
+    }
+    .footer-card {
+        position: relative;
+    }
+    footer .container {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    footer .copiright {
+        margin-left: 0px;
     }
 }

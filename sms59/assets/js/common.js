@@ -33,18 +33,23 @@ $('document').ready(function () {
 
     });
     $('#news-list').owlCarousel({
-        margin:25,
         nav: false,
         responsiveClass:true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                margin:0,
+                nav:false
             },
             768: {
-                items: 1
+                items: 1,
+                margin:0,
+                nav:false
             },
             1000: {
-                items: 3
+                items: 3,
+                margin:25
+
             }
         }
     });
