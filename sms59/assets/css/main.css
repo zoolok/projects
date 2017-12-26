@@ -217,37 +217,39 @@ button.modal-form.big{
     z-index: 100;
     align-items: center;
     position: relative;
+    cursor: pointer;
+    transition:all 0.3s;
 }
 .mob-menu-button span{
     width: 30px;
     height: 2px;
     background-color: #fff;
     margin-bottom: 8px;
-    transition:0.3s;
+    transition:all 0.3s;
 
 }
 .mob-menu-button span:last-child{
     margin-bottom: 0px;
 }
-.mob-menu-button:hover span:first-child{
+.mob-menu-button.open span:first-child{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    transition:0.3s;
+    transition:all 0.3s;
 }
-.mob-menu-button:hover span:nth-child(2){
+.mob-menu-button.open span:nth-child(2){
     display: none;
 }
-.mob-menu-button:hover span{
+.mob-menu-button.open span{
     margin-bottom: 0;
     position: absolute;
     top: 50%;
 }
-.mob-menu-button:hover span:last-child{
+.mob-menu-button.open span:last-child{
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    transition:0.3s;
+    transition: all0.3s;
 }
 .main-section{
     width: 100%;

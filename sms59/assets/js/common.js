@@ -99,6 +99,7 @@ $('document').ready(function () {
     $('.mob-menu-button').click(function () {
         $('.mob-menu').toggleClass('visible');
         $('.content-wrap').toggleClass('blured');
+        $('.mob-menu-button').toggleClass('open');
 
     });
 
