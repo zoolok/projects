@@ -890,9 +890,8 @@ footer .copiright p{
         margin-bottom: 30px;
     }
     figure p {
-        padding-top: 0px;
+        padding-top:0;
     }
-
     .mob-menu-button{
         display: flex;
         position: fixed;
@@ -911,9 +910,9 @@ footer .copiright p{
         transform: unset;
         left: unset;
         bottom: unset;
-        -webkit-box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
-        -moz-box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
-        box-shadow: 29px 26px 46px 0px rgba(0, 0, 0, 0.22);
+        -webkit-box-shadow: 29px 26px 46px 0 rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: 29px 26px 46px 0 rgba(0, 0, 0, 0.22);
+        box-shadow: 29px 26px 46px 0 rgba(0, 0, 0, 0.22);
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -922,4 +921,10 @@ footer .copiright p{
         margin: 30px auto;
         transform: unset;
     }
+    .catalog-list {
+        flex-direction: column;
+    }.catalog {
+         padding-top: 0;
+     }
+
 }
