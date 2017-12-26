@@ -170,6 +170,17 @@ button.modal-form.big{
     position: relative;
     top: 6px;
 }
+.mob-menu-button{
+    display: none;
+    justify-content: space-between;
+    padding: 10px;
+    background:  #e60000;
+}
+.mob-menu-button span{
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+}
 .main-section{
     width: 100%;
     height:auto;
@@ -794,6 +805,13 @@ footer .copiright p{
     }
     figure p {
         padding-top: 0px;
+    }
+
+    .mob-menu-button{
+        display: flex;
+        position: fixed;
+        top: 10px;
+        right: 10px;
     }
     .preim {
         position: relative;
