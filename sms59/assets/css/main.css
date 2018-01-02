@@ -845,6 +845,17 @@ footer .copiright p{
     text-transform: uppercase;
     color: #fff;
 }
+.arrow-up{
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 5%;
+    background: url(../images/arrow_up.jpg) 0 0 no-repeat;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    cursor: pointer;
+}
 /* Mobile */
 
 @media only screen and (max-width : 768px) {
