@@ -5,9 +5,18 @@
 @font-face {
     font-family: "GothamProMedium";
     src: url("../fonts/GothaProMed.otf");
-}@font-face {
+}
+@font-face {
     font-family: "GothamProLight";
     src: url("../fonts/GothaProLig.otf");
+}
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothaProBol.otf");
+}
+@font-face {
+    font-family: "GothamProBlack";
+    src: url("../fonts/GothaProBla.otf");
 }
 * {box-sizing: border-box}
 
@@ -52,10 +61,13 @@ header{
     position: relative;
     background: #f7f8fc;
     display: flex;
-    justify-content: space-between;
-    padding:32px 0 20px 0;
+    padding:32px 0 0 0;
+    flex-direction: column;
 }
-header .container{
+header hr{
+    margin-top: 25px;
+}
+.flex{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -93,6 +105,7 @@ header ul li:last-child {
     margin-top: 5px;
 }
 button.order-button{
+    font-size: 14px;
     width: 232px;
     height: 52px;
     border:none;
@@ -101,6 +114,37 @@ button.order-button{
     color: #fff;
     background-image: linear-gradient(to bottom, #e83701, #a90808 );
     box-shadow: 6px 10px 31.15px 3.85px rgba(255, 0, 0, 0.29);
+}
+ ul.top-menu{
+     padding:15px 0;
+}
+ul.top-menu li a{
+    font-family: "GothamProLight";
+    text-transform: uppercase;
+}
+ul.top-menu li a:hover{
+    text-decoration: underline;
+       color: #d62a03;
+}
+.main .container {
+   padding:152px 0 193px 0;
+}
+.main h1{
+    font-family: "GothamProBlack";
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.main h2{
+    font-family: "GothamProMedium";
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.main p{
+    font-family: "GothamProLight";
+    font-size: 20px;
+}
+.main .container{
+    background: url(../images/scroll-1-bg.png)center right no-repeat;
 }
 .wrapper-content {
     position:static;
@@ -274,8 +318,8 @@ button.order-button{
     stroke-width:.25
 }
 .shapes .shape.triangle.small {
-    width:60px;
-    height:60px;
+    width:160px;
+    height:160px;
     top:80%;
     left:25%;
     -webkit-transform:rotate(25deg);
