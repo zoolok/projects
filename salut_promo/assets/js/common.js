@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-            $('.shape').css('transform','translate('+ $(this).scrollTop()  +'%,' + $(this).scrollTop() / 50 +'%)');
+            $('.shapes').css('transform','translate('+ $(this).scrollTop()/-1150  +'%,' + $(this).scrollTop() /150 +'%)');
     });
 
 });

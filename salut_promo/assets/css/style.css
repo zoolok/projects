@@ -114,6 +114,12 @@ button.order-button{
     color: #fff;
     background-image: linear-gradient(to bottom, #e83701, #a90808 );
     box-shadow: 6px 10px 31.15px 3.85px rgba(255, 0, 0, 0.29);
+    transition: all 0.4s;
+}
+button.order-button:hover{
+    background-image: linear-gradient(to bottom, #097bcb, #043145 );
+    box-shadow: 6px 10px 31.15px 3.85px rgba(4, 116, 195, 0.55);
+    transition: all 0.4s;
 }
  ul.top-menu{
      padding:15px 0;
