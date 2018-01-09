@@ -112,12 +112,12 @@ button.order-button{
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    background-image: linear-gradient(to bottom, #e83701, #a90808 );
+    background-image: linear-gradient(to bottom, #e83701, #a90808);
     box-shadow: 6px 10px 31.15px 3.85px rgba(255, 0, 0, 0.29);
     transition: all 0.4s;
 }
 button.order-button:hover{
-    background-image: linear-gradient(to bottom, #097bcb, #043145 );
+    background-image: linear-gradient(to bottom, #097bcb, #043145);
     box-shadow: 6px 10px 31.15px 3.85px rgba(4, 116, 195, 0.55);
     transition: all 0.4s;
 }
@@ -139,6 +139,10 @@ ul.top-menu li a:hover{
     font-family: "GothamProBlack";
     font-size: 48px;
     text-transform: uppercase;
+    line-height: 60px;
+}
+.main h1 span{
+    border-bottom: 1px solid #000;
 }
 .main h2{
     font-family: "GothamProMedium";
@@ -148,6 +152,7 @@ ul.top-menu li a:hover{
 .main p{
     font-family: "GothamProLight";
     font-size: 20px;
+    line-height: 30px;
 }
 .main .container{
     background: url(../images/scroll-1-bg.png)center right no-repeat;
