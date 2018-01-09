@@ -5,6 +5,9 @@
 @font-face {
     font-family: "GothamProMedium";
     src: url("../fonts/GothaProMed.otf");
+}@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothaProLig.otf");
 }
 * {box-sizing: border-box}
 
@@ -20,6 +23,12 @@ a{
     color: inherit;
     outline: none;
 }
+a[href^="mailto"]{
+    text-decoration: underline;
+}
+a[href^="mailto"]:hover{
+     text-decoration: none;
+ }
 p, figure{
     padding: 0;
     margin: 0;
@@ -49,6 +58,7 @@ header{
 header .container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 header ul{
     display: flex;
@@ -68,6 +78,29 @@ header ul li:last-child {
 }
 .soc p{
     font-family: "GothamProMedium";
+}
+.num{
+    font-family: "GothamProMedium";
+    font-size: 18px;
+    letter-spacing:1px;
+    margin:10px 0 15px 0;
+}
+
+.email{
+    color: #0ec7fc;
+}
+.order{
+    margin-top: 5px;
+}
+button.order-button{
+    width: 232px;
+    height: 52px;
+    border:none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #e83701, #a90808 );
+    box-shadow: 6px 10px 31.15px 3.85px rgba(255, 0, 0, 0.29);
 }
 .wrapper-content {
     position:static;
