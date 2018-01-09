@@ -1,0 +1,323 @@
+@font-face {
+    font-family: "GothamPro";
+    src: url("../fonts/GothaProReg.otf");
+}
+@font-face {
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothaProMed.otf");
+}
+* {box-sizing: border-box}
+
+body{
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font:400 14px 'GothamPro';
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+p, figure{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+button{
+    cursor: pointer;
+    outline:none;
+}
+.container{
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    position: relative;
+    background: #f7f8fc;
+    display: flex;
+    justify-content: space-between;
+    padding:32px 0 20px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+header ul li img{
+    filter: brightness(0);
+}
+header ul li {
+    margin-right: 8px;
+}
+header ul li:last-child {
+    margin-right: 0px;
+}
+.soc p{
+    font-family: "GothamProMedium";
+}
+.wrapper-content {
+    position:static;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0
+    overflow: scroll;
+}
+.shapes {
+    position:fixed;
+    width:100%;
+    height:120%;
+    left:0;
+    opacity:1;
+    z-index: -1;
+
+}
+.shapes.one{
+    animation: turn-1 ease 50.6s infinite;
+}
+.shapes.two{
+    animation: turn-1 ease 30.6s infinite;
+}
+.shape {
+    animation: rotation linear 8.6s infinite;
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+@-keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes turn-1 {
+    0% {-webkit-transform: translate(0%, 0%);}
+    50% {-webkit-transform: translate(0%, -30%);}
+    100% {-webkit-transform: translate(0%, -10%);}
+}
+@-moz-keyframes turn-1 {
+    0% {-webkit-transform: translate(0%, 0%);}
+    50% {-webkit-transform: translate(0%, -30%);}
+    100% {-webkit-transform: translate(0%, -10%);}
+}
+@-keyframes turn-1 {
+0% {-webkit-transform: translate(0%, 0%);}
+50% {-webkit-transform: translate(0%, -30%);}
+100% {-webkit-transform: translate(0%, -10%);}
+}
+@media screen and (max-width:550px) {
+    .shapes {
+        display:none
+    }
+}
+.shapes.one {
+    top:0
+}
+.shapes.two {
+    top:90%
+}
+.shapes.two .rotate-area {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    -webkit-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.shapes.two .shape.diamond {
+    top:35%
+}
+.shapes.red .shape polygon,.shapes.red .shape path {
+    stroke:#fd7f48
+}
+.shapes.red .shape.diamond {
+    border-color:#fd7f48
+}
+.shapes.red .shape.circle {
+    border-color:#fd7f48
+}
+.shapes.grey .shape polygon,.shapes.grey .shape path {
+    stroke:#1a9f7d
+}
+.shapes.grey .shape.diamond {
+    border-color:#1a9f7d
+}
+.shapes.grey .shape.circle {
+    border-color:#1a9f7d
+}
+.shapes.yellow .shape polygon,.shapes.yellow .shape path {
+    stroke:#ab1018
+}
+.shapes.yellow .shape.diamond {
+    border-color:#ab1018
+}
+.shapes.yellow .shape.circle {
+    border-color:#ab1018
+}
+.shapes.pink .shape polygon,.shapes.pink .shape path {
+    stroke:#6ab1d7
+}
+.shapes.pink .shape.diamond {
+    border-color:#6ab1d7
+}
+.shapes.pink .shape.circle {
+    border-color:#6ab1d7
+}
+.shapes.victoria .shape polygon,.shapes.victoria .shape path {
+    stroke:#c9cf33
+}
+.shapes.victoria .shape.diamond {
+    border-color:#c9cf33
+}
+.shapes.victoria .shape.circle {
+    border-color:#c9cf33
+}
+.shapes.blue .shape polygon,.shapes.blue .shape path {
+    stroke:#428ab0
+}
+.shapes.blue .shape.diamond {
+    border-color:#428ab0
+}
+.shapes.blue .shape.circle {
+    border-color:#428ab0
+}
+.shapes.green .shape polygon,.shapes.green .shape path {
+    stroke:#5ec3b2
+}
+.shapes.green .shape.diamond {
+    border-color:#5ec3b2
+}
+.shapes.green .shape.circle {
+    border-color:#5ec3b2
+}
+.shapes.green2 .shape polygon,.shapes.green2 .shape path {
+    stroke:#3bbda7
+}
+.shapes.green2 .shape.diamond {
+    border-color:#3bbda7
+}
+.shapes.green2 .shape.circle {
+    border-color:#3bbda7
+}
+.shapes .shape {
+    position:absolute;
+    top:0;
+    left:0
+}
+.shapes .shape polygon,.shapes .shape path {
+    stroke:#3bbda7;
+    -webkit-transition:all .4s ease;
+    transition:all .4s ease
+}
+.shapes .shape.triangle {
+    width:120px;
+    height:120px;
+    top:15%;
+    left:5%;
+    -webkit-transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    transform:rotate(-10deg)
+}
+.shapes .shape.triangle polygon {
+    stroke-width:.25
+}
+.shapes .shape.triangle.small {
+    width:60px;
+    height:60px;
+    top:80%;
+    left:25%;
+    -webkit-transform:rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform:rotate(25deg)
+}
+.shapes .shape.triangle.small polygon {
+    stroke-width:.45;
+    stroke: #ff006a;
+}
+.shapes .shape.circle {
+    width:110px;
+    height:110px;
+    border-radius:100%;
+    border:6px solid #3100a1;
+    top:75%;
+    left:90%;
+    -webkit-transition:border-color .4s ease;
+    transition:border-color .4s ease
+}
+.shapes .shape.circle.small {
+    width:50px;
+    height:50px;
+    top:50%;
+    left:25%;
+    -webkit-transform:rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform:rotate(25deg)
+}
+.shapes .shape.diamond {
+    width:30px;
+    height:30px;
+    border:1px solid #3bbda7;
+    top:85%;
+    left:60%;
+    -webkit-transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg);
+    transform:rotate(-50deg);
+    -webkit-transition:border-color .4s ease;
+    transition:border-color .4s ease
+}
+.shapes .shape.waves {
+    width:60px;
+    height:60px;
+    top:65%;
+    left:5%;
+    -webkit-transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg);
+    transform:rotate(-50deg)
+}
+.shapes .shape.waves path {
+    stroke-width:.55;
+    stroke: #1fa2ed;
+}
+.shapes .shape.waves.small {
+    width:40px;
+    height:40px;
+    top:20%;
+    left:92%;
+    -webkit-transform:rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform:rotate(25deg)
+}
+.shapes .shape.waves.small path {
+    stroke-width:.6
+}
+.shapes .shape.hexa {
+    width:50px;
+    height:50px;
+    top:55%;
+    left:75%;
+    -webkit-transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg);
+    transform:rotate(-50deg)
+}
+.shapes .shape.hexa polygon {
+    stroke-width:.5
+}
