@@ -189,8 +189,9 @@ filter:grayscale(1);
     font-family: "GothamProMedium";
     font-size: 18px;
     position: relative;
-    left: calc(100% - 385px);
+    left: 437px;
     top: 83px;
+    display: inline-block;
 }
 .letters h2:before{
     content: '';
