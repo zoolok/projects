@@ -70,7 +70,6 @@ header hr{
 .flex{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 header ul{
     display: flex;
@@ -112,14 +111,32 @@ button.order-button{
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    position: relative;
+    z-index: 1;
     background-image: linear-gradient(to bottom, #e83701, #a90808);
     box-shadow: 6px 10px 31.15px 3.85px rgba(255, 0, 0, 0.29);
-    transition: all 0.4s;
+
 }
-button.order-button:hover{
+button.order-button:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    z-index: 0;
     background-image: linear-gradient(to bottom, #097bcb, #043145);
     box-shadow: 6px 10px 31.15px 3.85px rgba(4, 116, 195, 0.55);
-    transition: all 0.4s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+button.order-button:hover:after{
+    opacity:1;
+    z-index: -1;
 }
  ul.top-menu{
      padding:15px 0;
@@ -165,7 +182,104 @@ ul.top-menu li a:hover{
 .client-logo img{
 filter:grayscale(1);
 }
+.letters{
+    margin:143px 0 150px 0;
+}
+.letters h2{
+    font-family: "GothamProMedium";
+    font-size: 18px;
+    position: relative;
+    left: calc(100% - 385px);
+    top: 83px;
+}
+.letters h2:before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 38px;
+    bottom:0;
+    left: -21px;
+    background: #000;
+}
+.letters h2 span{
+    font-family: "GothamProLight";
+}
+.letters > .container{
+    padding: 0 40px 0 175px;
+}
+.letter-img{
+    width: 564px;
+    height:404px;
+    background: url(../images/letter-bg.jpg) 0 0 repeat;
+    padding:12px;
+    margin-right: 120px;
+    box-shadow: 11px 19px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.letter-item{
+    padding: 30px 0;
+}
+.letter-content{
+    padding-right: 130px;
+}
+.letter-content h3{
+    font-family: "GothamProBlack";
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+.letter-content p{
+    font-family: "GothamProLight";
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 22px;
+}
+.letter-content ul{
+    position: absolute;
+}
+.letter-content ul li{
+    margin-right: 60px;
+}
+.letter-content ul li img{
+    width:unset!important;
+}
+.letter-content ul li:last-child{
+    margin-right: 0;
+}
+ .owl-carousel .owl-nav.disabled {
+    display: unset;
+}
 
+ .owl-next, .owl-prev{
+     width: 67px;
+     height: 132px;
+     background: url(../images/slider-arrow.png) 0 0 no-repeat;
+     position: absolute;
+     top: calc(50% - 66px);
+     transition: all 1s;
+ }
+.owl-prev{
+    background: url(../images/slider-arrow-prev.png) 0 0 no-repeat;
+    left: -175px;
+}
+.owl-next{
+    right: -40px;
+}
+.owl-next:hover {
+    -o-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    transition: all 1s;
+}
+.owl-prev:hover {
+    -o-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
 .wrapper-content {
     position:static;
     width:100%;
