@@ -317,15 +317,6 @@ p.sub-header{
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-.dev:after {
-    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
-}
-.seo:after {
-    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
-}
-.brand:after {
-    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
-}
 .dev:before, .seo:before, .brand:before {
     content: '';
     position: absolute;
@@ -342,6 +333,16 @@ p.sub-header{
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+.dev:after {
+    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
+}
+.seo:after {
+    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
+}
+.brand:after {
+    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
+}
+
 .dev:hover:after, .seo:hover:after, .brand:hover:after   {
     opacity: 1;
     z-index: -2;
