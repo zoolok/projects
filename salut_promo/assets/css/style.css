@@ -185,15 +185,18 @@ filter:grayscale(1);
 .letters{
     margin:143px 0 150px 0;
 }
-.letters h2{
+.letters h2 , h2.header{
     font-family: "GothamProMedium";
     font-size: 18px;
     position: relative;
-    left: 437px;
-    top: 83px;
+    left: 609px;
     display: inline-block;
 }
-.letters h2:before{
+.letters h2{
+    top: 83px;
+    left: 437px;
+}
+.letters h2:before, h2.header:before{
     content: '';
     position: absolute;
     width: 1px;
@@ -202,8 +205,23 @@ filter:grayscale(1);
     left: -21px;
     background: #000;
 }
-.letters h2 span{
+.letters h2 span, h2.header span{
     font-family: "GothamProLight";
+}
+h3.header{
+    font-family: "GothamProBlack";
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: center;
+    margin: 35px 0;
+}
+p.sub-header{
+    font-family: "GothamProLight";
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 .letters > .container{
     padding: 0 40px 0 175px;
@@ -280,6 +298,117 @@ filter:grayscale(1);
     -moz-transform: translateX(-20px);
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
+}
+.nap{
+    margin-bottom: 150px;
+}
+.dev:after, .seo:after, .brand:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.dev:after {
+    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
+}
+.seo:after {
+    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
+}
+.brand:after {
+    background: url(../images/dev-bg.jpg) 0 0 no-repeat;
+}
+.dev:before, .seo:before, .brand:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.dev:hover:after, .seo:hover:after, .brand:hover:after   {
+    opacity: 1;
+    z-index: -2;
+}
+.dev:hover:before, .seo:hover:before, .brand:hover:before{
+    opacity:1;
+    z-index: -1;
+}
+.dev:hover, .seo:hover, .brand:hover{
+    color: #fff;
+}
+.dev:hover .dev-ico{
+    background: url(../images/dev-ico-hover.png) 0 0 no-repeat;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.seo:hover .seo-ico{
+    background: url(../images/seo-ico-hover.png) 0 0 no-repeat;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.brand:hover .brand-ico{
+    background: url(../images/brand-ico-hover.png) 0 0 no-repeat;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.dev, .seo, .brand{
+    padding: 25px 40px;
+    position: relative;
+}
+.dev h3, .seo h3, .brand h3{
+    font-family: "GothamProMedium";
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 11px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+.dev ul li, .seo ul li, .brand ul li{
+    font-family: "GothamProLight";
+    font-size: 14px;
+    line-height: 24px;
+}
+.dev-ico{
+    width: 100%;
+    height: 58px;
+    background: url(../images/dev-ico.png) 0 0 no-repeat;
+}
+
+.seo-ico{
+    width: 100%;
+    height: 58px;
+    background: url(../images/seo-ico.png) 0 0 no-repeat;
+}
+.brand-ico{
+    width: 100%;
+    height: 58px;
+    background: url(../images/brand-ico.png) 0 0 no-repeat;
 }
 .wrapper-content {
     position:static;
