@@ -226,19 +226,23 @@ p.sub-header{
 .letters > .container{
     padding: 0 40px 0 175px;
 }
-.letter-img{
-    width: 170%;
-    height:365px;
+.letter-img {
+    width: 293px;
+    height: 365px;
     background: url(../images/letter-bg.jpg) 0 0 no-repeat;
-    padding:12px;
-    margin-right: 120px;
+    padding: 12px;
     box-shadow: 11px 19px 7px 0px rgba(0, 0, 0, 0.35);
+    display: inline-block;
+    float: left;
 }
 .letter-item{
     padding: 30px 0 60px;
 }
-.letter-content{
-    padding-right: 130px;
+.letter-content {
+    padding-right: 75px;
+    display: inline-block;
+    width: calc(100% - 294px);
+    padding-left: 123px;
 }
 .letter-content h3{
     font-family: "GothamProBlack";
