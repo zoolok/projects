@@ -227,15 +227,15 @@ p.sub-header{
     padding: 0 40px 0 175px;
 }
 .letter-img{
-    width: 564px;
-    height:404px;
-    background: url(../images/letter-bg.jpg) 0 0 repeat;
+    width: 170%;
+    height:365px;
+    background: url(../images/letter-bg.jpg) 0 0 no-repeat;
     padding:12px;
     margin-right: 120px;
     box-shadow: 11px 19px 7px 0px rgba(0, 0, 0, 0.35);
 }
 .letter-item{
-    padding: 30px 0;
+    padding: 30px 0 60px;
 }
 .letter-content{
     padding-right: 130px;
