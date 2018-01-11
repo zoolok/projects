@@ -71,6 +71,15 @@ header hr{
     display: flex;
     justify-content: space-between;
 }
+.start{
+    justify-content: flex-start!important;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.hidden{
+    opacity:0;
+}
 header ul{
     display: flex;
     justify-content: flex-start;
@@ -214,7 +223,7 @@ h3.header{
     text-transform: uppercase;
     line-height: 30px;
     text-align: center;
-    margin: 35px 0;
+    margin: 35px 0 25px;
 }
 p.sub-header{
     font-family: "GothamProLight";
@@ -414,6 +423,9 @@ p.sub-header{
     width: 100%;
     height: 58px;
     background: url(../images/brand-ico.png) 0 0 no-repeat;
+}
+[class^="portfolio-item"] img{
+    max-width: 390px;
 }
 .wrapper-content {
     position:static;
