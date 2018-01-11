@@ -424,8 +424,87 @@ p.sub-header{
     height: 58px;
     background: url(../images/brand-ico.png) 0 0 no-repeat;
 }
-[class^="portfolio-item"] img{
+.portfolio-items{
+    box-shadow: 19px 33px 39.56px 3.44px rgba(0, 0, 0, 0.28);
+}
+[class^="portfolio-item-"]{
+    max-height: 390px;
+    position: relative;
+}
+[class^="portfolio-item-"] img{
     max-width: 390px;
+}
+[class^="portfolio-item-"] h4{
+    font-family: "GothamProBold";
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    margin-top: 0;
+ }
+[class^="portfolio-item-"] p{
+    font-family: "GothamProLight";
+    font-size: 18px;
+    text-transform: uppercase;
+ }
+[class^="portfolio-item-"]:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+[class^="portfolio-item-"]:hover:before{
+    opacity:1;
+    z-index: 0;
+}
+[class^="portfolio-item-"] .hidden {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+[class^="portfolio-item-"]:hover .hidden{
+    opacity:1!important;
+    z-index: 1;
+}
+.portfolio-item-1:before{
+    background: rgba(14,199,252,0.7);
+}
+.portfolio-item-2:before{
+    background: rgba(193,42,215,0.7);
+}
+.portfolio-item-3:before{
+    background: rgba(115,210,58,0.7);
+}
+.portfolio-item-4:before{
+    background: rgba(0,99,210,0.7);
+}
+.portfolio-item-5:before{
+    background: rgba(55, 44, 99, 0.7);
+}
+.portfolio-item-6:before{
+    background: rgba(255,0,48,0.7);
 }
 .wrapper-content {
     position:static;
