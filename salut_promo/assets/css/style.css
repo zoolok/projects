@@ -36,8 +36,8 @@ a[href^="mailto"]{
     text-decoration: underline;
 }
 a[href^="mailto"]:hover{
-     text-decoration: none;
- }
+    text-decoration: none;
+}
 p, figure{
     padding: 0;
     margin: 0;
@@ -153,8 +153,8 @@ header ul li:last-child {
     padding: 30px 0 40px;
     width: 345px;
 }
- ul.top-menu{
-     padding:15px 0;
+ul.top-menu{
+    padding:15px 0;
 }
 ul.top-menu li a{
     font-family: "GothamProLight";
@@ -162,10 +162,10 @@ ul.top-menu li a{
 }
 ul.top-menu li a:hover{
     text-decoration: underline;
-       color: #d62a03;
+    color: #d62a03;
 }
 .main .container {
-   padding:152px 0 193px 0;
+    padding:152px 0 193px 0;
 }
 .main h1{
     font-family: "GothamProBlack";
@@ -195,7 +195,7 @@ ul.top-menu li a:hover{
     border-bottom:1px solid #f1f1f1;
 }
 .client-logo img{
-filter:grayscale(1);
+    filter:grayscale(1);
 }
 .letters{
     margin:143px 0 150px 0;
@@ -284,18 +284,18 @@ p.sub-header{
 .letter-content ul li:last-child{
     margin-right: 0;
 }
- .owl-carousel .owl-nav.disabled {
+.owl-carousel .owl-nav.disabled {
     display: unset;
 }
 
- .owl-next, .owl-prev{
-     width: 67px;
-     height: 132px;
-     background: url(../images/slider-arrow.png) 0 0 no-repeat;
-     position: absolute;
-     top: calc(50% - 66px);
-     transition: all 1s;
- }
+.owl-next, .owl-prev{
+    width: 67px;
+    height: 132px;
+    background: url(../images/slider-arrow.png) 0 0 no-repeat;
+    position: absolute;
+    top: calc(50% - 66px);
+    transition: all 1s;
+}
 .owl-prev{
     background: url(../images/slider-arrow-prev.png) 0 0 no-repeat;
     left: -175px;
@@ -446,12 +446,12 @@ p.sub-header{
     text-transform: uppercase;
     margin-bottom: 22px;
     margin-top: 0;
- }
+}
 [class^="portfolio-item-"] p{
     font-family: "GothamProLight";
     font-size: 18px;
     text-transform: uppercase;
- }
+}
 [class^="portfolio-item-"]:before{
     content: '';
     position: absolute;
@@ -514,6 +514,10 @@ p.sub-header{
 }
 .more-button-wrap{
     margin:93px 0 100px;
+}
+.advant{
+    background: #f5f5f5;
+    padding-top: 88px;
 }
 .advant .container{
     overflow: hidden;
@@ -644,9 +648,10 @@ p.sub-header{
     background: url(../images/stat-bg.jpg) 0 0 no-repeat;
     width: 100%;
     height: auto;
+    background-size: cover;
 }
 .stat-item{
-    margin: 90px 0 140px;
+    margin: 90px 0 44px;
     color: #fff;
     text-align: center;
 }
@@ -664,6 +669,80 @@ p.sub-header{
 .stat-item h4 span{
     font-size: 24px;
 }
+.contact{
+    width: 100%;
+    height:auto;
+    background: url(../images/contact-bg.jpg) 0 0 no-repeat;
+    color: #fff;
+    padding-top: 75px;
+    background-size: cover;
+}
+.contact h2.header{
+    left: 309px;
+
+}
+.contact h2.header:before{
+    background: #fff;
+}
+.contact-form{
+    width: 415px;
+    margin-top: 40px;
+}
+.adress{
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+.adress span{
+    text-transform: uppercase;
+    color: #d62a03;
+    font-family: "GothamProMedium";
+    font-size: 14px;
+    margin-bottom: 13px;
+    display: inline-block;
+
+}
+.adress p{
+    text-transform: uppercase;
+    font-family: "GothamProLight";
+    font-size: 14px;
+    line-height: 24px;
+}
+.adress >div{
+    margin-bottom: 70px;
+}
+.adress >div:last-child{
+    margin-bottom: 160px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#contact-form input, #contact-form textarea{
+    width: 100%;
+    background: transparent;
+    margin-bottom: 85px;
+    border:none;
+    border-bottom:1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "GothamProLight";
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 1;
+}
+#contact-form button{
+    align-self: flex-end;
+}
+#contact-form ::placeholder{ opacity:1;}
+#contact-form ::-webkit-input-placeholder{ opacity:1;}
+#contact-form::-moz-placeholder{ opacity:1;}
+#contact-form:-ms-input-placeholder{ opacity:1;}
 .wrapper-content {
     position:static;
     width:100%;
