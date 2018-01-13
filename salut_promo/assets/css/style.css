@@ -171,7 +171,7 @@ ul.top-menu li a:hover{
     color: #d62a03;
 }
 .main .container {
-    padding:152px 0 193px 0;
+    padding:132px 0 193px 0;
 }
 .main h1{
     font-family: "GothamProBlack";
@@ -231,7 +231,7 @@ ul.top-menu li a:hover{
 }
 h3.header{
     font-family: "GothamProBlack";
-    font-size: 36px;
+    font-size: 43px;
     text-transform: uppercase;
     line-height: 30px;
     text-align: center;
@@ -865,7 +865,7 @@ p.sub-header{
     filter: brightness(0);
 }
 footer{
-    background: #232323;
+    background: #141414;
     color: #fff;
     padding-top: 65px;
     padding-bottom: 10px;
