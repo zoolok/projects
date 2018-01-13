@@ -916,6 +916,27 @@ footer li a:hover{
 .footer-contact .soc ul li{
     margin-right: 8px;
 }
+header .soc i{
+    border:1px solid #000;
+}
+.soc i{
+    border:1px solid #fff;
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+.soc i:hover{
+-webkit-transform: rotateY( 360deg );
+-moz-transform: rotateY( 360deg );
+-ms-transform: rotateY( 360deg );
+-o-transform: rotateY( 360deg );
+transform: rotateY( 360deg );
+    transition: 0.8s all ease;
+}
 .footer-menu{
     white-space: nowrap;
     margin-right: 130px;
