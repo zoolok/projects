@@ -74,6 +74,12 @@ header hr{
 .start{
     justify-content: flex-start!important;
 }
+.end{
+    justify-content: flex-end;
+}
+.column{
+    flex-direction: column;
+}
 .wrap{
     flex-wrap: wrap;
 }
@@ -856,6 +862,86 @@ p.sub-header{
 }
 .blog-item ul li img {
     filter: brightness(0);
+}
+footer{
+    background: #232323;
+    color: #fff;
+    padding-top: 65px;
+    padding-bottom: 10px;
+}
+footer h3{
+    font-size: 18px;
+    font-family: "GothamProBlack";
+    text-transform: uppercase;
+    margin:40px 0 35px;
+}
+footer li{
+    font-size: 14px;
+    font-family: "GothamProLight";
+    margin-bottom: 22px;
+
+}
+footer li a:hover{
+    text-decoration: underline;
+
+}
+.footer-contact{
+    margin-right: 138px;
+}
+.footer-contact img{
+    margin-bottom: 40px;
+}
+.footer-contact .sity{
+    font-size: 14px;
+    font-family: "GothamProMedium";
+    margin-bottom: 15px;
+}
+.footer-contact .phone{
+    font-size: 18px;
+    font-family: "GothamProMedium";
+    margin-bottom: 15px;
+}
+.footer-contact .email{
+    font-family: "GothamProLight";
+    margin-bottom: 40px;
+}
+.footer-contact .soc p{
+    font-family: "GothamProLight";
+    margin-bottom: 14px;
+    color: #9d9d9d;
+    margin-bottom: 15px;
+}
+.footer-contact .soc ul li{
+    margin-right: 8px;
+}
+.footer-menu{
+    white-space: nowrap;
+    margin-right: 130px;
+}
+.footer-nap{
+    white-space: nowrap;
+    margin-right: 144px;
+}
+.copyright{
+    margin-top: 45px;
+}
+.copyright p{
+    font-family: "GothamProLight";
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 45px;
+}
+.politic{
+    width: 100%;
+    background: url(../images/policy-bg.png) 0 0 no-repeat;
+}
+.politic a{
+    padding:18px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: inline-block;
+    justify-content: flex-end;
 }
 .wrapper-content {
     position:static;
