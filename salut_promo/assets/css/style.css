@@ -679,10 +679,11 @@ p.sub-header{
 .contact{
     width: 100%;
     height:auto;
-    background: url(../images/contact-bg.jpg) 0 0 no-repeat;
+    background: url(../images/contact-bg.jpg) center center no-repeat;
     color: #fff;
     padding-top: 75px;
     background-size: cover;
+
 }
 .contact h2.header{
     left: 309px;
