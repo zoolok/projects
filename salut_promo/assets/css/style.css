@@ -689,11 +689,20 @@ p.sub-header{
     left: 309px;
 
 }
+
+.contact h3.header{
+    margin: 35px 0 25px 160px;
+
+}
+.contact p.sub-header{
+    margin-left: 155px;
+
+}
 .contact h2.header:before{
     background: #fff;
 }
 .contact-form{
-    width: 415px;
+    width: 515px;
     margin-top: 40px;
 }
 .adress{
@@ -797,7 +806,7 @@ p.sub-header{
     font-family: "GothamProLight";
     font-size: 12px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 }
 .blog-item:hover .blog-hover{
     display: block;
