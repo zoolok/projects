@@ -542,7 +542,7 @@ p.sub-header{
     min-height: 95px;
     display: flex;
     align-items: center;
-    background: url(../images/adv-ico-bg.png)61px 5px no-repeat;
+    background: url(../images/dv-ico-bg.png)61px 5px no-repeat;
 }
 .slider-adv-nav .slick-track{
     display: flex;
@@ -632,25 +632,25 @@ p.sub-header{
     z-index: 2;
 }
 .slick-next{
-    background: url(../images/adv-slider-arrow-right.png) 0 0 no-repeat;
+    background: url(../images/dv-slider-arrow-right.png) 0 0 no-repeat;
     right: 210px;
 }
 
 .slick-prev{
-    background: url(../images/adv-slider-arrow-left.png) 0 0 no-repeat;
+    background: url(../images/dv-slider-arrow-left.png) 0 0 no-repeat;
     left: 210px;
 }
 .slick-prev:hover, .slick-prev:focus {
     color: transparent;
     outline: none;
     left: 205px;
-    background: url(../images/adv-slider-arrow-left.png) 0 0 no-repeat;
+    background: url(../images/dv-slider-arrow-left.png) 0 0 no-repeat;
     transition: all 1s;
 }
 .slick-next:hover, .slick-next:focus {
     color: transparent;
     outline: none;
-    background: url(../images/adv-slider-arrow-right.png) 0 0 no-repeat;
+    background: url(../images/dv-slider-arrow-right.png) 0 0 no-repeat;
     right:205px;
     transition: all 1s;
 }
@@ -945,11 +945,11 @@ header .soc i{
     transition: 0.5s all ease;
 }
 .soc i:hover{
--webkit-transform: rotateY( 360deg );
--moz-transform: rotateY( 360deg );
--ms-transform: rotateY( 360deg );
--o-transform: rotateY( 360deg );
-transform: rotateY( 360deg );
+    -webkit-transform: rotateY( 360deg );
+    -moz-transform: rotateY( 360deg );
+    -ms-transform: rotateY( 360deg );
+    -o-transform: rotateY( 360deg );
+    transform: rotateY( 360deg );
     transition: 0.8s all ease;
 }
 .footer-menu{
@@ -1402,9 +1402,30 @@ transform: rotateY( 360deg );
         text-align: center;
         line-height: 24px;
     }
+    .advant h3.header{
+        font-size: 23px;
+    }
     .adv-item p {
         font-size: 14px;
         text-align: center;
+    }
+    .slider-adv-nav {
+        background: url(../images/dv-ico-bg.png)-86px 5px no-repeat;
+    }
+    .slider-adv-nav img {
+        padding: 0px 45px;
+    }
+    .slick-next {
+        right: 60px;
+    }
+    .slick-prev {
+        left: 60px;
+    }
+    .slick-prev:hover, .slick-prev:focus {
+        left: 65px;
+    }
+    .slick-next:hover, .slick-next:focus {
+        right: 65px;
     }
     [data="button"] {
         margin:0 auto;
@@ -1413,6 +1434,36 @@ transform: rotateY( 360deg );
     }
     #counts .container{
         flex-direction: column;
+    }
+    .contact {
+        background: unset;
+        background: #000;
+    }
+    .contact h2.header {
+        left: 20px;
+    }
+    .contact h3.header {
+        margin: 0;
+    }
+    .contact p.sub-header {
+        margin-left: 0;
+    }
+    .adress {
+        margin-top: 0;
+    }
+    .adress > div:last-child {
+        margin-bottom: 20px;
+    }
+    .contact .flex{
+        flex-direction:column;
+    }
+    .contact-form{
+        width: calc(100% + 20px);
+        background: url(../images/form-bg-m.jpg) center center no-repeat;
+        background-size: cover;
+        padding:50px 10px 60px 10px;
+        margin-left: -10px;
+        margin-right: -20px;
     }
     .blog {
         background: #fff;
@@ -1434,4 +1485,5 @@ transform: rotateY( 360deg );
     .politic .container{
         justify-content: center!important;
     }
+
 }

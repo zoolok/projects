@@ -43,8 +43,14 @@ $(document).ready(function () {
         asNavFor: '.slider-adv-nav'
     });
 
+    var cnticon = 3;
+
+    if (document.body.clientWidth < 769){
+        cnticon = 1;
+    }
     $('.slider-adv-nav').slick({
-        slidesToShow: 3,
+
+        slidesToShow:  cnticon,
         slidesToScroll: 1,
         asNavFor: '.slider-adv',
         dots: false,
