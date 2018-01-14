@@ -1266,7 +1266,7 @@ header .soc i{
         padding:18px 0 21px;
         display: flex;
         flex-direction:column;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
     }
     .mobile-header>div img{
