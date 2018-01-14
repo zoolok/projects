@@ -1347,6 +1347,13 @@ header .soc i{
         top: -30px;
         transition: all 1s;
     }
+    .owl-prev:hover, .owl-next:hover {
+        -o-transform: unset;
+        -ms-transform: unset;
+        -moz-transform: unset;
+        -webkit-transform: unset;
+        transform: unset;
+    }
     .letter-content ul li {
         margin-right: 30px;
     }
@@ -1402,6 +1409,9 @@ header .soc i{
         text-align: center;
         line-height: 24px;
     }
+    .slider-adv-nav .slick-track {
+        justify-content: center;
+    }
     .advant h3.header{
         font-size: 23px;
     }
@@ -1410,22 +1420,29 @@ header .soc i{
         text-align: center;
     }
     .slider-adv-nav {
-        background: url(../images/dv-ico-bg.png)-86px 5px no-repeat;
+        background: url(../images/dv-ico-bg.png)52% 50% no-repeat;
     }
     .slider-adv-nav img {
         padding: 0px 45px;
     }
     .slick-next {
-        right: 60px;
+        right: calc(50% - 90px);
     }
     .slick-prev {
-        left: 60px;
+        left: calc(50% - 90px);
     }
     .slick-prev:hover, .slick-prev:focus {
-        left: 65px;
+        left: calc(50% - 95px);
     }
     .slick-next:hover, .slick-next:focus {
-        right: 65px;
+        right: calc(50% - 95px);
+    }
+    .slider-adv-nav .slick-slide.slick-current.slick-active {
+        left: 3px;
+    }
+    .slider-adv-nav .slick-slide {
+        position: relative;
+        left: 44px;
     }
     [data="button"] {
         margin:0 auto;
@@ -1486,4 +1503,10 @@ header .soc i{
         justify-content: center!important;
     }
 
+}
+@media only screen and (max-width : 320px) {
+    .slider-adv-nav .slick-slide {
+        position: relative;
+        left: -5px;
+    }
 }
