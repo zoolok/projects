@@ -1421,6 +1421,7 @@ header .soc i{
     }
     .slider-adv-nav {
         background: url(../images/dv-ico-bg.png)52% 50% no-repeat;
+        background-size: 128% 100%;
     }
     .slider-adv-nav img {
         padding: 0px 45px;
@@ -1508,5 +1509,8 @@ header .soc i{
     .slider-adv-nav .slick-slide {
         position: relative;
         left: -5px;
+    }
+    .slider-adv-nav {
+        background-size: cover;
     }
 }
