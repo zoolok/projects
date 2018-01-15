@@ -1251,7 +1251,6 @@ header .soc i{
     height: auto;
     color: #fff;
     padding:107px 0;
-    background: #000 url(../images/blog-header-bg.jpg) center center no-repeat;
 }
 .top-title h1{
     font-family: "GothamProLight";
@@ -1269,6 +1268,20 @@ header .soc i{
     margin: 0 0 0 0px;
     position: relative;
 }
+.top-title h2{
+    font-family: "GothamProLight";
+    font-size: 60px;
+    margin: 0;
+}
+.top-title h2 span{
+    font-family: "GothamProBold";
+}
+.top-title h4{
+    font-size: 24px;
+    font-family: "GothamProLight";
+    margin: 0;
+    font-weight: 100;
+}
 .top-title h1:before{
     content: '';
     position: absolute;
@@ -1277,6 +1290,26 @@ header .soc i{
     bottom: 0;
     left: 0px;
     background: #fff;
+}
+.blog-page h5{
+    font-family: "GothamProLight";
+    font-size: 30px;
+    font-weight: 100;
+    margin:0 0 40px 0;
+}
+ul.tags{
+    margin-top: 40px;
+    margin-bottom: 48px;
+}
+ul.tags li{
+    background: #cc2204;
+    padding:13px 25px;
+    margin-right:15px;
+    font-family: "GothamProLight";
+    font-size: 24px;
+}
+#__utl-rating-2 .__utl-rating-container div span {
+    line-height: 6px!important;
 }
 .blog-page{
     padding:65px 0 90px;
@@ -1290,6 +1323,15 @@ header .soc i{
 }
 .blog-tags{
     margin-bottom: 33px;
+}
+.blog-content{
+    padding:110px 0 0;
+}
+.blog-content p{
+    font-family: "GothamProLight";
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 45px;
 }
 button[data-filter], button[data-toggle]{
     cursor: pointer;
@@ -1629,7 +1671,27 @@ button.mixitup-control-active[data-filter], button.mixitup-control-active[data-t
     .top-title p {
         font-size: 40px;
     }
-
+    .top-title h2 {
+        font-size: 27px;
+    }
+    .top-title h4 {
+        font-size: 18px;
+    }
+    ul.tags {
+        flex-direction: row;
+        align-items: start;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    ul.tags li{
+        margin: 0 2px 4px;
+        flex-grow: 1;
+        font-size: 14px;
+        text-align: center;
+    }
+    .blog-content {
+        padding: 60px 0 0;
+    }
 }
 @media only screen and (max-width : 320px) {
     .slider-adv-nav .slick-slide {
