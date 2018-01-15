@@ -81,5 +81,11 @@ $(document).ready(function () {
             show = false;
         }
     });
-    var mixer = mixitup('.blog-wrap');
+    var mixer = mixitup('.blog-wrap', {
+        controls: {
+            toggleDefault: 'all',
+            toggleLogic: 'or'
+        }
+    });
+
 });

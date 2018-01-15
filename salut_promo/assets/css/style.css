@@ -1281,10 +1281,17 @@ header .soc i{
 .blog-page{
     padding:65px 0 90px;
 }
+.blog-wrap{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+
+}
 .blog-tags{
     margin-bottom: 33px;
 }
-button[data-filter]{
+button[data-filter], button[data-toggle]{
     cursor: pointer;
     outline: none;
     border: none;
@@ -1294,13 +1301,28 @@ button[data-filter]{
     font-family: "GothamProLight";
     font-size: 14px;
     text-transform: uppercase;
+    transition: 0.3s all ease;
+}
+button[data-filter]:hover, button[data-toggle]:hover{
+    background-color: #ddd;
+    transition: 0.3s all ease;
+}
+button.mixitup-control-active[data-filter], button.mixitup-control-active[data-toggle]{
+    background-color: #b4adad;
+    transition: 0.3s all ease;
 }
 .blog-item.mix{
     margin-bottom: 22px;
 }
+.blog-item.mix img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .blog-item.mix p {
     margin-bottom: 25px;
 }
+
 .tag{
     text-align: center;
     width: 181px;
@@ -1315,6 +1337,9 @@ button[data-filter]{
 }
 .w3{
     width:calc(100%/3 - 10px);
+}
+.w23{
+    width:calc(100%*2/3 - 10px);
 }
 .w7{
     width:calc(100%/7 - 10px);
@@ -1592,12 +1617,25 @@ button[data-filter]{
     .politic .container{
         justify-content: center!important;
     }
+    .blog-item.mix {
+        width: 100%;
+    }
+    button[data-filter], button[data-toggle] {
+        width: unset;
+        height: 40px;
+        margin: 0 2px 4px;
+        flex-grow: 1;
+    }
+    .top-title p {
+        font-size: 40px;
+    }
 
 }
 @media only screen and (max-width : 320px) {
     .slider-adv-nav .slick-slide {
         position: relative;
         left: -5px;
+
     }
     .slider-adv-nav {
         background-size: cover;
