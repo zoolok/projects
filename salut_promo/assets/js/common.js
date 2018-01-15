@@ -81,4 +81,5 @@ $(document).ready(function () {
             show = false;
         }
     });
+    var mixer = mixitup('.blog-wrap');
 });

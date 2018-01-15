@@ -1233,7 +1233,96 @@ header .soc i{
 .shapes .shape.hexa polygon {
     stroke-width:.5
 }
-/* Mobile */
+.breadcrumbs{
+    padding:20px 0 20px;
+}
+.B_firstCrumb{
+    padding-right: 20px;
+}
+.B_firstCrumb a:hover{
+    text-decoration: underline;
+}
+.B_currentCrumb{
+    color: #cc2204;
+    padding-left: 20px;
+}
+.blog-title{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding:107px 0;
+    background: #000 url(../images/blog-header-bg.jpg) center center no-repeat;
+}
+.top-title h1{
+    font-family: "GothamProLight";
+    font-size: 72px;
+    margin: 0 0 45px 0;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 42px;
+    padding-left: 75px;
+    font-weight: 100;
+}
+.top-title p{
+    font-family: "GothamProBold";
+    font-size: 72px;
+    margin: 0 0 0 0px;
+    position: relative;
+}
+.top-title h1:before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    bottom: 0;
+    left: 0px;
+    background: #fff;
+}
+.blog-page{
+    padding:65px 0 90px;
+}
+.blog-tags{
+    margin-bottom: 33px;
+}
+button[data-filter]{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #ededed;
+    height: 70px;
+    margin-bottom: 10px;
+    font-family: "GothamProLight";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.blog-item.mix{
+    margin-bottom: 22px;
+}
+.blog-item.mix p {
+    margin-bottom: 25px;
+}
+.tag{
+    text-align: center;
+    width: 181px;
+    height: 45px;
+    margin: 0 auto;
+    background: #ededed;
+    border:none;
+    font-family: "GothamProBold";
+    font-size: 14px;
+    display: block;
+    margin-bottom: 23px;
+}
+.w3{
+    width:calc(100%/3 - 10px);
+}
+.w7{
+    width:calc(100%/7 - 10px);
+}
+.w8{
+    width:calc(100%/8 - 10px);
+}
+/* ---------------- Mobile -----------------*/
 
 @media only screen and (max-width : 768px) {
     .mobile-none {
