@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-/*    $(window).scroll(function () {
-            $('.shape').css('transform','translate('+ $(this).offset().top  +'%,' + $(this).scrollTop() /10 +'%)');
-    });*/
-
     $('.image-popup-no-margins').magnificPopup({
         type: 'image',
         closeOnContentClick: true,
@@ -18,6 +14,7 @@ $(document).ready(function () {
             duration: 300
         }
     });
+
     $('#letter').owlCarousel({
         items:1,
         nav:true,
@@ -35,6 +32,26 @@ $(document).ready(function () {
         }
 
     });
+
+    $('.other-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+    });
+
+$('.other-slider .slick-next').html('right');
+$('.other-slider .slick-prev').html('left');
+
     $('.slider-adv').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -81,6 +98,7 @@ $(document).ready(function () {
             show = false;
         }
     });
+
     var mixer = mixitup('.blog-wrap', {
         controls: {
             toggleDefault: 'all',
