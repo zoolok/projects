@@ -61,7 +61,9 @@ $(document).ready(function () {
             });
         }
     });
-
+    /* --------------------------------------------------------
+         SLIDER PORTFOLIO
+----------------------------------------------------------- */
 
     $('.other-slider').slick({
         infinite: true,
@@ -108,35 +110,49 @@ $(document).ready(function () {
     /* --------------------------------------------------------
                         MOBILE MENU
 ----------------------------------------------------------- */
+
+    var menu = $('.mobile-menu');
+    var blured = $('.wrapper-content, footer');
+
     $('.m-menu').click(function () {
-
-        $('.mobile-menu').animate({
-            left: '0'
-        }, 300);
-
-        $('.mobile-menu').addClass('fixed');
-        $('.wrapper-content, footer').addClass('blured');
+        menu.animate({left: '0'}, 300);
+        menu.addClass('fixed');
+        blured.addClass('blured');
     });
 
     $('.mobile-menu span').click(function () {
-        $('.mobile-menu').animate({
-            left: "-999px"
-        }, 300);
+        menu.animate({left: "-999px"}, 300);
+        menu.removeClass('fixed');
+        blured.removeClass('blured');
+    });
 
-        $('.mobile-menu').removeClass('fixed');
-        $('.wrapper-content, footer').removeClass('blured');
+    /* --------------------------------------------------------
+                        SHOW MODAL ORDER
+----------------------------------------------------------- */
+
+    var overlay = $('.modal-overlay');
+
+    $('.order-button, .m-order').click(function () {
+        overlay.fadeIn();
+        overlay.css('display','flex')
+    });
+
+    $('.close').click(function () {
+        overlay.fadeOut();
     });
 
     /* --------------------------------------------------------
                         BLOG MIXITUP
 ----------------------------------------------------------- */
     $(function($) {
-        var mixer = mixitup('.blog-wrap', {
-            controls: {
-                toggleDefault: 'all',
-                toggleLogic: 'or'
-            }
-        });
+        if ( $( ".mix" ).length > 0 ) {
+            var mixer = mixitup('.blog-wrap', {
+                controls: {
+                    toggleDefault: 'all',
+                    toggleLogic: 'or'
+                }
+            });
+        }
     });
 
     /* --------------------------------------------------------
