@@ -34,6 +34,26 @@ $(document).ready(function () {
             });
         }
     });
+    /* --------------------------------------------------------
+         INDEX OWL CARUSEL
+----------------------------------------------------------- */
+    $(function() {
+        "use strict";
+        if ( $( ".main-slider" ).length > 0 ) {
+
+            $('.main-slider').owlCarousel({
+                items:1,
+                loop:false,
+                center:true,
+                margin:10,
+                URLhashListener:true,
+                autoplayHoverPause:true,
+                startPosition: 'URLHash'
+
+
+            });
+        }
+    });
 
 
 
