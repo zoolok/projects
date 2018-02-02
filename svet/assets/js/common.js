@@ -44,24 +44,20 @@ $(document).ready(function () {
             $('.main-slider').owlCarousel({
                 items:1,
                 nav:true,
+                navText:["",""],
                 dots:true,
-                // dotsContainer: '.slide-nav',
+                dotsContainer: '.slide-nav',
                 loop:false,
-                center:true,
-                URLhashListener:true,
-                autoplayHoverPause:true,
-                startPosition: 'URLHash'
-
+                center:true
             });
-           var si = $('.owl-item');
-
-            si.each(function (index, value) {
-               $(this).attr('data-hash','0w'+ (index + 1));
-               $('.slide-nav').append(' <a class="" href="#0w'+ (index + 1)+'">' + '0' + (index + 1)+'</a>')
+           var od = $('.owl-dot');
+           $('.owl-nav').addClass('flex');
+            $('.owl-dot.active').html('01');
+            od.each(function (index, value){
+               $(this).next().html('0'+ (index + 2));
             });
         }
     });
-
 
 
     /* --------------------------------------------------------
