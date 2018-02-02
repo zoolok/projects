@@ -8,7 +8,7 @@ body{
     padding: 0;
     margin: 0;
     font:100 14px 'Open Sans', sans-serif;
-    overflow: hidden;
+
 }
 a{
     text-decoration: none;
@@ -42,7 +42,9 @@ button{
 header{
 
 }
-
+.content-wrap{
+    overflow: hidden;
+}
 .container{
     width: 1200px;
     padding: 0;
@@ -226,6 +228,41 @@ section h2{
     font-size: 72px;
     color: #303030;
 }
+.catalog-items{
+    justify-content: space-between;
+    margin-top: 15px;
+}
+[class^='cat-item-']{
+    height: 299px;
+    width: 384px;
+    font-size: 36px;
+    padding: 15px 10px;
+    color: #fff;
+    margin-bottom: 23px;
+    font-family: "Playfair Display";
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+.cat-item-1{
+    background: url(../images/pamyatniki.jpg) 0 0 no-repeat;
+}
+.cat-item-2{
+    background: url(../images/blago.jpg) 0 0 no-repeat;
+    width: 790px;
+}
+.cat-item-3{
+    background: url(../images/kresty.jpg) 0 0 no-repeat;
+}
+.cat-item-4{
+    background: url(../images/plitka.jpg) 0 0 no-repeat;
+}
+.cat-item-5{
+    background: url(../images/ograda.jpg) 0 0 no-repeat;
+}
+/*todo 4654654*/
 .blured {
     filter: blur(4px);
     -webkit-transition: all 0.7s;
