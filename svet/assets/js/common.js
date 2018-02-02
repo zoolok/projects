@@ -43,14 +43,21 @@ $(document).ready(function () {
 
             $('.main-slider').owlCarousel({
                 items:1,
+                nav:true,
+                dots:true,
+                // dotsContainer: '.slide-nav',
                 loop:false,
                 center:true,
-                margin:10,
                 URLhashListener:true,
                 autoplayHoverPause:true,
                 startPosition: 'URLHash'
 
+            });
+           var si = $('.owl-item');
 
+            si.each(function (index, value) {
+               $(this).attr('data-hash','0w'+ (index + 1));
+               $('.slide-nav').append(' <a class="" href="#0w'+ (index + 1)+'">' + '0' + (index + 1)+'</a>')
             });
         }
     });
