@@ -393,6 +393,80 @@ section h2{
     margin-left: 40px;
     margin-top: 50px;
 }
+.callback{
+    background: url(../images/callback-bg.jpg) 50% 50% no-repeat;
+    justify-content: center;
+}
+.callback .container{
+    padding:80px;
+}
+.call-form-wrap{
+    background: url(../images/call-form-bg.jpg) 50% 50% no-repeat;
+    justify-content: normal;
+}
+.form-text{
+    padding: 130px 0;
+    width: 50%;
+}
+.form-text h3{
+    font-size:40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 32px;
+}
+.form-text p{
+    font-size:18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 100;
+}
+#call{
+    padding: 75px 60px 0 60px;
+    width: 50%;
+}
+#call input {
+    width: 100%;
+    background: transparent;
+    border:none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 65px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#call input[name='email']{
+    margin-bottom: 30px;
+}
+#call button{
+    width: 219px;
+    height: 56px;
+    font-size: 18px;
+    color: #3e3940;
+    text-transform: uppercase;
+    border:none;
+    background-color: #b6b397;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#call button:hover{
+    background-color: rgba(182,179,151,0.6);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#call ::placeholder{ opacity:1;}
+#call ::-webkit-input-placeholder{ opacity:1;}
+#call ::-moz-placeholder{ opacity:1;}
+#call :-ms-input-placeholder{ opacity:1;}
 .blured {
     filter: blur(4px);
     -webkit-transition: all 0.7s;
