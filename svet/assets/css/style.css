@@ -467,6 +467,58 @@ section h2{
 #call ::-webkit-input-placeholder{ opacity:1;}
 #call ::-moz-placeholder{ opacity:1;}
 #call :-ms-input-placeholder{ opacity:1;}
+footer{
+    background: #000 url(../images/footer-bg.jpg) 50% 50% no-repeat;
+    color: #fff;
+    padding:55px 0 75px;
+}
+footer h4{
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.f-menu li, .f-services li{
+    margin-bottom: 13px;
+}
+.f-menu{
+    margin-right: 125px;
+    white-space: nowrap;
+}
+.f-services{
+    margin-right: 145px;
+    white-space: nowrap;
+}
+.f-adress{
+    margin-right: 80px;
+    white-space: nowrap;
+}
+.f-adress li:nth-child(2){
+    font-size: 24px;
+    font-weight: 600;
+}
+.f-adress ul{
+    margin-bottom: 45px;
+}
+.f-copy{
+    padding-top: 40px;
+}
+.f-copy img{
+    margin-bottom: 25px;
+}
+.f-copy p{
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+.f-copy a{
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.f-copy a:hover{
+    text-decoration: none;
+}
 .blured {
     filter: blur(4px);
     -webkit-transition: all 0.7s;
