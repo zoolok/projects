@@ -469,6 +469,8 @@ section h2{
 #call :-ms-input-placeholder{ opacity:1;}
 footer{
     background: #000 url(../images/footer-bg.jpg) 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
     color: #fff;
     padding:55px 0 75px;
 }
