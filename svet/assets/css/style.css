@@ -472,6 +472,9 @@ footer{
     color: #fff;
     padding:55px 0 75px;
 }
+footer a:hover{
+    text-decoration: underline;
+}
 footer h4{
     font-size: 24px;
     font-weight: 100;
