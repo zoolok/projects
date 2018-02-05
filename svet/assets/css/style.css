@@ -122,9 +122,9 @@ header nav ul li a{
     content: '\f041';
     font-family:'FontAwesome';
     position: absolute;
-    top: 0px;
+    top: 3px;
     left: -38px;
-    font-size: 40px;
+    font-size: 32px;
 }
 .top-phone{
     margin-left: 110px;
@@ -133,9 +133,9 @@ header nav ul li a{
     content: '\f098';
     font-family:'FontAwesome';
     position: absolute;
-    top: 4px;
+    top: 9px;
     left: -42px;
-    font-size: 40px;
+    font-size: 32px;
 }
 .top-phone li{
     font-size: 24px;
@@ -226,10 +226,25 @@ header nav ul li a{
     background: url(../images/arrow-left.png) 0 0 no-repeat;
     margin-right: 25px;
 }
+.breadcrumbs{
+    text-align: center;
+    text-transform: uppercase;
+}
+.B_firstCrumb{
+    color: #b6b397;
+}
+.B_currentCrumb{
+    color: #3e3940;
+}
 section h2{
     font-size: 72px;
     color: #303030;
     font-weight: 100;
+}
+section.inner h2 {
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 30px;
 }
 .catalog{
     padding-bottom: 80px;
