@@ -59,7 +59,27 @@ $(document).ready(function () {
         }
     });
 
+    $(function() {
+        "use strict";
+        if ( $( ".catalog-slider" ).length > 0 ) {
 
+            $('.catalog-slider').owlCarousel({
+                items:1,
+                nav:true,
+                navText:["",""],
+                dots:true,
+                dotsContainer: '.slide-nav',
+                loop:false,
+                center:true
+            });
+            var od = $('.owl-dot');
+            $('.owl-nav').addClass('flex');
+            $('.owl-dot.active').html('01');
+            od.each(function (index, value){
+                $(this).next().html('0'+ (index + 2));
+            });
+        }
+    });
     /* --------------------------------------------------------
                         MOBILE MENU
 ----------------------------------------------------------- */

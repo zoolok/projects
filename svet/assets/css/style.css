@@ -106,6 +106,9 @@ header{
 header{
     padding:13px 0 30px 0;
 }
+header.inner{
+    padding:13px 0 0 0;
+}
 header ul{
     position: relative;
 }
@@ -215,6 +218,15 @@ header nav ul li a{
     -o-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
 }
+.catalog-slider-wrap .owl-nav .owl-next,
+.catalog-slider-wrap .owl-nav .owl-prev {
+    filter: brightness(0);
+}
+.catalog-slider-wrap .owl-nav{
+    left: calc(50% - 146px);
+    bottom: -82px;
+}
+
 .owl-next:hover,
 .owl-prev:hover {
     opacity: 0.5;
@@ -229,6 +241,29 @@ header nav ul li a{
 .breadcrumbs{
     text-align: center;
     text-transform: uppercase;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.catalog-slider{
+    margin-top: 85px;
+}
+.catalog-slider.owl-carousel .owl-item img {
+    display: block;
+    width: unset;
+    margin-bottom: 20px;
+}
+.catalog-slider-wrap .slide-nav{
+    background-color: #fff;
+    bottom: -110px;
+    left: calc(50% - 160px);
+}
+.catalog-slider-wrap .slide-nav .owl-dot.active{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+.catalog-slider-wrap .slide-nav .owl-dot{
+    color: #808080;
+    border-bottom: 1px solid #808080;
 }
 .B_firstCrumb{
     color: #b6b397;
@@ -248,6 +283,10 @@ section.inner h2 {
 }
 .catalog{
     padding-bottom: 80px;
+}
+.catalog.inner{
+    background-color: #fff;
+    padding-bottom: 153px;
 }
 .catalog p{
     line-height: 24px;
@@ -413,7 +452,7 @@ section.inner h2 {
     justify-content: center;
 }
 .callback .container{
-    padding:80px;
+    padding:73px;
 }
 .call-form-wrap{
     background: url(../images/call-form-bg.jpg) 50% 50% no-repeat;
