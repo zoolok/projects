@@ -85,7 +85,6 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
 
     var menu = $('.mobile-menu');
-    var blured = $('.wrapper-content, footer');
 
     $('.menu-button').click(function () {
         menu.fadeToggle(300);
@@ -94,26 +93,7 @@ $(document).ready(function () {
     $('.close-menu').click(function () {
         menu.fadeToggle(300);
         menu.removeClass('fixed');
-
     });
-
-
-
-    /* --------------------------------------------------------
-                  SHOW MODAL ORDER
------------------------------------------------------------ */
-
-    var overlay = $('.modal-overlay');
-
-    $('.order-button, .m-order').click(function () {
-        overlay.fadeIn();
-        overlay.css('display','flex')
-    });
-
-    $('.close').click(function () {
-        overlay.fadeOut();
-    });
-
 
 
 });
