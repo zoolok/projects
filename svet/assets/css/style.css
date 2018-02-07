@@ -869,5 +869,27 @@ span.close:hover{
         margin-right: 0;
         margin-bottom: 0;
     }
+    .callback {
+        background: none;
+    }.callback .container {
+         padding: 0;
+     }
+    .call-form-wrap {
+        background: url(../images/mob-zayavka-bg.png) 0 0 no-repeat;
+        flex-direction: column;
+    }
+    .form-text {
+        padding: 0;
+        width: 100%;
+    }
+    .form-text h3 {
+        font-size: 30px;
+        margin: 65px 0 35px;
+    }
+    #call {
+        padding: 70px 15px 35px 15px;
+        width: 100%;
+        background-color: #3e3940;
+    }
 }
 
