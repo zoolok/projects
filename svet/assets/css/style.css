@@ -901,6 +901,9 @@ span.close:hover{
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .f-adress{
+        margin-right:0;
+    }
     .f-copy {
         padding-top: 0;
     }
