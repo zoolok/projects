@@ -899,6 +899,7 @@ span.close:hover{
     }
     footer .container{
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .f-copy {
         padding-top: 0;
