@@ -847,7 +847,7 @@ span.close:hover{
         position: relative;
     }
     .preim h2 {
-        font-size: 48px;
+        font-size: 36px;
         margin-top: 0;
     }
     .preim .container{
@@ -855,6 +855,7 @@ span.close:hover{
         flex-direction: column;
     }
     .preim-icon{
+        background: #fff;
         position: relative;
         left: 0;
         padding: 50px 0;
