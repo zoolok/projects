@@ -524,6 +524,9 @@ section.inner h2 {
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 #call input[name='email']{
     margin-bottom: 30px;
