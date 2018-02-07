@@ -87,17 +87,17 @@ $(document).ready(function () {
     var menu = $('.mobile-menu');
     var blured = $('.wrapper-content, footer');
 
-    $('.m-menu').click(function () {
-        menu.animate({left: '0'}, 300);
+    $('.menu-button').click(function () {
+        menu.fadeToggle(600);
         menu.addClass('fixed');
-        blured.addClass('blured');
+    });
+    $('.close-menu').click(function () {
+        menu.fadeToggle(600);
+        menu.removeClass('fixed');
+
     });
 
-    $('.mobile-menu span').click(function () {
-        menu.animate({left: "-999px"}, 300);
-        menu.removeClass('fixed');
-        blured.removeClass('blured');
-    });
+
 
     /* --------------------------------------------------------
                   SHOW MODAL ORDER

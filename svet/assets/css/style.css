@@ -165,13 +165,16 @@ header nav ul li a{
     width: 25px;
 }
 .mobile-menu{
-    flex-direction: column;
     position: absolute;
     top: 0;
-    left: -9999px;
+    left: 0;
+    display: none;
     transition: all 1s ease;
     width: 100%;
+    height: 100%;
+    background-color: #3e3940;
     z-index: 100;
+    color: #fff;
 }
 .title-section{
     background-color: #3e3940;
@@ -619,61 +622,46 @@ footer h4{
 .fixed{
     position: fixed;
 }
-.mobile-menu span {
-    font-family: "GothamProBold";
-    font-size: 14px;
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
-    padding:40px 0;
-    background: #fff url(../images/m-menu-back.png) 20% 50% no-repeat;
+span.close-menu{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 26px;
+    height: 26px;
+    background: url(../images/close-menu.png) 0 0 no-repeat;
     cursor: pointer;
-    border-bottom: 1px solid #d5d3d5;;
+
 }
 .mobile-menu ul{
     display: flex;
-    align-content: stretch;
-    align-items: stretch;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
 .mobile-menu ul li{
-    width:calc(100%/3);
-    border-right:1px solid #d5d3d5;
-    border-bottom:1px solid #d5d3d5;
-    flex-grow: 1;
-    text-align: center;
-    min-height: 110px;
-    position: relative;
+
 }
 .mobile-menu ul li a{
-    font-family: "GothamProBold";
-    font-size: 11px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    margin-top: 30px;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 48px;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
 }
-.mobile-menu ul li:nth-child(1){
-    background: #fff url(../images/m-menu-about.png) 50% 50% no-repeat;
+.mobile-menu ul li a:hover {
+    color: #e59040;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
 }
-.mobile-menu ul li:nth-child(2){
-    background: #fff url(../images/m-menu-portfolio.png) 50% 50% no-repeat;
-}
-.mobile-menu ul li:nth-child(3){
-    background: #fff url(../images/m-menu-uslugi.png) 50% 50% no-repeat;
-}
-.mobile-menu ul li:nth-child(4){
-    background: #fff url(../images/m-menu-stoimost.png) 50% 50% no-repeat;
-}
-.mobile-menu ul li:nth-child(5){
-    background: #fff url(../images/m-menu-contact.png) 50% 50% no-repeat;
-}
-.mobile-menu ul li:nth-child(6){
-    background: #fff url(../images/m-menu-blog.png) 50% 50% no-repeat;
-}
+
 .modal-overlay{
     position: fixed;
     display: none;
@@ -843,7 +831,7 @@ span.close:hover{
     }
     .preim {
         background: #3e3940;
-        padding: 50px 0 50px;
+        padding: 50px 0 0;
         position: relative;
     }
     .preim h2 {
