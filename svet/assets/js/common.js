@@ -88,11 +88,11 @@ $(document).ready(function () {
     var blured = $('.wrapper-content, footer');
 
     $('.menu-button').click(function () {
-        menu.fadeToggle(600);
+        menu.fadeToggle(300);
         menu.addClass('fixed');
     });
     $('.close-menu').click(function () {
-        menu.fadeToggle(600);
+        menu.fadeToggle(300);
         menu.removeClass('fixed');
 
     });
