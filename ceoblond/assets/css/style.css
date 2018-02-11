@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "GothamPro";
+    src: url("../fonts/GothaProReg.otf");
+}
+@font-face {
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothaProMed.otf");
+}
+@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothaProLig.otf");
+}
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothaProBol.otf");
+}
+@font-face {
+    font-family: "GothamProBlack";
+    src: url("../fonts/GothaProBla.otf");
+}
+@font-face {
+    font-family: 'Austin Cyr';
+    src: url('AustinCyr-Bold.eot');
+    src: local('Austin Cyr Bold'), local('AustinCyr-Bold'),
+    url('../fonts/AustinCyr-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AustinCyr-Bold.woff') format('woff'),
+    url('../fonts/AustinCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+* {box-sizing: border-box}
+
+body {
+    background: #f3f3f3;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font: 100 14px 'GothamProLight;
+}
+.container {
+    width: 1280px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+}
