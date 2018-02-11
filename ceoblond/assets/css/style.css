@@ -132,17 +132,20 @@ body {
     z-index: 2;
 }
 .name{
+    position: absolute;
+    z-index: 3;
+}
+.name p{
     font-size: 65px;
     font-family: 'Austin Cyr';
     letter-spacing:17px;
     text-transform: uppercase;
-    position: absolute;
     color: #2d2d2d;
     text-shadow: 2px 2px 0px rgba(197, 197, 197, 1);
     background: linear-gradient(to top, #2d2d2d 0%, #131313 43%, #393939 52%, #4d4d4d 84%, #2d2d2d 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: 3;
+    -webkit-text-fill-color: linear-gradient(to top, #2d2d2d 0%, #131313 43%, #393939 52%, #4d4d4d 84%, #2d2d2d 100%);
+
 }
 .menu-button{
     position: fixed;
