@@ -20,11 +20,19 @@
 }
 @font-face {
     font-family: 'Austin Cyr';
-    src: url('AustinCyr-Bold.eot');
     src: local('Austin Cyr Bold'), local('AustinCyr-Bold'),
     url('../fonts/AustinCyr-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/AustinCyr-Bold.woff') format('woff'),
     url('../fonts/AustinCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}@font-face {
+    font-family: 'VremenaBold';
+    src: local('VremenaBold'), local('VremenaBold'),
+    url('../fonts/VremenaBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/VremenaBold.woff') format('woff'),
+    url('../fonts/VremenaBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -53,7 +61,7 @@ ul{
     position: relative;
 }
 .main{
-    background: url(../images/bg-main-1.jpg) 50% 0% no-repeat;
+    /*background: url('../images/bg-main.jpg') 50% 0% no-repeat;*/
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -112,20 +120,44 @@ ul{
     border-radius: 50%;
     z-index: 2;
 }
-.sqwrap{
+.top-sq-wrap{
     position: absolute;
-    top: -9px;
-    right: 0;
-    width: 100px;
-    height: 100px;
+    top: -6px;
+    left: -7px;
+    width: 13px;
+    height: 63px;
 }
-[class^="sq-"]{
+.bottom-sq-wrap{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 55px;
+    height: 55px;
+}
+[class^="sqt-"]{
+    width: 13px;
+    height: 13px;
+   border:3px solid #000;
+    position: absolute;
+}
+[class^="sqb-"]{
     width: 20px;
     height: 20px;
-    border: 4px solid #000;
+    background-color: #000;
+    position: absolute;
 }
-.sq-2{
-    margin-left: 20px;
+.sqb-2{
+    margin-left: 35px;
+}
+.sqb-3{
+    margin-left: 35px;
+    margin-top: 35px
+}
+.sqt-2{
+    margin-top: 28px;
+}
+.sqt-3{
+    margin-top: 57px;
 }
 @-webkit-keyframes orbit2 {
     from {  -webkit-transform: rotate(0deg) translateX(280px) rotate(0deg); }
@@ -168,10 +200,10 @@ ul{
 }
 .left-sidebar{
     position: fixed;
-    left: calc(50% - 800px);
+    left: calc(50% - 790px);
     z-index: 1;
     transform: rotate(-90deg);
-    top: 250px;
+    top: 242px;
 }
 .left-sidebar ul li:first-child a{
     color: #000;
@@ -195,12 +227,36 @@ ul{
     height: 50vh;
     position: relative;
 }
+.a-letter, .x-letter, .s-letter, .v-letter{
+    font-size: 60px;
+    opacity: 0.19;
+    font-family: 'VremenaBold';
+    text-transform: uppercase;
+    position: absolute;
+ }
+.a-letter{
+    bottom: 235px;
+    left: 148px;
+}
+.x-letter{
+    bottom: 255px;
+    right: 148px;
+}
+.s-letter{
+    top: 258px;
+    left: 148px;
+}
+.v-letter{
+    top: 258px;
+    right: 148px;
+}
 .top-content{
-     border-left: 1px solid #c4c4c4;
+     border-left: 1px solid #bebebe;
  }
 .bottom-content{
-    border-top: 1px solid #c4c4c4;
-    border-right: 1px solid #c4c4c4;
+    border-top: 1px solid #bebebe;
+    border-right: 1px solid #bebebe;
+    z-index: 1;
 }
 .center-content{
     position: absolute;
@@ -216,6 +272,7 @@ ul{
 }
 .blond-foto{
     position: relative;
+    margin-bottom: 167px;
 }
 
 .circle{
@@ -246,12 +303,14 @@ ul{
 .name,.name-1{
     position: absolute;
     z-index: 3;
+    margin-bottom: 133px;
+    margin-left: 48px;
 }
 .name p{
     position: relative;
     font-size: 65px;
     font-family: 'Austin Cyr';
-    letter-spacing:17px;
+    letter-spacing:20px;
     text-transform: uppercase;
     color: transparent;
     background: linear-gradient(to top, #2d2d2d 0%, #131313 43%, #393939 52%, #4d4d4d 84%, #2d2d2d 100%);
@@ -270,7 +329,14 @@ ul{
     top: 0;
     z-index: -1;
 }
-
+.name span{
+    display: block;
+    text-align: right;
+    font-family: "GothamProMedium";
+    font-size: 18px;
+    margin-bottom: 13px;
+    padding-right: 16px;
+}
 .menu-button{
     position: fixed;
     width: 60px;
