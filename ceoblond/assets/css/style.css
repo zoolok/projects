@@ -265,6 +265,7 @@ ul{
     justify-content: center;
     z-index: 2;
     position: relative;
+    bottom: -145px;
 }
 .scroll-wrap img{
     cursor: pointer;
