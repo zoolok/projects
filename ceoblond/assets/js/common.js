@@ -112,8 +112,8 @@ $(document).ready(function () {
                    ADD ELEMENTS
 ----------------------------------------------------------- */
     $('.circle-wrap').html('<span class="circle-1"></span>\n' +
-                    '<span class="circle-2"></span>\n' +
-                    '<span class="circle-3"></span>\n' +
+                    '<span class="circle-2"></span>')
+    $('.circle-dotted').html('<span class="circle-3"></span>\n' +
                     '<span class="circle-4"></span>')
 });
 

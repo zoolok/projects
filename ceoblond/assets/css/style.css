@@ -61,9 +61,12 @@ ul{
     position: relative;
 }
 .main{
-    /*background: url('../images/bg-main.jpg') 50% 0% no-repeat;*/
+    background: url('../images/bg-main.png') 50% 50% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+}
+.main .container{
+    padding:0 70px;
 }
 .circle-1{
     position: absolute;
@@ -97,7 +100,7 @@ ul{
 }
 .circle-3{
     position: absolute;
-    top: 717px;
+    bottom: 75px;
     right: calc(50% - 215px);
     width: 20px;
     height: 20px;
@@ -110,7 +113,7 @@ ul{
 }
 .circle-4{
     position: absolute;
-    top: 706px;
+    bottom: 98px;
     right: calc(50% - 229px);
     width: 12px;
     height: 12px;
@@ -137,7 +140,7 @@ ul{
 [class^="sqt-"]{
     width: 13px;
     height: 13px;
-   border:3px solid #000;
+    border:4px solid #000;
     position: absolute;
 }
 [class^="sqb-"]{
@@ -200,10 +203,10 @@ ul{
 }
 .left-sidebar{
     position: fixed;
-    left: calc(50% - 790px);
+    left: calc(50% - 720px);
     z-index: 1;
     transform: rotate(-90deg);
-    top: 242px;
+    top: 205px;
 }
 .left-sidebar ul li:first-child a{
     color: #000;
@@ -227,72 +230,114 @@ ul{
     height: 50vh;
     position: relative;
 }
+
 .a-letter, .x-letter, .s-letter, .v-letter{
     font-size: 60px;
     opacity: 0.19;
     font-family: 'VremenaBold';
     text-transform: uppercase;
     position: absolute;
- }
+}
 .a-letter{
     bottom: 235px;
-    left: 148px;
+    left: 95px;
 }
 .x-letter{
     bottom: 255px;
-    right: 148px;
+    right: 95px;
 }
 .s-letter{
     top: 258px;
-    left: 148px;
+    left: 95px;
 }
 .v-letter{
     top: 258px;
-    right: 148px;
+    right: 95px;
 }
 .top-content{
-     border-left: 1px solid #bebebe;
- }
+    border-left: 1px solid #bebebe;
+}
 .bottom-content{
     border-top: 1px solid #bebebe;
     border-right: 1px solid #bebebe;
-    z-index: 1;
+}
+.scroll-wrap{
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+.scroll-wrap img{
+    cursor: pointer;
+}
+.citata-wrap{
+    justify-content:space-between;
+    position: relative;
+    z-index: 2;
+}
+.citata-wrap p{
+    font:100 14px/30px 'GothamProLight';
+    letter-spacing: 0.75px;
+}
+.citata-wrap p:first-child{
+    margin:35px 0 0 91px;
+}
+.citata-wrap p:nth-child(2){
+    margin:35px 78px 0 0;
 }
 .center-content{
     position: absolute;
     justify-content:center;
     align-items: center;
     width: 100%;
-    transform: translate(0%,-50%);
+    transform: translate(-70px,-50%);
     z-index: 1;
 }
 .center-content img{
     box-shadow: 17px 19px 16.56px 1.44px rgba(0, 0, 0, 0.6);
-    z-index: 0;
+    position: relative;
 }
 .blond-foto{
     position: relative;
     margin-bottom: 167px;
+    z-index: 2;
 }
-
+.f-circ {
+    position: absolute;
+    top: -5px;
+    left: -26px;
+    width: 23px;
+    height: 23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border:4px solid #000;
+}
+.f-sq{
+    position: absolute;
+    top: -20px;
+    left: -2px;
+    width: 15px;
+    height: 15px;
+    border:4px solid #000;
+}
 .circle{
-     position: absolute;
-     width: 540px;
-     height: 540px;
-     top: calc(50% - 270px);
-     left: calc(50% - 270px);
-     background-color: #e0e0e0;
-     -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
-     border-radius: 50%;
-     z-index: 0;
- }
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    top: calc(50% - 235px);
+    left: calc(50% - 235px);
+    background-color: #e0e0e0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 0;
+}
 .circle-dotted{
     position: absolute;
-    width: 660px;
-    height: 660px;
-    top: calc(50% - 330px);
-    left: calc(50% - 330px);
+    width: 574px;
+    height: 575px;
+    top: calc(50% - 287px);
+    left: calc(50% - 287px);
     background-color:transparent;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -303,8 +348,8 @@ ul{
 .name,.name-1{
     position: absolute;
     z-index: 3;
-    margin-bottom: 133px;
-    margin-left: 48px;
+    padding-bottom: 133px;
+    padding-left: 48px;
 }
 .name p{
     position: relative;
