@@ -342,7 +342,7 @@ ul{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 5px dotted #e0e0e0;
+    border: 5px dotted #ececec;
     z-index: 0;
 }
 .name,.name-1{
