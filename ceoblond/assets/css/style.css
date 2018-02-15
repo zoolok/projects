@@ -380,9 +380,15 @@ ul{
 }
 .citata-wrap p:first-child{
     margin:35px 0 0 91px;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
 }
 .citata-wrap p:nth-child(2){
     margin:35px 78px 0 0;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
 }
 .center-content{
     position: absolute;

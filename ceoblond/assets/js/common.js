@@ -134,6 +134,11 @@ $(document).ready(function () {
         mnu.animate({right: '-999'}, 400);
         $('.main-menu ul li').removeClass('animated fadeInUp');
     });
+    /* --------------------------------------------------------
+           ANIMATIONS
+----------------------------------------------------------- */
+    $('.citata-wrap p:first-child').addClass('animated fadeInLeft');
+    $('.citata-wrap p:nth-child(2)').addClass('animated fadeInRight');
 });
 
 
