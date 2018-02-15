@@ -237,8 +237,17 @@ ul{
     width: 13px;
     height: 13px;
     border: 2px solid #fff;
-    top: 35px;
-    left: -31px;
+    top: 37px;
+    left: -36px;
+    opacity: 0;
+}
+.main-menu ul li:hover:after{
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 .close-menu{
     width: 29px;
