@@ -220,7 +220,31 @@ ul{
     color: #fff;
 }
 .main-menu ul li{
-    position: relative;
+     position: relative;
+ }
+.main-menu ul li:nth-child(1){
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.main-menu ul li:nth-child(2){
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.main-menu ul li:nth-child(3){
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.main-menu ul li:nth-child(4){
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+.main-menu ul li:nth-child(5){
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.main-menu ul li:nth-child(6){
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
 }
 .main-menu ul li:before{
     content: '';
@@ -257,14 +281,30 @@ ul{
     top: 35px;
     left: calc(50% - 15px);
     cursor: pointer;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+.close-menu:hover{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 .left-sidebar{
     position: fixed;
     left: calc(50% - 720px);
-    z-index: 1;
     transform: rotate(-90deg);
     top: 205px;
-    z-index: -3;
+    z-index: 3;
 }
 .left-sidebar ul li:first-child a{
     color: #000;
@@ -324,6 +364,7 @@ ul{
     z-index: 2;
     position: relative;
     bottom: -145px;
+    cursor: pointer;
 }
 .scroll-wrap img{
     cursor: pointer;

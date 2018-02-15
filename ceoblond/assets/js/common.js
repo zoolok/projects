@@ -96,17 +96,20 @@ $(document).ready(function () {
     /* --------------------------------------------------------
                         ONE PAGE SCROLL
 ----------------------------------------------------------- */
-/*    $(".main-wrap").onepage_scroll({
+    $(".main-wrap").onepage_scroll({
         sectionContainer: "section",
-        easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
+        easing: "ease-in-out", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
         animationTime: 1000, // время анимации
         pagination: true, // скрыть или отобразить пагинатор
         updateURL: false // обновлять URL или нет
-    });*/
-    $.scrollify({
+    });
+    $('.scroll-wrap').click(function () {
+        $(".main").moveTo(2);
+    });
+/*    $.scrollify({
         section : ".main",
         scrollbars: true
-    });
+    });*/
     /*https://github.com/lukehaas/Scrollify*/
     /* --------------------------------------------------------
                    ADD ELEMENTS
@@ -123,10 +126,13 @@ $(document).ready(function () {
     var mnu = $('.main-menu');
 
     $('.menu-button').click(function () {
-        mnu.animate({right: '0'}, 700);
+        mnu.animate({right: '0'}, 400);
+        $('.main-menu ul li').addClass('animated fadeInUp');
     });
+
     $('.close-menu').click(function () {
-        mnu.animate({right: '-999'}, 700);
+        mnu.animate({right: '-999'}, 400);
+        $('.main-menu ul li').removeClass('animated fadeInUp');
     });
 });
 
