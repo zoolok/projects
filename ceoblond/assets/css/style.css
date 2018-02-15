@@ -201,12 +201,61 @@ ul{
     from {  transform: rotate(0deg) translateX(280px) rotate(0deg); }
     to {  transform: rotate(-360deg) translateX(280px) rotate(360deg); }
 }
+.main-menu{
+    position: fixed;
+    top: 0;
+    width: calc(50% - 103px);
+    height: 100vh;
+    padding: 173px 0 173px 168px;
+    background: url(../images/menu-bg.jpg) 0 0 no-repeat;
+    z-index: 100;
+    right: -999px;
+    box-shadow: -55px 18px 20px rgba(0,0,0,0.5);
+    background-size: cover;
+}
+.main-menu ul li a{
+    font: 100 30px/90px "GothamProLight";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.main-menu ul li{
+    position: relative;
+}
+.main-menu ul li:before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    top: 42px;
+    left: -31px;
+}
+.main-menu ul li:after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    top: 35px;
+    left: -31px;
+}
+.close-menu{
+    width: 29px;
+    height: 29px;
+    background:url(../images/close-menu.png) 0 0 no-repeat;
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 15px);
+    cursor: pointer;
+}
 .left-sidebar{
     position: fixed;
     left: calc(50% - 720px);
     z-index: 1;
     transform: rotate(-90deg);
     top: 205px;
+    z-index: -3;
 }
 .left-sidebar ul li:first-child a{
     color: #000;

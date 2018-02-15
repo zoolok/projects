@@ -85,11 +85,11 @@ $(document).ready(function () {
 
     var menu = $('.mobile-menu');
 
-    $('.menu-button').click(function () {
+    $('.menu-button-6').click(function () {
         menu.fadeToggle(300);
         menu.addClass('fixed');
     });
-    $('.close-menu').click(function () {
+    $('.close-menu-6').click(function () {
         menu.fadeToggle(300);
         menu.removeClass('fixed');
     });
@@ -115,7 +115,17 @@ $(document).ready(function () {
                     '<span class="circle-2"></span>')
     $('.circle-dotted').html('<span class="circle-3"></span>\n' +
                     '<span class="circle-4"></span>')
-});
 
+    /* --------------------------------------------------------
+               MENU
+----------------------------------------------------------- */
+
+    $('.menu-button').click(function () {
+        $('.main-menu').animate({right: '0'}, 700);
+    });
+    $('.close-menu').click(function () {
+        $('.main-menu').animate({right: '-999'}, 700);
+    });
+});
 
 
