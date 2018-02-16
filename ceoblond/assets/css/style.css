@@ -56,7 +56,7 @@ ul{
 }
 .container {
     width: 1280px;
-    padding: 0;
+    padding:0 70px;
     margin: 0 auto;
     position: relative;
 }
@@ -64,9 +64,6 @@ ul{
     background: url('../images/bg-main.png') 50% 50% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-}
-.main .container{
-    padding:0 70px;
 }
 .circle-1{
     position: absolute;
@@ -220,8 +217,8 @@ ul{
     color: #fff;
 }
 .main-menu ul li{
-     position: relative;
- }
+    position: relative;
+}
 .main-menu ul li:nth-child(1){
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
@@ -507,7 +504,36 @@ ul{
     height: 3px;
     background-color: #fff;
     margin-bottom: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .menu-button span:last-child{
     margin-bottom: 0;
+}
+.menu-button:hover{
+    background-color: #fff;
+    border:2px solid #ededed;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.menu-button:hover span{
+    background-color: #000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.services{
+    background-color: #fff;
+}
+.services-content{
+    background: url(../images/services-bg.jpg) 0 50% no-repeat;
 }
