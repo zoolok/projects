@@ -49,11 +49,11 @@ $(document).ready(function () {
                 loop:false,
                 center:true
             });
-           var od = $('.owl-dot');
-           $('.owl-nav').addClass('flex');
+            var od = $('.owl-dot');
+            $('.owl-nav').addClass('flex');
             $('.owl-dot.active').html('01');
             od.each(function (index, value){
-               $(this).next().html('0'+ (index + 2));
+                $(this).next().html('0'+ (index + 2));
             });
         }
     });
@@ -103,24 +103,45 @@ $(document).ready(function () {
         pagination: true, // скрыть или отобразить пагинатор
         updateURL: false // обновлять URL или нет
     });
+
     $('.scroll-wrap').click(function () {
         $(".main").moveTo(2);
     });
-/*    $.scrollify({
-        section : ".main",
-        scrollbars: true
-    });*/
-    /*https://github.com/lukehaas/Scrollify*/
+
+    $('span.top').on('click',function () {
+        $(this).moveUp();
+    });
+    $('span.down').on('click',function () {
+        $(this).moveDown();
+    });
+
+    $(".main-wrap").onepage_scroll({
+        afterMove: function(index) {
+            if($('body').hasClass('viewing-page-1')){
+                $('.right-pagen').css('display','none');
+            }else{
+                $('.right-pagen').css('display','block');
+            }
+        }
+    });
     /* --------------------------------------------------------
                    ADD ELEMENTS
 ----------------------------------------------------------- */
     $('.circle-wrap').html('<span class="circle-1"></span>\n' +
-                    '<span class="circle-2"></span>')
+        '<span class="circle-2"></span>');
     $('.circle-dotted').html('<span class="circle-3"></span>\n' +
-                    '<span class="circle-4"></span>')
+        '<span class="circle-4"></span>');
+
+    $('.onepage-pagination li a').each(function (index) {
+        $(this).html('0'+ (index + 1));
+    });
+
+    $(".onepage-pagination").wrap("<div class='right-pagen'></div>");
+    $('.right-pagen').append('<span class="top"></span>\n' + '<span class="down"></span>\n')
+    $('.right-pagen').css('display','none');
 
     /* --------------------------------------------------------
-               MENU
+          MENU
 ----------------------------------------------------------- */
 
     var mnu = $('.main-menu');

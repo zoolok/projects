@@ -84,6 +84,22 @@ h2.header:after{
     margin: 0 auto;
     position: relative;
 }
+span.top, span.down{
+    width: 12px;
+    height: 69px;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    right: 33px;
+}
+span.top{
+    background: url(../images/top-nav.png) 0 0 no-repeat;
+}
+span.down{
+    background: url(../images/down-nav.png) 0 0 no-repeat;
+    top: 380px;
+
+}
 .main{
     background: url('../images/bg-main.png') 50% 50% no-repeat;
     -webkit-background-size: cover;
@@ -554,7 +570,6 @@ h2.header:after{
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-
 .services{
     background-color: #fff;
 }
