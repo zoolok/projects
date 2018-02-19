@@ -108,11 +108,15 @@ $(document).ready(function () {
         $(".main").moveTo(2);
     });
 
-    $('span.top').on('click',function () {
-        $(this).moveUp();
+    $(".onepage-pagination").wrap("<div class='right-pagen'></div>");
+    $('.right-pagen').append('<span class="top"></span>\n' + '<span class="down"></span>\n');
+    $('.right-pagen').css('display','none');
+
+    $('.top').on('click',function () {
+        $('section.active').moveUp();
     });
-    $('span.down').on('click',function () {
-        $(this).moveDown();
+    $('.down').on('click',function () {
+        $('section.active').moveDown();
     });
 
     $(".main-wrap").onepage_scroll({
@@ -124,6 +128,7 @@ $(document).ready(function () {
             }
         }
     });
+
     /* --------------------------------------------------------
                    ADD ELEMENTS
 ----------------------------------------------------------- */
@@ -136,9 +141,6 @@ $(document).ready(function () {
         $(this).html('0'+ (index + 1));
     });
 
-    $(".onepage-pagination").wrap("<div class='right-pagen'></div>");
-    $('.right-pagen').append('<span class="top"></span>\n' + '<span class="down"></span>\n')
-    $('.right-pagen').css('display','none');
 
     /* --------------------------------------------------------
           MENU
