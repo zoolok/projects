@@ -101,7 +101,8 @@ $(document).ready(function () {
         easing: "ease-in-out", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
         animationTime: 1000, // время анимации
         pagination: true, // скрыть или отобразить пагинатор
-        updateURL: false // обновлять URL или нет
+        updateURL: false, // обновлять URL или нет
+        loop: false
     });
 
     $('.scroll-wrap').click(function () {
@@ -126,6 +127,8 @@ $(document).ready(function () {
             }else{
                 $('.right-pagen').css('display','block');
             }
+            $('.serv-slog').addClass('animated fadeIn');
+            $('[class^="serv-item-"]').addClass('animated fadeIn');
         }
     });
 
@@ -157,11 +160,17 @@ $(document).ready(function () {
         mnu.animate({right: '-999'}, 400);
         $('.main-menu ul li').removeClass('animated fadeInUp');
     });
+
     /* --------------------------------------------------------
-           ANIMATIONS
+       ANIMATIONS
 ----------------------------------------------------------- */
-    $('.citata-wrap p:first-child').addClass('animated fadeInLeft');
-    $('.citata-wrap p:nth-child(2)').addClass('animated fadeInRight');
+
+    $('.citata-wrap p:first-child').animated('fadeInLeft','fadeOutLeft');
+    $('.citata-wrap p:nth-child(2)').animated('fadeInRight','fadeOutRight');
+    $('.scroll-wrap').addClass('flipInX animated');
+
+
+
 });
 
 

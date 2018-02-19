@@ -45,12 +45,12 @@ body, .onepage-wrapper, html {
 .onepage-pagination li a{
     position: relative;
     display: block;
-    font-family: 'VremenaBold';
+    font-family: 'VremenaRegular';
     font-weight: 100;
     font-size: 18px;
     color: #797979;
     text-decoration: none;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
