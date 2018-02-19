@@ -54,17 +54,15 @@ ul{
 h2.header{
     font-size: 65px;
     font-family: 'Austin Cyr';
-    position: absolute;
-    width: 100%;
     text-align: center;
-    top: 140px;
     letter-spacing:15px;
+    position: relative;
     color: transparent;
     background: linear-gradient(to top, #2d2d2d 0%, #131313 43%, #393939 52%, #4d4d4d 84%, #2d2d2d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 120px;
     line-height: 62px;
 }
 h2.header:after{
@@ -563,13 +561,14 @@ h2.header:after{
 .services-content{
     background: url(../images/services-bg-1.jpg) top center no-repeat;
     height: 100vh;
+    padding-top: 143px;
 }
 .service-list{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 0 160px;
-    margin-top: -100px;
+    margin-top:20px;
 }
 [class^="serv-item-"]{
     width: 203px;
@@ -589,7 +588,7 @@ h2.header:after{
     line-height: normal;
     text-transform: uppercase;
     padding: 0;
-    margin: 90px 0 15px 0;
+    margin: 90px 0 10px 0;
     z-index: 1;
 }
 [class^="serv-item-"] p{
@@ -620,11 +619,11 @@ h2.header:after{
 [class^="serv-item-"]:hover:before  {
     opacity: 1;
     z-index: 1;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: opacity 0.2s ease-in-out;
     -moz-transition: opacity 0.2s ease-in-out;
     -ms-transition: opacity 0.2s ease-in-out;
@@ -634,4 +633,11 @@ h2.header:after{
 [class^="serv-item-"]:hover h3,
 [class^="serv-item-"]:hover p{
     color: #000;
+}
+.serv-slog{
+    font: 100 14px/30px 'GothamProLight';
+    letter-spacing: 0.75px;
+    display: flex;
+    justify-content: center;
+    margin-left: 550px;
 }
