@@ -169,8 +169,34 @@ $(document).ready(function () {
     $('.citata-wrap p:nth-child(2)').animated('fadeInRight','fadeOutRight');
     $('.scroll-wrap').addClass('flipInX animated');
 
+    /* --------------------------------------------------------
+       PORTFOLIO
+----------------------------------------------------------- */
+    var pi= $('.portfolio ul li');
+    var portfolio = $('[class^="portfolio-item-"]');
+    console.log(portfolio);
+    pi.click(function () {
 
+        pi.each(function (index) {
+            pi.removeClass('active');
+        });
 
+        $(this).addClass('active');
+        portfolio.fadeOut();
+
+        var numit = parseInt($(this).attr('data-portfolio'));
+
+        console.log(numit);
+        var cur = numit-1;
+        console.log(cur);
+
+        portfolio.each(function (index) {
+            if (index == cur) {
+                $(this).fadeIn();
+            }
+        });
+
+    });
 });
 
 

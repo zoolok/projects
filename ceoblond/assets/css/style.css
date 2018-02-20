@@ -708,3 +708,143 @@ span.down{
     animation-delay: 2.5s;
     opacity:0;
 }
+.portfolio{
+    overflow: hidden;
+}
+.portfolio-content{
+    background: url(../images/portfolio-bg.png) 21px 0 no-repeat;
+    height: 100vh;
+    padding-top: 96px;
+    padding-left: 26px;
+}
+h2.portfolio{
+    font-family: 'Austin Cyr';
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 7px;
+}
+.portfolio-wrap{
+    padding-left: 5px;
+    padding-right: 85px;
+}
+.portfolio-list{
+    width: 100%;
+    position: relative;
+}
+.portfolio-list{
+    padding-left: 53px;
+}
+.portfolio-desc{
+    height: 100vh;
+    padding-right: 80px;
+}
+.portfolio-list ul{
+    margin-left: 40px;
+
+}
+.portfolio-list li{
+    cursor: pointer;
+    font: 100 14px/18px 'GothamProLight';
+    margin-bottom: 40px;
+    position: relative;
+}
+.portfolio-list li:last-child{
+    margin-bottom: 0;
+}
+.portfolio-list li:before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    top: 5px;
+    left: -37px;
+}
+.portfolio-list li:after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #e02d02;
+    top: 0;
+    left: -42px;
+    opacity: 0;
+}
+.portfolio-list li:hover:before,
+.portfolio-list li.active:before{
+    background-color: #e02d02;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+.portfolio-list li:hover:after,
+.portfolio-list li.active:after{
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+.more-list{
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    font: 100 10px 'GothamProLight';
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.more-list:before{
+    position: absolute;
+    content: '';
+    background: url(../images/more-list.png) 0 0 no-repeat;
+    top: -42px;
+    left: 7px;
+    width: 12px;
+    height: 69px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+[class^="portfolio-item-"]{
+    height: 100%;
+    color: #fff;
+    padding:65px 57px 108px 50px;
+    -webkit-background-size: cover!important;
+    background-size: cover!important;
+    position: relative;
+    display: none;
+}
+[class^="portfolio-item-"] h3{
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Austin Cyr';
+    margin-bottom: 15px;
+}
+[class^="portfolio-item-"] p{
+    font: 100 14px/24px 'GothamProLight';
+}
+[class^="portfolio-item-"] a{
+    position: absolute;
+    text-decoration: none;
+    font: 100 14px 'GothamPro';
+    text-transform: uppercase;
+    left: 50px;
+    bottom: 108px;
+    border: 1px solid #e02d02;
+    margin: 0;
+    padding: 26px 62px;
+    color: #fff;
+    overflow: hidden;
+}
