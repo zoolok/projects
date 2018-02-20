@@ -547,7 +547,7 @@ span.down{
     padding-bottom: 133px;
     padding-left: 48px;
 }
-.name p{
+.name h1{
     position: relative;
     font-size: 65px;
     font-family: 'Austin Cyr';
@@ -561,7 +561,7 @@ span.down{
     margin: 0;
     line-height: 57px;
 }
-.name p:after{
+.name h1:after{
     background: none;
     content: attr(data-text);
     left: 0;
