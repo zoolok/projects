@@ -201,7 +201,7 @@ $(document).ready(function () {
     });
 
     /* --------------------------------------------------------
-      PORTFOLIO LIST
+      PORTFOLIO LIST (http://www.it-article.ru/images/example/2012_10_08_lenta.html)
 ----------------------------------------------------------- */
     var slideHeight = parseInt($('.portfolio-list').css('height')); //высота видимой области
     var lentaMargin = parseInt($('.lenta').css('margin-top')); // отступ с верху списка, если он есть
@@ -210,30 +210,12 @@ $(document).ready(function () {
     var lentaElements = parseInt($('.lenta li').length); // Колличество элементов
     var lentaStep = Math.round(lentaHeight / lentaElements); // Шаг прокрутки
 
-    function lentaSkrol(){
-        lentaPosition = ($(this).attr('id') == 'up_lenta') ? //определяем какая кнопка была нажата
-            (lentaPosition - lentaStep) : (lentaPosition + lentaStep); // Если ввнрх, то отнимаем (чтобы поднять), вниз пребовляем (чтобы опустить)
-        $('.lenta').animate({'margin-top':(lentaPosition)}); // применяем новую позицию
-        lentaActive(); // активируем действие кнопки
-    };
+ $('.more-list').click(function () {
+     lentaPosition = lentaPosition - lentaStep;
+     $('.lenta').animate({'margin-top':(lentaPosition)}); // применяем новую позицию
+ });
 
-    function lentaActive(){ //Проверяем на положение позиции списка и соответственно включаем или выключаем кнопки
-        if(lentaPosition <= (slideHeight - lentaHeight)){
-            if($("#up_lenta").hasClass("up_active")){
-                $("#up_lenta").unbind("click", lentaSkrol).removeClass("up_active")};
-        }else{
-            if(!$("#up_lenta").hasClass("up_active"))
-                $("#up_lenta").bind("click", lentaSkrol).addClass("up_active")
-        }
 
-        if(lentaPosition >= lentaMargin){
-            if($("#down_lenta").hasClass("down_active")){
-                $("#down_lenta").unbind("click", lentaSkrol).removeClass("down_active")};
-        }else{
-            if(!$("#down_lenta").hasClass("down_active"))
-                $("#down_lenta").bind("click", lentaSkrol).addClass("down_active")
-        }
-    }
 });
 
 
