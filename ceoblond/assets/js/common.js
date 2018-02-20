@@ -129,14 +129,21 @@ $(document).ready(function () {
             }
             $('.serv-slog').addClass('animated fadeIn');
             $('[class^="serv-item-"]').addClass('animated fadeIn');
+
+            if($('body').hasClass('viewing-page-3')){
+                $('.portfolio-list li').addClass('flipInX animated');
+                $('h2.portfolio').addClass('pulse animated');
+            }
         }
     });
 
     /* --------------------------------------------------------
                    ADD ELEMENTS
 ----------------------------------------------------------- */
-    $('.circle-wrap').html('<span class="circle-1"></span>\n' +
-        '<span class="circle-2"></span>');
+    $('.circle-wrap, .center-galaktiki').html('<span class="circle-1"></span>\n' + '<span class="circle-2"></span>');
+    $('.center-galaktiki').html('<span class="circle-1"></span>\n' +
+        '<span class="circle-2"></span>\n' + '<span class="circle-5"></span>\n' + '<span class="circle-6"></span>');
+
     $('.circle-dotted').html('<span class="circle-3"></span>\n' +
         '<span class="circle-4"></span>');
 
@@ -168,6 +175,7 @@ $(document).ready(function () {
     $('.citata-wrap p:first-child').animated('fadeInLeft','fadeOutLeft');
     $('.citata-wrap p:nth-child(2)').animated('fadeInRight','fadeOutRight');
     $('.scroll-wrap').addClass('flipInX animated');
+
 
     /* --------------------------------------------------------
        PORTFOLIO SLIDE
@@ -201,22 +209,38 @@ $(document).ready(function () {
     });
 
     /* --------------------------------------------------------
-      PORTFOLIO LIST (http://www.it-article.ru/images/example/2012_10_08_lenta.html)
+      PORTFOLIO LIST ()
 ----------------------------------------------------------- */
     var slideHeight = parseInt($('.portfolio-list').css('height')); //высота видимой области
-    var lentaMargin = parseInt($('.lenta').css('margin-top')); // отступ с верху списка, если он есть
+    var lentaMargin = parseInt($('.lenta').css('margin-top')); // отступ сверху списка, если он есть
     var lentaPosition = lentaMargin; // начальная позиция
     var lentaHeight = parseInt($('.lenta').css('height')); // Высота списка
-    var lentaElements = parseInt($('.lenta li').length); // Колличество элементов
-    var lentaStep = Math.round(lentaHeight / lentaElements); // Шаг прокрутки
-
+    var lentaElements = parseInt($('.lenta li').length); // Количество элементов
+    var lentaStep = Math.round(lentaHeight / lentaElements)*6; // Шаг прокрутки
+    var steps = Math.floor(lentaElements/6);
+    var i = 0;
 
     $('.more-list').click(function () {
-     lentaPosition = lentaPosition - lentaStep;
-        if(lentaPosition < lentaMargin) {
-            $('.lenta').animate({'margin-top': (lentaPosition)}); // применяем новую позицию
+        i++;
+        if(steps > i) {
+            lentaPosition = lentaPosition - lentaStep;
+            $('.lenta').animate({'margin-top': (lentaPosition)});
+            $('.more-list').html('меньше');
+            $('.more-list').addClass('minus');
+            $('.more-list').removeClass('more-list');
+        }else{
+            $('.minus').html('больше');
+            $('.minus').addClass('more-list');
+            $('.minus').removeClass('minus');
+
+            i = 0;
+            if(steps > i) {
+                lentaPosition = lentaPosition + lentaStep;
+                $('.lenta').animate({'margin-top': (lentaPosition)});
+            }
         }
- });
+    });
+
 
 
 });

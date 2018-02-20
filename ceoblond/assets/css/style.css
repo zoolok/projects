@@ -135,6 +135,11 @@ span.down{
     -o-animation: orbit2 54s linear infinite;
     animation: orbit2 54s linear infinite;
 }
+.center-galaktiki .circle-1,
+.center-galaktiki .circle-2{
+    left: calc(50% - 50px);
+    right:unset;
+}
 .circle-2{
     position: absolute;
     top: 600px;
@@ -161,12 +166,11 @@ span.down{
     -moz-border-radius: 50%;
     border-radius: 50%;
     z-index: 2;
-    z-index: 2;
 }
 .circle-4{
     position: absolute;
-    bottom: 98px;
-    right: calc(50% - 229px);
+    top: 20px;
+    right: calc(50% - 0px);
     width: 12px;
     height: 12px;
     background-color: #000;
@@ -174,6 +178,30 @@ span.down{
     -moz-border-radius: 50%;
     border-radius: 50%;
     z-index: 2;
+}
+.circle-5{
+    position: absolute;
+    top: 19px;
+    right: calc(50% + 42px);
+    width: 20px;
+    height: 20px;
+    border: 4px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 3;
+}
+.circle-6{
+    position: absolute;
+    top:4px;
+    right: calc(50% + 25px);
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 3;
 }
 .top-sq-wrap{
     position: absolute;
@@ -713,6 +741,11 @@ span.down{
     animation-delay: 2.5s;
     opacity:0;
 }
+.center-galaktiki{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
 .portfolio{
     overflow: hidden;
 }
@@ -729,6 +762,8 @@ h2.portfolio{
     color: #000;
     letter-spacing: 7px;
     margin-left: 53px;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
 }
 .portfolio-wrap{
     padding-left: 5px;
@@ -745,6 +780,7 @@ h2.portfolio{
 .portfolio-desc{
     height: 100vh;
     padding-right: 80px;
+    position: relative;
 }
 .portfolio-list ul{
     margin-left: 40px;
@@ -756,6 +792,43 @@ h2.portfolio{
     margin-bottom: 40px;
     position: relative;
 }
+.portfolio-list li:nth-child(1){
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+}
+.portfolio-list li:nth-child(2){
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+}
+.portfolio-list li:nth-child(3){
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+}
+.portfolio-list li:nth-child(4){
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+}
+.portfolio-list li:nth-child(5){
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+}
+.portfolio-list li:nth-child(6){
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+}
+
 .portfolio-list li:last-child{
     margin-bottom: 0;
 }
@@ -796,7 +869,7 @@ h2.portfolio{
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 }
-.more-list{
+.more-list, .minus{
     position: absolute;
     bottom: -60px;
     right: 20px;
@@ -830,8 +903,35 @@ h2.portfolio{
     -o-transition: all  0.3s ease-in-out;
     transition: all  0.3s ease-in-out;
 }
+.minus:before{
+    position: absolute;
+    content: '';
+    background: url(../images/more-list.png) 0 0 no-repeat;
+    top: -42px;
+    left: 7px;
+    width: 12px;
+    height: 69px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all  0.3s ease-in-out;
+    -ms-transition: all  0.3s ease-in-out;
+    -o-transition: all  0.3s ease-in-out;
+    transition: all  0.3s ease-in-out;
+}
 .more-list:hover:before{
     left: -2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all  0.3s ease-in-out;
+    -ms-transition: all  0.3s ease-in-out;
+    -o-transition: all  0.3s ease-in-out;
+    transition: all  0.3s ease-in-out;
+}
+.minus:hover:before{
+    left: 18px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all  0.3s ease-in-out;
     -ms-transition: all  0.3s ease-in-out;
@@ -868,4 +968,47 @@ h2.portfolio{
     padding: 26px 62px;
     color: #fff;
     overflow: hidden;
+}
+[class^="portfolio-item-"] a:before{
+    position: absolute;
+    content: '';
+    left: -235px;
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all  0.3s ease-in-out;
+    -ms-transition: all  0.3s ease-in-out;
+    -o-transition: all  0.3s ease-in-out;
+    transition: all  0.3s ease-in-out;
+}
+[class^="portfolio-item-"] a:hover{
+    border-color: #fff;
+    color: #e02d02;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all  0.3s ease-in-out;
+    -ms-transition: all  0.3s ease-in-out;
+    -o-transition: all  0.3s ease-in-out;
+    transition: all  0.3s ease-in-out;
+}
+[class^="portfolio-item-"] a:hover:before{
+    left: 235px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all  0.3s ease-in-out;
+    -ms-transition: all  0.3s ease-in-out;
+    -o-transition: all  0.3s ease-in-out;
+    transition: all  0.3s ease-in-out;
+}
+.portfolio-desc .bottom-sq-wrap {
+    bottom: 12px;
+    right: 96px;
+    top:unset;
+}
+.portfolio-desc [class^="sqb-"] {
+    background-color: #fff;
 }
