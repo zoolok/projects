@@ -114,10 +114,15 @@ $(document).ready(function () {
     $('.right-pagen').css('display','none');
 
     $('.top').on('click',function () {
-        $('section.active').moveUp();
+        var cursect =  $('section.active');
+        var cernnum = parseInt($('.onepage-pagination li a.active').attr('data-index'));
+        cursect.moveTo(cernnum - 1);
+
     });
     $('.down').on('click',function () {
-        $('section.active').moveDown();
+        var cursect =  $('section.active');
+        var cernnum = parseInt($('.onepage-pagination li a.active').attr('data-index'));
+        cursect.moveTo(cernnum + 1);
     });
 
     $(".main-wrap").onepage_scroll({
