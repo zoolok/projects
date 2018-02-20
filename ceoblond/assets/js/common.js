@@ -170,11 +170,12 @@ $(document).ready(function () {
     $('.scroll-wrap').addClass('flipInX animated');
 
     /* --------------------------------------------------------
-       PORTFOLIO
+       PORTFOLIO SLIDE
 ----------------------------------------------------------- */
     var pi= $('.portfolio ul li');
     var portfolio = $('[class^="portfolio-item-"]');
     console.log(portfolio);
+
     pi.click(function () {
 
         pi.each(function (index) {
@@ -187,7 +188,9 @@ $(document).ready(function () {
         var numit = parseInt($(this).attr('data-portfolio'));
 
         console.log(numit);
+
         var cur = numit-1;
+
         console.log(cur);
 
         portfolio.each(function (index) {
@@ -195,8 +198,42 @@ $(document).ready(function () {
                 $(this).fadeIn();
             }
         });
-
     });
+
+    /* --------------------------------------------------------
+      PORTFOLIO LIST
+----------------------------------------------------------- */
+    var slideHeight = parseInt($('.portfolio-list').css('height')); //высота видимой области
+    var lentaMargin = parseInt($('.lenta').css('margin-top')); // отступ с верху списка, если он есть
+    var lentaPosition = lentaMargin; // начальная позиция
+    var lentaHeight = parseInt($('.lenta').css('height')); // Высота списка
+    var lentaElements = parseInt($('.lenta li').length); // Колличество элементов
+    var lentaStep = Math.round(lentaHeight / lentaElements); // Шаг прокрутки
+
+    function lentaSkrol(){
+        lentaPosition = ($(this).attr('id') == 'up_lenta') ? //определяем какая кнопка была нажата
+            (lentaPosition - lentaStep) : (lentaPosition + lentaStep); // Если ввнрх, то отнимаем (чтобы поднять), вниз пребовляем (чтобы опустить)
+        $('.lenta').animate({'margin-top':(lentaPosition)}); // применяем новую позицию
+        lentaActive(); // активируем действие кнопки
+    };
+
+    function lentaActive(){ //Проверяем на положение позиции списка и соответственно включаем или выключаем кнопки
+        if(lentaPosition <= (slideHeight - lentaHeight)){
+            if($("#up_lenta").hasClass("up_active")){
+                $("#up_lenta").unbind("click", lentaSkrol).removeClass("up_active")};
+        }else{
+            if(!$("#up_lenta").hasClass("up_active"))
+                $("#up_lenta").bind("click", lentaSkrol).addClass("up_active")
+        }
+
+        if(lentaPosition >= lentaMargin){
+            if($("#down_lenta").hasClass("down_active")){
+                $("#down_lenta").unbind("click", lentaSkrol).removeClass("down_active")};
+        }else{
+            if(!$("#down_lenta").hasClass("down_active"))
+                $("#down_lenta").bind("click", lentaSkrol).addClass("down_active")
+        }
+    }
 });
 
 
