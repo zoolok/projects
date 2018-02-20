@@ -210,9 +210,12 @@ $(document).ready(function () {
     var lentaElements = parseInt($('.lenta li').length); // Колличество элементов
     var lentaStep = Math.round(lentaHeight / lentaElements); // Шаг прокрутки
 
- $('.more-list').click(function () {
+
+    $('.more-list').click(function () {
      lentaPosition = lentaPosition - lentaStep;
-     $('.lenta').animate({'margin-top':(lentaPosition)}); // применяем новую позицию
+        if(lentaPosition < lentaMargin) {
+            $('.lenta').animate({'margin-top': (lentaPosition)}); // применяем новую позицию
+        }
  });
 
 
