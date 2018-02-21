@@ -139,6 +139,12 @@ $(document).ready(function () {
                 $('.portfolio-list li').addClass('flipInX animated');
                 $('h2.portfolio').addClass('pulse animated');
             }
+            if($('body').hasClass('viewing-page-4')){
+                $('.serv-slog').addClass('animated fadeIn');
+                $('.down').css('display','none');
+            }else{
+                $('.down').css('display','block');
+            }
         }
     });
 
@@ -156,6 +162,11 @@ $(document).ready(function () {
         $(this).html('0'+ (index + 1));
     });
 
+    if($('body').hasClass('viewing-page-4')){
+        $('.circle-5').css('animation','orbit2 34s linear infinite');
+        $('.circle-6').css('animation','orbit1 64s linear infinite');
+
+    }
 
     /* --------------------------------------------------------
           MENU
@@ -245,8 +256,6 @@ $(document).ready(function () {
             }
         }
     });
-
-
 
 });
 
