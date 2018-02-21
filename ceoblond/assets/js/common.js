@@ -138,10 +138,15 @@ $(document).ready(function () {
             if($('body').hasClass('viewing-page-3')){
                 $('.portfolio-list li').addClass('flipInX animated');
                 $('h2.portfolio').addClass('pulse animated');
+                $('.circle-5').css('animation','orbit2 34s linear infinite');
+                $('.circle-6').css('animation','orbit1 64s linear infinite');
             }
             if($('body').hasClass('viewing-page-4')){
                 $('.serv-slog').addClass('animated fadeIn');
                 $('.down').css('display','none');
+                $('.circle-5').css('animation','orbit2 34s linear infinite');
+                $('.circle-6').css('animation','orbit1 64s linear infinite');
+
             }else{
                 $('.down').css('display','block');
             }
@@ -163,8 +168,6 @@ $(document).ready(function () {
     });
 
     if($('body').hasClass('viewing-page-4')){
-        $('.circle-5').css('animation','orbit2 34s linear infinite');
-        $('.circle-6').css('animation','orbit1 64s linear infinite');
 
     }
 
