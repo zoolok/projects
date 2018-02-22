@@ -1213,11 +1213,21 @@ footer .container{
 .footer-copyright p span{
     color: #e02d02;
 }
+.desc-none{
+    display: none;
+}
+/* *************** MOBILE **************** */
 
 @media only screen and (max-width:768px){
+    body{
+        overflow: auto!important;
+    }
+    .desc-none{
+        display: block;}
+
     .container{
         width: 100%;
-        padding:0 0 0 16px;
+        padding:0 0 0 0;
     }
     .mb-none{
         display: none;
@@ -1247,12 +1257,11 @@ footer .container{
     .left-sidebar ul li:first-child a {
         color: #000;
         margin-right: 35px;
-        font-weight: 400;
+        font-weight: 600;
     }
     .left-sidebar a {
         font-size: 12px;
         text-decoration: none;
-        font-family: "GothamProMedium";
         letter-spacing: 2px;
     }
     .main {
@@ -1263,6 +1272,7 @@ footer .container{
         transform: unset;
         flex-direction: column;
         z-index: 1;
+        align-items: normal;
     }
     .name, .name-1 {
         top: 128px;
@@ -1285,6 +1295,7 @@ footer .container{
         margin: 0;
         line-height: unset;
         text-align: center;
+        margin-left: 16px;
     }
     .name h1::after {
         content: "";
@@ -1295,5 +1306,9 @@ footer .container{
         font-family: "GothamProLight";
         font-size: 16px;
         margin-bottom: 5px;
+    }
+    .center-content img {
+        box-shadow: none;
+        width: 100%;
     }
 }
