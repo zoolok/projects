@@ -1027,6 +1027,9 @@ h2.portfolio{
 }
 .serv-slog.cont{
     margin-left: 360px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
 .contact-info{
     margin-top: 65px;
@@ -1039,6 +1042,9 @@ h2.portfolio{
     font-size: 24px;
     margin-bottom: 25px;
     position: relative;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    opacity: 0;
 }
 .phone:before{
     content: '';
@@ -1052,6 +1058,9 @@ h2.portfolio{
 .mail{
     font-size: 18px;
     position: relative;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    opacity: 0;
 }
 .mail:before{
     content: '';
@@ -1067,6 +1076,9 @@ h2.portfolio{
     justify-content: flex-start;
     margin-left: -49px;
     margin-top: 90px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    opacity: 0;
 }
 .vk{
     width: 56px;

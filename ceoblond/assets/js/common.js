@@ -142,7 +142,7 @@ $(document).ready(function () {
                 $('.circle-6').css('animation','orbit1 64s linear infinite');
             }
             if($('body').hasClass('viewing-page-4')){
-                $('.serv-slog').addClass('animated fadeIn');
+                $('.serv-slog, .serv-slog.cont, .phone, .mail, .soc').addClass('animated fadeIn');
                 $('.down').css('display','none');
                 $('.circle-5').css('animation','orbit2 34s linear infinite');
                 $('.circle-6').css('animation','orbit1 64s linear infinite');
