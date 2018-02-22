@@ -1280,7 +1280,7 @@ footer .container{
         margin-bottom: 40px;
         padding-left: 0;
     }
-    .name h1 {
+    .name h1, h2.header {
         position: relative;
         font-size: 30px;
         font-family: 'Austin Cyr';
@@ -1311,4 +1311,25 @@ footer .container{
         box-shadow: none;
         width: 100%;
     }
+    .blond-foto {
+        margin-bottom: 135px;
+    }
+    .services-content {
+        background: none;
+        height: auto;
+        padding-top: 0;
+    }
+    .serv-slog {
+        margin-left: 0;
+        opacity: 1;
+        padding: 0 6px 0 16px;
+    }
+    .service-list {
+        padding: 0 ;
+    }
+    [class^="serv-item-"] {
+        width: 100%;
+        opacity: 1;
+    }
+
 }
