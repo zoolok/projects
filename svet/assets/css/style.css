@@ -121,6 +121,34 @@ header nav ul li a{
     font-size: 19px;
     font-weight: 400;
 }
+.keramo{
+    margin-bottom: 80px;
+}
+h3.keramica{
+    margin-bottom: 43px;
+}
+[class^="keram-item-"]{
+    display: flex;
+    width: calc(33% - 10px);
+}
+[class^="keram-item-"] img{
+    margin-right: 20px;
+    padding-top: 30px;
+}
+.table-price thead td{
+     font: 600 14px 'Open Sans', sans-serif;
+    padding-bottom: 15px;
+}
+
+.table-price tbody td{
+    font: 400 14px 'Open Sans', sans-serif;
+    padding: 3px 0;
+    margin: 0;
+}
+.table-price tbody td:first-child:after{
+    content: '............';
+}
+
 .top-contact ul:before{
     content: '\f041';
     font-family:'FontAwesome';
