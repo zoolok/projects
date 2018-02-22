@@ -1213,3 +1213,87 @@ footer .container{
 .footer-copyright p span{
     color: #e02d02;
 }
+
+@media only screen and (max-width:768px){
+    .container{
+        width: 100%;
+        padding:0 0 0 16px;
+    }
+    .mb-none{
+        display: none;
+    }
+    .menu-button {
+        top: 15px;
+        right: 15px;
+    }
+    .main-menu {
+        width: 100%;
+        padding: 85px 0 149px 100px;
+    }
+    .main-menu ul li a {
+        font: 100 22px/80px "GothamProLight";
+    }
+    .main-menu ul li::after {
+        top: 30px;
+    }
+    .main-menu ul li::before {
+        top: 35px;
+    }
+    .left-sidebar {
+        left: 20px;
+        transform: rotate(0deg);
+        top: 37px;
+    }
+    .left-sidebar ul li:first-child a {
+        color: #000;
+        margin-right: 35px;
+        font-weight: 400;
+    }
+    .left-sidebar a {
+        font-size: 12px;
+        text-decoration: none;
+        font-family: "GothamProMedium";
+        letter-spacing: 2px;
+    }
+    .main {
+        background: #fff;
+    }
+    .center-content {
+        position: relative;
+        transform: unset;
+        flex-direction: column;
+        z-index: 1;
+    }
+    .name, .name-1 {
+        top: 128px;
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 0;
+    }
+    .name h1 {
+        position: relative;
+        font-size: 30px;
+        font-family: 'Austin Cyr';
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        color: #000;
+        background: none;
+        background-clip: border-box;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        padding: 0;
+        margin: 0;
+        line-height: unset;
+        text-align: center;
+    }
+    .name h1::after {
+        content: "";
+    }
+    .name span {
+        display: block;
+        text-align: right;
+        font-family: "GothamProLight";
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}

@@ -96,63 +96,64 @@ $(document).ready(function () {
     /* --------------------------------------------------------
                         ONE PAGE SCROLL
 ----------------------------------------------------------- */
-    $(".main-wrap").onepage_scroll({
-        sectionContainer: "section",
-        easing: "ease-in-out", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
-        animationTime: 1000, // время анимации
-        pagination: true, // скрыть или отобразить пагинатор
-        updateURL: false, // обновлять URL или нет
-        loop: false
-    });
+    if(document.body.clientWidth > 768) {
+        $(".main-wrap").onepage_scroll({
+            sectionContainer: "section",
+            easing: "ease-in-out", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
+            animationTime: 1000, // время анимации
+            pagination: true, // скрыть или отобразить пагинатор
+            updateURL: false, // обновлять URL или нет
+            loop: false
+        });
 
-    $('.scroll-wrap').click(function () {
-        $(".main").moveTo(2);
-    });
+        $('.scroll-wrap').click(function () {
+            $(".main").moveTo(2);
+        });
 
-    $(".onepage-pagination").wrap("<div class='right-pagen'></div>");
-    $('.right-pagen').append('<span class="top"></span>\n' + '<span class="down"></span>\n');
-    $('.right-pagen').css('display','none');
+        $(".onepage-pagination").wrap("<div class='right-pagen'></div>");
+        $('.right-pagen').append('<span class="top"></span>\n' + '<span class="down"></span>\n');
+        $('.right-pagen').css('display', 'none');
 
-    $('.top').on('click',function () {
-        var cursect =  $('section.active');
-        var cernnum = parseInt($('.onepage-pagination li a.active').attr('data-index'));
-        cursect.moveTo(cernnum - 1);
+        $('.top').on('click', function () {
+            var cursect = $('section.active');
+            var cernnum = parseInt($('.onepage-pagination li a.active').attr('data-index'));
+            cursect.moveTo(cernnum - 1);
 
-    });
-    $('.down').on('click',function () {
-        var cursect =  $('section.active');
-        var cernnum = parseInt($('.onepage-pagination li a.active').attr('data-index'));
-        cursect.moveTo(cernnum + 1);
-    });
+        });
+        $('.down').on('click', function () {
+            var cursect = $('section.active');
+            var cernnum = parseInt($('.onepage-pagination li a.active').attr('data-index'));
+            cursect.moveTo(cernnum + 1);
+        });
 
-    $(".main-wrap").onepage_scroll({
-        afterMove: function(index) {
-            if($('body').hasClass('viewing-page-1')){
-                $('.right-pagen').css('display','none');
-            }else{
-                $('.right-pagen').css('display','block');
+        $(".main-wrap").onepage_scroll({
+            afterMove: function (index) {
+                if ($('body').hasClass('viewing-page-1')) {
+                    $('.right-pagen').css('display', 'none');
+                } else {
+                    $('.right-pagen').css('display', 'block');
+                }
+                $('.serv-slog').addClass('animated fadeIn');
+                $('[class^="serv-item-"]').addClass('animated fadeIn');
+
+                if ($('body').hasClass('viewing-page-3')) {
+                    $('.portfolio-list li').addClass('flipInX animated');
+                    $('h2.portfolio').addClass('pulse animated');
+                    $('.circle-5').css('animation', 'orbit2 34s linear infinite');
+                    $('.circle-6').css('animation', 'orbit1 64s linear infinite');
+                }
+                if ($('body').hasClass('viewing-page-4')) {
+                    $('.serv-slog, .serv-slog.cont, .phone, .mail, .soc').addClass('animated fadeIn');
+                    $('.down').css('display', 'none');
+                    $('.circle-5').css('animation', 'orbit2 34s linear infinite');
+                    $('.circle-6').css('animation', 'orbit1 64s linear infinite');
+
+                } else {
+                    $('.down').css('display', 'block');
+                }
             }
-            $('.serv-slog').addClass('animated fadeIn');
-            $('[class^="serv-item-"]').addClass('animated fadeIn');
-
-            if($('body').hasClass('viewing-page-3')){
-                $('.portfolio-list li').addClass('flipInX animated');
-                $('h2.portfolio').addClass('pulse animated');
-                $('.circle-5').css('animation','orbit2 34s linear infinite');
-                $('.circle-6').css('animation','orbit1 64s linear infinite');
-            }
-            if($('body').hasClass('viewing-page-4')){
-                $('.serv-slog, .serv-slog.cont, .phone, .mail, .soc').addClass('animated fadeIn');
-                $('.down').css('display','none');
-                $('.circle-5').css('animation','orbit2 34s linear infinite');
-                $('.circle-6').css('animation','orbit1 64s linear infinite');
-
-            }else{
-                $('.down').css('display','block');
-            }
-        }
-    });
-
+        });
+    }
     /* --------------------------------------------------------
                    ADD ELEMENTS
 ----------------------------------------------------------- */
@@ -167,9 +168,6 @@ $(document).ready(function () {
         $(this).html('0'+ (index + 1));
     });
 
-    if($('body').hasClass('viewing-page-4')){
-
-    }
 
     /* --------------------------------------------------------
           MENU
