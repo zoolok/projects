@@ -1037,6 +1037,11 @@ h2.portfolio{
     flex-direction:column;
     font-family: 'GothamProMedium';
     margin-left: 523px;
+
+}
+.contact-info a {
+    color: #000000;
+    text-decoration: none;
 }
 .phone{
     font-size: 24px;
@@ -1087,6 +1092,35 @@ h2.portfolio{
     background: url(../images/vk-ico.png) 0 0 no-repeat;
     cursor: pointer;
     margin-right: 24px;
+    position: relative;
+    overflow: hidden;
+}
+.vk:before, .insta:before{
+    position: absolute;
+    content: '';
+    left: -235px;
+    width: 300%;
+    height: 20px;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all  0.6s ease-in-out;
+    -ms-transition: all  0.6s ease-in-out;
+    -o-transition: all  0.6s ease-in-out;
+    transition: all  0.6s ease-in-out;
+}
+
+.vk:hover:before, .insta:hover:before{
+    left: 235px;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all  0.6s ease-in-out;
+    -ms-transition: all  0.6s ease-in-out;
+    -o-transition: all  0.6s ease-in-out;
+    transition: all  0.6s ease-in-out;
 }
 .insta{
     width: 56px;
@@ -1094,6 +1128,9 @@ h2.portfolio{
     display: inline-block;
     background: url(../images/insta-ico.png) 0 0 no-repeat;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 }
 .contact-info a{
     text-decoration: none;
