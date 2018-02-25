@@ -96,7 +96,7 @@ $(document).ready(function () {
     /* --------------------------------------------------------
                         ONE PAGE SCROLL
 ----------------------------------------------------------- */
-    if(document.body.clientWidth > 768) {
+    if(document.body.clientWidth > 768 &&  $(".main-wrap").length > 0) {
         $(".main-wrap").onepage_scroll({
             sectionContainer: "section",
             easing: "ease-in-out", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
