@@ -31,7 +31,7 @@ body, .onepage-wrapper, html {
 .right-pagen {
     position: absolute;
     right: calc(50% - 564px);
-    top: 257px;
+    top: calc(50% - 250px);
     z-index: 5;
     list-style: none;
     margin: 0;

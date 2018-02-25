@@ -184,7 +184,7 @@ $(document).ready(function () {
     });
 
     $('.close-menu').click(function () {
-        mnu.animate({right: '-999'}, 400);
+        mnu.animate({right: '-9999'}, 400);
         $('.main-menu ul li').removeClass('animated fadeInUp');
     });
 
