@@ -171,7 +171,17 @@ $(document).ready(function () {
     if(document.body.clientWidth < 768) {
         var br = $('p').find($('br'));
         br.remove();
+
+        /* навигация портфолио в мобиле*/
+
+        $('.portfolio-desc').append('<div class="nav-dots"></div>');
+
+        for(var i=0; i< $('[class^="portfolio-item-"]').length; i++){
+            $('.nav-dots').append('<span data-portfolio="' + (i + 1) +'"></span>');
+        }
+        $('.nav-dots span:first-of-type').addClass('active');
     }
+
     /* --------------------------------------------------------
           MENU
 ----------------------------------------------------------- */
@@ -200,7 +210,11 @@ $(document).ready(function () {
     /* --------------------------------------------------------
        PORTFOLIO SLIDE
 ----------------------------------------------------------- */
-    var pi= $('.portfolio ul li');
+    if(document.body.clientWidth > 768) {
+        var pi = $('.portfolio ul li');
+    }else{
+        var pi = $('.nav-dots span');
+    }
     var portfolio = $('[class^="portfolio-item-"]');
     console.log(portfolio);
 

@@ -1389,4 +1389,51 @@ footer .container{
     [class^="portfolio-item-"] a {
         left: calc(50% - 121px);
     }
+    .nav-dots{
+        position: relative;
+        bottom: 50px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding:0 16px;
+    }
+    span[data-portfolio]{
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        position: relative;
+        cursor: pointer;
+    }
+    span.active[data-portfolio]{
+        background-color: #e02d02;
+    }
+    span.active[data-portfolio]:after{
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        border: 2px solid #e02d02;
+        top: -6px;
+        left: -6px;
+    }
+    .contact-content {
+        background: #fff;
+        height: auto;
+        padding-top: 60px;
+        padding-left: 0;
+        width: 100%;
+        padding-bottom: 103px;
+    }
+    .serv-slog.cont {
+        margin-left: 0;
+        margin-top: 10px;
+        opacity: 1;
+    }
+    .contact-info {
+        margin-left: 63px;
+    }
+    .phone, .mail {
+        opacity: 1;
+    }
 }
