@@ -157,13 +157,14 @@ $(document).ready(function () {
     /* --------------------------------------------------------
                    ADD ELEMENTS
 ----------------------------------------------------------- */
-    $('.circle-wrap, .center-galaktiki').html('<span class="circle-1"></span>\n' + '<span class="circle-2"></span>');
-    $('.center-galaktiki').html('<span class="circle-1"></span>\n' +
-        '<span class="circle-2"></span>\n' + '<span class="circle-5"></span>\n' + '<span class="circle-6"></span>');
+    if(document.body.clientWidth > 768) {
+        $('.circle-wrap, .center-galaktiki').html('<span class="circle-1"></span>\n' + '<span class="circle-2"></span>');
+        $('.center-galaktiki').html('<span class="circle-1"></span>\n' +
+            '<span class="circle-2"></span>\n' + '<span class="circle-5"></span>\n' + '<span class="circle-6"></span>');
 
-    $('.circle-dotted').html('<span class="circle-3"></span>\n' +
-        '<span class="circle-4"></span>');
-
+        $('.circle-dotted').html('<span class="circle-3"></span>\n' +
+            '<span class="circle-4"></span>');
+    }
     $('.onepage-pagination li a').each(function (index) {
         $(this).html('0'+ (index + 1));
     });

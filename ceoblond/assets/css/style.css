@@ -1304,8 +1304,9 @@ footer .container{
         margin: 0;
         line-height: unset;
         text-align: center;
-        margin-left: 16px;
+        margin-left: 0;
         top: 0;
+        left: 0;
     }
     .name h1::after {
         content: "";
