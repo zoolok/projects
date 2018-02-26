@@ -1225,6 +1225,10 @@ footer .container{
 .desc-none{
     display: none;
 }
+.portfolio-item .container{
+    display: flex;
+    flex-direction: column;
+}
 .portfolio-main{
     background: url(../images/portfolio-item-1-bg.jpg) 21px 0 no-repeat;
     width: 100%;
@@ -1232,12 +1236,127 @@ footer .container{
     padding-top: 0;
     position: relative;
     height: 100vh;
+  max-height: 792px;
 }
 .portfolio-main img{
     position: absolute;
     bottom: 0;
     left: 0;
     margin-left: 21px;
+}
+.portfolio-name{
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Austin Cyr';
+    margin:171px 0 10px 0;
+    padding: 0;
+    line-height: 17px;
+    position: relative;
+    left:calc(50% + 100px);
+    letter-spacing: 13px;
+}
+.portfolio-main p{
+    font-size: 14px;
+    font-family: 'GothamProLight';
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left:calc(50% + 100px);
+}
+.portfolio-shema{
+    flex-wrap: wrap;
+    margin-left: 21px;
+}
+.shema-item{
+    width: calc(100%/3);
+    padding: 97px 40px 112px 126px;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.shema-item:hover{
+    z-index: 2;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.shema-item h3{
+    font-family: 'VremenaBold';
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    position: relative;
+}
+.shema-item p{
+    font-family: 'GothamProLight';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #a5a5a5;
+}
+.shema-item:nth-child(odd){
+    background-color:#151518;
+}
+.shema-item:nth-child(odd) h3:before{
+   content: "";
+    position: absolute;
+    width: 44px;
+    height: 41px;
+    background: url(../images/portfolio-item-ico-1.png) 0 0 no-repeat;
+    top: -12px;
+    left: -55px;
+}
+.shema-item:nth-child(even){
+    background-color: #181824;
+}
+.shema-item:nth-child(even) h3:before{
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 41px;
+    background: url(../images/portfolio-item-ico-2.png) 0 0 no-repeat;
+    top: -12px;
+    left: -55px;
+}
+.process-desc{
+    width: calc(100%*2/3);
+    background-color: #151518;
+    position: relative;
+    margin-left: 21px;
+    color: #fff;
+}
+.process-desc h3{
+    font-family: 'Austin Cyr';
+    font-size: 48px;
+    letter-spacing: 10px;
+   /* padding: 120px 0 0 57px;*/
+
+}
+.next-item{
+    background-color: #181824;
+    position: relative;
+    width: 50%;
+    height: 445px;
+    bottom: 0;
+    right: -50%;
+}
+.process-img{
+    width: calc(100%/3);
+}
+.process-img img{
+    width: 100%;
 }
 /* *************** MOBILE **************** */
 
