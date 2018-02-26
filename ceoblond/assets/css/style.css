@@ -1102,7 +1102,7 @@ h2.portfolio{
     position: relative;
     overflow: hidden;
 }
-.vk:before, .insta:before{
+.vk:before, .insta:before, a.next:before{
     position: absolute;
     content: '';
     left: -235px;
@@ -1121,7 +1121,7 @@ h2.portfolio{
     transition: all  0.6s ease-in-out;
 }
 
-.vk:hover:before, .insta:hover:before{
+.vk:hover:before, .insta:hover:before, a.next:hover:before{
     left: 235px;
     -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all  0.6s ease-in-out;
@@ -1148,9 +1148,10 @@ footer{
     width: 100%;
     max-height: 236px;
     background-size: cover;
+    overflow: hidden;
 }
 footer .container{
-    padding-top: 40px;
+    padding: 40px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -1181,22 +1182,29 @@ footer .container{
 }
 .footer-contact a.phone{
     margin-bottom: 15px;
+    opacity:1;
+}
+.footer-contact a.mail{
+    opacity:1;
 }
 .footer-contact a.vk{
     width: 30px;
     height: 30px;
     background: url(../images/vk-ico-footer.png) 0 0 no-repeat;
+    opacity:1;
 }
 .footer-contact a.insta{
     width: 30px;
     height: 30px;
     background: url(../images/insta-ico-footer.png) 0 0 no-repeat;
+    opacity:1;
 }
 .footer-contact .soc{
     display: flex;
     justify-content: flex-start;
     margin-left: 0;
     margin-top: 27px;
+    opacity:1;
 }
 .footer-copyright{
     flex-direction: column;
@@ -1237,6 +1245,7 @@ footer .container{
     position: relative;
     height: 100vh;
   max-height: 792px;
+    overflow: hidden;
 }
 .portfolio-main img{
     position: absolute;
@@ -1248,7 +1257,7 @@ footer .container{
     font-size: 72px;
     color: #fff;
     font-family: 'Austin Cyr';
-    margin:171px 0 10px 0;
+    margin:171px 0 20px 0;
     padding: 0;
     line-height: 17px;
     position: relative;
@@ -1336,27 +1345,67 @@ footer .container{
     position: relative;
     margin-left: 21px;
     color: #fff;
+    padding:55px 0 0 118px;
 }
 .process-desc h3{
     font-family: 'Austin Cyr';
     font-size: 48px;
-    letter-spacing: 10px;
-   /* padding: 120px 0 0 57px;*/
-
+    letter-spacing: 8px;
+    margin: 0 0 40px 0;
+    padding: 0;
+    line-height: 24px;
 }
-.next-item{
+.process-desc span{
+    font-family: 'GothamPro';
+    font-size: 18px;
+}
+.process-desc p{
+    font-family: 'GothamProLight';
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 100;
+    text-align: justify;
+}
+.process-desc p:first-of-type{
+    padding-right: 68px;
+}
+.next-item {
     background-color: #181824;
     position: relative;
-    width: 50%;
+    width: calc(50% + 55px);
     height: 445px;
-    bottom: 0;
-    right: -50%;
+    float: right;
+    margin-left: 20px;
 }
 .process-img{
     width: calc(100%/3);
+    height: 100%;
 }
-.process-img img{
-    width: 100%;
+a.next{
+    position: absolute;
+    font-family: 'GothamProLight';
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    padding:24px 49px;
+    background-color: #cc3300;
+    bottom: 46px;
+    right: 30px;
+    text-decoration: none;
+    overflow: hidden;
+}
+a.next::before {
+    left: -435px;
+}
+.next-item:after{
+    content: '';
+    position: absolute;
+    width: 69px;
+    height: 12px;
+    bottom: 23px;
+    right: 29px;
+    background: url(../images/next-arrow.png) 0 0 no-repeat;
 }
 /* *************** MOBILE **************** */
 

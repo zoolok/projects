@@ -166,10 +166,10 @@ $(document).ready(function () {
         $('.circle-dotted').html('<span class="circle-3"></span>\n' +
             '<span class="circle-4"></span>');
 
-        if ($('body').hasClass('portfolio')) {
+        if ($('body').hasClass('kays')) {
             $('.circle-5').css('animation', 'orbit2 34s linear infinite');
             $('.circle-6').css('animation', 'orbit1 64s linear infinite');
-        }s
+        };
     }
     $('.onepage-pagination li a').each(function (index) {
         $(this).html('0'+ (index + 1));
