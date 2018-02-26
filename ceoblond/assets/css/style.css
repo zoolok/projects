@@ -1233,6 +1233,9 @@ footer .container{
 .desc-none{
     display: none;
 }
+.portfolio-item{
+    margin-bottom: 60px;
+}
 .portfolio-item .container{
     display: flex;
     flex-direction: column;
@@ -1619,5 +1622,73 @@ a.next::before {
     }
     .phone, .mail {
         opacity: 1;
+    }
+    .portfolio-item {
+        margin-bottom: 0;
+    }
+    .portfolio-name {
+        left: 0;
+        text-align: center;
+    }
+    .portfolio-main {
+        background: url(../images/portfolio-item-1-bg.jpg) 0 0 no-repeat;
+        height: auto;
+    }
+    .portfolio-main img {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-left: 0;
+        margin-top: 248px;
+        width: 100%;
+    }
+    .portfolio-main p {
+        left: 0;
+        text-align: center;
+    }
+    .shema-item, .process-desc {
+        width: 100%;
+    }
+    .shema-item{
+        padding: 97px 40px 112px 77px;
+    }
+    .portfolio-shema {
+        margin-left: 0;
+    }
+    .portfolio-process{
+        background-color: #000;
+    }
+    .process-desc {
+        margin-left: 0;
+        padding: 55px 16px 0 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .process-desc h3 {
+        font-size: 30px;
+        margin: 0 0 20px 0;
+    }
+    .process-desc span {
+        font-size: 14px;
+    }
+    .process-desc p{
+        padding-right: 0;
+    }
+    .process-desc p:first-of-type {
+        padding-right: 0;
+    }
+    .next-item{
+        order:1;
+        background-color: #000;
+        position: relative;
+        width: 100%;
+        height: auto;
+        float: unset;
+        margin-left: 0;
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+    a.next {
+        right: calc(50% - 122px);
     }
 }
