@@ -1454,6 +1454,10 @@ a.next::before {
 [class^="post-section-"] .post{
     width: 100%!important;
 }
+[class^="post-section-"] .post.text{
+    height: 50%!important;
+    min-height:197px
+}
 .post.text{
     width: 50%;
     height:197px ;
@@ -1462,6 +1466,8 @@ a.next::before {
     width: 50%;
     height:395px ;
     position: relative;
+    -webkit-background-size: cover!important;
+    background-size: cover!important;
 }
 .post.video:before{
     content: '';
@@ -1473,7 +1479,7 @@ a.next::before {
     background: url(../images/blog-play.png) 0 0 no-repeat;
 }
 .post-desc{
-    width: 50%;
+    width: calc(50% + 10px);
     background-color: #f6f6f6;
     padding: 30px 20px 25px 20px;
     max-height: 197px;
@@ -1482,6 +1488,13 @@ a.next::before {
 .post-desc:after{
     content: '';
     position: absolute;
+    width: 0;
+    height: 0;
+    top:calc(50% - 22px);
+    right: -10px;
+    border-top: 17px solid transparent;
+    border-left: 10px solid #f6f6f6;
+    border-bottom: 17px solid transparent;
 }
 .post-desc a{
     color: #000;
