@@ -1491,14 +1491,47 @@ a.next::before {
     height: 50%!important;
     min-height:197px
 }
+.post{
+    position: relative;
+    overflow: hidden;
+}
 .post.text{
     width: 50%;
     height:197px ;
 }
-.post:nth-child(1){
-
+.post:after{
+    content: 'Открыть пост';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -400px;
+    left: 0;
+    font-size: 25px;
+    font-family: 'Austin Cyr';
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #fff url(../images/kotik.jpg) 50% 0 no-repeat;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+    opacity: 0;
+    text-align: center;
+    padding-top: calc(50% + 50px);
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
 }
-.post:hover .post-desc{
+.post:hover:after{
+    opacity: 1;
+    top: 0;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+/*.post:hover .post-desc{
     width: 100%!important;
     height: 100%!important;
     max-height: unset;
@@ -1507,7 +1540,7 @@ a.next::before {
     -ms-transition: all ease-in-out 0.2s;
     -o-transition: all ease-in-out 0.2s;
     transition: all ease-in-out 0.2s;
-}
+}*/
 .post.video{
     width: 50%;
     height:395px ;
