@@ -1210,9 +1210,9 @@ footer .container{
     flex-direction: column;
 }
 .footer-copyright img{
-     width: -moz-fit-content;
+    width: -moz-fit-content;
     max-width: 153px;
- }
+}
 .footer-copyright a{
     font-size: 10px;
     text-transform: uppercase;
@@ -1247,7 +1247,7 @@ footer .container{
     padding-top: 0;
     position: relative;
     height: 100vh;
-  max-height: 792px;
+    max-height: 792px;
     overflow: hidden;
 }
 .portfolio-main img{
@@ -1322,7 +1322,7 @@ footer .container{
     background-color:#151518;
 }
 .shema-item:nth-child(odd) h3:before{
-   content: "";
+    content: "";
     position: absolute;
     width: 44px;
     height: 41px;
@@ -1409,6 +1409,103 @@ a.next::before {
     bottom: 23px;
     right: 29px;
     background: url(../images/next-arrow.png) 0 0 no-repeat;
+}
+.blog{
+     background-color: #fff;
+ }
+.blog .container{
+    background: url(../images/blog-bg.png) 162px 0 no-repeat;
+    height: auto;
+    padding-top: 96px;
+    padding-left: 26px;
+    display: flex;
+    justify-content: flex-start;
+}
+.blog h2.header {
+    letter-spacing: 12px;
+    position: relative;
+    margin: 0 0 0 70px;
+    top: unset;
+    left: unset;
+    text-align: unset;
+}
+.blog-title{
+    max-width: 314px;
+    margin-left: 62px;
+    margin-top: 45px;
+}
+.blog .serv-slog.cont {
+    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
+    padding: 0 32px 0 73px;
+}
+.blog-posts{
+    flex-direction: column;
+}
+.second-row{
+    flex-wrap: wrap;
+}
+[class^="post-section-"]{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+[class^="post-section-"] .post{
+    width: 100%!important;
+}
+.post.text{
+    width: 50%;
+    height:197px ;
+}
+.post.video{
+    width: 50%;
+    height:395px ;
+    position: relative;
+}
+.post.video:before{
+    content: '';
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 63px;
+    bottom: 63px;
+    background: url(../images/blog-play.png) 0 0 no-repeat;
+}
+.post-desc{
+    width: 50%;
+    background-color: #f6f6f6;
+    padding: 30px 20px 25px 20px;
+    max-height: 197px;
+    position: relative;
+}
+.post-desc:after{
+    content: '';
+    position: absolute;
+}
+.post-desc a{
+    color: #000;
+    text-decoration: none;
+}
+.post-desc h3{
+    font-family: "GothamProMedium";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.post-desc p{
+    font-family: "GothamProLight";
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 24px 0;
+}
+.post-desc span{
+    font-family: "GothamProLight";
+    font-size: 14px;
+    color: #787070;
+}
+.post-desc hr{
+    margin-bottom: 18px;
 }
 /* *************** MOBILE **************** */
 
