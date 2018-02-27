@@ -170,7 +170,18 @@ $(document).ready(function () {
             $('.circle-5').css('animation', 'orbit2 34s linear infinite');
             $('.circle-6').css('animation', 'orbit1 64s linear infinite');
         };
+var k=0;
+        $('.post').each(function (index) {
+            k+=0.2;
+            $(this).addClass('flipInX animated');
+            $(this).css({
+                "animation-delay" : i +'s',
+                "-webkit-animation-delay" : i +'s'
+            });
+        });
+
     }
+
     $('.onepage-pagination li a').each(function (index) {
         $(this).html('0'+ (index + 1));
     });

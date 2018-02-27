@@ -1462,6 +1462,18 @@ a.next::before {
     width: 50%;
     height:197px ;
 }
+.post:nth-child(1){
+
+}
+.post:hover .post-desc{
+    width: 100%!important;
+    height: 100%!important;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+}
 .post.video{
     width: 50%;
     height:395px ;
@@ -1484,6 +1496,11 @@ a.next::before {
     padding: 30px 20px 25px 20px;
     max-height: 197px;
     position: relative;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
 }
 .post-desc:after{
     content: '';
