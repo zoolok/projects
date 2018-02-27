@@ -117,6 +117,39 @@ span.down{
     top: 380px;
 
 }
+.delay-1{
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.delay-2{
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.delay-3{
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.delay-4{
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.delay-5{
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+.delay-6{
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.delay-7{
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.delay-8{
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
 .main{
     background: url('../images/bg-main.png') 50% 50% no-repeat;
     -webkit-background-size: cover;
@@ -1468,6 +1501,7 @@ a.next::before {
 .post:hover .post-desc{
     width: 100%!important;
     height: 100%!important;
+    max-height: unset;
     -webkit-transition: all ease-in-out 0.2s;
     -moz-transition: all ease-in-out 0.2s;
     -ms-transition: all ease-in-out 0.2s;
