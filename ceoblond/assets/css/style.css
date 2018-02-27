@@ -1544,7 +1544,7 @@ a.next::before {
 }*/
 .post.video{
     width: 50%;
-    height:395px ;
+    height:395px!important;
     position: relative;
     -webkit-background-size: cover!important;
     background-size: cover!important;
@@ -1604,6 +1604,9 @@ a.next::before {
 }
 .post-desc hr{
     margin-bottom: 18px;
+}
+.post img{
+    max-width: calc(50% - 10px);
 }
 /* *************** MOBILE **************** */
 
@@ -1905,5 +1908,32 @@ a.next::before {
     }
     .post{
         width: 100%!important;
+        flex-direction: column;
+        height: 100%!important;
+    }
+    .post-desc {
+        width: 100%;
+        order: 1;
+    }
+    .video .post-desc {
+        position: absolute;
+        bottom: 0;
+    }
+    [class^="post-section-"] {
+        width: 100%;
+    }
+
+    .post.video::before {
+        left: calc(50% - 35px);
+        bottom: unset;
+        top: 65px;
+    }
+    .post img {
+        max-width: 100%;
+    }
+    .post-desc::after {
+        top: -22px;
+        right: 50%;
+        transform: rotate(-90deg);
     }
 }
