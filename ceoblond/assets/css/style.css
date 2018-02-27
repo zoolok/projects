@@ -1516,6 +1516,7 @@ a.next::before {
     opacity: 0;
     text-align: center;
     padding-top: calc(50% + 50px);
+    cursor: pointer;
     -webkit-transition: all ease-in-out 0.5s;
     -moz-transition: all ease-in-out 0.5s;
     -ms-transition: all ease-in-out 0.5s;
@@ -1884,5 +1885,25 @@ a.next::before {
     }
     a.next {
         right: calc(50% - 122px);
+    }
+    .blog .container {
+        background: none;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .blog-title {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 45px;
+    }
+    .blog h2.header {
+        margin: 0;
+        text-align: center;
+    }
+    .blog .serv-slog.cont {
+        padding: 0 16px;
+    }
+    .post{
+        width: 100%!important;
     }
 }
