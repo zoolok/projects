@@ -27,6 +27,14 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+:after, :before, :hover{
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 
 body {
     background: #fff;
@@ -440,8 +448,8 @@ button:hover{
 .stage li:before{
     content: '';
     position: absolute;
-    width: 19px;
-    height: 19px;
+    width: 21px;
+    height: 21px;
     background-color: #eaeaea;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -453,8 +461,8 @@ button:hover{
 .stage li:after{
     content: '';
     position: absolute;
-    width: 13px;
-    height: 13px;
+    width: 11px;
+    height: 11px;
     background-color:#c0bebe;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
