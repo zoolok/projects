@@ -114,6 +114,7 @@ a:hover{
     -moz-animation: orbit2 54s linear infinite;
     -o-animation: orbit2 54s linear infinite;
     animation: orbit2 54s linear infinite;
+    z-index: 5;
 }
 .center-galaktiki{
     position: fixed;
@@ -124,6 +125,7 @@ a:hover{
 .center-galaktiki .circle-2{
     left: calc(50% - 50px);
     right:unset;
+    z-index: 5;
 }
 .circle-2{
     position: absolute;
@@ -139,6 +141,7 @@ a:hover{
     -moz-animation: orbit1 74s linear infinite;
     -o-animation: orbit1 74s linear infinite;
     animation: orbit1 74s linear infinite;
+    z-index: 5;
 }
 .circle-3{
     position: absolute;
@@ -150,7 +153,7 @@ a:hover{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 5;
 }
 .circle-4{
     position: absolute;
@@ -162,7 +165,7 @@ a:hover{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 5;
 }
 .circle-5{
     position: absolute;
@@ -174,7 +177,7 @@ a:hover{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    z-index: 3;
+    z-index: 5;
 }
 .circle-6{
     position: absolute;
@@ -186,7 +189,7 @@ a:hover{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    z-index: 3;
+    z-index: 5;
 }
 @-webkit-keyframes orbit2 {
     from {  -webkit-transform: rotate(0deg) translateX(280px) rotate(0deg); }
@@ -293,14 +296,14 @@ header .container{
 .soc{
     background: #dbdbdb url(../images/fb-ico.png) 50% 50% no-repeat;
     width: 47px;
-    height: 75px;
+    height: 77px;
     display: inline-block;
     margin-right: -4px;
 }
 .ling{
     background: #262c3a url(../images/ru-ico.png) 50% 27px no-repeat;
     width: 47px;
-    height: 75px;
+    height: 77px;
     display: inline-block;
     cursor: pointer;
 }
@@ -308,6 +311,7 @@ header .container{
     width: 100%;
     height: 0;
     color: #e0e0e0;
+    margin: 12px 0 0 0;
 }
 nav{
     width: 100%;
@@ -315,6 +319,9 @@ nav{
 nav ul{
     align-items: center;
     justify-content: space-between;
+}
+nav ul li{
+    padding: 20px 0;
 }
 nav ul li a{
     text-transform: uppercase;
@@ -329,6 +336,148 @@ button{
     height: 58px;
     border: 0;
     border-radius: 29px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    border:1px solid #ed1c24;
+    color: #ed1c24;
+}
+.slide-text{
+    position: absolute;
+    top: 88px;
+    left: 0;
+}
+.slide-text p{
+    font-size: 24px;
+}
+.slide-text h2{
+    font: 400 55px/60px "Akrobat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+.slide-text h2 span{
+    color: #ed1c24;
+}
+.owl-dots{
+    position: absolute;
+    bottom: 135px;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.owl-dot{
+    width: 12px;
+    height: 12px;
+    margin-right: 17px;
+    background-color: #ed1c24;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.owl-dot.active{
+    width: 21px;
+    height: 21px;
+}
+.shema{
+    padding:110px 0 147px 0;
+}
+.shema h1{
+    font: 400 60px "Akrobat", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 132px;
+}
+.shema h1:before{
+    content: attr(data-text);
+    position: absolute;
+    font: 400 95px "Akrobat", sans-serif;
+    text-transform: uppercase;
+    top: -65px;
+    opacity: 0.12;
+    left: 0;
+    width: 100%;
+}
+[class^="shema-item-"] {
+    display: none;
+}
+.shema-item-1{
+    display: block;
+}
+.stage{
+    margin-right: 122px;
+}
+.stage-img{
+    width: 100%;
+    max-height: 356px;
+    overflow: hidden;
+}
+.stage ul{
+    position: relative;
+}
+.stage ul:after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    top: 0;
+    right: -19px;
+    z-index: -1;
+}
+.stage li{
+    cursor: pointer;
+    font: 700 14px "Open Sans";
+    color: #999;
+    margin-bottom: 50px;
+    text-align: right;
+    position: relative;
+}
+.stage li.active, .stage li:hover{
+    color: #000;
+}
+.stage li:before{
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: #eaeaea;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border:2px solid #dcdcdc;
+    top: 0;
+    right: -30px;
+}
+.stage li:after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color:#c0bebe;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top: 5px;
+    right: -25px;
+}
+.stage li.active:after, .stage li:hover:after{
+    background-color:#ed1c24;
+}
+.stage li.active:before, .stage li:hover:before{
+    background-color:#fff;
+}
+.content{
+    padding-right: 48px;
+}
+.content h2{
+    font: 400 36px "Akrobat";
+    margin-bottom: 28px;
+}
+.content p{
+    font: 400 18px/24px "Open Sans";
+    margin-bottom: 35px;
 }
 /* *************** MOBILE **************** */
 

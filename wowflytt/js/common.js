@@ -45,17 +45,12 @@ $(document).ready(function () {
                 nav:true,
                 navText:["",""],
                 dots:true,
-                dotsContainer: '.slide-nav',
                 loop:false,
-                center:true
-            });
-            var od = $('.owl-dot');
-            $('.owl-nav').addClass('flex');
-            $('.owl-dot.active').html('01');
-            od.each(function (index, value){
-                $(this).next().html('0'+ (index + 2));
+                center:true,
+                autoplay:true
             });
         }
+        $('.owl-dots').wrap("<div class='container'></div>");
     });
 
 
@@ -89,7 +84,40 @@ $(document).ready(function () {
     if(document.body.clientWidth < 768) {
 
     }
+    /* --------------------------------------------------------
+       SHEMA SLIDER
+----------------------------------------------------------- */
+    if(document.body.clientWidth > 768) {
+        var pi = $('.stage ul li');
+    }else{
+        var pi = $('.nav-dots span');
+    }
+    var shema_img = $('[class^="shema-item-"]');
+    console.log(shema_img);
 
+    pi.click(function () {
+
+        pi.each(function (index) {
+            pi.removeClass('active');
+        });
+
+        $(this).addClass('active');
+        shema_img.fadeOut(300);
+
+        var numit = parseInt($(this).attr('data-shema'));
+
+        console.log(numit);
+
+        var cur = numit-1;
+
+        console.log(cur);
+
+        shema_img.each(function (index) {
+            if (index == cur) {
+                $(this).fadeIn(300);
+            }
+        });
+    });
     /* --------------------------------------------------------
           MENU
 ----------------------------------------------------------- */
