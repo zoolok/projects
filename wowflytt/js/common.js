@@ -78,6 +78,11 @@ $(document).ready(function () {
             '<span class="circle-2"></span>\n' + '<span class="circle-5"></span>\n' + '<span class="circle-6"></span>');
         $('.circle-5').css('animation', 'orbit2 34s linear infinite');
         $('.circle-6').css('animation', 'orbit1 64s linear infinite');
+        $('.shema h1').css('delay-4');
+        $('[data-shema="1"]').css('delay-2');
+        $('[data-shema="2"]').css('delay-3');
+        $('[data-shema="3"]').css('delay-4');
+        $('[data-shema="4"]').css('delay-5');
 
     }
 
@@ -93,7 +98,7 @@ $(document).ready(function () {
         var pi = $('.nav-dots span');
     }
     var shema_img = $('[class^="shema-item-"]');
-    console.log(shema_img);
+    /*console.log(shema_img);*/
 
     pi.click(function () {
 
@@ -106,7 +111,7 @@ $(document).ready(function () {
 
         var numit = parseInt($(this).attr('data-shema'));
 
-        console.log(numit);
+       /* console.log(numit);*/
 
         var cur = numit-1;
 
@@ -138,10 +143,8 @@ $(document).ready(function () {
        ANIMATIONS
 ----------------------------------------------------------- */
 
-    $('.citata-wrap p:first-child').animated('fadeInLeft','fadeOutLeft');
-    $('.citata-wrap p:nth-child(2)').animated('fadeInRight','fadeOutRight');
-    $('.scroll-wrap').addClass('flipInX animated');
-
+    $('.shema h1').animated('fadeIn','fadeOut');
+    $('li[data-shema]').animated('fadeIn','fadeOut');
 });
 
 
