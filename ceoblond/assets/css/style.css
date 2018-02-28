@@ -1609,6 +1609,26 @@ a.next::before {
 .post img{
     max-width: calc(50% - 10px);
 }
+.about{
+    background-color: #fff;
+}
+.about-content{
+    background: #fff url(../images/about-bg.jpg) 21px 0 no-repeat;
+   /* height: calc(100vh - 236px);*/
+    height: 100vh;
+    padding-top: 60px;
+    padding-left: 115px;
+    width: 100%;
+}
+.about-content .serv-slog{
+    opacity: 1;
+    flex-direction: column;
+    margin-top: 132px;
+    padding: 0 130px;
+}
+.serv-slog span{
+    font: 400 24px "GothamPro", sans-serif;
+}
 /* *************** MOBILE **************** */
 
 @media only screen and (max-width:768px){
