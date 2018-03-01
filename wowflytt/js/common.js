@@ -1,27 +1,5 @@
 $(document).ready(function () {
-    /* --------------------------------------------------------
-       MAGNIFIC POP-UP
------------------------------------------------------------ */
-    $(function() {
-        "use strict";
-        if ( $( ".image-popup-no-margins" ).length > 0 ) {
 
-            $('.image-popup-no-margins').magnificPopup({
-                type: 'image',
-                closeOnContentClick: true,
-                closeBtnInside: false,
-                fixedContentPos: true,
-                mainClass: 'mfp-no-margins mfp-with-zoom',
-                image: {
-                    verticalFit: true
-                },
-                zoom: {
-                    enabled: true,
-                    duration: 300
-                }
-            });
-        }
-    });
     /* --------------------------------------------------------
           FANCYBOX POP-UP
 ----------------------------------------------------------- */
@@ -84,6 +62,7 @@ $(document).ready(function () {
         $('[data-shema="3"]').css('delay-4');
         $('[data-shema="4"]').css('delay-5');
         $('.serv-desc h2').css('delay-3');
+        $('.gallery-line h2').css('delay-3');
         $('[class^="figovina-"]').css('delay-4');
     }
 
@@ -160,6 +139,7 @@ $(document).ready(function () {
 
     $('.shema h1').animated('fadeIn','fadeOut');
     $('.serv-desc h2').animated('fadeIn','fadeOut');
+    $('.gallery-line h2').animated('fadeIn','fadeOut');
     $('li[data-shema]').animated('fadeIn','fadeOut');
     $('[class^="figovina-"]').animated('slideInDown','slideInUp');
 });

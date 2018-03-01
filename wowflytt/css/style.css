@@ -390,14 +390,14 @@ button:hover{
 .shema{
     padding:110px 0 147px 0;
 }
-.shema h1, .serv-wrap h2{
+.shema h1, .serv-wrap h2, .gallery-line h2{
     font: 400 60px "Akrobat", sans-serif;
     text-align: center;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 132px;
 }
-.shema h1:before, .serv-wrap h2:before{
+.shema h1:before, .serv-wrap h2:before, .gallery-line h2:before{
     content: attr(data-text);
     position: absolute;
     font: 400 95px "Akrobat", sans-serif;
@@ -762,6 +762,25 @@ a.fb{
     left: -42px;
     top: -3px;
     background: url(../images/map-marker-ico-contact.png) 0 0 no-repeat;
+}
+.gallery-line{
+    padding:15px 0 60px 0;
+}
+.gal-img{
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.gal-img img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+.gallery-line h2 {
+    text-align: left;
+    margin-bottom: 11px;
+}
+.gallery-line h2::before {
+    left: -83px;
 }
 /* *************** MOBILE **************** */
 
