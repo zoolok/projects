@@ -782,6 +782,23 @@ a.fb{
 .gallery-line h2::before {
     left: -83px;
 }
+.blog-post{
+    margin-bottom: 55px;
+}
+.post-desc{
+    margin-left: 57px;
+}
+.post-desc h3{
+    font:400 36px "Akrobat";
+    margin-bottom: 10px;
+    color: #000;
+}
+.post-desc a{
+    color: #e40000;
+}
+.post-desc span, .post-desc p{
+    font:400 18px/30px "Open Sans";
+}
 /* *************** MOBILE **************** */
 
 @media only screen and (max-width:768px){
