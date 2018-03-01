@@ -724,6 +724,45 @@ a.fb{
     bottom: -85px;
     background: url(../images/el-11.png) 0 0 no-repeat;
 }
+.contact-info .container{
+    justify-content: space-between;
+    padding:38px 0 45px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact-info p, .contact-info a{
+    font:400 18px "Open Sans";
+    position: relative;
+}
+.contact-info p:before, .contact-info a:before{
+    content: '';
+    position: absolute;
+}
+.contact-info a{
+    color: #ff3333;
+    text-transform: uppercase;
+}
+.contact-phone:before{
+    width: 18px;
+    height: 30px;
+    left: -42px;
+    top: -3px;
+    background: url(../images/mobile-ico-contact.png) 0 0 no-repeat;
+}
+.contact-email:before{
+    width: 25px;
+    height: 19px;
+    left: -46px;
+    top: 3px;
+    background: url(../images/email-ico-contact.png) 0 0 no-repeat;
+}
+.contact-adrr:before{
+    width: 18px;
+    height: 25px;
+    left: -42px;
+    top: -3px;
+    background: url(../images/map-marker-ico-contact.png) 0 0 no-repeat;
+}
 /* *************** MOBILE **************** */
 
 @media only screen and (max-width:768px){
