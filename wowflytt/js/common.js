@@ -83,6 +83,8 @@ $(document).ready(function () {
         $('[data-shema="2"]').css('delay-3');
         $('[data-shema="3"]').css('delay-4');
         $('[data-shema="4"]').css('delay-5');
+        $('.serv-desc h2').css('delay-3');
+        $('[class^="figovina-"]').css('delay-4');
     }
 
     if(document.body.clientWidth < 768) {
@@ -157,7 +159,9 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
 
     $('.shema h1').animated('fadeIn','fadeOut');
+    $('.serv-desc h2').animated('fadeIn','fadeOut');
     $('li[data-shema]').animated('fadeIn','fadeOut');
+    $('[class^="figovina-"]').animated('slideInDown','slideInUp');
 });
 
 

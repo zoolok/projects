@@ -672,7 +672,6 @@ a.fb{
     width: 437px;
     height: 207px;
     left: -360px;
-    left: -360px;
     bottom: -35px;
     background: url(../images/el-12.png) 0 0 no-repeat;
 }
@@ -710,6 +709,20 @@ a.fb{
     top: 7px;
     right: 0;
     z-index: -1;
+}
+.figovina-5{
+    width: 494px;
+    height: 283px;
+    right: -360px;
+    bottom: -110px;
+    background: url(../images/el-13.png) 0 0 no-repeat;
+}
+.figovina-6{
+    width: 437px;
+    height: 207px;
+    left: -360px;
+    bottom: -85px;
+    background: url(../images/el-11.png) 0 0 no-repeat;
 }
 /* *************** MOBILE **************** */
 
