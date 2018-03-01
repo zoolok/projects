@@ -583,6 +583,36 @@ a.fb{
     text-decoration: underline;
     font:400 14px "Akrobat";
 }
+.inner-title{
+    background: url(../images/inner-title-bg.png) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    padding: 60px 0;
+    margin-bottom: 65px;
+}
+.inner-title h1{
+    font:400 36px "Akrobat";
+    text-transform: uppercase;
+}
+.breadcrumbs, .breadcrumbs a {
+    font: 700 10px "Open Sans";
+    text-transform: uppercase;
+    color: #fff;
+}
+.about-content p{
+    font: 400 18px/30px "Open Sans";
+    text-align: justify;
+}
+.top-img img{
+    float: right;
+    margin:0 0 102px 32px;
+}
+.bottom-img{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 41px 0 47px 0;
+}
 /* *************** MOBILE **************** */
 
 @media only screen and (max-width:768px){
