@@ -91,11 +91,11 @@ $(document).ready(function () {
 
         var numit = parseInt($(this).attr('data-shema'));
 
-       /* console.log(numit);*/
+        /* console.log(numit);*/
 
         var cur = numit-1;
 
-       /* console.log(cur);*/
+        /* console.log(cur);*/
 
         shema_img.each(function (index) {
             if (index == cur) {
@@ -105,9 +105,8 @@ $(document).ready(function () {
     });
 
     function nextStepFn () {
-      var ns = $('.stage ul li.active');
+        var ns = $('.stage ul li.active');
         ns.removeClass('active');
-
         if(ns.is('.stage ul li:last')){
             var nsNext = $('.stage ul li:first');
         }else{
@@ -142,6 +141,52 @@ $(document).ready(function () {
     $('.gallery-line h2').animated('fadeIn','fadeOut');
     $('li[data-shema]').animated('fadeIn','fadeOut');
     $('[class^="figovina-"]').animated('slideInDown','slideInUp');
+
+    /* --------------------------------------------------------
+       PRICE SLIDER
+----------------------------------------------------------- */
+    $("#price-slider").slider({
+        value:0,
+        min: 0,
+        max: 100,
+        step: 1,
+        slide: function( event, ui ) {
+            $( "#amount" ).val(ui.value + ' kvm' );
+            var arg =  parseInt(ui.value);
+            switch(true){
+                case arg <= 30:
+                    $( ".summa" ).html( (arg*45) + ' SEK');
+                    break;
+                case arg > 30 && arg <= 45:
+                    $( ".summa" ).html( (arg*40) + ' SEK');
+                    break;
+                case arg > 45 && arg <= 60:
+                    $( ".summa" ).html( (arg*35) + ' SEK');
+                    break;
+                case arg > 60 :
+                    $( ".summa" ).html( (arg*30) + ' SEK');
+                    break;
+            }
+        }
+    });
+
+    $('#amount').change(function () {
+        var arg =  $(this).val();
+        switch(true){
+            case arg <= 30:
+                $( ".summa" ).html( (arg*45) + ' SEK');
+                break;
+            case arg > 30 && arg <= 45:
+                $( ".summa" ).html( (arg*40) + ' SEK');
+                break;
+            case arg > 45 && arg <= 60:
+                $( ".summa" ).html( (arg*35) + ' SEK');
+                break;
+            case arg > 60 :
+                $( ".summa" ).html( (arg*30) + ' SEK');
+                break;
+        }
+    });
 });
 
 

@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
     <meta name="format-detection" content="telephone=no">
-    <title>WOWFLYTT</title>
+    <title>WOWFLYTT-Räkna ut priser</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:image" content="/share.jpg">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="libs/owl-carusel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl-carusel/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -51,13 +51,81 @@
 </header>
 <section class="inner-title">
     <div class="container">
-        <div class="breadcrumbs"><a href="index.html">startsida</a>/ <span>Om oss</span> </div>
-        <h1>Om oss</h1>
+        <div class="breadcrumbs"><a href="index.html">startsida</a>/ <span>Räkna ut priser</span> </div>
+        <h1>Räkna ut priser</h1>
     </div>
 </section>
-<div class="contact-info">
+<div class="price-info">
     <div class="container">
-
+        <h2 data-text="Уборка">Уборка</h2>
+        <div class="calculate flex">
+            <div class="calc">
+                <p>Площадь,kvm</p>
+                <div id="price-slider"></div>
+                <input type="text" id="amount"  value="0"/>
+            </div>
+            <div class="order flex">
+                <span class="summa">0 SEK</span>
+                <button>skicka meddelande</button>
+            </div>
+        </div>
+        <div class="price-table">
+            <h2 data-text="Переезд">Переезд</h2>
+            <table class="pricelist">
+                <thead>
+                <tr >
+                    <td colspan="2">Перевозка</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Lastbil 20,22 kubik + 2 man</td>
+                    <td>500SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Lastbil 25 kubik + 2 man</td>
+                    <td>600SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Lastbil 20,22 kubik + 3 man</td>
+                    <td>750SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Lastbil 25 kubik + 3 man</td>
+                    <td>799SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Lastbil 35 kubik + 2 man</td>
+                    <td>750SEK/time</td>
+                </tr>
+                <tr>
+                    <td>Lastbil 45 kubik + 2 man</td>
+                    <td>850SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Lastbil 45 kubik + 3 man</td>
+                    <td>950SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Packmästare</td>
+                    <td>250SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Bärhjälp 2 personer</td>
+                    <td>400SEK/timme</td>
+                </tr>
+                <tr>
+                    <td>Fast framkörningsavgift på</td>
+                    <td>500SEK tillkommer för alla flytt</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">OBS: 3 timmar minimumdebitering på alla uppdrag. (минимальный заказ 3 часа)</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </div>
 <footer>
@@ -101,6 +169,7 @@
     </div>
 </footer>
 <script src="js/jquery-2.1.3.min.js"></script>
+<script src="libs/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 <script src="libs/owl-carusel/owl.carousel.min.js"></script>
 <script src="libs/waypoints/waypoints.min.js"></script>
 <script src="js/animate-css.js"></script>
