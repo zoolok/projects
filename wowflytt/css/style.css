@@ -1019,6 +1019,71 @@ label{
     left: 0;
     background-color: rgba(0,0,0,0.5);
 }
+.desc-none{
+    display: none;
+}
+.mob-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #fff;
+    border-bottom:1px solid #ededed;
+    z-index: 100;
+}
+.menu-button{
+    position: absolute;
+    width: 29px;
+    height: 35px;
+    top: 21px;
+    right: 19px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-button span{
+    width: 29px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 6px;
+}
+.menu-button span:last-child{
+    margin-bottom: 8px;
+}
+.menu-button p{
+    font: 700 12px/10px "Akrobat";
+    margin: 0;
+    letter-spacing: 1px;
+}
+.mob-header nav{
+    display: none;
+}
+.mob-header .top-ico{
+    height: 75px;
+}
+.close-menu{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    bottom: 23px;
+   left:calc(50% - 11px);
+    cursor: pointer;
+    background: url(../images/close.png) 0 0 no-repeat;
+
+}
+.mob-header nav{
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: -7px;
+    box-shadow: 0 7px 9px -4px #999;
+}
+.mob-header nav ul li {
+    padding: 15px 0;
+}
 /* *************** MOBILE **************** */
 
 @media only screen and (max-width:768px){
@@ -1026,7 +1091,8 @@ label{
         overflow: auto!important;
     }
     .desc-none{
-        display: block;}
+        display: block;
+    }
 
     .container{
         width: 100%;
@@ -1035,5 +1101,32 @@ label{
     .mb-none{
         display: none;
     }
-
+    .top-slider{
+        margin-top: 75px;
+    }
+    .slide-text {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
+    .slide-text h2 {
+        font: 400 36px/40px "Akrobat", sans-serif;
+        margin-bottom: 33px;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+    .item{
+        min-height: 500px;
+    }
+    .shema h1, .serv-wrap h2, .gallery-line h2, .price-info h2 {
+        font: 400 27px "Akrobat", sans-serif;
+    }
+    .shema h1::before, .serv-wrap h2::before, .gallery-line h2::before, .price-info h2::before {
+        font: 400 42px "Akrobat", sans-serif;
+        top: -25px;
+    }
 }

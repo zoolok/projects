@@ -120,18 +120,22 @@ $(document).ready(function () {
           MENU
 ----------------------------------------------------------- */
 
-    var mnu = $('.main-menu');
+    var mnu = $('.mob-header nav');
 
     $('.menu-button').click(function () {
-        mnu.animate({right: '0'}, 400);
-        $('.main-menu ul li').addClass('animated fadeInUp');
+        mnu.slideDown();
+        $('.mob-header nav ul li').addClass('animated fadeInLeft');
+        $('.menu-button span').css('background-color','#fc0000')
     });
 
     $('.close-menu').click(function () {
-        mnu.animate({right: '-9999'}, 400);
-        $('.main-menu ul li').removeClass('animated fadeInUp');
+        mnu.slideUp();
+        $('.menu-button span').css('background-color','#000')
     });
 
+    $('.mob-header nav ul li').each(function (index) {
+        $(this).addClass('delay-' + (index+1));
+    });
     /* --------------------------------------------------------
        ANIMATIONS
 ----------------------------------------------------------- */
