@@ -72,11 +72,9 @@ $(document).ready(function () {
     /* --------------------------------------------------------
        SHEMA SLIDER
 ----------------------------------------------------------- */
-    if(document.body.clientWidth > 768) {
+
         var pi = $('.stage ul li');
-    }else{
-        var pi = $('.nav-dots span');
-    }
+
     var shema_img = $('[class^="shema-item-"]');
     /*console.log(shema_img);*/
 

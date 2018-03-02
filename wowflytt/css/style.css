@@ -1099,7 +1099,7 @@ label{
         padding:0 0 0 0;
     }
     .mb-none{
-        display: none;
+        display: none!important;
     }
     .top-slider{
         margin-top: 75px;
@@ -1122,11 +1122,30 @@ label{
     .item{
         min-height: 500px;
     }
+    .owl-dots {
+        bottom: calc(100% + 200px);
+        left: 16px;r;
+    }
+    .shema {
+        padding-top: 0;
+    }
+    .shema .container{
+        flex-direction: column;
+        padding: 0 16px;
+    }
     .shema h1, .serv-wrap h2, .gallery-line h2, .price-info h2 {
         font: 400 27px "Akrobat", sans-serif;
     }
     .shema h1::before, .serv-wrap h2::before, .gallery-line h2::before, .price-info h2::before {
         font: 400 42px "Akrobat", sans-serif;
         top: -25px;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-contact img {
+        display: block;
+        margin: 0 auto;
     }
 }
