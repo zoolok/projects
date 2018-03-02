@@ -417,7 +417,7 @@ button:hover{
     display: none;
 }
 .shema-item-1{
-    display: block;
+    display: flex;
 }
 .stage{
     margin-right: 122px;
