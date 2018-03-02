@@ -25,7 +25,7 @@
         <div class="header-info flex">
             <div class="top-info flex">
                 <div class="work-hour">Mon-Sun 8:00-17:00</div>
-                <div class="order-but"><button>skicka meddelande</button></div>
+                <div class="order-but"><button name="popup">skicka meddelande</button></div>
                 <div class="top-adress">
                     <p class="addr">Atlasvägen 53, 13133 Nacka</p>
                     <p class="phone">08 317 178 - 0735 60 04 99</p>
@@ -107,6 +107,21 @@
             законом</p>
     </div>
 </footer>
+<div class="worm-wrap">
+    <form id="pop-up" class="flex" method="post">
+        <span class="close"></span>
+        <h3>Оставьте заявку</h3>
+        <p>и мы свяжемся с Вами в ближайшее время</p>
+        <input type="text" name="name" placeholder="Namn" required>
+        <input type="email" name="email" placeholder="E-post" required>
+        <textarea name="message"  cols="30" rows="10" placeholder="Meddelande"></textarea>
+        <button>skicka</button>
+        <div class="polisy-wrap flex">
+            <input type="checkbox" checked required id="policy">
+            <label for="policy">Jag håller med integritetspolicy</label>
+        </div>
+    </form>
+</div>
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="libs/owl-carusel/owl.carousel.min.js"></script>
 <script src="libs/waypoints/waypoints.min.js"></script>

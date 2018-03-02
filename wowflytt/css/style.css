@@ -786,6 +786,9 @@ a.fb{
     -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
+    -webkit-box-shadow: 0 10px 29px -13px #000;
+    -moz-box-shadow: 0 10px 29px -13px #000;
+    box-shadow: 0 10px 29px -13px #000;
 }
 .gallery-line h2 {
     text-align: left;
@@ -900,6 +903,85 @@ a.fb{
 }
 .pricelist tr:nth-child(even){
     background-color: #f1f1f1;
+}
+.worm-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1000;
+}
+.worm-wrap:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter:blur(200px);
+    background-color: #666;
+    opacity: 0.8  ;
+    z-index: -1;
+}
+#pop-up{
+    background-color: #fff;
+    flex-direction: column;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
+    padding:45px;
+    position: relative;
+    align-items: center;
+}
+#pop-up input, #pop-up textarea{
+    width: 220px;
+    height: 50px;
+    color: #000;
+    background-color:transparent;
+    border:1px solid #000;
+    margin-bottom: 20px;
+    padding:0 15px;
+}
+#pop-up input[type="checkbox"]{
+    margin: 0;
+    width: unset;
+    height: unset;
+    margin-right: 10px;
+}
+#pop-up textarea{
+    height: 72px;
+    padding-top: 15px;
+}
+#pop-up h3{
+    font:400 30px "Akrobat";
+    text-transform: uppercase;
+    text-align: center;
+}
+#pop-up p{
+    font:400 18px "Akrobat";
+    text-align: center;
+}
+label{
+    font-family: "Akrobat";
+}
+.close{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 13px;
+    right: 13px;
+    cursor: pointer;
+    background: url(../images/close.png) 0 0 no-repeat;
+}
+.close:hover{
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.polisy-wrap{
+    margin-top: 25px;
 }
 /* *************** MOBILE **************** */
 

@@ -145,14 +145,36 @@ $(document).ready(function () {
     /* --------------------------------------------------------
        PRICE SLIDER
 ----------------------------------------------------------- */
-    $("#price-slider").slider({
-        value:0,
-        min: 0,
-        max: 100,
-        step: 1,
-        slide: function( event, ui ) {
-            $( "#amount" ).val(ui.value + ' kvm' );
-            var arg =  parseInt(ui.value);
+    if ($("#price-slider").length >0){
+
+        $("#price-slider").slider({
+            value:0,
+            min: 0,
+            max: 100,
+            step: 1,
+            slide: function( event, ui ) {
+                $( "#amount" ).val(ui.value + ' kvm' );
+                var arg =  parseInt(ui.value);
+                switch(true){
+                    case arg <= 30:
+                        $( ".summa" ).html( (arg*45) + ' SEK');
+                        break;
+                    case arg > 30 && arg <= 45:
+                        $( ".summa" ).html( (arg*40) + ' SEK');
+                        break;
+                    case arg > 45 && arg <= 60:
+                        $( ".summa" ).html( (arg*35) + ' SEK');
+                        break;
+                    case arg > 60 :
+                        $( ".summa" ).html( (arg*30) + ' SEK');
+                        break;
+                }
+            }
+        });
+
+        $('#amount').change(function () {
+            var arg =  $(this).val();
+            $("#price-slider").slider({value:arg});
             switch(true){
                 case arg <= 30:
                     $( ".summa" ).html( (arg*45) + ' SEK');
@@ -167,25 +189,17 @@ $(document).ready(function () {
                     $( ".summa" ).html( (arg*30) + ' SEK');
                     break;
             }
-        }
-    });
+        });
 
-    $('#amount').change(function () {
-        var arg =  $(this).val();
-        switch(true){
-            case arg <= 30:
-                $( ".summa" ).html( (arg*45) + ' SEK');
-                break;
-            case arg > 30 && arg <= 45:
-                $( ".summa" ).html( (arg*40) + ' SEK');
-                break;
-            case arg > 45 && arg <= 60:
-                $( ".summa" ).html( (arg*35) + ' SEK');
-                break;
-            case arg > 60 :
-                $( ".summa" ).html( (arg*30) + ' SEK');
-                break;
-        }
+    }
+    /* --------------------------------------------------------
+  POP UP
+----------------------------------------------------------- */
+    $('[name="popup"]').click(function () {
+        $('.worm-wrap').css('display','flex');
+    });
+    $('.close').click(function () {
+        $('.worm-wrap').css('display','none');
     });
 });
 
