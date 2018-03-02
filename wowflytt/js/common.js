@@ -114,7 +114,7 @@ $(document).ready(function () {
         }
         nsNext.addClass('active').trigger('click');
     }
-    setInterval(nextStepFn, 3000);
+    setInterval(nextStepFn, 5000);
 
     /* --------------------------------------------------------
           MENU
