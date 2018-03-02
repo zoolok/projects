@@ -983,18 +983,27 @@ label{
 .polisy-wrap{
     margin-top: 25px;
 }
+.blog-post-content p{
+    font: 400 18px/30px "Open Sans";
+}
+.blog-post-img{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .blog-post-img, .blog-post-img span{
     position: relative;
 }
 .blog-post-img p, .blog-post-img h2{
     position: absolute;
     color: #fff;
-    top: 50%;
-    left: 50%;
 }
 .blog-post-img h2{
     font:700 60px "Akrobat";
     text-transform: uppercase;
+}
+.date{
+    margin-bottom: 100px;
 }
 .blog-post-img span{
     width: 100%;
