@@ -25,6 +25,7 @@ $(document).ready(function () {
                 dots:true,
                 loop:false,
                 center:true,
+                dotsContainer: '.dots',
                 autoplay:true
             });
         }
@@ -85,7 +86,7 @@ $(document).ready(function () {
         });
 
         $(this).addClass('active');
-        shema_img.fadeOut(300);
+        shema_img.fadeOut(0);
 
         var numit = parseInt($(this).attr('data-shema'));
 
@@ -97,7 +98,7 @@ $(document).ready(function () {
 
         shema_img.each(function (index) {
             if (index == cur) {
-                $(this).fadeIn(300);
+                $(this).fadeIn(0);
             }
         });
     });
@@ -121,13 +122,13 @@ $(document).ready(function () {
     var mnu = $('.mob-header nav');
 
     $('.menu-button').click(function () {
-        mnu.slideDown();
+        mnu.slideDown(800);
         $('.mob-header nav ul li').addClass('animated fadeInLeft');
         $('.menu-button span').css('background-color','#fc0000')
     });
 
     $('.close-menu').click(function () {
-        mnu.slideUp();
+        mnu.slideUp(800);
         $('.menu-button span').css('background-color','#000')
     });
 
