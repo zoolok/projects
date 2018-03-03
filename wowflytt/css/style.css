@@ -602,6 +602,9 @@ a.fb{
     text-decoration: underline;
     font:400 14px "Akrobat";
 }
+.copyright img{
+    max-height: 30px;
+}
 .inner-title{
     background: url(../images/inner-title-bg.png) 0 0 no-repeat;
     -webkit-background-size: cover;

@@ -74,7 +74,7 @@ $(document).ready(function () {
        SHEMA SLIDER
 ----------------------------------------------------------- */
 
-        var pi = $('.stage ul li');
+    var pi = $('.stage ul li');
 
     var shema_img = $('[class^="shema-item-"]');
     /*console.log(shema_img);*/
@@ -175,7 +175,11 @@ $(document).ready(function () {
             }
         });
 
-        $('#amount').change(function () {
+        $('#amount').on("click",function () {
+            $(this).val("");
+        });
+
+        $('#amount').on("input",function () {
             var arg =  $(this).val();
             $("#price-slider").slider({value:arg});
             switch(true){
