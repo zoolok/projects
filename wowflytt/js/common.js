@@ -62,7 +62,7 @@ $(document).ready(function () {
         $('[data-shema="2"]').css('delay-3');
         $('[data-shema="3"]').css('delay-4');
         $('[data-shema="4"]').css('delay-5');
-        $('.serv-desc h2').css('delay-3');
+        $('.serv-desc h2').css('delay-2');
         $('.gallery-line h2').css('delay-3');
         $('[class^="figovina-"]').css('delay-4');
     }

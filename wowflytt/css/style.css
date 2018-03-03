@@ -337,7 +337,7 @@ nav ul li a{
     text-transform: uppercase;
     font:700 20px 'Akrobat';
 }
-button{
+button, a.link{
     color: #fff;
     text-transform: uppercase;
     font:700 18px 'Akrobat';
@@ -349,10 +349,14 @@ button{
     cursor: pointer;
     outline: none;
 }
-button:hover{
+button:hover,  a.link:hover{
     background-color: #fff;
     border:1px solid #ed1c24;
     color: #ed1c24;
+}
+a.link{
+    text-decoration: none;
+    padding:18px 54px;
 }
 .slide-text{
     position: absolute;
@@ -666,16 +670,16 @@ a.fb{
 .serv-wrap h2 {
     margin-bottom: 15px;
     margin-top: 35px;
-    text-align: left;
+    /*text-align: left;*/
 }
 .serv-wrap h2::before {
-    left: -60px;
+  /*  left: -60px;*/
 }
 .serv-desc h3{
     font:400 36px/42px "Akrobat";
 }
-.serv-desc button{
-    margin-top: 28px;
+.serv-desc p{
+    margin-bottom: 56px;
 }
 .serv-img{
     position: relative;
