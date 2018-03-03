@@ -177,6 +177,7 @@ $(document).ready(function () {
 
         $('#amount').on("click",function () {
             $(this).val("");
+            $("#price-slider").slider({value:0});
         });
 
         $('#amount').on("input",function () {

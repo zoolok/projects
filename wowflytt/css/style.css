@@ -69,6 +69,7 @@ a:hover{
     display: block;
 }
 .flex{
+    display: -webkit-flex;
     display: flex;
 }
 .container {
@@ -751,6 +752,9 @@ a.fb{
     bottom: -85px;
     background: url(../images/el-11.png) 0 0 no-repeat;
 }
+.info{
+    margin-left: 45px;
+}
 .contact-info .container{
     justify-content: space-between;
     padding:38px 0 45px 0;
@@ -812,11 +816,11 @@ a.fb{
     box-shadow: 0 10px 29px -13px #000;
 }
 .gallery-line h2 {
-    text-align: left;
+  /*  text-align: left;*/
     margin-bottom: 11px;
 }
 .gallery-line h2::before {
-    left: -83px;
+  /*  left: -83px;*/
 }
 .blog-post{
     margin-bottom: 55px;
@@ -1007,6 +1011,9 @@ label{
     font: 400 18px/30px "Open Sans";
 }
 .blog-post-img{
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1023,7 +1030,7 @@ label{
     text-transform: uppercase;
 }
 .date{
-    margin-bottom: 100px;
+    top: calc(50% - 80px);
 }
 .blog-post-img span{
     width: 100%;
