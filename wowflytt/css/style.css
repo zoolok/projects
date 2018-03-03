@@ -854,11 +854,11 @@ a.fb{
     padding-bottom: 30px;
 }
 .price-info h2{
-    text-align: left;
+   /* text-align: left;*/
     margin-bottom: 65px;
 }
 .price-info h2::before {
-    left: -45px;
+    /*left: -45px;*/
 }
 #amount{
     border: none;
@@ -1233,4 +1233,84 @@ label{
         width: 100%;
         margin-top: 55px;
     }
+    .inner-title {
+        background: url(../images/inner-title-bg.png) 50% 77px no-repeat;
+        padding: 90px 16px 10px 16px;
+        margin-bottom: 0;
+    }
+    .about-content p, .serv-desc p {
+        font: 400 16px/30px "Open Sans";
+        padding: 0 16px;
+    }
+    .top-img img {
+        margin: 0 0 25px 32px;
+    }
+    .serv-wrap h2 {
+        margin-bottom: 0;
+    }
+    .serv-desc h3 {
+        font: 400 23px/28px "Akrobat";
+        padding: 0 16px;
+    }
+    .serv-img {
+        order: -1;
+    }
+    .serv-img img{
+        width: 100%;
+    }
+    .serv-list-2, .serv-list-3 {
+        padding: 0;
+    }
+    .gal-img img, .blog-post img {
+        width: 100vw;
+    }
+    .blog-post {
+        flex-direction: column;
+    }
+    .post-desc {
+        margin-left: 0;
+        padding: 0 16px;
+    }
+    .post-desc h3 {
+        font: 400 30px "Akrobat";
+    }
+    .blog-post-img img{
+        width: 100vw;
+        min-height: 300px;
+        object-fit: cover;
+    }
+    .blog-post-img h2 {
+        font: 700 38px "Akrobat";
+    }
+    .blog-post-content p {
+        font: 400 16px/30px "Open Sans";
+        padding: 0 16px;
+    }
+    .calculate {
+        margin: 0 auto 53px auto;
+        padding:3px0 16px;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .price-info h2 {
+        margin:25px 0;
+    }
+    #amount{
+        width: 100%;
+    }
+    .summa {
+        margin:12px 0;
+    }
+    .table-wrap {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pricelist, .contact-map, .contact-map iframe{
+        width: 100%;
+    }
+    .pricelist tbody td {
+        font: 400 14px "Open Sans";
+        padding-left: 10px;
+    }
+
 }
