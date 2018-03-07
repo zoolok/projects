@@ -183,8 +183,8 @@ height: auto;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url(../images/lubomirov-main.png)0 0 no-repeat;
-    top: -25px;
+    background: url(../images/lubomirov-main.png)0 -25px no-repeat;
+    top: 0;
     left: -150px;
 }
 .main-content h1{
@@ -273,14 +273,79 @@ height: auto;
     z-index: 0;
 }
 .down:hover{
-    animation: bounce 1s ease-in-out;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 /********************* services *******************/
 .services{
     width: 100%;
     height: 862px;
     background: url(../images/serv-bg.jpg) 0 0 no-repeat;
+    padding:141px 0 115px 0;
 }
 .serv-slider{
     width: 564px;
+}
+.item{
+    overflow: hidden;
+}
+.item h2{
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 38px;
+    margin-bottom: 55px;
+}
+.item p{
+    font:100 18px/30px "Open Sans";
+    margin-bottom:47px;
+}
+.item button{
+    margin: 130px 0 30px 30px;
+}
+.owl-nav{
+    display: flex;
+    position: absolute;
+    bottom: 145px;
+    width: 275px;
+    justify-content:space-between;
+}
+.owl-prev, .owl-next{
+     width: 71px;
+     height: 71px;
+     cursor: pointer;
+ }
+.owl-prev:hover, .owl-next:hover{
+    filter: drop-shadow( 0 0 5px #ffe9b3);
+}
+.owl-prev{
+       background: url(../images/nav-left.png) 0 0 no-repeat;
+   }
+.owl-next{
+    background: url(../images/nav-right.png) 0 0 no-repeat;
+    order:1;
+}
+.owl-dots{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 175px;
+    left: 120px;
+}
+.owl-dot{
+    width: 7px;
+    height: 7px;
+    background-color: #999;
+    margin-right: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+}
+.owl-dot.active{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
 }

@@ -23,13 +23,11 @@ $(document).ready(function () {
                 nav:true,
                 navText:["",""],
                 dots:true,
-                loop:false,
+                loop:true,
                 center:true,
-                dotsContainer: '.dots',
                 autoplay:true
             });
         }
-        $('.owl-dots').wrap("<div class='container'></div>");
     });
 
 
@@ -46,5 +44,16 @@ $(document).ready(function () {
     $('.m-close-menu').click(function () {
         menu.fadeToggle(300);
         menu.removeClass('fixed');
+    });
+
+    /* --------------------------------------------------------
+               ADD ELEMENTS
+----------------------------------------------------------- */
+    $('.down').click(function () {
+        var hs = $('.main').height();
+        /*console.log(hs);*/
+        $('html, body').stop().animate({
+            scrollTop: hs +'px'
+        },1000);
     });
 });
