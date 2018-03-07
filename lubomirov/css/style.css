@@ -203,10 +203,10 @@ nav ul:first-of-type li a:hover:before{
     position: absolute;
     width: 650px;
     height: 1px;
-    background-image: linear-gradient(to right,  #fff 0%, #fff 25%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
-    background-image: -webkit-linear-gradient(to right,  #fff 0%, #fff 25%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
-    background-image:-moz-linear-gradient(to right,  #fff 0%, #fff 25%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
-    background-image: -o-linear-gradient(to right,  #fff 0%, #fff 25%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
+    background-image: linear-gradient(to right,  #fff 0%, #fff 30%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
+    background-image: -webkit-linear-gradient(to right,  #fff 0%, #fff 30%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
+    background-image:-moz-linear-gradient(to right,  #fff 0%, #fff 30%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
+    background-image: -o-linear-gradient(to right,  #fff 0%, #fff 30%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 75%, #fff 75%, #fff 100%);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -214,7 +214,7 @@ nav ul:first-of-type li a:hover:before{
     transform: rotate(-45deg);
     z-index: 0;
     top: 70%;
-    left: 0;
+    left: -100px;
 }
 .main-content h1 span{
     font-size: 60px!important;
@@ -235,6 +235,7 @@ nav ul:first-of-type li a:hover:before{
     position: relative;
     margin: 63px 0;
     cursor: pointer;
+    z-index: 1;
 }
 .main-content button:before{
     content: '';
