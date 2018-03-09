@@ -105,14 +105,14 @@ header nav{
     margin-top: 42px;
     justify-content: space-between;
 }
-nav i{
+li i{
     color: #ffe9b3;
 }
-nav i{
+li i{
     color: #ffe9b3;
     position: relative;
 }
-nav i:after{
+li i:after{
     content: "";
     position: absolute;
     width: 34px;
@@ -469,5 +469,55 @@ footer{
     width: 100%;
     height: 352px;
     background: url(../images/footer-bg.jpg) 50% 0 no-repeat;
-    padding:69px 0 79px 0;
+    padding:43px 0 60px 0;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu{
+    margin-top: 25px;
+}
+.footer-menu li{
+    margin-bottom: 20px;
+}
+.footer-copyright{
+    margin-top: 35px;
+}
+.footer-copyright p{
+    margin: 27px 0 30px 0 ;
+    font:100 12px/18px "Open Sans";
+}
+.policy{
+    font:700 12px/18px "Open Sans";
+    text-decoration: underline;
+}
+.footer-center{
+    text-align: center;
+    margin-left: 120px;
+}
+.footer-center ul{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer-center ul li{
+    margin-right: 30px;
+}
+.footer-center ul li:last-child{
+    margin-right: 0;
+}
+.footer-center h3{
+    font-size: 56px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-shadow:  0 0 10px #fff;
+    position: relative;
+    z-index: 1;
+    background-color:transparent;
+    margin-bottom: 25px;
+}
+.footer-center h3 span{
+    font-size: 40px!important;
 }
