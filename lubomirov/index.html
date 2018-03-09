@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="libs/owl-carusel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl-carusel/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="css/style.css" />
+
+
+
 </head>
 <body>
 <section class="main flex">
@@ -83,18 +88,82 @@
             <button class="video">видео</button>
         </div>
         <div class="slider-vievport">
-            <div class="slider-foto owl-carousel visible">
-                <img src="images/foto-1.jpg" alt="">
+            <div class="slider-foto visible">
+                <div class=""><img src="images/foto-1.jpg" alt=""></div>
+                <div class=""><img src="images/foto-1.jpg" alt=""></div>
+                <div class=""><img src="images/foto-1.jpg" alt=""></div>
+                <div class=""><img src="images/foto-1.jpg" alt=""></div>
+
             </div>
-            <div class="slider-video owl-carousel hidden">
-                <iframe width="854" height="480" src="https://www.youtube.com/embed/et281UHNoOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="slider-video hidden">
+                <div class="">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/et281UHNoOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/et281UHNoOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/et281UHNoOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/et281UHNoOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<section class="news">
+    <div class="container">
+        <h2>Новости и блог</h2>
+        <div class="controls">
+            <ul class="flex">
+                <li class="filter active" data-filter="all">Все</li>
+                <li class="filter" data-filter=".about">Обо мне</li>
+                <li class="filter" data-filter=".instagram">Instagram</li>
+                <li class="filter" data-filter=".travels">Путешествия</li>
+                <li class="filter" data-filter=".history">История</li>
+                <li class="filter" data-filter=".religion">Религия</li>
+            </ul>
+        </div>
+        <div id="news-grid">
+            <div class="mix news-item about">
+                <p>Всегда рад повидаться с родными
+                    соратниками волшебного искусства...</p>
+                <span class="date">16.12.2017 23:39</span>
+                <a href=""><img src="images/news-foto-1.jpg" alt=""></a>
+            </div>
+            <div class="mix news-item about">
+                <p>Всегда рад повидаться с родными
+                    соратниками волшебного искусства...</p>
+                <span class="date">16.12.2017 23:39</span>
+                <a href=""><img src="images/news-foto-1.jpg" alt=""></a>
+            </div>
+            <div class="mix news-item instagram">
+                <p>Всегда рад повидаться с родными
+                    соратниками волшебного искусства...</p>
+                <span class="date">16.12.2017 23:39</span>
+                <a href=""><img src="images/news-foto-1.jpg" alt=""></a>
+            </div>
+            <div class="mix news-item history">
+                <p>Всегда рад повидаться с родными
+                    соратниками волшебного искусства...</p>
+                <span class="date">16.12.2017 23:39</span>
+                <a href=""><img src="images/news-foto-1.jpg" alt=""></a>
+            </div>
+        </div>
+        <a href="" class="zapis">перейти в блог</a>
+    </div>
+</section>
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="libs/owl-carusel/owl.carousel.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
 <script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/mixitup/mixitup.min.js"></script>
 <script src="js/animate-css.js"></script>
 <script src="js/common.js"></script>
 </body>
