@@ -391,6 +391,9 @@ button.video.active{
     color: #000;
     background-color: #ffe9b3
 }
+.slider-foto{
+    box-shadow: 13px 11px 35px 0px rgba(0, 0, 0, 0.52);
+}
 .slider-foto, .slider-video{
     position: absolute;
     top: 0;
