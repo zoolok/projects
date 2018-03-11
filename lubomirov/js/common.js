@@ -5,7 +5,7 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
     $(function() {
         "use strict";
-        if ( $( "[data-fancybox]" ).length > 0 ) {
+        if ( $("[data-fancybox]").length > 0 ) {
             $("[data-fancybox]").fancybox({
                 // Options will go here
             });
@@ -16,7 +16,7 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
     $(function() {
         "use strict";
-        if ( $( ".main-slider" ).length > 0 ) {
+        if ( $(".main-slider").length > 0 ) {
 
             $('.main-slider').owlCarousel({
                 items:1,
@@ -102,5 +102,15 @@ $(document).ready(function () {
         $(".controls li").removeClass("active");
         $(this).addClass("active");
     });
-
+    /* --------------------------------------------------------
+        ORDER POP UP
+----------------------------------------------------------- */
+    $('.popup').click(function () {
+        $('.content-wrap').addClass('blured');
+        $('.popup-wrap').addClass('flex');
+    });
+    $('.close').click(function () {
+        $('.popup-wrap').removeClass('flex');
+        $('.content-wrap').removeClass('blured');
+    });
 });
