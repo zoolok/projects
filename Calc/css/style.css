@@ -1,9 +1,52 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic);
+@font-face {
+    font-family: timesbd;
+    src: url(../fonts/timesbd.ttf);
+}
+
+@font-face {
+    font-family: timesbi;
+    src: url(../fonts/timesbi.ttf);
+}
+
+@font-face {
+    font-family: cyrillicold;
+    src: url(../fonts/cyrillicold.ttf);
+}
+
+@font-face {
+    font-family: arialbd;
+    src: url(../fonts/arialbd.ttf);
+}
+
+@font-face {
+    font-family: Academy;
+    src: url(../fonts/academyc.otf);
+}
+
+@font-face {
+    font-family: anastasia;
+    src: url(../fonts/anastasia.ttf);
+}
+
+@font-face {
+    font-family: asessor;
+    src: url(../fonts/4242.ttf);
+}
+
+@font-face {
+    font-family: carolina;
+    src: url(../fonts/4307.ttf);
+}
+
 .container-calc{
     width: 1200px;
     height: auto;
     position: relative;
     margin: 0 auto;
+}
+.flex{
+    display: flex!important;
 }
 form p{
     font-weight: 700;
@@ -32,9 +75,10 @@ form p{
      font-size: 14px;
  }
 .image-area li span{
-    font-size: 13px;
+    font-size: 12px;
     padding-left: 10px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 .tab-wrap{
     display: flex;
@@ -93,4 +137,75 @@ select{
     height: 50px;
     font-size: 20px;
     text-align: center;
+}
+.portret label:last-of-type{
+    margin-left: 30px;
+}
+.port-select{
+    display: none;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.port-select .input-grup{
+    width:calc(33% - 10px);
+}
+.port-select .input-grup:nth-child(3){
+    margin-bottom: 30px;
+}
+.port-select form{
+    flex-grow:1;
+}
+.port-select img{
+    width: 57%;
+}
+.select-font{
+    display: flex;
+    flex-direction:column;
+}
+.select-font label{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items:center;
+    padding-left: 10px;
+}
+.select-font label input{
+    margin-right: 15px;
+}
+.cvetnik label:last-of-type{
+    margin-left: 30px;
+}
+#memorial, #FigureFon{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+#imgLoad{
+    position: absolute;
+    top: 80px;
+}
+#imgLoad img{
+    width: 70px;
+    height: auto;
+    filter:grayscale(100%);
+}
+#NameLoad{
+    position: absolute;
+    top: 169px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+}
+#DateLoad{
+    position: absolute;
+    top: 206px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
 }

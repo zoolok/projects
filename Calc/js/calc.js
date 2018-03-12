@@ -16,9 +16,34 @@ $(document).ready(function () {
                     SELECT LIST
 ----------------------------------------------------------- */
     $('.material-wrap label').click(function () {
-        $('#mat').html($(this).next('input').val());
+        $('#mat').html($(this).children('input').val());
     });
-
+    $('.model-slider label').click(function () {
+        $('#form').html($(this).children('input').val());
+        $('#FigureFon').html("<img src=" + $(this).prev().attr('src') + ">");
+    });
+    $('#sizeStone').change(function () {
+        $('#razm').html($('#sizeStone option:selected').text());
+    });
+    $('.portret label').click(function () {
+        if($(this).attr('for') == 'port-da'){
+            $('.port-select').addClass('flex');
+            $('#imgLoad').css('display','block')
+        }else{
+            $('.port-select').removeClass('flex');
+            $('#port').html('нет');
+            $('#imgLoad').css('display','none')
+        }
+    });
+    $('.port-select label').click(function () {
+        $('#port').html($(this).children('input').val());
+    });
+    $('.select-font label').click(function () {
+        $('#NameLoad').css('font-family',$(this).children('input').val());
+    });
+    $('.cvetnik label').click(function () {
+        $('#cvetn').html($(this).children('input').val());
+    });
     /* --------------------------------------------------------
                         INDEX OWL CARUSEL
 ----------------------------------------------------------- */
