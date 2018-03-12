@@ -10,6 +10,10 @@ $(document).ready(function () {
         $('.granit-list, .mramor-list').removeClass('visible');
         $(at).addClass('visible');
     });
+
+    $('.material-wrap label').click(function () {
+        $('#mat').html($(this).next('input').val());
+    });
     /* --------------------------------------------------------
                                   INDEX OWL CARUSEL
 ----------------------------------------------------------- */
@@ -20,7 +24,7 @@ $(document).ready(function () {
             $('.model-slider').owlCarousel({
                 items:3,
                 nav:true,
-                navText:["<",">"],
+                navText:["&lsaquo;","&rsaquo;"],
                 dots:false,
                 loop:true,
                 center:true,

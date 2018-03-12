@@ -5,6 +5,11 @@
     position: relative;
     margin: 0 auto;
 }
+form p{
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 22px;
+}
 .calc-area, .image-area{
     font: 100 18px/25px "Open Sans";
     width: calc(50% - 100px);
@@ -16,10 +21,24 @@
 }
 .image-area{
     position: fixed;
-    right: 0;
-    top: calc(50% - 250px);
-    height: 500px;
+    right: 200px;
+    top: calc(50% - 350px);
+    width: 500px;
+    height: 700px;
+    padding: 10px 20px;
     box-shadow: 0 0 1px 1px #000;
+}
+.image-area li{
+     font-size: 14px;
+ }
+.image-area li span{
+    font-size: 13px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+.tab-wrap{
+    display: flex;
+    justify-content: center;
 }
 button.tab{
     border:1px solid #000;
@@ -60,4 +79,18 @@ button.tab:hover, button.tab.active{
 }
 .input-grup label{
     margin: 0 auto;
+}
+.owl-nav{
+    top: calc(50% - 38px);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 76px;
+}
+select{
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
 }

@@ -23,74 +23,90 @@
                 <div class="granit-list visible">
                     <div class="input-grup">
                         <img src="images/gabro.png" alt="Габбро Диабаз">
-                        <input type="radio" id="granit-1" name="material" value="Габбро Диабаз" checked>
-                        <label for="granit-1">Габбро Диабас</label>
+                        <label for="granit-1"><input type="radio" id="granit-1" name="material" value="Габбро Диабаз" checked>Габбро Диабаз</label>
+                        <input type="hidden" value="Гранит Габбро Диабаз">
                     </div>
                     <div class="input-grup">
                         <img src="images/dym.png" alt="Дымовский">
-                        <input type="radio" id="granit-2" name="material" value="Дымовский">
-                        <label for="granit-2">Дымовский</label>
+                        <label for="granit-2"><input type="radio" id="granit-2" name="material" value="Дымовский">Дымовский</label>
+                        <input type="hidden" value="Гранит Дымовский">
                     </div>
                 </div>
                 <div class="mramor-list">
                     <div class="input-grup">
                         <img src="images/polevskoy.png" alt="Полевской">
-                        <input type="radio" id="mramor-1" name="material" value="Полевской">
-                        <label for="mramor-1">Полевской</label>
+                        <label for="mramor-1"><input type="radio" id="mramor-1" name="material" value="Полевской">Полевской</label>
+                        <input type="hidden" value="Мрамор Полевской">
                     </div>
                 </div>
             </div>
+            <hr>
             <p>Выберите модель</p>
             <div class="model-slider owl-carousel">
                 <div class="input-grup">
                     <img src="images/forma-1.jpg" alt="форма - 1">
-                    <input type="radio" id="forma-1" name="forma" value="forma-1">
-                    <label for="forma-1">форма - 1</label>
+                    <label for="forma-1"><input type="radio" id="forma-1" name="forma" value="forma-1">форма - 1</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-2.jpg" alt="форма - 2">
-                    <input type="radio" id="forma-2" name="forma" value="forma-2">
-                    <label for="forma-2">форма - 2</label>
+                    <label for="forma-2"><input type="radio" id="forma-2" name="forma" value="forma-2">форма - 2</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-3.jpg" alt="форма - 3">
-                    <input type="radio" id="forma-3" name="forma" value="forma-3">
-                    <label for="forma-3">форма - 3</label>
+                    <label for="forma-3"><input type="radio" id="forma-3" name="forma" value="forma-3">форма - 3</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-4.jpg" alt="форма - 4">
-                    <input type="radio" id="forma-4" name="forma" value="forma-4">
-                    <label for="forma-4">форма - 4</label>
+                    <label for="forma-4"><input type="radio" id="forma-4" name="forma" value="forma-4">форма - 4</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-5.jpg" alt="форма - 51">
-                    <input type="radio" id="forma-5" name="forma" value="forma-5">
-                    <label for="forma-5">форма - 5</label>
+                    <label for="forma-5"><input type="radio" id="forma-5" name="forma" value="forma-5">форма - 5</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-6.jpg" alt="форма - 6">
-                    <input type="radio" id="forma-6" name="forma" value="forma-6">
-                    <label for="forma-6">форма - 6</label>
+                    <label for="forma-6"><input type="radio" id="forma-6" name="forma" value="forma-6">форма - 6</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-7.jpg" alt="форма - 7">
-                    <input type="radio" id="forma-7" name="forma" value="forma-7">
-                    <label for="forma-7">форма - 7</label>
+                    <label for="forma-7"><input type="radio" id="forma-7" name="forma" value="forma-7">форма - 7</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-8.jpg" alt="форма - 8">
-                    <input type="radio" id="forma-8" name="forma" value="forma-81">
-                    <label for="forma-8">форма - 8</label>
+                    <label for="forma-8"><input type="radio" id="forma-8" name="forma" value="forma-8">форма - 8</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-9.jpg" alt="форма - 9">
-                    <input type="radio" id="forma-9" name="forma" value="forma-9">
-                    <label for="forma-9">форма - 9</label>
+                    <label for="forma-9"><input type="radio" id="forma-9" name="forma" value="forma-9">форма - 9</label>
                 </div>
             </div>
+            <hr>
+            <p>Выберите размер памятника</p>
+            <select id="sizeStone">
+                <option value="0" disabled>Выбрать размер</option>
+                <option value="1" selected>90*45*6</option>
+                <option value="2">100*50*6</option>
+                <option value="3">100*50*8</option>
+                <option value="4">110*50*8</option>
+                <option value="5">120*50*8</option>
+                <option value="6">100*70*8</option>
+                <option value="7">120*60*8</option>
+            </select>
+            <hr>
         </form>
     </div>
-    <div class="image-area"></div>
+    <div class="image-area">
+        <p>Выбранные параметры:</p>
+        <ul>
+            <li>Материал памятника:<span id="mat">---</span>;</li>
+            <li>Форма памятника:<span id="form">---</span>;</li>
+            <li>Размер памятника:<span id="razm">---</span>;</li>
+            <li>Портрет:<span id="port">---</span>;</li>
+            <li>Цветник:<span id="cvetn">---</span>;</li>
+        </ul>
+        <hr>
+        <div class="eskiz"></div>
+    </div>
 </div>
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
