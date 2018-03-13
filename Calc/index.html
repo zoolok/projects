@@ -23,7 +23,7 @@
                 <div class="granit-list visible">
                     <div class="input-grup">
                         <img src="images/gabro.png" alt="Габбро Диабаз">
-                        <label for="granit-1"><input type="radio" id="granit-1" name="material" value="Гранит Габбро Диабаз">Габбро Диабаз</label>
+                        <label for="granit-1"><input type="radio" id="granit-1" name="material" value="Гранит Габбро Диабаз" checked>Габбро Диабаз</label>
                     </div>
                     <div class="input-grup">
                         <img src="images/dym.png" alt="Дымовский">
@@ -42,7 +42,7 @@
             <div class="model-slider owl-carousel">
                 <div class="input-grup">
                     <img src="images/forma-1.jpg" alt="форма - 1">
-                    <label for="forma-1"><input type="radio" id="forma-1" name="forma" value="форма - 1">форма - 1</label>
+                    <label for="forma-1"><input type="radio" id="forma-1" name="forma" value="форма - 1" checked>форма - 1</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/forma-2.jpg" alt="форма - 2">
@@ -81,24 +81,24 @@
             <p>Выберите размер памятника</p>
             <select id="sizeStone">
                 <option value="0" disabled>Выбрать размер</option>
-                <option value="1">90*45*6</option>
+                <option value="1" selected>90*45*6</option>
                 <option value="2">100*50*6</option>
                 <option value="3">100*50*8</option>
                 <option value="4">110*50*8</option>
-                <option value="5">120*50*8</option>
-                <option value="6">100*70*8</option>
+                <option value="5">100*70*8</option>
+                <option value="6">120*50*8</option>
                 <option value="7">120*60*8</option>
             </select>
             <hr>
             <p>Портрет</p>
             <div class="portret flex">
-                <label for="port-da"><input type="radio" id="port-da" name="portret" value="Да">Да</label>
-                <label for="port-net"><input type="radio" id="port-net" name="portret" value="Нет" checked>Нет</label>
+                <label for="port-da"><input type="radio" id="port-da" name="portret" value="Да" checked>Да</label>
+                <label for="port-net"><input type="radio" id="port-net" name="portret" value="Нет">Нет</label>
             </div>
             <div class="port-select">
                 <div class="input-grup">
                     <img src="images/stone.png" alt="на камне">
-                    <label for="port-1"><input type="radio" id="port-1" name="vidport" value="На камне">На камне</label>
+                    <label for="port-1"><input type="radio" id="port-1" name="vidport" value="На камне" checked>На камне</label>
                 </div>
                 <div class="input-grup">
                     <img src="images/keram.png" alt="на керамике">
@@ -114,7 +114,7 @@
             <hr>
             <p>Шрифт надписи на памятник</p>
             <div class="select-font">
-                <label style="font-family: timesbd;" for="timesbd"><input type="radio" id="timesbd" name="fontfamily" value="timesbd">Фамилия Имя Отчество</label>
+                <label style="font-family: timesbd;" for="timesbd"><input type="radio" id="timesbd" name="fontfamily" value="timesbd" checked>Фамилия Имя Отчество</label>
                 <label style="font-family: timesbi;" for="timesbi"><input type="radio" id="timesbi" name="fontfamily" value="timesbi">Фамилия Имя Отчество</label>
                 <label style="font-family: cyrillicold;" for="cyrillicold"><input type="radio" id="cyrillicold" name="fontfamily" value="cyrillicold">Фамилия Имя Отчество</label>
                 <label style="font-family: arialbd;" for="arialbd"><input type="radio" id="arialbd" name="fontfamily" value="arialbd">Фамилия Имя Отчество</label>
@@ -126,9 +126,10 @@
             <hr>
             <p>Выбор цветника</p>
             <div class="cvetnik flex">
-                <label for="cvet-da"><input type="radio" id="cvet-da" name="cvetn" value="Да">Да</label>
+                <label for="cvet-da"><input type="radio" id="cvet-da" name="cvetn" value="Да" checked>Да</label>
                 <label for="cvet-net"><input type="radio" id="cvet-net" name="cvetn" value="Нет" checked>Нет</label>
             </div>
+            <button class="submit-form" type="submit"></button>
         </form>
     </div>
     <div class="image-area">
