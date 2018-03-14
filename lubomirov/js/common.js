@@ -49,9 +49,9 @@ $(document).ready(function () {
                         MOBILE MENU
 ----------------------------------------------------------- */
 
-    var menu = $('.mobile-menu');
+    var menu = $('.mob-menu');
 
-    $('.m-menu-button').click(function () {
+    $('.menu-button').click(function () {
         menu.fadeToggle(300);
         menu.addClass('fixed');
     });
