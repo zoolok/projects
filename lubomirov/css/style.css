@@ -470,7 +470,7 @@ li.filter:hover, li.filter.active{
 /******************** footer *********************/
 footer{
     width: 100%;
-    height: 352px;
+    height:auto;
     background: url(../images/footer-bg.jpg) 50% 0 no-repeat;
     padding:43px 0 60px 0;
 }
@@ -677,7 +677,7 @@ footer .container{
     .serv-slider {
         width: 100%;
     }
-    .serv-item h2 {
+    .serv-item h2, .news h2 {
         font-size: 36px;
         font-weight: 100;
         line-height: 30px;
@@ -695,7 +695,7 @@ footer .container{
         display: block;
     }
     .foto-video {
-        padding: 102px 0 0 0;
+        padding: 102px 0 150px 0;
     }
     .tabs{
         width: 100%;
@@ -727,7 +727,7 @@ footer .container{
         width: 71px;
         height: 71px;
         top: unset;
-        bottom: 50px;
+        bottom: -145px;
     }
     .slick-next {
         right: 0;
@@ -736,5 +736,39 @@ footer .container{
     .slick-prev {
         left: 0;
         background: url(../images/nav-left.png) 0 0 no-repeat;
+    }
+    .controls ul {
+        flex-wrap: wrap;
+        border: 1px solid #ffe9b3;
+    }
+    .news-item {
+        max-width: 100%;
+    }
+    .news-item img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .news-item p {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    footer{
+        -webkit-background-size: cover;
+        background-size: cover;
+         }
+    
+    footer .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-center {
+        margin-left: 0;
+    }
+    .footer-center h3 {
+        font-size: 39px;
+    }
+    .footer-center h3 span {
+        font-size: 30px !important;
     }
 }
