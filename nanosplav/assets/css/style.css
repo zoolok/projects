@@ -9,7 +9,9 @@
     transition: all 0.3s ease;
     outline: none;
 }
-:after, :before, :hover{
+:after,
+:before,
+:hover{
     box-sizing: border-box;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -139,7 +141,8 @@ header nav{
 .short-menu li:nth-of-type(2){
     margin: 0 50px 0 44px;
 }
-.top-phone, .top-adress{
+.top-phone,
+.top-adress{
     text-align: right;
 }
 .slider .container{
@@ -269,11 +272,14 @@ a.more{
 .map .container{
     padding: 0;
 }
+footer{
+    background-color:  #336699;
+}
 footer .container{
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    background-color:  #336699;
+
     padding: 40px 54px;
 }
 footer li{
@@ -282,7 +288,8 @@ footer li{
 .footer-contact {
     text-align: right;
 }
-.footer-contact li:last-of-type, .footer-menu li:last-of-type{
+.footer-contact li:last-of-type,
+.footer-menu li:last-of-type{
     margin-bottom: 0;
 }
 .sogl{
