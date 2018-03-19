@@ -20,8 +20,7 @@ $(document).ready(function () {
 
             $('.main-slider').owlCarousel({
                 items:1,
-                nav:true,
-                navText:["",""],
+                nav:false,
                 dots:true,
                 loop:true,
                 center:true,
