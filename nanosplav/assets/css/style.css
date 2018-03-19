@@ -35,6 +35,13 @@ h1, h2, h3, h4, h5, p{
     margin: 0;
     padding: 0;
 }
+h1{
+    font: 100 69px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #336699;
+    margin: 185px 0 134px 0;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -99,4 +106,45 @@ header nav{
 }
 .top-phone, .top-adress{
     text-align: right;
+}
+.slider .container{
+    padding: 0;
+}
+.item {
+    position: relative;
+}
+.item p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 55px;
+    background-color: rgba(255,255,255,0.5);
+    font-size: 15px;
+    font-weight: 600;
+}
+.container-cont{
+    padding: 0 52px;
+}
+.about-content p{
+    margin-bottom: 22px;
+}
+a.more{
+    display: inline-block;
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 7px 47px;
+    width: 218px;
+    height: 38px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #336699;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.about-content a{
+    text-align: right;
+
 }
