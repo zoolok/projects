@@ -235,3 +235,44 @@ a.more{
 .img-item a:hover .hover{
     left: 0;
 }
+.map{
+    margin-top: 58px;
+}
+.map .container{
+    padding: 0;
+}
+footer .container{
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color:  #336699;
+    padding: 40px 54px;
+}
+footer li{
+    margin-bottom: 20px;
+}
+.footer-contact {
+    text-align: right;
+}
+.footer-contact li:last-of-type, .footer-menu li:last-of-type{
+    margin-bottom: 0;
+}
+.sogl{
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+}
+.sogl a img{
+    box-shadow: 6px 0 1px 0 rgba(0, 0, 0, 0.2);
+    width: 63px;
+    height: 33px;
+}
+.sogl .container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.sogl p{
+    flex-grow: 1;
+}
