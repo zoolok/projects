@@ -42,6 +42,32 @@ h1{
     color: #336699;
     margin: 185px 0 134px 0;
 }
+h2{
+    font: 100 69px/40px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #336699;
+    margin:137px 0 169px 0;
+    position: relative;
+}
+h2>span {
+    font-size: 17px!important;
+    display: block;
+}
+h2:after, h2:before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 67px;
+    background-color: #336699;
+    left: 50%;
+}
+h2:after{
+    top: -83px;
+}
+h2:before{
+    bottom: -87px;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -64,6 +90,9 @@ a:hover{
     padding: 0 27px;
     margin: 0 auto;
     position: relative;
+}
+.container.cont{
+    padding: 0 52px;
 }
 header{
     border-bottom: 4px solid #474646;
@@ -123,9 +152,7 @@ header nav{
     font-size: 15px;
     font-weight: 600;
 }
-.container-cont{
-    padding: 0 52px;
-}
+
 .about-content p{
     margin-bottom: 22px;
 }
@@ -147,4 +174,52 @@ a.more{
 .about-content a{
     text-align: right;
 
+}
+.img-item{
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.img-item a{
+    display: block;
+    padding: 0;
+    position: relative;
+    border-right: 5px solid #999;
+    line-height: 0;
+    overflow: hidden;
+}
+.img-item a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 300px solid  rgba(255,255,255,0.5);
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+}
+.hover{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -400px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+.hover button{
+    width: 105px;
+    height: 37px;
+    border: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #336699;
+    cursor: pointer;
+}
+.img-item a:hover .hover{
+    left: 0;
 }
