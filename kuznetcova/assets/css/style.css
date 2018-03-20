@@ -94,4 +94,83 @@ header .container{
 }
 .top-contact{
     flex-direction: column;
+    margin-top: 23px;
+}
+.top-nav li{
+    margin-right: 46px;
+    position: relative;
+    z-index: 1;
+}
+.top-nav li:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 8px;
+    left: -5px;
+    bottom: 2px;
+    background-color: #ffcccc;
+    z-index: -1;
+
+}
+.top-nav li:hover:before{
+    width: calc(100% + 10px);
+}
+.top-nav li a{
+    font-size: 18px;
+}
+.top-nav li a:hover{
+    text-decoration: none;
+}
+.top-nav li:nth-last-child{
+    margin-right:0;
+}
+.soc{
+    margin-bottom: 20px;
+}
+li i{
+    font-size: 20px!important;
+    color: #fff;
+    margin-right: 34px;
+    position: relative;
+    z-index: 1;
+}
+li i:nth-last-of-type{
+    margin-right: 0;
+}
+li i:after{
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: #000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: -4px;
+    top: -6px;
+    z-index: -1;
+}
+li i:hover{
+    color: #000;
+}
+li i:hover:after{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    background-color: transparent;
+}
+.phone a{
+    font: 600 24px "Open Sans";
+    position: relative;
+}
+.phone a:before {
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background: url(../images/phone.png) 0 0 no-repeat;
+    top: 0;
+    left: -74px;
 }
