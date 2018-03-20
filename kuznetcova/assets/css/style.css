@@ -248,6 +248,11 @@ li i:hover:after{
 .zapis{
     width: 472px;
 }
+.zapis-2{
+    width: 532px;
+    margin:0 auto;
+    display: block;
+}
 .more{
     width: 253px;
     display: flex;
@@ -486,4 +491,88 @@ li i:hover:after{
     top: 50px;
     background: url(../images/shema-line.png) 0 0 no-repeat;
     z-index: -1;
+}
+.result{
+    padding-top: 77px;
+    padding-bottom: 133px;
+}
+.result-list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 96px;
+}
+[class^="result-item-"]{
+    width:calc(100%/3);
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    align-self: flex-start;
+    text-align: center;
+    padding: 0 70px;
+    margin-bottom: 82px;
+}
+[class^="result-item-"] img{
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #2d2d51;
+    color:#fff;
+    padding:53px 0 103px 0;
+}
+.footer-menu,
+.copyright{
+    justify-content:space-between;
+}
+.footer-contact{
+    flex-direction:column;
+}
+.footer-menu li{
+    margin-right: 72px;
+}
+
+
+.footer-menu>ul{
+    padding-top: 40px;
+}
+.footer-menu li:last-of-type{
+    margin-right: 0;
+}
+.footer-contact .soc li{
+    margin-right: 0;
+}
+.footer-contact .soc li:last-of-type{
+    margin-right: 0;
+}
+.copyright{
+    font-size: 12px;
+    margin-top: 46px;
+}
+.copyright p{
+    margin-bottom: 17px;
+}
+.copyright a{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer .phone a::before {
+    background: url(../images/phone-white.png) 0 0 no-repeat;
+}
+footer li i {
+    color: #c6ffe1;
+}
+footer li i::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: -4px;
+    top: -6px;
+    z-index: -1;
+
 }
