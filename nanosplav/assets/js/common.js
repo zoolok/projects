@@ -38,12 +38,28 @@ $(document).ready(function () {
         $(location).attr('href',url);
     });
     /* --------------------------------------------------------
+                    FULL MENU
+----------------------------------------------------------- */
+
+    var menu = $('.full-menu');
+
+    $('.menu-button').click(function () {
+        menu.css('left','0px');
+
+    });
+    $('.close-menu').click(function () {
+        menu.css('left','-454px');
+    });
+
+
+
+    /* --------------------------------------------------------
                         MOBILE MENU
 ----------------------------------------------------------- */
 
-    var menu = $('.mob-menu');
+    var mobmenu = $('.mob-menu');
 
-    $('.menu-button').click(function () {
+    $('.m-menu-button').click(function () {
         menu.fadeToggle(300);
         menu.addClass('fixed');
     });
