@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic);
+@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
+
+* {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+:after,
+:before,
+:hover{
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+body{
+    font:400 14px 'Open Sans', sans-serif;
+    background: #ааа;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font: 100 69px 'Playfair Display', serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #336699;
+    margin: 185px 0 134px 0;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+.hidden{
+    display: none!important;
+}
+.visible{
+    display: block!important;
+}
+.flex{
+    display: -webkit-flex!important;
+    display: flex!important;
+}
+.container {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
