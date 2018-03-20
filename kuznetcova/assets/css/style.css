@@ -269,5 +269,64 @@ li i:hover:after{
     right: -100%;
 }
 .pochemu{
-    padding-top: 145px;
+    padding-top: 150px;
+}
+.pochemu .container{
+    background: url(../images/Tanya.png) 100% 100% no-repeat;
+}
+.pochemu-list{
+    margin-top: 93px;
+}
+.pochemu-list li{
+    position: relative;
+    margin-bottom: 78px;
+    padding-left: 100px;
+}
+.pochemu-list li:last-of-type{
+    margin-bottom: 0;
+}
+.pochemu-list li:nth-child(1):before{
+    content: '';
+    position: absolute;
+    width:56px;
+    height: 56px;
+    background: url(../images/what-ico-1.png) 0 0 no-repeat;
+    left:0;
+    top: -15px;
+}
+.pochemu-list li:nth-child(1):before{
+    content: '';
+    position: absolute;
+    width:56px;
+    height: 56px;
+    background: url(../images/what-ico-1.png) 0 0 no-repeat;
+    left:0;
+    top: -15px;
+}
+.pochemu-list li:nth-child(2):before{
+    content: '';
+    position: absolute;
+    width:56px;
+    height: 56px;
+    background: url(../images/what-ico-2.png) 0 0 no-repeat;
+    left:0;
+    top: -30px;
+}
+.pochemu-list li:nth-child(3):before{
+    content: '';
+    position: absolute;
+    width:56px;
+    height: 56px;
+    background: url(../images/what-ico-3.png) 0 0 no-repeat;
+    left:0;
+    top: -15px;
+}
+.pochemu-list li:nth-child(4):before{
+    content: '';
+    position: absolute;
+    width:56px;
+    height: 56px;
+    background: url(../images/what-ico-4.png) 0 0 no-repeat;
+    left:0;
+    top: -15px;
 }
