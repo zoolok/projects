@@ -79,7 +79,7 @@ header .container{
     text-transform: uppercase;
     text-align: right;
     line-height: 13px;
-
+    margin-top: 33px;
 }
 .logo span:nth-child(1){
     color: #ef0c27;
@@ -95,6 +95,11 @@ header .container{
 .top-contact{
     flex-direction: column;
     margin-top: 23px;
+    text-align: right;
+    align-items: end;
+}
+.top-nav{
+    margin-top: 33px;
 }
 .top-nav li{
     margin-right: 46px;
@@ -121,11 +126,11 @@ header .container{
 .top-nav li a:hover{
     text-decoration: none;
 }
-.top-nav li:nth-last-child{
+.top-nav li:last-of-type{
     margin-right:0;
 }
 .soc{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 li i{
     font-size: 20px!important;
@@ -134,7 +139,7 @@ li i{
     position: relative;
     z-index: 1;
 }
-li i:nth-last-of-type{
+.soc li:last-of-type i{
     margin-right: 0;
 }
 li i:after{
@@ -172,5 +177,9 @@ li i:hover:after{
     height: 37px;
     background: url(../images/phone.png) 0 0 no-repeat;
     top: 0;
-    left: -74px;
+    left: -60px;
+}
+.callback{
+    color: #ef0c27;
+    font-size: 18px;
 }
