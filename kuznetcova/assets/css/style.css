@@ -459,3 +459,31 @@ li i:hover:after{
 .shema{
     padding-top: 135px;
 }
+.process{
+    margin-top: 154px;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.process-item{
+    position: relative;
+}
+.process-item img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.process-item p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+.process-item:nth-child(2):before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -82%;
+    top: 50px;
+    background: url(../images/shema-line.png) 0 0 no-repeat;
+    z-index: -1;
+}
