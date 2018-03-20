@@ -184,6 +184,17 @@ li i:hover:after{
 .main .container{
     justify-content: flex-end;
     padding-top: 145px;
+    position: relative;
+}
+.main .container:before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 112px;
+    background-color: #000;
+    left: calc(50% - 1px);
+    bottom: -145px;
+    padding-bottom: 140px;
 }
 .main-content{
     text-align: left;
@@ -219,6 +230,7 @@ li i:hover:after{
     overflow: hidden;
     z-index: 1;
     transition: all 0.6s ease-in-out;
+    box-shadow: 17px 17px 18px 0px rgba(77, 0, 2, 0.31);
 }
 .zapis{
     width: 472px;
