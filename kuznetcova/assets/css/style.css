@@ -71,4 +71,27 @@ a:hover{
     margin: 0 auto;
     position: relative;
 }
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 13px;
 
+}
+.logo span:nth-child(1){
+    color: #ef0c27;
+    display: block;
+    margin-bottom: 6px;
+}
+.logo span:nth-child(2){
+    font-size: 21px;
+    font-weight: 600;
+    color: #000;
+    display: block;
+}
+.top-contact{
+    flex-direction: column;
+}
