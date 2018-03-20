@@ -561,6 +561,7 @@ footer .phone a::before {
 }
 footer li i {
     color: #c6ffe1;
+    margin-top: 0;
 }
 footer li i::after {
     content: "";
