@@ -104,6 +104,11 @@ a:hover{
 }
 header{
     border-bottom: 4px solid #474646;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
 }
 header nav{
     align-items: center;
@@ -144,6 +149,9 @@ header nav{
 .top-phone,
 .top-adress{
     text-align: right;
+}
+.slider{
+    margin-top: 94px;
 }
 .slider .container{
     padding: 0;
