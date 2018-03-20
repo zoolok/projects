@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic);
 @import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
 
@@ -22,8 +22,8 @@
     transition: all 0.3s ease;
 }
 body{
-    font:400 14px 'Open Sans', sans-serif;
-    background: #ааа;
+    font:400 18px 'Open Sans', sans-serif;
+    background: #fff;
     color: #000;
     width: 100%;
     height: 100%;
@@ -40,12 +40,7 @@ h1, h2, h3, h4, h5, p{
     padding: 0;
 }
 h1{
-    font: 100 69px 'Playfair Display', serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: #336699;
-    margin: 185px 0 134px 0;
-    position: relative;
+    font: 100 72px/72px 'Playfair Display', serif;
 }
 
 a{
@@ -182,4 +177,72 @@ li i:hover:after{
 .callback{
     color: #ef0c27;
     font-size: 18px;
+}
+.main{
+    background: url(../images/main-img.jpg) 0 0 no-repeat;
+}
+.main .container{
+    justify-content: flex-end;
+    padding-top: 145px;
+}
+.main-content{
+    text-align: left;
+}
+.main-content p{
+    font-size: 60px;
+    color: #ccc;
+    font-style: italic;
+}
+.main-content ul{
+    margin-bottom: 48px;
+}
+.main-content span{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    font-style: italic;
+    display: block;
+    margin-top: 47px;
+    margin-bottom: 32px;
+}
+.red{
+    border: none;
+    background-color: #ff0033;
+    height: 79px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    color: #fff;
+    font: 600 16px "Open Sans";
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.6s ease-in-out;
+}
+.zapis{
+    width: 472px;
+}
+.red:before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    right: calc(100% + 1px);
+    background-image: linear-gradient(101deg, #fff 50%, #ff0033);
+    transition: right 0.3s ease-in-out;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    z-index: -1;
+}
+.red:hover{
+    color:#ff0033;
+    background-color: #fff;
+    border: 1px solid #ff0033;
+}
+.red:hover:before {
+    transition: all 0.3s ease-in-out;
+    right: -100%;
 }
