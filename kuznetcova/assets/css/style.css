@@ -39,10 +39,20 @@ h1, h2, h3, h4, h5, p{
     margin: 0;
     padding: 0;
 }
-h1{
+h1, h2{
     font: 100 72px/72px 'Playfair Display', serif;
+    position: relative;
 }
-
+h2:before {
+    content: attr(data-text);
+    position: absolute;
+    font: 400 110px 'Playfair Display', serif;
+    text-transform: uppercase;
+    top: -55px;
+    opacity: 0.05;
+    left: -95px;
+    width: 100%;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -257,4 +267,7 @@ li i:hover:after{
 .red:hover:before {
     transition: all 0.3s ease-in-out;
     right: -100%;
+}
+.pochemu{
+    padding-top: 145px;
 }
