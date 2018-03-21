@@ -595,3 +595,65 @@ footer li i::after {
     z-index: -1;
 
 }
+
+/*********************** MOBILE ***************************/
+
+@media only screen and (max-width: 768px){
+
+    .mobile-none {
+        display: none!important;
+    }
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding:0 15px;
+    }
+    .logo span:nth-child(1) {
+        font-size: 12px;
+    }
+    .logo span:nth-child(2) {
+        font-size: 14px;
+    }
+    .logo{
+        margin-top: 0;
+    }
+    header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .m-menu-button{
+        display: flex!important;
+        flex-direction: column;
+        position: absolute;
+        top: 28px;
+        right: 26px;
+        width: 28px;
+        height: 22px;
+        cursor: pointer;
+    }
+    .m-menu-button span{
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        margin-bottom: 8px;
+    }
+    .m-menu-button span:last-of-type{
+        margin-bottom: 0;
+    }
+    .main .container {
+        justify-content: flex-start;
+        padding-top: 40px;
+        position: relative;
+    }
+    .main {
+        background: url(../images/main-img.jpg) 50% 100% no-repeat;
+        background-size: cover;
+    }
+    .main-content p {
+        font-size:36px;
+    }
+    h1, h2 {
+        font: 100 48px/48px 'Playfair Display', serif;
+    }
+}
