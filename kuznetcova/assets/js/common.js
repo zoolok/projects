@@ -51,9 +51,13 @@ $(document).ready(function () {
 
     var menu = $('.mob-menu');
 
-    $('.menu-button').click(function () {
-        menu.fadeToggle(300);
+    $('.m-menu-button').click(function () {
+        menu.fadeToggle();
         menu.addClass('fixed');
+        $('.mob-menu li').each(function (index) {
+            $(this).addClass('animated fadeInLeft delay-' + (index+1));
+        });
+
     });
     $('.m-close-menu').click(function () {
         menu.fadeToggle(300);
