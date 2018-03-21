@@ -114,7 +114,12 @@ header .container{
     position: relative;
     z-index: 1;
 }
-.top-nav li:before{
+.mob-menu li a{
+    position: relative;
+    z-index: 1;
+}
+.top-nav li:before,
+.mob-menu li a:before{
     content: "";
     position: absolute;
     width: 0;
@@ -125,13 +130,15 @@ header .container{
     z-index: -1;
 
 }
-.top-nav li:hover:before{
+.top-nav li:hover:before,
+.mob-menu li a:hover:before{
     width: calc(100% + 10px);
 }
 .top-nav li a{
     font-size: 18px;
 }
-.top-nav li a:hover{
+.top-nav li a:hover,
+.mob-menu li a:hover{
     text-decoration: none;
 }
 .top-nav li:last-of-type{
@@ -665,6 +672,10 @@ footer li i::after {
     }
     .mob-menu li{
         margin-bottom: 30px;
+        position: relative;
+    }
+    .mob-menu li a{
+        position: relative;
     }
     .m-close-menu{
         position: absolute;
@@ -740,6 +751,7 @@ footer li i::after {
     .main-content li{
         font-size: 14px;
         line-height: 24px;
+
     }
     .mobile{
         display: block!important;
