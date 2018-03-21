@@ -799,6 +799,9 @@ footer li i::after {
     [class^="result-item-"] p{
         font-size: 14px;
     }
+    footer {
+        padding: 53px 0 53px 0;
+    }
     .copyright {
         flex-wrap: wrap;
     }
