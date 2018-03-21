@@ -75,6 +75,10 @@ a:hover{
     margin: 0 auto;
     position: relative;
 }
+header{
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 35px;
+}
 header .container{
     justify-content: space-between;
     align-items: center;
@@ -526,11 +530,25 @@ footer{
 }
 .footer-contact{
     flex-direction:column;
+    justify-content: center;
+    align-items: end;
+}
+.footer-contact ul{
+    justify-content: right;
+}
+.footer-contact ul li,
+.footer-contact ul li i{
+    margin-right: 0;
+}
+.footer-contact ul li i:Hover{
+    color: #fff;
+}
+.footer-contact ul li{
+    margin-left: 34px;
 }
 .footer-menu li{
     margin-right: 72px;
 }
-
 
 .footer-menu>ul{
     padding-top: 40px;
