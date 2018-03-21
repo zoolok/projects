@@ -648,12 +648,31 @@ footer li i::after {
     }
     .main {
         background: url(../images/main-img.jpg) 50% 100% no-repeat;
-        background-size: cover;
+        padding-bottom: 550px;
     }
     .main-content p {
         font-size:36px;
     }
     h1, h2 {
         font: 100 48px/48px 'Playfair Display', serif;
+    }
+    .main-content span{
+        margin-top: 33px;
+    }
+    .mobile{
+        display: block!important;
+        width: 287px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .main .container::before {
+        width: 0;
+        height: 0;
+
+    }
+    .pochemu-list li {
+        margin-bottom: 49px;
+        padding-left: 73px;
+        font-size: 14px;
     }
 }
