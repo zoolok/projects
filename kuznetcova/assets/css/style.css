@@ -264,6 +264,10 @@ li i:hover:after{
 .zapis{
     width: 472px;
 }
+.zapis.mobile{
+    display: block;
+    margin: 0 auto;
+}
 .zapis-2{
     width: 532px;
     margin:0 auto;
@@ -410,7 +414,8 @@ li i:hover:after{
     flex-wrap: wrap;
     position: relative;
 }
-[class^="made-item-"]:before{
+[class^="made-item-"]:before,
+.gallery-wrap a:before{
     content: '';
     position: absolute;
     width: 1px;
@@ -439,7 +444,8 @@ li i:hover:after{
 [class^="made-item-"]:hover{
     color: #fff;
 }
-[class^="made-item-"]:hover:before{
+[class^="made-item-"]:hover:before,
+.gallery-wrap a:hover:before{
     opacity:1;
     top: -45px;
 }
@@ -680,6 +686,7 @@ footer li i::after {
 .style{
     padding-top: 75px;
     text-align: center;
+    padding-bottom: 50px;
 }
 .style p{
     line-height: 30px;
@@ -689,17 +696,50 @@ footer li i::after {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-top: 145px;
 }
 .gallery-wrap a{
     height: 509px;
     width: calc(50% - 16px);
     display: block;
     margin-bottom: 32px;
+    position: relative;
+}
+.gallery-wrap a:after{
+    content: '\f06e';
+    font-family: "FontAwesome";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #696868;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+}
+.gallery-wrap a:hover:after{
+    opacity: 1;
 }
 .gallery-wrap img{
     height: 100%;
     width:100%;
     object-fit: cover;
+}
+.order{
+    padding: 54px 0 105px 0;
+}
+.order p {
+    font-size: 35px;
+    font-family: "Playfair Display";
+    text-align: center;
+    margin-bottom: 55px;
+}
+.order p>span{
+    font-size:48px;
 }
 /*********************** MOBILE ***************************/
 
@@ -814,7 +854,7 @@ footer li i::after {
     .mobile{
         display: block!important;
         width: 287px;
-        margin: 0 auto 40px;
+        margin: 0 auto 40px auto;
         font-size: 14px;
     }
     .main .container::before {
