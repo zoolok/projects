@@ -59,8 +59,8 @@ h2>span {
 }
 h2:after,
 h2:before,
-h1:after,
-h1:before{
+h1:not(.inner):after,
+h1:not(.inner):before{
     content: '';
     position: absolute;
     width: 1px;
@@ -76,6 +76,12 @@ h2:before,
 h1:before{
     bottom: -87px;
 }
+h1.inner{
+    padding: 65px 0;
+    margin: 0;
+}
+h3{
+    font-size: 24px;}
 a{
     text-decoration: none;
     color: inherit;
@@ -372,4 +378,61 @@ footer li{
 }
 .sogl p{
     flex-grow: 1;
+}
+.B_crumbBox{
+    color: #a2a2a2;
+    font-size: 12px;
+    margin-bottom: 60px;
+    display: inline-block;
+}
+.about-content{
+    padding-bottom: 136px;
+    padding-right: 65px;
+}
+.about-content h3{
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+section:first-of-type{
+    margin-top: 93px;
+}
+.inner p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.catalog-content{
+    margin-bottom: 88px;
+}
+.catalog-wrap{
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.catalog-item{
+    width:calc(50% - 87px);
+    margin-bottom: 90px;
+}
+.catalog-item:hover a span{
+    padding: 45px 75px;
+}
+.catalog-item a span{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 4px;
+    text-align: center;
+    background-color: rgba(0,102,153, 0.5);
+    padding: 25px 75px;
+    font-size: 24px;
+    color: #fff;
+}
+.catalog-item a{
+    position: relative;
+    margin-bottom: 30px;
+    display: block;
+}
+.catalog-item img{
+    width: 100%;
+    height: auto;
+    box-shadow: 6px 0px 1px 0px rgba(0, 0, 0, 0.2);
 }

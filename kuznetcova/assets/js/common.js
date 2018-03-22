@@ -7,9 +7,7 @@ $(document).ready(function () {
         "use strict";
         if ( $("[data-fancybox]").length > 0 ) {
             $("[data-fancybox]").fancybox({
-                thumbs : {
-                    autoStart : true
-                }
+
         });
         }
     });
