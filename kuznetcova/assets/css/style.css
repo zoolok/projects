@@ -43,7 +43,12 @@ h1, h2{
     font: 100 72px/72px 'Playfair Display', serif;
     position: relative;
 }
-h2:before {
+h3{
+    font: 100 60px/60px 'Playfair Display', serif;
+    position: relative;
+}
+h2:before,
+h3:before{
     content: attr(data-text);
     position: absolute;
     font: 400 110px/100px 'Playfair Display', serif;
@@ -642,6 +647,59 @@ footer li i::after {
 .delay-8{
     -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
+}
+.B_crumbBox{
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    margin: 50px 0;
+    font-style: italic;
+}
+.B_homeCrumb{
+    color: #ef0c27;
+}
+.about-content{
+    background-color: #f0f0f0;
+    margin-top: 30px;
+    padding: 55px 120px 52px 60px;
+    height: 426px;
+}
+.about-content p{
+    font-size: 40px;
+    color: #585858;
+    font-style: italic;
+}
+.about-content h1{
+    margin-bottom: 25px;
+}
+.about-content span{
+    margin-bottom: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+.style{
+    padding-top: 75px;
+    text-align: center;
+}
+.style p{
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.gallery-wrap{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.gallery-wrap a{
+    height: 509px;
+    width: calc(50% - 16px);
+    display: block;
+    margin-bottom: 32px;
+}
+.gallery-wrap img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
 }
 /*********************** MOBILE ***************************/
 

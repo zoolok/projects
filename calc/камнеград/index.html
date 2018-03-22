@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Памятники из гранита и мрамора Нижний Новгород</title>
+	<meta charset="utf-8">
+	<meta name='description' content='ПК "Камнеград" - изделия из натурального камня. Памятники из гранита и мрамора от 8 000 рублей!'> 
+	<meta name='keywords' content='памятники на могилу, памятник на могилу цена, памятники на могилу фото, цены на памятники на могилу новгород, цены, нижний новгород, памятники в нижнем, купить памятник, цены в новгороде на памятник, цены памятник, памятники на могилу в новгороде, установка памятника на могилу, благоустройство могил, заказать памятник на могилу'> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="script/jquery-3.1.1.min.js"></script>
+	<script src="script/jquery.form.js"></script>
+	<script src="script/accounting.min.js"></script>
+	<script src="script/index.js"></script>
+	<link href="style/index.css" rel="stylesheet">
+	<!--http://xn----7sbalgd7arjfa5a.xn--p1ai/-->
+</head>
+<body>
+	<div class="menuTop">
+		<div class="contact">
+			8 (831) 216 22 40 <!--<input type="button" name="BtnNewCall" value="Заказать звонок">-->
+		</div>
+		<div class="info">
+			<a href="http://ritual.nnov.ru" target="_blank" style="color: #fff;">Информационный потрал ПК "Камнеград"</a>
+		</div>
+		<div class="search">
+			<input type="text" name="NameOrderSearch" placeholder="Номер заказа"> 
+			<input type="button" name="BtnOrderSearch" value="Узнать статус" onclick="StatusOrder();">
+		</div>
+	</div>
+	<div class="header">
+		<div class="logo">
+			<a href="/"><img src="images/logo.png" alt='ПК "Камнеград"'></a>
+		</div>
+		<div class="nameTop">
+			<span style="font-size:55px; text-align:left;">Памятники</span>
+			<span style="font-size:35px; text-align:right; margin-bottom:15px;">из гранита и мрамора</span>
+			<span style="font-size:45px; text-align:left; margin-bottom:15px; text-indent:1.5em;">Ритуальные изделия</span>
+			<span style="font-size:55px; text-align:center;">Ограды</span>
+		</div>
+		<div class="action">
+			<span style="font-size:45px">Хотите скидку?</span><br>
+			Просто подпишитесь на наши новости и получите 5%!
+			<input type="text" name="NewEmailAction" placeholder="Ваш E-Mail"> 
+			<input type="button" name="BtnNewEmail" value="Получить скидку" onclick="newContact();">
+		</div>
+		<div id="actMessage">
+			<div class="actMessageContent">
+				<div class="close" onclick="document.getElementById('actMessage').style.display='none';"></div>
+				<img src="images/logo.png" alt='ПК "Камнеград"'>
+				<div class="message">
+				</div>
+				<input type="button" value="OK" onclick="document.getElementById('actMessage').style.display='none';">
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<span><a href="#calcLink">Расчет памятника</a></span>
+		<span><a href="#commentLink">Отзывы</a></span>
+		<span><a href="#contactLink">Контакты</a></span>
+		<span><a href="http://www.ritual.nnov.ru/kompleks.html" target="_blank">Примеры работ</a></span>
+	</div>
+	<a id="calcLink"></a>
+	<div class="article">
+				<div class="calc">
+			<h1>Расчет памятника</h1>
+			Тут Вы можете создать памятник по Вашим представлениям и желаниям. 
+			После отправки заказа, с Вами свяжется наш менеджер для уточнения деталей. 
+			О всех этапах работы Вы будете получать уведомления на Вашу электронную почту. <br><br>
+			<b>Выберите материал:</b>
+			<input type="radio" name="material" id="m1" value="granit" onclick="material()" checked> 
+			<label for="m1">Гранит <span id="NameGraniteSelect">"Габбро Диабаз"</span></label>
+			<input type="radio" name="material" id="m2" value="mramor" onclick="material()"> 
+			<label for="m2">Мрамор <span id="NameMramorSelect"></span></label>
+			<br>
+			<div id="material">
+			</div>
+			<br>
+			<div id="rasp">
+				<b>Расположение:</b>
+				<input type="radio" name="rasp" id="rs1" value="vertical" onclick="Rasp();" checked>
+				<label for="rs1">Вертикально</label>
+				<br><br>
+			</div>
+			<div id="model">
+				<b>Модель памятника:</b>
+				<span id="NameFigureSelect">1 &nbsp;&nbsp; <span onclick="model()" style="display: inline-block; color: #880000; text-decoration: underline; cursor: pointer;">Изменить</span></span>
+				<div id="TypeFigure" onclick="document.getElementById('TypeFigure').style.display='none';">
+				</div>
+				<br><br>
+			</div>
+			<div id="size">
+				<b>Размер:</b>
+				<select id="SizeStone" onchange="SizeStoneFunc();">
+					<option value="0" disabled>Выбрать размер</option>
+					<option value="1" selected>100*50*8</option><option value="2">110*50*8</option><option value="3">120*50*8</option><option value="4">120*60*8</option><option value="5">100*70*8</option><option value="6">140*70*8</option><option value="7">150*70*8</option>				</select>
+				<br><br>
+			</div>
+			<div id="portret">
+				<b>Портрет:</b>
+				<input type="radio" name="portrait" id="pt1" value="yes" checked>
+				<label for="pt1" onclick="divPortret()">Да<span id="NamePortraitSelect">: На камне </span></label>
+				<input type="radio" name="portrait" id="pt2" value="no">
+				<label for="pt2" onclick="CheckedPortraitNone()">Нет</label>
+				<div id="TypePortait">
+				</div>
+				<div id="photo">
+					<form action="script/upload.php" method="post" enctype="multipart/form-data" id="PhotoForm">
+						Прикрепить фото для портрета? 
+						<div class="input">
+							<input type="file" id="NewPhoto" name="NewPhoto" accept="image/*">
+							<label for="NewPhoto">Прикрепить</label>
+						</div>
+						<div id="PhotoLoad"></div>
+					</form>
+				</div>
+			</div>
+			<div id="DopOption">
+				<div class="fonts">
+					<b>Знаки:</b>
+					<br>
+					<span>Шрифт имени</span>
+					<select id="FontStyleName" onchange="fontName();">
+						<option disabled selected>Выбрать шрифт</option>
+						<option style="font-family: timesbd; font-size: 27px;" value="timesbd">Фамилия Имя Отчество</option>
+						<option style="font-family: timesbi; font-size: 26px;" value="timesbi">Фамилия Имя Отчество</option>
+						<option style="font-family: cyrillicold; font-size: 28px;" value="cyrillicold">Фамилия Имя Отчество</option>
+						<option style="font-family: arialbd; font-size: 24px;" value="arialbd">Фамилия Имя Отчество</option>
+						<option style="font-family: Academy; font-size: 30px;" value="Academy">Фамилия Имя Отчество</option>
+						<option style="font-family: anastasia; font-size: 30px;" value="anastasia">Фамилия Имя Отчество</option>
+						<option style="font-family: asessor; font-size: 30px;" value="asessor">Фамилия Имя Отчество</option>
+						<option style="font-family: carolina; font-size: 32px;" value="carolina">Фамилия Имя Отчество</option>
+					</select>
+					<br>
+					<span>ФИО усопшего</span>
+					<input id="NameDeceased" name="NameDeceased" type="text" onkeyup="NameLoadFonts()">
+					<br>
+					<span>Шрифт даты</span>
+					<select id="FontStyleDate" onchange="fontDate();">
+						<option disabled selected>Выбрать шрифт</option>
+						<option style="font-family: timesbd; font-size: 27px;" value="timesbd">10.12.1958-12.05.2010</option>
+						<option style="font-family: timesbi; font-size: 27px;" value="timesbi">10.12.1958-12.05.2010</option>
+						<option style="font-family: cyrillicold; font-size: 28px;" value="cyrillicold">10.12.1958-12.05.2010</option>
+						<option style="font-family: arialbd; font-size: 24px;" value="arialbd">10.12.1958-12.05.2010</option>
+						<option style="font-family: Academy; font-size: 29px;" value="Academy">10.12.1958-12.05.2010</option>
+						<option style="font-family: anastasia; font-size: 33px;" value="anastasia">10.12.1958-12.05.2010</option>
+						<option style="font-family: asessor; font-size: 30px;" value="asessor">10.12.1958-12.05.2010</option>
+						<option style="font-family: carolina; font-size: 31px;" value="carolina">10.12.1958-12.05.2010</option>
+					</select>
+					<br>
+					<span>Даты</span>
+					<input id="DateDeceased" name="DateDeceased" type="text" onkeyup="DateLoadFonts()">
+					<br>
+					<span>Шрифт эпитафии</span>
+					<select id="FontStyleEpit" onchange="fontEpit();">
+						<option disabled selected>Выбрать шрифт</option>
+						<option style="font-family: timesbd; font-size: 27px;" value="timesbd">Эпитафий</option>
+						<option style="font-family: timesbi; font-size: 26px;" value="timesbi">Эпитафий</option>
+						<option style="font-family: cyrillicold; font-size: 28px;" value="cyrillicold">Эпитафий</option>
+						<option style="font-family: arialbd; font-size: 24px;" value="arialbd">Эпитафий</option>
+						<option style="font-family: Academy; font-size: 30px;" value="Academy">Эпитафий</option>
+						<option style="font-family: anastasia; font-size: 30px;" value="anastasia">Эпитафий</option>
+						<option style="font-family: asessor; font-size: 30px;" value="asessor">Эпитафий</option>
+						<option style="font-family: carolina; font-size: 32px;" value="carolina">Эпитафий</option>
+					</select>
+					<br>
+					<span>Эпитафия</span>
+					<input id="EpitDeceased" name="EpitDeceased" type="text" onkeyup="EpitLoadFonts()">
+				</div>
+				<br>
+				<b>Цветник:</b>
+				<input type="radio" name="Flow" id="FG1" value="yes" onclick="FlowSize()">
+				<label for="FG1">Да</label><span id="FlowName"></span>
+				<input type="radio" name="Flow" id="FG2" value="no" onclick="FlowSizeNone()" checked>
+				<label for="FG2">Нет</label>
+				<div id="Flow">
+				</div>
+			</div>
+		</div>
+		<div id="rezult">
+			<b>ВНИМАНИЕ!</b> Этот эскиз не будет использоваться при создании памятника и предназначен для создания общего вида. Макет памятника будет выслан на Ваш E-Mail после подтверждения заявки.
+			<div id="memorial">
+				<div id="FigureFon">
+				</div>
+				<div id="imgLoad">
+					<img src="../images/photo.jpg" alt='Фото для памятника'>
+					<div id="ImgLoadBord">
+					</div>
+				</div>
+				<div id="NameLoad"><span id="NameLoadSpan">Фамилия</span><br>Имя Отчество</div>
+				<div id="DateLoad">10.12.1958<br>12.05.2010</div>
+				<div id="EpitLoad"></div>
+			</div>
+			<div id="podst">
+			</div>
+			<div id="summ">
+				<div class="TableSumm">
+					<div class="MaterialPrice">
+						252000
+					</div>
+					<div class="ModelPrice">
+						0
+					</div>
+					<div class="SizePrice">
+						0.04
+					</div>
+					<div class="CoefPrice">
+						1
+					</div>
+					<div class="PortretPrice">
+						3600
+					</div>
+					<div class="QuantPortret">
+						1
+					</div>
+					<div class="SignsPrice">
+						52
+					</div>
+					<div class="Flow">
+						0
+					</div>
+				</div>
+				Итого: <span class="calcSumm"></span> <span class="rubznak">q</span>
+				<input type="button" name="NewOrder" id="NewOrder" value="Заказать" onclick="NewOrder();">
+			</div>
+		</div>
+		<div id="ActOrder">
+			<div class="ActOrderContent">
+				<div class="close" onclick="document.getElementById('ActOrder').style.display='none';"></div>
+				<h2>Новый заказ</h2>
+				<div class="order">
+					<div class="left">
+						Вы выбрали камень: <span class="stone"></span><br>
+						Модель: <span class="model"></span><br>
+						Размер камня: <span class="size"></span><br>
+						Портрет: <span class="portret"></span><br>
+						ФИО: <span class="name"></span><br>
+						Даты: <span class="date"></span><br>
+						Эпитафий: <span class="epit"></span><br>
+						Цветник: <span class="flow"></span><br>
+						Ваша скидка: <span class="sale">0</span><b>%</b><br>
+						<h3>Стоимость всего заказа: <span class="summ"></span><span class="rubznak"> q</span></h3>
+					</div>
+					<div class="right">
+						<div class="coupon">
+							<input type="text" name="SaleCoupon" placeholder="Ваш Промо-код"><br>
+							<span class="RezultSale" style="font-size: 16px;"></span>
+							<input type="button" name="BtnActCoupon" value="Активировать скидку" onclick="ActSale();">
+						</div>
+						<div class="ContactZakaz">
+							<label for="nameZakaz">Как к Вам обращаться?<span style="color: #f9ff07;">*</span></label><br>
+							<input type="text" name="nameZakaz" id="nameZakaz" placeholder="Наталья Вячеславовна"><br>
+							<label for="EmailOrder">Ваш E-Mail<span style="color: #f9ff07;">*</span></label><br>
+							<input type="text" name="EmailOrder" id="EmailOrder" placeholder="site@kamnegradnn.ru"><br>
+							<label for="phoneZakaz">Контактный телефон<span style="color: #f9ff07;">*</span></label><br>
+							<input type="text" name="phoneZakaz" id="phoneZakaz" placeholder="89534153277"><br><br>
+						</div>
+					</div>
+				</div>
+				<input type="button" value="Отправить заказ" onclick="AddOrder();">
+				<input type="button" value="Изменить заказ" onclick="document.getElementById('ActOrder').style.display='none';">
+			</div>
+		</div>		<div class="company">
+			<h2>О компании</h2>
+			<p>
+				Наша компания существует на Российском рынке с 1999 года. 
+				За это время ПК «Камнеград Нижний Новгород» прошла большой путь 
+				от маленькой торговой фирмы до одного из крупнейших производителей изделий из натурального камня.
+				Главное правило - индивидуальный подход к каждому клиенту.
+			</p>
+			<b>Передовые технологии и бесценный опыт</b>
+			<p>
+				Использование передовых компьютерных технологий, 
+				многолетний опыт наших специалистов позволяют произвести грамотные расчеты 
+				и снизить расход материалов и себестоимость продукции, 
+				избежать ошибок при проектировании. Гарантия на нашу продукцию составляет 12 месяцев, 
+				а на отдельную продукцию до 25 лет.
+
+				Мы гордимся нашими сотрудниками, прошедшими профессиональное обучение
+				в лучших учебных заведениях России и зарубежья. 
+				У нас трудятся высококлассные специалисты разных возрастов. 
+				Мы ценим энтузиазм молодежи и бесценный опыт старшего поколения. 
+				Все мы разные, но нас объединяет преданность своему делу и вера в идеи нашей компании.
+			</p>	
+			<b>Высочайшие стандарты качества - залог нашего успеха</b>
+			<p>
+				ПК «Камнеград Нижний Новгород» осуществляет производство на высококлассном оборудовании 
+				с применением минимальной доли ручного труда, что позволяет обеспечить высокое качество нашей продукции. 
+				Налажен производственный процесс как массового и индивидуального характера, 
+				что с одной стороны позволяет обеспечить постоянную номенклатуру изделий и индивидуальный подход – с другой.
+				Ежегодно наша продукция проходит сертификационные испытания в специализированных лабораториях 
+				России и имеет сертификаты соответствия продукции нормам безопасности и качества. 
+				Кроме того, ПК «Камнеград Нижний Новгород» одной из первых среди производителей 
+				изделий из натурального камня России в 2003 году прошла аудит на соответствие требованиям системы 
+				<a id="commentLink"></a>
+				менеджмента качества «ИСО 9000» и получила сертификат соответствия системы качества на предприятии нормам международного стандарта.
+			</p>
+		</div>
+		<div class="comments">
+			<h2>Ваши отзывы</h2>
+			
+				<div>
+				<img src="images/skrep.png" alt="Отзывы о компании ПК Камнеград">
+				<span style="font-weight: bold;">Захрянин А.С.</span><br>
+				Н. Новгород<br>
+				<p>Я, Захрянин А.С. с огромной благодарностью обращаюсь к работникам бюро за внимательное и чуткое , отношение ко мне и моим близким. Очень доволен работой, качеством и сроками исполнения. Так держать дорогие товарищи, с Вами легко жить.</p>
+				</div>
+				<div>
+				<img src="images/skrep.png" alt="Отзывы о компании ПК Камнеград">
+				<span style="font-weight: bold;">Ивантьева Л.Н.</span><br>
+				Н. Новгород<br>
+				<p>Заказ ***** 11 августа, была установка (д. Мамакино) - памятник. Приехали точно в назначенное время. Работу выполнили на отлично ( даже не спросила как их зовут), очень четко, быстро, аккуратно, без суеты. Чувствуется профессионализм, все отлажено. А я думала часа на 2-3 будет! Большое им спасибо!</p>
+				</div>
+				<div>
+				<img src="images/skrep.png" alt="Отзывы о компании ПК Камнеград">
+				<span style="font-weight: bold;">Тимошенко Лидия Алексеевна</span><br>
+				Н. Новгород<br>
+				<p>Я, Тимошенко Лидия Алексеевна выражаю большую благодарность за качественно выполненный з-з № ******. Особую благодарность выражаю ребятам- установщикам за виртуозно выполненную работу. Вежливость. Быстроту. Желаю вам хороших заказчиков и процветания всей вашей фирме.</p>
+				</div>
+				<div>
+				<img src="images/skrep.png" alt="Отзывы о компании ПК Камнеград">
+				<span style="font-weight: bold;">Базаркин Н.И.</span><br>
+				Н. Новгород<br>
+				<p>Я, Базаркин Н.И. искал мраморный памятник для мамы. Обошел много фирм, занимающихся данной продукцией, однако ничего хорошего по отношению цены и качества не нашел, пока не обратился к вам. Устроили меня и цена, и сроки, и обращение продавца. Огромное вам спасибо!</p>
+				</div>
+				<div>
+				<img src="images/skrep.png" alt="Отзывы о компании ПК Камнеград">
+				<span style="font-weight: bold;">Иванцова Валентина Ивановна</span><br>
+				Н. Новгород<br>
+				<p>Я, Иванцова Валентина Ивановна заказала в вашей фирме памятник заказ №*****. Осталась довольна. Отличная работа продавцов - консультантов салона, а также ребят  установщиков. Благодарю вашу фирму и сотрудников за оказанную профессиональную работу.</p>
+				</div>
+				<div>
+				<img src="images/skrep.png" alt="Отзывы о компании ПК Камнеград">
+				<span style="font-weight: bold;">Подмоскова Л.А</span><br>
+				Н. Новгород<br>
+				<p>Выражаю сердечную благодарность менеджерам салона за их внимание и теплое отношение к заказчикам, желание посодействовать, как лучше. Я, Подмоскова Л.А, заказала мраморный памятник своим родным. Осталась очень довольна и вернусь в эту фирму еще не раз. Спасибо.</p>
+				</div>			<br>
+			<input type="button" value="Оставить отзыв" onclick="document.getElementById('CommentPopUp').style.display='block';">
+			<a id="contactLink"></a>
+		</div>
+		<div id="CommentPopUp">
+			<div class="CommentPopUpContent">
+				<img src="images/logo.png" alt='ПК "Камнеград"'>
+				<div class="close" onclick="document.getElementById('CommentPopUp').style.display='none';"></div>
+				<h2>Добавить комментарий:</h2>
+				<label for="NameComment">Как к Вам обращаться?<span style="color: #d80000;">*</span></label><br>
+				<input type="text" name="NameComment" id="NameComment" placeholder="Наталья Вячеславовна"><br>
+				<label for="EmailComment">Ваш E-Mail:<span style="color: #d80000;">*</span></label><br>
+				<input type="text" name="EmailComment" id="EmailComment" placeholder="info@kamnegradnn.ru"><br>
+				<label for="CityComment">Ваш город</label><br>
+				<input type="text" name="CityComment" id="CityComment" placeholder="Н. Новгород"><br>
+				<label for="TextComment">Ваш отзыв:<span style="color: #d80000;">*</span></label><br>
+				<textarea name="TextComment" id="TextComment" cols="30" rows="4"></textarea><br>
+				<input type="button" value="Добавить отзыв" onclick="AddComment();">
+			</div>
+		</div>
+		<div id="CommentPopUpAdd">
+			<div class="CommentPopUpAddContent">
+				<img src="images/logo.png" alt='ПК "Камнеград"'>
+				<div class="close" onclick="document.getElementById('CommentPopUpAdd').style.display='none';"></div>
+				<h2><span class="NameCommentLoad"></span>, Ваш отзыв отправлен!</h2>
+				Сейчас он находиться в обработке, и как только он провериться нашими администраторами, он будет выводиться на сайте.<br>
+				<input type="button" value="ОК" onclick="document.getElementById('CommentPopUpAdd').style.display='none';">
+			</div>
+		</div>
+		<div class="contact">
+			<h2>Наша сеть</h2>
+			<div>
+				<p><span style="font-size: 26px;">Центральный офис:</span></p>
+				<p>Нижний Новгород,<br>Пр. Бусыгина д. 2а</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(1);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Чкалова д.7</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(2);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>пр. Октября д. 15</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(3);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>пр. Ленина д. 50</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(4);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Комсомольская д. 6/1</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(5);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Стрелковая д. 59</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(6);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Костина д. 13 (Средной рынок)</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(7);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Гагарина д. 88</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(8);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Плотникова д. 4а</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(9);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Белинского д. 93</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(10);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. Полтавская д. 30 (ТЦ "Куб")</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(11);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Нижний Новгород,<br>ул. В. Печерская д. 14б (Рынок)</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(12);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Заволжье,<br>ул. Баумана д.17 (ТЦ "Кристал", Рынок)</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(13);">Посмотреть контакты</span></p>
+				</div><div>
+				<p><span style="font-size: 26px;">Филиал:</span></p>
+				<p>Балахна,<br>пл. Советская д. 22 (Центральный рынок)</p>
+				<p><span style="border-bottom: 1px dashed #000; cursor: pointer;" onclick="contact(14);">Посмотреть контакты</span></p>
+				</div>		</div>
+		<div id="ContactPopUp" onclick="closeContact()">
+			<div class="ContactPopUpContent">
+				<div class="close" onclick="closeContact()"></div>
+				<h2>Контакты салона:</h2>
+				<div class="ContactLoad">
+				</div>
+			</div>
+		</div>
+		<div id="StatusOrder" onclick="document.getElementById('StatusOrder').style.display='none';">
+			<div id="ContentStatusOrder">
+				<div class="close" onclick="document.getElementById('StatusOrder').style.display='none'; document.getElementById('ContentStatusOrderLoad').innerHTML='';"></div>
+				<div id="ContentStatusOrderLoad">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script/calc.js"></script>
+	<script src="script/menu.js"></script>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77724423-4"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments)};
+	gtag('js', new Date());
+
+	gtag('config', 'UA-77724423-4');
+	</script>
+	<script src="http://vk.com/js/api/openapi.js?146"></script>
+
+	<!-- VK Widget -->
+	<div id="vk_community_messages"></div>
+	<script>
+	VK.Widgets.CommunityMessages("vk_community_messages", 126677629, {expandTimeout: "50000",widgetPosition: "left",tooltipButtonText: "Есть вопрос?"});
+	</script>
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47098527 = new Ya.Metrika({
+                    id:47098527,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47098527" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

@@ -7,8 +7,10 @@ $(document).ready(function () {
         "use strict";
         if ( $("[data-fancybox]").length > 0 ) {
             $("[data-fancybox]").fancybox({
-                // Options will go here
-            });
+                thumbs : {
+                    autoStart : true
+                }
+        });
         }
     });
     /* --------------------------------------------------------
