@@ -518,3 +518,23 @@ section:first-of-type{
     margin-left: 50px;
 }
 
+/****************MOBILE**************************/
+
+@media only screen and (max-width:768px){
+    body {
+        font-size: 14px;
+    }
+    .mobile-none {
+        display: none!important;
+    }
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding:0 15px;
+        overflow: hidden;
+    }
+    .flex>*{
+        width: 100%;
+    }
+}
