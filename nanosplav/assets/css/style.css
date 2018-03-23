@@ -431,8 +431,27 @@ section:first-of-type{
     margin-bottom: 30px;
     display: block;
 }
-.catalog-item img{
+.catalog-item img,
+.portfolio-item img{
     width: 100%;
     height: auto;
     box-shadow: 6px 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.portfolio-content{
+    margin-bottom: 85px;
+}
+.portfolio-content h3{
+    margin-bottom: 20px;
+}
+.portfolio-img{
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.portfolio-item{
+    width: calc(100%/4 - 36px);
+}
+.portfolio-item p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 17px;
 }
