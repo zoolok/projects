@@ -455,3 +455,23 @@ section:first-of-type{
     font-weight: 600;
     margin-top: 17px;
 }
+.blog-item{
+    margin-bottom: 80px;
+}
+.blog-content h3{
+     font-size: 31px;
+    margin-bottom: 30px;
+ }
+.blog-content{
+    padding-left: 60px;
+}
+.blog-content p{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.blog-content p:last-of-type{
+    margin-bottom: 30px;
+}
+.blog-content a.more{
+    padding: 7px 30px;
+}
