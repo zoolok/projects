@@ -53,7 +53,8 @@ h2{
     margin:137px 0 169px 0;
     position: relative;
 }
-h2>span {
+h2>span,
+h1>span{
     font-size: 17px!important;
     display: block;
 }
@@ -255,12 +256,15 @@ span.close-menu{
 .about-content p{
     margin-bottom: 22px;
 }
-a.more{
-    display: inline-block;
+a.more,
+a.order{
+    display: inline-flex;
+    align-items: center;
+    justify-content:center ;
     float: right;
     font-size: 18px;
     font-weight: 600;
-    padding: 7px 47px;
+    padding: 7px;
     width: 218px;
     height: 38px;
     color: #fff;
@@ -432,7 +436,8 @@ section:first-of-type{
     display: block;
 }
 .catalog-item img,
-.portfolio-item img{
+.portfolio-item img,
+.catalog-element-item img{
     width: 100%;
     height: auto;
     box-shadow: 6px 0px 1px 0px rgba(0, 0, 0, 0.2);
@@ -447,10 +452,12 @@ section:first-of-type{
     justify-content: space-between;
     margin-top: 25px;
 }
-.portfolio-item{
+.portfolio-item,
+.catalog-element-item{
     width: calc(100%/4 - 36px);
 }
-.portfolio-item p{
+.portfolio-item p,
+.catalog-element-item p{
     font-size: 17px;
     font-weight: 600;
     margin-top: 17px;
@@ -475,3 +482,39 @@ section:first-of-type{
 .blog-content a.more{
     padding: 7px 30px;
 }
+.catalog-element-wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.catalog-element-item{
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.catalog-element-item li{
+    margin-bottom: 13px;
+    font-size: 12px;
+}
+.catalog-element-item p{
+    margin-bottom: 25px;
+}
+.contact-inner{
+     padding-bottom: 80px;
+ }
+.contact li{
+    font-size: 18px;
+}
+.contact li a{
+    font-weight: 100;
+}
+.contact-content{
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-map{
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
