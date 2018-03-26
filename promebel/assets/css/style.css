@@ -48,7 +48,9 @@ h1, h2, h3, h4, h5, p{
     margin: 0;
     padding: 0;
 }
-
+h1  {
+    font-family: "IntroRegular";
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -139,6 +141,17 @@ header .container{
     width: 100%;
     height: 799px;
     background: url(../images/main-bg.jpg) 0 0 no-repeat;
+    padding: 118px 0 121px 0;
+}
+h1.main{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+h1.main>span{
+    font-size: 60px;
+    color:  #ffc000;
+    display: block;
 }
 /*********************** MOBILE ***************************/
 
