@@ -162,6 +162,9 @@ header .container{
     font-size: 12px;
     cursor: pointer;
 }
+.catalog-button:hover span{
+    box-shadow: 0 0 6px 3px rgba(255, 240, 0, 0.42);
+}
 .catalog-button span{
     width: 100%;
     height: 3px;
@@ -174,6 +177,78 @@ header .container{
 }
 .catalog-menu{
     display: none;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+    height: 100vh;
+    width:825px;
+    padding:80px 184px 93px 113px;
+    box-shadow: 0 5px 109px 0 rgba(0, 0, 0, 0.4);
+}
+.close-menu{
+     position: absolute;
+     width: 35px;
+     height: 34px;
+     cursor: pointer;
+     top: 37px;
+     right: 42px;
+     background: url(../images/close-menu.png) 0 0 no-repeat;
+ }
+.close-menu:hover{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.catalog-menu ul{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: -35px;
+}
+.catalog-menu ul li{
+    width: 33%;
+    margin-bottom: 65px;
+}
+.catalog-menu ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+.catalog-menu ul li a img{
+    width: 44px;
+    height: 44px;
+    object-fit: scale-down;
+    margin-bottom: 10px;
+}
+.menu-contact{
+    display: flex;
+    flex-direction:column;
+    margin-right: 70px;
+}
+.menu-contact a[href^="mail"]{
+    font-size: 14px;
+    margin-top: 12px;
+}
+.menu-adress{
+    font-size: 14px;
+}
+.menu-adress span{
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+.menu-adress p:first-of-type{
+    margin-bottom: 10px;
 }
 .buttons{
     justify-content: flex-end;
@@ -290,8 +365,12 @@ button.zamer-black{
     cursor: pointer;
 }
 button.zamer-black:hover{
-    border:6px solid;
-    border-top: none;
+    border: 2px solid transparent;
+    border-top:none;
+    -moz-border-image: -moz-linear-gradient(45deg, #ffc000 0%, #000 100%);
+    -webkit-border-image: -webkit-linear-gradient(45deg, #ffc000 0%, #000 100%);
+    border-image: linear-gradient(45deg, #ffc000 0%, #000 100%);
+    border-image-slice: 1;
 }
 button.zamer:hover{
     box-shadow: 0 0 10px 10px rgba(255, 240, 0, 0.42);
@@ -308,6 +387,9 @@ button.zamer-black:before{
 }
 button.zamer-black:before{
     background: url(../images/zamer-button-ico-black.png) 50% 50% no-repeat;
+    height: 44px;
+    border-radius: 50%;
+    top: -23px;
 }
 button.zamer:after{
     content: '';
@@ -328,8 +410,8 @@ button.zamer-black:after{
     top: 0;
     left: 0;
 }
-button.zamer-black:hover:after{
-    height: 6px;
+button.zamer-black:hover:before{
+    border: 2px solid #ffc000;
 }
 
 /*///////////// SOLUTIONS /////////////////*/
@@ -425,14 +507,24 @@ button.zamer-black:hover:after{
     top: 0;
     left: 0;
 }
+.catalog:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 0 solid #000;
+    border-bottom: 0 solid #000;
+    border-right: 0 solid #000;
+}
 .catalog:hover{
     text-decoration: none;
-    border: 3px solid #000;
-    border-top: none;
 }
-.catalog:hover:before{
-    height: 3px;
+.catalog:hover:after{
+    border-left: 100px solid rgba(255,192,0,1);
+    border-right: 100px solid rgba(255,192,0,1);
+    opacity:0;
 }
+
 .bs:hover .hover-content{
     opacity:1;
 }
@@ -497,6 +589,13 @@ button.zamer-black:hover:after{
 }
 .proiz-item img{
     margin-bottom: 20px;
+}
+.proiz-item:hover{
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 /*///////////// OTZYVY /////////////////*/
 
@@ -563,6 +662,17 @@ button.catalog{
     font-size: 16px;
     font-weight: 600;
     background-color: transparent;
+    position: relative;
+}
+button.catalog:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-left: 0 solid #000;
+    border-right: 0 solid #000;
 }
 .otzyv-slider .owl-nav{
     right: 0;

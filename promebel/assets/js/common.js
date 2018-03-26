@@ -60,6 +60,20 @@ $(document).ready(function () {
         menu.fadeToggle(300);
         menu.removeClass('fixed');
     });
+    /* --------------------------------------------------------
+
+                       MENU
+----------------------------------------------------------- */
+
+    var menu = $('.catalog-menu');
+
+    $('.catalog-button').click(function () {
+        menu.fadeToggle();
+
+    });
+    $('.close-menu').click(function () {
+        menu.fadeToggle();
+    });
 
     /* --------------------------------------------------------
               SCROLL DOWN
@@ -70,38 +84,6 @@ $(document).ready(function () {
         $('html, body').stop().animate({
             scrollTop: hs +'px'
         },1000);
-    });
-    /* --------------------------------------------------------
-          FOTO VIDEO TABS
------------------------------------------------------------ */
-    $('.foto').click(function () {
-        $(this).addClass('active');
-        $('.slider-foto').addClass('visible');
-        $('.slider-foto').removeClass('hidden');
-        $('.video').removeClass('active');
-        $('.slider-video').removeClass('visible');
-        $('.slider-video').addClass('hidden');
-    });
-    $('.video').click(function () {
-        $(this).addClass('active');
-        $('.slider-video').addClass('visible');
-        $('.slider-video').removeClass('hidden');
-        $('.foto').removeClass('active');
-        $('.slider-foto').removeClass('visible');
-        $('.slider-foto').addClass('hidden');
-    });
-
-    /* --------------------------------------------------------
-          NEWS & BLOG MIXITUP
------------------------------------------------------------ */
-
-    if ($("#news-grid").length > 0) {
-        $("#news-grid").mixItUp();
-    }
-
-    $('.controls li').click(function () {
-        $(".controls li").removeClass("active");
-        $(this).addClass("active");
     });
 
     /* --------------------------------------------------------
