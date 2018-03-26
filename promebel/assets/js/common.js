@@ -30,6 +30,21 @@ $(document).ready(function () {
         }
     });
 
+    $(function() {
+        "use strict";
+        if ( $(".otzyv-slider").length > 0 ) {
+            $('.otzyv-slider').owlCarousel({
+                items:1,
+                nav:true,
+                navText:["",""],
+                dots:false,
+                loop:true,
+                center:true,
+                autoplay:true
+            });
+        }
+    });
+
 
     /* --------------------------------------------------------
                         MOBILE MENU

@@ -186,7 +186,7 @@ header .container{
 .main{
     width: 100%;
     background: url(../images/main-bg.jpg) 0 0 no-repeat;
-    padding: 118px 0 73px 0;
+    padding: 118px 0 92px 0;
 }
 .main .container{
     position: relative;
@@ -195,6 +195,7 @@ h1.main-header{
     font-size: 30px;
     text-transform: uppercase;
     color: #fff;
+    ine-height: 48px;
 }
 h1.main-header>span{
     font-size: 60px;
@@ -205,6 +206,7 @@ h1.main-header>span{
     font-size: 24px;
     color: #fff;
     margin-bottom: 74px;
+    line-height: 22px;
 }
 .text{
     font-size: 16px;
@@ -345,7 +347,7 @@ button.zamer-black:hover:after{
     margin-top: 50px;
     justify-content: space-between;
     align-items: stretch;
-    margin-bottom: 80px;v
+    margin-bottom: 80px;
 }
 .bs{
     box-shadow: 0 17px 16px 0 rgba(0, 0, 0, 0.22);
@@ -402,7 +404,7 @@ button.zamer-black:hover:after{
 .detskaya img{
     width: 100%;
 }
-a.catalog{
+.catalog{
     display: flex;
     width: 178px;
     height: 49px;
@@ -414,7 +416,7 @@ a.catalog{
     font: 600 12px "Open Sans";
     text-transform: uppercase;
 }
-a.catalog:before{
+.catalog:before{
     content: '';
     position: absolute;
     width: 100%;
@@ -423,12 +425,12 @@ a.catalog:before{
     top: 0;
     left: 0;
 }
-a.catalog:hover{
+.catalog:hover{
     text-decoration: none;
     border: 3px solid #000;
     border-top: none;
 }
-a.catalog:hover:before{
+.catalog:hover:before{
     height: 3px;
 }
 .bs:hover .hover-content{
@@ -464,24 +466,108 @@ a.catalog:hover:before{
 /*///////////// PROIZVODSTVO /////////////////*/
 .proiz{
     padding-top: 94px;
+    padding-bottom: 66px;
 }
 .proiz-icon{
-    width: 50%;
     justify-content: space-between;
+}
+.proiz-text{
+    padding-right:105px;
 }
 .proiz-item{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    width: calc(100%/3 - 5px);
+    width: 168px;
+    margin-right: 10px;
     background-color: #e5e5e5;
     box-shadow: 0 17px 16px 0 rgba(0, 0, 0, 0.49);
     font-size: 12px;
+    padding:25px  11px 55px 10px;
+}
+.proiz-item:last-child{
+    margin-right: 0;
 }
 .proiz-item h4{
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.proiz-item img{
+    margin-bottom: 20px;
+}
+/*///////////// OTZYVY /////////////////*/
+
+.otzyv{
+    padding-top: 55px;
+    padding-bottom: 110px;
+    background: url(../images/otzyv-bg.jpg) 50% 50% no-repeat;
+}
+.otzyv h2:before{
+    height: 160%;
+}
+.otzyv h2:after{
+    top: calc(50% + 34px);
+    right: -217px;
+}
+.otz-img{
+    margin-right: 81px;
+    position: relative;
+    display: table;
+    height: auto;
+    padding: 20px 0;
+}
+.otz-text p{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+    margin-bottom: 23px;
+}
+.otz-text{
+    padding-right: 221px;
+}
+.otz-text p:last-of-type{
+    margin-bottom: 0;
+}
+
+.otz-img:before{
+    content: '';
+    position: absolute;
+    height: calc(100% - 5px);
+    width: calc( 100% - 25px);
+    top: 3px;
+    left: 42px;
+    border: 2px solid #000;
+    z-index: -1;
+}
+.name,
+.otz-date{
+    text-transform: uppercase;
+    font-weight:600;
+    display:inline-block;
+}
+.name{
+    margin-right: 21px;
+    margin-bottom: 20px;
+}
+.otzyv-slider{
+    margin-bottom: 73px;
+}
+button.catalog{
+    width: 277px;
+    height: 77px;
+    display: block;
+    margin:0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+}
+.otzyv-slider .owl-nav{
+    right: 0;
+    top: 0;
+    margin-top: 0;
 }
 /*********************** MOBILE ***************************/
 
