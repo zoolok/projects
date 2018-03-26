@@ -75,10 +75,8 @@ a:hover{
 header{
     background-color: #1a1d22;
     color: #fff;
-    -webkit-box-shadow: 0 1px 0 #fff;
-    -moz-box-shadow: 0 1px 0 #fff;
-    box-shadow: 0 1px 0 #fff;
-    padding: 35px 0;
+    border-bottom: 1px solid #fff;
+    padding: 22px 0;
 }
 header .container{
     justify-content: space-between;
@@ -122,6 +120,7 @@ header .container{
     flex-direction: column;
     font-size: 12px;
     cursor: pointer;
+    margin-top: 13px;
 }
 .catalog-button span{
     width: 100%;
@@ -130,8 +129,16 @@ header .container{
     box-shadow: 0 0 6px 2px rgba(255, 240, 0, 0.42);
     margin-bottom:10px;
 }
-.catalog-button span:last-of-type{
+.catalog-button span:last-of-type {
     margin-bottom: 6px;
+}
+.catalog-menu{
+    display: none;
+}
+.main{
+    width: 100%;
+    height: 799px;
+    background: url(../images/main-bg.jpg) 0 0 no-repeat;
 }
 /*********************** MOBILE ***************************/
 
