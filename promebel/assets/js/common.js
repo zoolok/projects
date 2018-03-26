@@ -22,24 +22,10 @@ $(document).ready(function () {
                 items:1,
                 nav:true,
                 navText:["",""],
-                dots:true,
+                dots:false,
                 loop:true,
                 center:true,
                 autoplay:true
-            });
-        }
-        var foto = $(".slider-foto");
-
-        if ( foto.length > 0 ) {
-            foto.slick({
-                autoplay: true,
-                infinite: true
-            });
-        }
-        var vid = $(".slider-video");
-        if ( vid.length > 0 ) {
-            vid.slick({
-
             });
         }
     });
