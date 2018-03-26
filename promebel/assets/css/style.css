@@ -569,6 +569,53 @@ button.catalog{
     top: 0;
     margin-top: 0;
 }
+/*///////////// FOOTER /////////////////*/
+footer{
+    background-color: #1a1d22;
+    color: #fff;
+    padding-top: 56px;
+    padding-bottom: 66px;
+    font-size: 14px;
+}
+footer .container{
+    justify-content:space-between;
+}
+footer h4{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family:"IntroRegular";
+    margin-bottom: 25px;
+}
+footer li{
+    margin-bottom: 16px;
+}
+footer a[href^="tel:"]{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.footer-contact li{
+    margin-bottom: 5px;
+}
+.footer-contact li:last-of-type{
+    margin-bottom: 35px;
+}
+.footer-contact span{
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 11px;
+}
+.copyright{
+    margin-top: 33px;
+}
+.copyright p{
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+.copyright a{
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 12px;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
