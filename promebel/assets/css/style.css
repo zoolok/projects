@@ -61,19 +61,28 @@ h2{
 h2:before{
     content: '';
     position: absolute;
-    width: 1px;
+    width: 2px;
     height: 100%;
     background-color: #ffc000;
     top: 0;
     left: -20px;
 }
-h2:after{
+h2.lb:after {
     content: '';
     position: absolute;
     width: 190px;
-    height: 1px;
+    height: 2px;
     background-color: #ffc000;
     top: calc(50% + 21px);
+    right: -90px;
+}
+h2.lt:after{
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 2px;
+    background-color: #ffc000;
+    top: calc(50% - 21px);
     right: -90px;
 }
 h3  {
@@ -324,6 +333,7 @@ button.zamer-black:hover:after{
 /*///////////// SOLUTIONS /////////////////*/
 .solutions{
     padding: 91px 0 88px 0;
+    background-color: #f6f6f6;
 }
 .subh{
     font: 600 19px "Open Sans";
@@ -388,7 +398,8 @@ button.zamer-black:hover:after{
 }
 .prihozh img,
 .gostin img,
-.shkaf img{
+.shkaf img,
+.detskaya img{
     width: 100%;
 }
 a.catalog{
@@ -440,6 +451,7 @@ a.catalog:hover:before{
     text-align: center;
     opacity: 0;
     padding: 0 20%;
+    box-shadow: 0 17px 16px 0 rgba(0, 0, 0, 0.22);
 }
 .hover-content h3 {
     font: 800 36px "Open Sans";
@@ -448,6 +460,28 @@ a.catalog:hover:before{
 }
 .hover-content p{
     margin-bottom: 31px;
+}
+/*///////////// PROIZVODSTVO /////////////////*/
+.proiz{
+    padding-top: 94px;
+}
+.proiz-icon{
+    width: 50%;
+    justify-content: space-between;
+}
+.proiz-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/3 - 5px);
+    background-color: #e5e5e5;
+    box-shadow: 0 17px 16px 0 rgba(0, 0, 0, 0.49);
+    font-size: 12px;
+}
+.proiz-item h4{
+    font-weight: 600;
+    text-transform: uppercase;
 }
 /*********************** MOBILE ***************************/
 
