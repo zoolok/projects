@@ -95,7 +95,7 @@ h2.nbr:after {
     height: 2px;
     background-color: #ffc000;
     top: calc(50% + 34px);
-    right: -8px;
+    left: 110px;
 }
 h3  {
     font: 800 24px "Open Sans";
