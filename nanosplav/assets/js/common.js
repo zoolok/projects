@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     /* --------------------------------------------------------
           FANCYBOX POP-UP
------------------------------------------------------------ */
+    ----------------------------------------------------------- */
     $(function() {
         "use strict";
         if ( $("[data-fancybox]").length > 0 ) {
@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
     /* --------------------------------------------------------
          INDEX OWL CARUSEL
------------------------------------------------------------ */
+    ----------------------------------------------------------- */
     $(function() {
         "use strict";
         if ( $(".main-slider").length > 0 ) {
@@ -31,15 +31,16 @@ $(document).ready(function () {
     });
     /* --------------------------------------------------------
                        PODDOMENY
------------------------------------------------------------ */
+    ----------------------------------------------------------- */
     $('#region').change(function (e) {
         e.preventDefault();
         var url = $('#region option:selected').val();
         $(location).attr('href',url);
     });
+
     /* --------------------------------------------------------
                     FULL MENU
------------------------------------------------------------ */
+    ----------------------------------------------------------- */
 
     var menu = $('.full-menu');
 
@@ -52,21 +53,19 @@ $(document).ready(function () {
     });
 
 
+});
 
-    /* --------------------------------------------------------
-                        MOBILE MENU
+/* --------------------------------------------------------
+           MODAL
 ----------------------------------------------------------- */
+var mw = $('.modal-wrap');
 
-    var mobmenu = $('.mob-menu');
+$('a.order').click(function (e) {
+    e.preventDefault();
+    mw.addClass('flex');
+});
 
-    $('.m-menu-button').click(function () {
-        menu.fadeToggle(300);
-        menu.addClass('fixed');
-    });
-    $('.m-close-menu').click(function () {
-        menu.fadeToggle(300);
-        menu.removeClass('fixed');
-    });
-
-
+$('.modal-close').click(function (e) {
+    e.preventDefault();
+    mw.removeClass('flex');
 });
