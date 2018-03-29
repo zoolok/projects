@@ -16,9 +16,9 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
     $(function() {
         "use strict";
-        if ( $(".main-slider").length > 0 ) {
+        if ( $(".good-slider").length > 0 ) {
 
-            $('.main-slider').owlCarousel({
+            $('.good-slider').owlCarousel({
                 items:1,
                 nav:true,
                 navText:["",""],
@@ -28,20 +28,7 @@ $(document).ready(function () {
                 autoplay:true
             });
         }
-        var foto = $(".slider-foto");
 
-        if ( foto.length > 0 ) {
-            foto.slick({
-                autoplay: true,
-                infinite: true
-            });
-        }
-        var vid = $(".slider-video");
-        if ( vid.length > 0 ) {
-            vid.slick({
-
-            });
-        }
     });
 
 
