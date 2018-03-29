@@ -22,7 +22,7 @@
 <header>
     <div class="container flex">
         <div class="logo">
-            <img src="assets/images/logo-top-min.png" alt="logo caraudio-nn">
+            <a href="/"><img src="assets/images/logo-top-min.png" alt="logo caraudio-nn"></a>
         </div>
         <div class="slog">
             <p>Продажа и установка автомобильных
@@ -30,31 +30,36 @@
                 в Нижнем Новгороде</p>
         </div>
         <div class="info">
-            <p>Мы в:<a href="https://vk.com/caraudio.center" target="_blank" rel="nofollow">vk.com/caraudio.center</a></p>
-            <p>Бесплатная доставка в <span>Нижний Новгород</span></p>
-            <form action="rezultaty-poiska.html" method="get" style="display:flex">
-                <button class="search" type="submit"></button>
+            <p>Мы в: <a href="https://vk.com/caraudio.center" target="_blank" rel="nofollow">vk.com/caraudio.center</a></p>
+            <p>Бесплатная доставка в <span id="user-city">Нижний Новгород</span></p>
+            <form id="search" action="rezultaty-poiska.html" method="get" style="display:flex">
                 <input name="search" placeholder="Поиск по каталогу" type="text">
+                <button class="search" type="submit"></button>
             </form>
         </div>
         <div class="top-contact">
             <p>время работы: с 9:00 до 20:00</p>
-            <a href="tel:+78314148796"><span>+7 (831)</span>414-87-<span>96</span> </a>
-            <a href="tel:+78002348796"><span>7 (800)</span>234-87-<span>96</span> </a>
+            <a href="tel:+78314148796"><span>+7 (831) </span>414-87-<span>96</span></a>
+            <a href="tel:+78002348796"><span>7 (800) </span>234-87-<span>96</span> </a>
             <button class="cons">бесплатная консультация</button>
         </div>
     </div>
-    <nav class="flex">
-        <p><span></span><span></span><span></span>Каталог</p>
-        <ul class="flex">
-            <li><a href="">СТОИМОСТЬ УСТАНОВКИ</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">СЕРТИФИКАТЫ</a></li>
-            <li><a href="">ДОСТАВКА И ОПЛАТА</a></li>
-            <li><a href="">КОНТАКТЫ</a></li>
-            <li><a href="">ВИДЕООБЗОРЫ</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="flex">
+            <div class="but">
+                <span></span><span></span><span></span>
+            </div>
+            <p>Каталог</p>
+            <ul class="flex">
+                <li><a href="">СТОИМОСТЬ УСТАНОВКИ</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">СЕРТИФИКАТЫ</a></li>
+                <li><a href="">ДОСТАВКА И ОПЛАТА</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+                <li><a href="">ВИДЕООБЗОРЫ</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <script src="assets/js/jquery-2.1.3.min.js"></script>
 <script src="assets/libs/masked-input/jquery.maskedinput.min.js"></script>
