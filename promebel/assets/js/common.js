@@ -12,6 +12,13 @@ $(document).ready(function () {
         }
     });
     /* --------------------------------------------------------
+                  BR MOBILE REMOVE
+----------------------------------------------------------- */
+    if(document.body.clientWidth < 768) {
+        var br = $('body').find($('br'));
+        br.remove();
+    }
+    /* --------------------------------------------------------
          INDEX OWL CARUSEL
 ----------------------------------------------------------- */
     $(function() {
@@ -34,6 +41,21 @@ $(document).ready(function () {
         "use strict";
         if ( $(".otzyv-slider").length > 0 ) {
             $('.otzyv-slider').owlCarousel({
+                items:1,
+                nav:true,
+                navText:["",""],
+                dots:false,
+                loop:true,
+                center:true,
+                autoplay:true
+            });
+        }
+    });
+    $(function() {
+        "use strict";
+        if ( $(".uslugi-wrap").length > 0 && document.body.clientWidth < 768) {
+            $(".kuhnya").unwrap();
+            $('.uslugi-wrap').owlCarousel({
                 items:1,
                 nav:true,
                 navText:["",""],
