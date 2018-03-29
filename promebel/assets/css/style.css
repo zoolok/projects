@@ -44,6 +44,9 @@ ul{
     margin: 0;
     padding: 0;
 }
+li{
+    list-style: none;
+}
 h1, h2, h3, h4, h5, p{
     margin: 0;
     padding: 0;
@@ -292,7 +295,7 @@ h1.main-header{
     font-size: 30px;
     text-transform: uppercase;
     color: #fff;
-    ine-height: 48px;
+    line-height: 50px;
 }
 h1.main-header>span{
     font-size: 60px;
@@ -467,7 +470,7 @@ button.zamer-black:hover:before{
     object-fit: cover;
 }
 .usl-desc{
-    padding: 45px 46px 25px 30px;
+    padding: 45px 30px 25px 30px;
 }
 .usl-desc h3{
     margin-bottom:7px;
