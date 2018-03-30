@@ -38,13 +38,19 @@ $(document).ready(function () {
     });
 
     $(function() {
+
+        var dots = false;
+
+        if (document.body.clientWidth < 768) {
+            var dots = true;
+        }
         "use strict";
         if ( $(".otzyv-slider").length > 0 ) {
             $('.otzyv-slider').owlCarousel({
                 items:1,
                 nav:true,
                 navText:["",""],
-                dots:false,
+                dots:dots,
                 loop:true,
                 center:true,
                 autoplay:true
@@ -90,11 +96,11 @@ $(document).ready(function () {
     var menu = $('.catalog-menu');
 
     $('.catalog-button').click(function () {
-        menu.fadeToggle();
+        menu.animate({right: "0"}, 500);
 
     });
     $('.close-menu').click(function () {
-        menu.fadeToggle();
+        menu.animate({right: "-5999"}, 500);
     });
 
     /* --------------------------------------------------------
