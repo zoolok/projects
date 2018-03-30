@@ -122,12 +122,10 @@ $(document).ready(function () {
     /* --------------------------------------------------------
         ORDER POP UP
 ----------------------------------------------------------- */
-    $('.popup').click(function () {
-        $('.content-wrap').addClass('blured');
-        $('.popup-wrap').addClass('flex');
+    $('[data="order"]').click(function () {
+        $('.modal-wrap').addClass('flex');
     });
-    $('.close').click(function () {
-        $('.popup-wrap').removeClass('flex');
-        $('.content-wrap').removeClass('blured');
+    $('.modal-close').click(function () {
+        $('.modal-wrap').removeClass('flex');
     });
 });
