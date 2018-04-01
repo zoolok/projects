@@ -8,7 +8,7 @@ $(document).ready(function () {
         if ( $("[data-fancybox]").length > 0 ) {
             $("[data-fancybox]").fancybox({
 
-        });
+            });
         }
     });
     /* --------------------------------------------------------
@@ -38,14 +38,6 @@ $(document).ready(function () {
     }
 
     /* --------------------------------------------------------
-                       PODDOMENY
------------------------------------------------------------ */
-    $('#region').change(function (e) {
-        e.preventDefault();
-        var url = $('#region option:selected').val();
-        $(location).attr('href',url);
-    });
-    /* --------------------------------------------------------
                         MOBILE MENU
 ----------------------------------------------------------- */
 
@@ -66,3 +58,60 @@ $(document).ready(function () {
 
 
 });
+/* --------------------------------------------------------
+            SEND FORM
+----------------------------------------------------------- */
+
+$('#zakaz').submit(function () {
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $('.modal-close').trigger("click");
+        alert('Спасибо за обращение!' +
+            'Мы свяжемся с Вами в ближайшее время')
+    });
+    return false;
+});
+
+/* --------------------------------------------------------
+    MASKED INPUT
+----------------------------------------------------------- */
+$('#phone').mask("+7 (999) 999-99-99");
+
+
+/* --------------------------------------------------------
+    ORDER POP UP
+----------------------------------------------------------- */
+$('[data="order"]').click(function (e) {
+    e.preventDefault();
+    $('.modal-wrap').addClass('flex');
+    $('#zakaz').addClass('animated fadeInDown');
+});
+$('.modal-close').click(function () {
+    $('.modal-wrap').removeClass('flex');
+    $('#zakaz').removeClass('animated fadeInDown');
+});
+
+/* --------------------------------------------------------
+    HOVER IMG
+----------------------------------------------------------- */
+
+$('.service-item img').hover(function () {
+        var hi = $(this).attr('hover-data');
+        var ci = $(this).attr('src');
+        $(this).attr('src', hi);
+        $(this).attr('hover-data', ci);
+        $(this).addClass('animated fadeIn');
+    },
+    function(){
+        var hi = $(this).attr('hover-data');
+        var ci = $(this).attr('src');
+        $(this).attr('src', hi);
+        $(this).attr('hover-data', ci);
+        $(this).removeClass('animated fadeIn');
+    });
+
+

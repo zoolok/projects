@@ -120,3 +120,21 @@ $(document).ready(function () {
         $('.content-wrap').removeClass('blured');
     });
 });
+
+/* --------------------------------------------------------
+            SEND FORM
+----------------------------------------------------------- */
+
+$('#zakaz').submit(function () {
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $('.modal-close').trigger("click");
+        alert('Спасибо за обращение!' +
+            'Мы свяжемся с Вами в ближайшее время')
+    });
+    return false;
+});

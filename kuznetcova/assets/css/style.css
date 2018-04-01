@@ -509,6 +509,7 @@ li i:hover:after{
     font-size: 16px;
     text-align: center;
     line-height: 24px;
+    white-space: pre-line;
 }
 .process-item:nth-child(2):before{
     content: '';
@@ -542,6 +543,10 @@ li i:hover:after{
 }
 [class^="result-item-"] img{
     margin-bottom: 30px;
+}
+[class^="result-item-"] b{
+    text-transform: uppercase;
+    display: block;
 }
 footer{
     background-color: #2d2d51;
@@ -741,6 +746,188 @@ footer li i::after {
 .order p>span{
     font-size:48px;
 }
+.services{
+    padding-bottom: 100px;
+}
+.services h2{
+    text-align: center;
+}
+.sercice-list{
+    justify-content:space-between;
+    margin-top: 80px;
+}
+.service-item{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:calc(100%/3 - 20px);
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.22);
+}
+.service-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.service-item h3{
+    font-size: 30px;
+    line-height: 30px;
+    margin:20px 15px;
+}
+.service-item p{
+    font-size: 16px;
+    padding: 0 15px;
+}
+.service-item .more {
+    width: 253px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    height: 70px;
+}
+.price-list{
+    flex-direction:column;
+    margin-top: 80px;
+}
+.price-item{
+justify-content: space-between;
+    margin-bottom: 50px;
+}
+.price-item p:first-of-type{
+    width: 30%;
+    font-family:"Playfair Display";
+    position: relative;
+    font-size: 25px;
+}
+.price-item p:last-of-type{
+    font-family:"Playfair Display";
+    position: relative;
+    font-size: 30px;
+}
+.price-item p>span{
+    font-size: 18px;
+}
+.price-item ul{
+    width:60%;
+}
+.price-item li i:after{
+    content: none;
+}
+.price-item li i {
+    font-size: 18px !important;
+    color: #ffcccc;
+    margin-right: 0;
+}
+.baza{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../images/baza-bg.jpg) 50% 50% no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.vesh{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../images/vesh-bg.JPG) 50% 50% no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.baza:before,
+.vesh:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.70) 100%);
+}
+.baza .container,
+.vesh .container{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: #fff;
+}
+    /*********************** MODAL ***************************/
+.modal-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.83);
+    z-index: 1000;
+    display: none;
+    justify-content:center;
+    align-items:center;
+}
+
+#zakaz{
+    flex-direction:column;
+    position: relative;
+    background-color: #fff;
+    padding:45px 80px 30px 80px;
+    justify-content:space-between;
+    text-align: center;
+    min-width: 320px;
+    color: #000;
+    box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.22);
+}
+#zakaz h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height:unset;
+}
+#zakaz p{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.modal-close{
+    position: absolute;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: url(../images/close-popup.png) 0 0 no-repeat;
+    top: 12px;
+    right: 12px;
+}
+#zakaz input{
+    height: 73px;
+    margin-bottom: 17px;
+    padding:0 37px;
+    font-size: 18px;
+    border:1px solid #999;
+    font-family:"Playfair Display";
+    -webkit-border-radius: 37px;
+    -moz-border-radius: 37px;
+    border-radius: 37px;
+}
+#zakaz input:last-of-type{
+    margin-bottom: 27px;
+}
+#zakaz small{
+    font-size: 11px;
+    color: #a9a9a9;
+    text-align: center;
+    display: block;
+    padding: 26px 0;
+    white-space: pre-line;
+}
+#zakaz button{
+    width: 100%;
+}
+
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
@@ -1039,5 +1226,57 @@ footer li i::after {
         font-size: 32px;
         line-height: 35px;
         margin-bottom: 35px;
+    }
+    #zakaz {
+        flex-direction: column;
+        padding: 45px 15px 0 15px;
+    }
+    #zakaz p {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    #zakaz input {
+        height: 55px;
+    }
+    .services {
+        padding-bottom: 50px;
+    }
+    .sercice-list {
+        margin-top: 40px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .service-item p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .service-item .more {
+        margin: 30px auto 30px;
+    }
+    .price-list {
+        margin-top: 50px;
+    }
+    .price-item {
+        align-items:center;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+    .price-item p:first-of-type {
+        width: 100%;
+        font-family: "Playfair Display";
+        position: relative;
+        font-size: 25px;
+    }
+    .price-item ul {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .price-item li i {
+        font-size: 16px !important;
     }
 }
