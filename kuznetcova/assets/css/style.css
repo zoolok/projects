@@ -308,9 +308,16 @@ li i:hover:after{
     padding-top: 150px;
     border-bottom:1px solid #bdbdbd;
 }
+.pochemu.inner{
+    padding-top: 50px;
+}
 .pochemu .container{
     background: url(../images/Tanya.png) 100% 100% no-repeat;
     padding-bottom: 116px;
+}
+.pochemu.inner .container{
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 .pochemu-list{
     margin-top: 93px;
@@ -492,6 +499,9 @@ li i:hover:after{
 .shema{
     padding-top: 135px;
 }
+.shema.inner{
+    padding-top: 50px;
+}
 .process{
     margin-top: 154px;
     justify-content:space-between;
@@ -511,19 +521,44 @@ li i:hover:after{
     line-height: 24px;
     white-space: pre-line;
 }
-.process-item:nth-child(2):before{
+.shema.inner .process-item:nth-child(2):before{
     content: '';
     position: absolute;
     width: 100vw;
     height: 100%;
-    left: -82%;
+    left: -91%;
     top: 50px;
     background: url(../images/shema-line.png) 0 0 no-repeat;
     z-index: -1;
 }
+.shema.inner-2 .process-item:nth-child(2):before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -74%;
+    top: 50px;
+    background: url(../images/shema-line.png) 0 0 no-repeat;
+    z-index: -1;
+}
+.process-item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -91%;
+    top: 50px;
+    background: url(../images/shema-line.png) 0 0 no-repeat;
+    z-index: -1;
+    background-size: 50%;
+
+}
 .result{
     padding-top: 77px;
     padding-bottom: 133px;
+}
+.result.inner{
+    padding-bottom: 0;
 }
 .result-list{
     flex-wrap: wrap;
@@ -841,8 +876,32 @@ justify-content: space-between;
     align-items:center;
     justify-content:center;
 }
+.obraz{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../images/obraz-bg.jpg) 50% 50% no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.portfolio{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../images/portfolio-bg.jpg) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
 .baza:before,
-.vesh:before{
+.vesh:before,
+.obraz:before,
+.portfolio:before{
     content: '';
     position: absolute;
     width: 100%;
@@ -852,11 +911,74 @@ justify-content: space-between;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.70) 100%);
 }
 .baza .container,
-.vesh .container{
+.vesh .container,
+.obraz .container,
+.portfolio .container{
     display: flex;
     align-items:center;
     justify-content:center;
     color: #fff;
+}
+blockquote {
+    margin: 0;
+    background: #FDFBFB;
+    color: #000;
+    padding: 30px 30px 30px 80px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+blockquote:before {
+    content: "\f10d";
+    position: absolute;
+    font-family:"FontAwesome";
+    z-index: 2;
+    left: 30px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    color: #F2EAD7;
+    font-size: 35px;
+
+    background: rgba(188,231,250, .7);
+}
+blockquote:after {
+    content: "";
+    position: absolute;
+    left: 34px;
+    top: 19px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(239,12,39, .7);
+}
+blockquote p {
+    font-family: "Playfair Display";
+    font-size: 30px;
+    letter-spacing: .05em;
+    line-height: 1.4;
+    margin: 0 0 16px;
+    position: relative;
+    z-index: 3;
+}
+blockquote cite {
+    font-style: normal;
+    font-weight: 300;
+    color: #5F5F5F;
+}
+blockquote footer{
+    background-color: transparent;
+    color: #5F5F5F;
+    padding: 0;
+}
+.bq {
+    padding: 50px;
+    background-color: #fafafa;
+    text-align: center;
 }
     /*********************** MODAL ***************************/
 .modal-wrap{
@@ -1278,5 +1400,8 @@ justify-content: space-between;
     }
     .price-item li i {
         font-size: 16px !important;
+    }
+    .bq {
+        padding: 0;
     }
 }
