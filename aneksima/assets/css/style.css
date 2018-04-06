@@ -324,6 +324,7 @@ ul.sub-menu li a:hover{
     height: 100vh;
     padding-top: 86px;
     background: url(../images/main-bg-min.jpg) 50% -3px no-repeat;
+    position: relative;
 }
 .main h1{
     margin-bottom: 8px;
@@ -333,6 +334,27 @@ ul.sub-menu li a:hover{
     line-height: 30px;
     font-size: 18px;
     margin-bottom: 28px;
+}
+.preim-wpap {
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.preim-item{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color: #e42626;
+    width:calc(100%/3 - 15px);
+    color: #fff;
+    font-family: "BanderaPro";
+    text-transform: uppercase;
+    text-align: center;
+    height: 280px;
+}
+.preim-item p{
+    line-height: 24px;
+    margin-top: 34px;
 }
 /*********************** MOBILE ***************************/
 
