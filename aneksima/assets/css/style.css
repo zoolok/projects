@@ -400,12 +400,12 @@ ul.sub-menu li a:hover{
 .catalog{
     padding-top: 80px;
     padding-bottom: 125px;
-    background: url(../images/cat-bg-min.png) 0 0 no-repeat;
+    background: url(../images/cat-bg-min.png) 0 -105px no-repeat;
 }
 .catalog-wrap{
     flex-wrap: wrap;
     justify-content:space-between;
-    margin-top: 75px;
+    margin-top: 65px;
 }
 .catalog-item{
     width:calc(100%/3 - 15px);
