@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i);
+@import url(https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css);
+@font-face {
+    font-family: "BanderaProBold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/BanderaPro-Bold.otf");
+}
+@font-face {
+    font-family: "BanderaPro";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/BanderaPro.otf");
+}
+@font-face {
+    font-family: 'Akrobat Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Akrobat Black'),
+    url('../fonts/Akrobat-Black.woff') format('woff'),
+    url("../fonts/Akrobat-Black.otf") format("truetype");
+}
+* {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+:after,
+:before,
+:hover{
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+body{
+    font:400 14px 'Open Sans', sans-serif;
+    background: #fff;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+.hidden{
+    display: none!important;
+}
+.visible{
+    display: block!important;
+}
+.flex{
+    display: -webkit-flex!important;
+    display: flex!important;
+}
+.container {
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+header .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 10px;
+
+}
+nav {
+    background-color: #f7f7f7;
+}
+nav .container{
+    padding: 35px 0;
+}
+nav a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav li{
+    margin-right: 78px;
+    
+}
+nav li.submenu:after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: -15px;
+    top: 5px;
+    border-right: 1px solid #e41e2a;
+    border-bottom:1px solid #e41e2a;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+nav li.submenu:hover:after{
+     -webkit-transform: rotate(-135deg);
+     -moz-transform: rotate(-135deg);
+     -ms-transform: rotate(-135deg);
+     -o-transform: rotate(-135deg);
+     transform: rotate(-135deg);
+ }
+nav li.submenu:hover .submenu>ul{
+    opacity: 1;
+    height: 200px;
+    color: #000;
+ }
+nav li.submenu{
+     text-transform: uppercase;
+     font-weight: 600;
+     color: #e41e2a;
+     cursor: pointer;
+     position: relative;
+ }
+nav li.submenu>ul{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+}
+.top-contact{
+    margin-right: 25px;
+}
+.top-contact a {
+    font-size: 18px;
+    font-weight: 800;
+}
+.top-contact p{
+    position: relative;
+}
+.top-contact p:first-of-type:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/phone-ico-min.png) 0 0 no-repeat;
+}
+.top-contact p:last-of-type:before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -27px;
+    width: 12px;
+    height: 20px;
+    background: url(../images/map-marker-ico-min.png) 0 0 no-repeat;
+}
+.top-contact p:last-of-type{
+    white-space: pre-line;
+    margin-top: 10px;
+}
+.order{
+    width: 265px;
+    height: 59px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 22px;
+    background:#e42626 url(../images/calc-ico-min.png) 22px 50% no-repeat;
+    box-shadow: 0 3px 4.95px 0.05px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/main-bg-min.jpg) 50% 0 no-repeat;
+}
+/*********************** MOBILE ***************************/
+
+@media only screen and (max-width: 768px){
+
+    .mobile-none {
+        display: none!important;
+    }
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding:0 15px;
+    }
+
+}
