@@ -102,7 +102,7 @@ nav li{
     margin-right: 78px;
     
 }
-nav li.submenu:after{
+.has-sub:after{
     content: '';
     position: absolute;
     width: 6px;
@@ -117,31 +117,52 @@ nav li.submenu:after{
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-nav li.submenu:hover:after{
+.has-sub:hover:after{
      -webkit-transform: rotate(-135deg);
      -moz-transform: rotate(-135deg);
      -ms-transform: rotate(-135deg);
      -o-transform: rotate(-135deg);
      transform: rotate(-135deg);
  }
-nav li.submenu:hover .submenu>ul{
-    opacity: 1;
-    height: 200px;
-    color: #000;
- }
-nav li.submenu{
+
+.has-sub{
      text-transform: uppercase;
      font-weight: 600;
      color: #e41e2a;
      cursor: pointer;
      position: relative;
  }
-nav li.submenu>ul{
-    top: 0;
-    left: 0;
+.has-sub:hover ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+ul.sub-menu {
+    flex-direction: column;
     position: absolute;
-    height: 0;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    white-space: nowrap;
     opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    z-index: 10;
+    background-color: #f7f7f7;
+    -webkit-box-shadow:  0 2px 2px #696868;
+    -moz-box-shadow:  0 2px 2px #696868;
+    box-shadow:  0 2px 2px #696868;
+}
+ul.sub-menu a{
+    color: #000;
+}
+ul.sub-menu li{
+    margin-bottom: 10px;
 }
 .top-contact{
     margin-right: 25px;
