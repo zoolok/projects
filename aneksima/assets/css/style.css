@@ -20,6 +20,17 @@
     url('../fonts/Akrobat-Black.woff') format('woff'),
     url("../fonts/Akrobat-Black.otf") format("truetype");
 }
+@font-face {
+    font-family: 'Akrobat Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Akrobat Bold'), local('Akrobat-Bold'),
+    url('../fonts/Akrobatbold.woff2') format('woff2'),
+    url('../fonts/Akrobatbold.woff') format('woff'),
+    url('../fonts/Akrobatbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 * {
     box-sizing: border-box;
     -webkit-transition: all 0.3s ease;
@@ -57,7 +68,18 @@ h1, h2, h3, h4, h5, p{
     margin: 0;
     padding: 0;
 }
+h1{
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+    font-family: 'Akrobat Bold';
 
+}
+h1>span{
+    font-size: 72px;
+    display: block;
+    font-family: 'Akrobat Black';
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -144,25 +166,44 @@ ul.sub-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 300px;
-    height: 100%;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
     z-index: 10;
-    background-color: #f7f7f7;
-    -webkit-box-shadow:  0 2px 2px #696868;
-    -moz-box-shadow:  0 2px 2px #696868;
-    box-shadow:  0 2px 2px #696868;
+    box-shadow: 4px 45px 44px 2px rgba(0, 0, 0, 0.3);
 }
 ul.sub-menu a{
     color: #000;
+    font-size: 12px;
 }
 ul.sub-menu li{
-    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    width: 100%;
+}
+ul.sub-menu li:hover{
+    background-color: #fff;
+}
+ul.sub-menu li:first-of-type a{
+}
+ul.sub-menu li a{
+    margin: 10px;
+    display: block;
+}
+ul.sub-menu li a:hover{
+    color: #e42626;
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
+    text-decoration: none;
 }
 .top-contact{
     margin-right: 25px;
@@ -206,11 +247,60 @@ ul.sub-menu li{
     background:#e42626 url(../images/calc-ico-min.png) 22px 50% no-repeat;
     box-shadow: 0 3px 4.95px 0.05px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    z-index:1;
+    position: relative;
+    overflow: hidden;
+}
+.order:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    opacity:0;
+
+}
+.order:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    top: -50%;
+    left: 0;
+    opacity:0;
+}
+.order:hover:before{
+    top: 50%;
+    z-index: -1;
+    opacity:1;
+}
+.order:hover:after{
+    top: 0;
+    z-index: -1;
+    opacity: 1;
+}
+.order:hover{
+    color: #e42626;
+    z-index: 1;
+    box-shadow: 0 3px 4.95px 0.05px rgba(204, 51, 51, 0.3);
 }
 .main{
     width: 100%;
     height: 100vh;
-    background: url(../images/main-bg-min.jpg) 50% 0 no-repeat;
+    padding-top: 86px;
+    background: url(../images/main-bg-min.jpg) 50% -3px no-repeat;
+}
+.main h1{
+    margin-bottom: 8px;
+}
+.main p{
+    white-space: pre-line;
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 28px;
 }
 /*********************** MOBILE ***************************/
 
