@@ -103,6 +103,38 @@ a:hover{
     margin: 0 auto;
     position: relative;
 }
+.delay-1{
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.delay-2{
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.delay-3{
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.delay-4{
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.delay-5{
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+.delay-6{
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.delay-7{
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.delay-8{
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
 header .container{
     justify-content: space-between;
     align-items: center;
