@@ -12,6 +12,9 @@ $('document').ready(function () {
         zoom: {
             enabled: true,
             duration: 300
+        },
+        gallery:{
+            enabled:true
         }
     });
 
