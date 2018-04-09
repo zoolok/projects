@@ -17,10 +17,12 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
 
     var menu = $('.mob-menu');
+    var ham = $('.hamburger');
 
-    $('.menu-button').click(function () {
-        menu.fadeToggle(300);
-        menu.addClass('fixed');
+    ham.click(function () {
+        ham.toggleClass('is-active');
+       /* menu.fadeToggle(300);*/
+
     });
     $('.m-close-menu').click(function () {
         menu.fadeToggle(300);
