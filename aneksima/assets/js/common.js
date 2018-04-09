@@ -11,39 +11,6 @@ $(document).ready(function () {
             });
         }
     });
-    /* --------------------------------------------------------
-         INDEX OWL CARUSEL
------------------------------------------------------------ */
-    $(function() {
-        "use strict";
-        if ( $(".main-slider").length > 0 ) {
-
-            $('.main-slider').owlCarousel({
-                items:1,
-                nav:true,
-                navText:["",""],
-                dots:true,
-                loop:true,
-                center:true,
-                autoplay:true
-            });
-        }
-        var foto = $(".slider-foto");
-
-        if ( foto.length > 0 ) {
-            foto.slick({
-                autoplay: true,
-                infinite: true
-            });
-        }
-        var vid = $(".slider-video");
-        if ( vid.length > 0 ) {
-            vid.slick({
-
-            });
-        }
-    });
-
 
     /* --------------------------------------------------------
                         MOBILE MENU
@@ -70,38 +37,11 @@ $(document).ready(function () {
             scrollTop: hs +'px'
         },1000);
     });
-    /* --------------------------------------------------------
-          FOTO VIDEO TABS
------------------------------------------------------------ */
-    $('.foto').click(function () {
-        $(this).addClass('active');
-        $('.slider-foto').addClass('visible');
-        $('.slider-foto').removeClass('hidden');
-        $('.video').removeClass('active');
-        $('.slider-video').removeClass('visible');
-        $('.slider-video').addClass('hidden');
-    });
-    $('.video').click(function () {
-        $(this).addClass('active');
-        $('.slider-video').addClass('visible');
-        $('.slider-video').removeClass('hidden');
-        $('.foto').removeClass('active');
-        $('.slider-foto').removeClass('visible');
-        $('.slider-foto').addClass('hidden');
-    });
 
     /* --------------------------------------------------------
-          NEWS & BLOG MIXITUP
+          SHEMA
 ----------------------------------------------------------- */
-
-    if ($("#news-grid").length > 0) {
-        $("#news-grid").mixItUp();
-    }
-
-    $('.controls li').click(function () {
-        $(".controls li").removeClass("active");
-        $(this).addClass("active");
-    });
+        $('[class^="step-"]').animated("fadeIn", "fadeOut");
 
     /* --------------------------------------------------------
         MASKED INPUT
