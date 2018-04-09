@@ -21,6 +21,14 @@
     url("../fonts/Akrobat-Black.otf") format("truetype");
 }
 @font-face {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Akrobat'),
+    url('../fonts/Akrobat.woff') format('woff'),
+    url("../fonts/Akrobat.otf") format("truetype");
+}
+@font-face {
     font-family: 'Akrobat Bold';
     font-style: normal;
     font-weight: normal;
@@ -465,7 +473,7 @@ ul.sub-menu li a:hover{
 .howworks{
     background-color: #fff;
     padding-top: 62px;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
 }
 .shema-wrap{
     width: 732px;
@@ -529,6 +537,60 @@ ul.sub-menu li a:hover{
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 30px;
+}
+.footer-logo img{
+    max-width: 241px;
+}
+footer .container{
+    background-color: #fff;
+    position: relative;
+    top: -50px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+footer .container:last-child{
+align-items: flex-end;
+}
+footer h3{
+    font-size: 18px;
+    font-family: "Akrobat Black";
+    position: relative;
+    margin-bottom: 35px;
+}
+footer h3:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    background-color: #e42626;
+    bottom: -8px;
+    left: 0;
+}
+footer li a{
+    font-size: 16px;
+    font-family: "Akrobat";
+}
+footer li{
+    margin-bottom: 7px;
+}
+footer li:last-of-type{
+    margin-bottom: 0;
+}
+.footer-logo{
+    margin-top: 61px;
+}
+hr{
+    height: 100%;
+}
+.top-contact.footer a{
+    font-size: 24px;
+}
+.politic{
+    font-size: 12px;
+}
+.politic a{
+    font-weight: 600;
+    text-decoration: underline;
 }
 /*********************** MOBILE ***************************/
 
