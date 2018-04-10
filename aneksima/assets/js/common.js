@@ -21,12 +21,8 @@ $(document).ready(function () {
 
     ham.click(function () {
         ham.toggleClass('is-active');
-        /* menu.fadeToggle(300);*/
+         menu.toggleClass('animated fadeIn');
 
-    });
-    $('.m-close-menu').click(function () {
-        menu.fadeToggle(300);
-        menu.removeClass('fixed');
     });
 
     /* --------------------------------------------------------

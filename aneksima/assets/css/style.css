@@ -676,16 +676,36 @@ hr{
     }
     .hamburger{
         display: inline-block;
-        position: absolute;
+        position: fixed;
         top: 23px;
         right: 28px;
         padding: 0;
+        z-index: 100;
     }
     .hamburger-box {
         width: 25px;
         height: 14px;
         display: inline-block;
         position: relative;
+    }
+    .mob-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.95);
+        color: #fff;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+    }
+    .is-active .hamburger-inner,
+    .is-active .hamburger-inner:before,
+    .is-active .hamburger-inner::after {
+        background-color: #fff;
     }
     .desc-none{
         display: unset;
@@ -859,11 +879,46 @@ hr{
     }
     .queestion {
         padding-top: 45px;
-        padding-bottom: 105px;
+        padding-bottom: 55px;
     }
     .queestion h3 {
         font-size: 18px;
         font-weight: 800;
         margin-bottom: 30px;
+    }
+    footer .container {
+        top: 0;
+        flex-wrap: wrap;
+        padding: 60px 15px 50px 15px;
+    }
+    footer .container:last-of-type {
+        top: 0;
+        flex-wrap: wrap;
+        padding: 0 15px 50px;
+    }
+    .footer-logo {
+        margin-top: 0;
+        order: -1;
+        padding-left: 35px;
+        margin-bottom: 10px;
+    }
+    .top-contact {
+        margin-right: 0;
+        order: -1;
+        padding-left: 35px;
+        margin-bottom: 33px;
+    }
+    hr{
+        display: none;
+    }
+    .politic {
+        margin-bottom: 20px;
+    }
+    .salut{
+        width: 100%;
+    }
+    .salut img{
+        display: block;
+        margin: 0 auto;
     }
 }
