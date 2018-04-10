@@ -198,20 +198,20 @@ nav li{
     transform: rotate(45deg);
 }
 .has-sub:hover:after{
-     -webkit-transform: rotate(-135deg);
-     -moz-transform: rotate(-135deg);
-     -ms-transform: rotate(-135deg);
-     -o-transform: rotate(-135deg);
-     transform: rotate(-135deg);
- }
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
 
 .has-sub{
-     text-transform: uppercase;
-     font-weight: 600;
-     color: #e41e2a;
-     cursor: pointer;
-     position: relative;
- }
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #e41e2a;
+    cursor: pointer;
+    position: relative;
+}
 .has-sub:hover ul.sub-menu {
     opacity: 1;
     visibility: visible;
@@ -443,7 +443,7 @@ ul.sub-menu li a:hover{
 .preim-item .hover {
     width: 100%;
     height: 100%;
-/*    padding-top: 25px;*/
+    /*    padding-top: 25px;*/
     white-space: pre-line;
     align-items: center;
     justify-content: center;
@@ -577,9 +577,9 @@ ul.sub-menu li a:hover{
     right: -38px;
 }
 .step-4{
-      top: 310px;
-      left: -93px;
-  }
+    top: 310px;
+    left: -93px;
+}
 .step-5{
     top: 310px;
     left: 214px;
@@ -611,7 +611,7 @@ footer .container{
     justify-content: space-between;
 }
 footer .container:last-child{
-align-items: flex-end;
+    align-items: flex-end;
 }
 footer h3{
     font-size: 18px;
@@ -795,5 +795,75 @@ hr{
     .catalog-item p {
         font-size: 14px;
         padding: 8px 20px;
+    }
+    .shema-wrap {
+        width: 100%;
+        height: auto;
+        margin: 40px auto 0;
+        background: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .howworks {
+        background-color: #fff;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    [class^="step-"] {
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        white-space: pre-line;
+        text-align: center;
+        top: unset;
+        left: unset;
+        right: unset;
+        margin-bottom: 35px;
+    }
+    [class^="step-"] span {
+        font-family: "BanderaProBold";
+        font-style: italic;
+        font-size: 30px;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        background-color: #585858;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 6px;
+        padding-right: 6px;
+        position: relative;
+    }
+    .step-1>span:before{
+        content: none!important;
+    }
+    .step-1{
+        margin-bottom: 50px!important;
+    }
+    [class^="step-"] span:before{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 39px;
+        top: -42px;
+        left: calc(50% - 2px);
+        background: url(../images/shema-line.png) 0 0 no-repeat;
+    }
+    .queestion {
+        padding-top: 45px;
+        padding-bottom: 105px;
+    }
+    .queestion h3 {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 30px;
     }
 }
