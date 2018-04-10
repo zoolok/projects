@@ -21,8 +21,7 @@ $(document).ready(function () {
 
     ham.click(function () {
         ham.toggleClass('is-active');
-         menu.toggleClass('animated fadeIn');
-
+         menu.toggleClass('active');
     });
 
     /* --------------------------------------------------------
@@ -49,13 +48,13 @@ $(document).ready(function () {
     /* --------------------------------------------------------
         ORDER POP UP
 ----------------------------------------------------------- */
-    $('.popup').click(function () {
-        $('.content-wrap').addClass('blured');
-        $('.popup-wrap').addClass('flex');
+    $('.order').click(function () {
+        $('.modal-wrap').addClass('flex');
+        $('.form-wrap').addClass('animated slideIn')
     });
     $('.close').click(function () {
-        $('.popup-wrap').removeClass('flex');
-        $('.content-wrap').removeClass('blured');
+        $('.modal-wrap').removeClass('flex');
+        $('.form-wrap').removeClass('animated slideIn');
     });
 });
 

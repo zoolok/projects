@@ -305,7 +305,6 @@ ul.sub-menu li a:hover{
     background:#e42626 url(../images/calc-ico-min.png) 22px 50% no-repeat;
     box-shadow: 0 3px 4.95px 0.05px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    z-index:1;
     position: relative;
     overflow: hidden;
 }
@@ -664,10 +663,97 @@ hr{
 .desc-none{
     display: none;
 }
+.mob-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.95);
+    color: #fff;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    text-align: center;
+}
+.modal-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.81);
+    justify-content:center;
+    align-items:center;
+    display: none;
+}
+.form-img img{
+    display: block;
+    height: auto;
+}
+#zakaz {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    padding-left: 52px;
+    padding-right: 43px;
+}
+#zakaz h3{
+    font-size: 47px;
+    font-family:"Akrobat Bold";
+    text-transform: uppercase;
+    margin-top: 67px;
+    margin-bottom: 28px;
+    line-height: 60px;
+}
+#zakaz h3>span{
+    font-size: 61px;
+     display: block;
+     font-family:"Akrobat Black";
+}
+#zakaz input{
+    width: 100%;
+    height: 68px;
+    border:1px solid #000;
+    margin-bottom: 17px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    max-width: 383px;
+}
+.form-wrap{
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.35);
+    visibility: hidden;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+    background: url(../images/close-form.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+#zakaz small{
+    white-space: pre-line;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 18px;
+
+}
+#zakaz button{
+    margin-bottom: 26px;
+}
+
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
-
     .mobile-none {
         display: none!important;
     }
@@ -692,19 +778,16 @@ hr{
         display: inline-block;
         position: relative;
     }
-    .mob-menu{
-        position: fixed;
-        top: 0;
-        left: 0;
+
+    .active{
+        z-index: 99;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.95);
-        color: #fff;
-        z-index: -1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
+        opacity:1;
+    }
+    .mob-menu li{
+        font-size: 18px;
+        font-family:"Akrobat Bold";
+        margin-bottom: 23px;
     }
     .is-active .hamburger-inner,
     .is-active .hamburger-inner:before,
@@ -716,6 +799,7 @@ hr{
     }
     .logo img{
         max-width: 206px;
+        margin-left: 26px;
     }
     header {
         background-color: transparent;
@@ -751,6 +835,7 @@ hr{
     .main {
         background: #ededed url(../images/mobile-bg.jpg) 100% 0 no-repeat;
         padding-top: 114px;
+        background-size: contain;
     }
     .static{
         display: none;
