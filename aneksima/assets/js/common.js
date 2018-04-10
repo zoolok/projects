@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     ham.click(function () {
         ham.toggleClass('is-active');
-       /* menu.fadeToggle(300);*/
+        /* menu.fadeToggle(300);*/
 
     });
     $('.m-close-menu').click(function () {
@@ -43,7 +43,7 @@ $(document).ready(function () {
     /* --------------------------------------------------------
           SHEMA
 ----------------------------------------------------------- */
-        $('[class^="step-"]').animated("fadeIn", "fadeOut");
+    $('[class^="step-"]').animated("fadeIn", "fadeOut");
 
     /* --------------------------------------------------------
         MASKED INPUT

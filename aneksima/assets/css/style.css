@@ -443,7 +443,7 @@ ul.sub-menu li a:hover{
 .preim-item .hover {
     width: 100%;
     height: 100%;
-    padding-top: 25px;
+/*    padding-top: 25px;*/
     white-space: pre-line;
     align-items: center;
     justify-content: center;
@@ -657,6 +657,9 @@ hr{
 .hamburger{
     display: none;
 }
+.desc-none{
+    display: none;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
@@ -668,7 +671,8 @@ hr{
         width: 100%;
         margin-right: auto;
         margin-left: auto;
-        padding:0 15px;
+        padding:0;
+        overflow: hidden;
     }
     .hamburger{
         display: inline-block;
@@ -682,6 +686,9 @@ hr{
         height: 14px;
         display: inline-block;
         position: relative;
+    }
+    .desc-none{
+        display: unset;
     }
     .logo img{
         max-width: 206px;
@@ -698,19 +705,15 @@ hr{
         background-color: transparent;
     }
     h1 {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 31px;
+        line-height: 36px;
         text-align: center;
     }
     h1 > span {
-        font-size: 24px;
+        font-size: 31px;
     }
-    .main p {
-        text-align: center;
-        white-space: unset;
-        line-height: 18px;
-        font-size: 12px;
-        margin-bottom: 40px;
+    .main h1 {
+        margin-bottom: 18px;
     }
     .order {
         width: 218px;
@@ -718,5 +721,79 @@ hr{
         border: none;
         margin: 0 auto;
         display: block;
+        background: #e42626 url(../images/calc-ico-min.png) 10px 50% no-repeat;
+        font-size: 12px;
+    }
+    .main {
+        background: #ededed url(../images/mobile-bg.jpg) 100% 0 no-repeat;
+        padding-top: 114px;
+    }
+    .static{
+        display: none;
+    }
+    .preim-wpap {
+        margin-top: 66px;
+    }
+    .preim-item {
+        width: 100%;
+        height: auto;
+    }
+    .hover h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        text-align: left;
+        font-size: 16px;
+    }
+    .preim-item .hover {
+        padding-top: unset;
+        text-align: left;
+        padding-left: 23px;
+        padding-right: 5px;
+    }
+    .main p.sect{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 42px;
+        padding: 0 30px;
+    }
+    .main p {
+        text-align: left;
+        white-space: unset;
+        line-height: 24px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .preim-item .hover h3::before {
+        width: 51px;
+        bottom: -20px;
+    }
+    .catalog {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    h2 {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    h2:after {
+        width: 42px;
+        top: 24px;
+        left: 16px;
+    }
+    .catalog-wrap {
+        margin-top: 28px;
+    }
+    .catalog-item {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .catalog-item p {
+        font-size: 14px;
+        padding: 8px 20px;
     }
 }
