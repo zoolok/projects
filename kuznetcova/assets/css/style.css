@@ -571,6 +571,7 @@ li i:hover:after{
     margin-top: 154px;
     justify-content:space-between;
     overflow: hidden;
+    background: url(../images/shema-line.png) 100px 50px no-repeat;
 }
 .process-item{
     position: relative;
@@ -586,38 +587,7 @@ li i:hover:after{
     line-height: 24px;
     white-space: pre-line;
 }
-.shema.inner .process-item:nth-child(2):before{
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    left: -91%;
-    top: 50px;
-    background: url(../images/shema-line.png) 0 0 no-repeat;
-    z-index: -1;
-}
-.shema.inner-2 .process-item:nth-child(2):before{
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    left: -74%;
-    top: 50px;
-    background: url(../images/shema-line.png) 0 0 no-repeat;
-    z-index: -1;
-}
-.process-item:nth-child(2)::before {
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    left: -91%;
-    top: 50px;
-    background: url(../images/shema-line.png) 0 0 no-repeat;
-    z-index: -1;
-    background-size: 50%;
 
-}
 .result{
     padding-top: 77px;
     padding-bottom: 133px;
@@ -1152,7 +1122,50 @@ blockquote footer{
     color: #999;
     font-size: 14px;
 }
-
+.contacty-wrap{
+    padding-top: 50px;
+    justify-content: center;
+}
+.contact-img img{
+    display: block;
+    max-height: 500px;
+}
+.comtact-list li{
+    font-size: 19px;
+    font-weight: 600;
+    color: #ef0c27;
+    line-height: 50px;
+    position: relative;
+    font-style: italic;
+}
+.comtact-list li:before{
+     content: '';
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     left: -70px;
+ }
+.comtact-list li:nth-child(1):before{
+    background: url(../images/city.svg) 0 0 no-repeat;
+    top: 30px;
+}
+.comtact-list li:nth-child(2):before{
+    background: url(../images/phone.svg) 0 0 no-repeat;
+    top: 50px;
+}
+.comtact-list li:nth-child(3):before{
+    background: url(../images/mail.svg) 0 0 no-repeat;
+    top: 55px;
+}
+.comtact-list{
+    margin-right: 100px;
+}
+.comtact-list li p>span{
+     display: block;
+     color: #333;
+     font-size: 30px;
+    font-style: normal;
+ }
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
@@ -1513,5 +1526,12 @@ blockquote footer{
     .owl-carousel .owl-item img {
         width: 200px;
         height: 200px;
+    }
+    .contacty-wrap {
+        justify-content: normal;
+        padding-top: 25px;
+    }
+    .comtact-list li p > span {
+        font-size: 24px;
     }
 }
