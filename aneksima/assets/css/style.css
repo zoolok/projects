@@ -776,10 +776,12 @@ hr{
     line-height: 24px;
     font-weight: 400;
 }
-.about{
+.about,
+.contact{
     background: url(../images/about-bg.jpg) 50% 50% no-repeat;
     padding-top:75px;
-    padding-bottom:92px ;
+    padding-bottom:20px ;
+    background-size: cover;
 }
 .breadcrumb{
     padding: 10px 0;
@@ -874,6 +876,27 @@ hr{
 }
 .owl-carousel {
     z-index: 0;
+}
+section>iframe{
+    width: 100%;
+    display: block;
+}
+.contact-wrap{
+    justify-content: space-between;
+    margin-top: 108px;
+    margin-bottom: 94px;
+}
+.cont-item p:first-of-type{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #dd091d;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.cont-item p,
+.cont-item a{
+    font-weight: 600;
+    white-space: pre-line;
 }
 /*********************** MOBILE ***************************/
 
@@ -1184,5 +1207,18 @@ hr{
         padding-top: 30px;
         padding-bottom: 0;
         margin-top: 80px;
+    }
+    .contact-wrap {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .cont-item{
+        flex-grow: 1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2px;
     }
 }
