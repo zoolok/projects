@@ -326,18 +326,10 @@ li i:hover:after{
     position: relative;
     margin-bottom: 78px;
     padding-left: 100px;
+    white-space: pre-line;
 }
 .pochemu-list li:last-of-type{
     margin-bottom: 0;
-}
-.pochemu-list li:nth-child(1):before{
-    content: '';
-    position: absolute;
-    width:56px;
-    height: 56px;
-    background: url(../images/what-ico-1.png) 0 0 no-repeat;
-    left:0;
-    top: -15px;
 }
 .pochemu-list li:nth-child(1):before{
     content: '';
@@ -374,6 +366,79 @@ li i:hover:after{
     background: url(../images/what-ico-4.png) 0 0 no-repeat;
     left:0;
     top: 0;
+}
+.pochemu-list.obraz-ico li:nth-child(1):before{
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/obraz-1.png) 0 0 no-repeat;
+    left:0;
+    top: -15px;
+}
+.pochemu-list.obraz-ico li:nth-child(2):before{
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/obraz-2.png) 0 0 no-repeat;
+    left:0;
+    top: -20px;
+}
+.pochemu-list.obraz-ico li:nth-child(3):before{
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/obraz-3.png) 0 0 no-repeat;
+    left:0;
+    top: -20px;
+}
+
+.pochemu-list.vesh-ico li:nth-child(1):before{
+     content: '';
+     position: absolute;
+     width:63px;
+     height: 66px;
+     background: url(../images/vesh-1.png) 0 0 no-repeat;
+     left:0;
+     top: -15px;
+ }
+.pochemu-list.vesh-ico  li:nth-child(2):before{
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/vesh-2.png) 0 0 no-repeat;
+    left:0;
+    top: -20px;
+}
+.pochemu-list.vesh-ico  li:nth-child(3):before{
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/vesh-3.png) 0 0 no-repeat;
+    left:0;
+    top: 10px;
+}
+.pochemu-list.vesh-ico  li:nth-child(4):before{
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/vesh-4.png) 0 0 no-repeat;
+    left:0;
+    top: 0;
+}
+.pochemu-list.vesh-ico  li:nth-child(5):before{
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/vesh-5.png) 0 0 no-repeat;
+    left:0;
+    top: -15px;
 }
 .miting{
     padding-top: 155px;
@@ -723,6 +788,11 @@ footer li i::after {
     line-height: 30px;
     display: inline-block;
 }
+.portfolio-list{
+    padding-top: 75px;
+    text-align: center;
+    padding-bottom: 50px;
+}
 .style{
     padding-top: 75px;
     text-align: center;
@@ -743,6 +813,13 @@ footer li i::after {
     width: calc(50% - 16px);
     display: block;
     margin-bottom: 32px;
+    position: relative;
+}
+.gallery-wrap.portfolio-wrap a{
+    height: 447px;
+    width: 25%;
+    display: block;
+    margin-bottom: 0;
     position: relative;
 }
 .gallery-wrap a:after{
@@ -768,6 +845,7 @@ footer li i::after {
     height: 100%;
     width:100%;
     object-fit: cover;
+    display: block;
 }
 .order{
     padding: 54px 0 105px 0;
@@ -1048,6 +1126,31 @@ blockquote footer{
 }
 #zakaz button{
     width: 100%;
+}
+.otzyv{
+    padding-top: 50px;
+}
+.owl-carousel{
+    margin-top: 50px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px auto;
+    box-shadow: 0 0 15px;
+}
+.owl-carousel p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.owl-carousel span{
+    text-align: center;
+    display: block;
+    color: #999;
+    font-size: 14px;
 }
 
 /*********************** MOBILE ***************************/
@@ -1403,5 +1506,12 @@ blockquote footer{
     }
     .bq {
         padding: 0;
+    }
+    .gallery-wrap.portfolio-wrap a{
+        width: 100%;
+    }
+    .owl-carousel .owl-item img {
+        width: 200px;
+        height: 200px;
     }
 }
