@@ -50,11 +50,11 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
     $('.order').click(function () {
         $('.modal-wrap').addClass('flex');
-        $('.form-wrap').addClass('animated slideIn')
+        $('.form-wrap').addClass('animated fadeInUp')
     });
     $('.close').click(function () {
         $('.modal-wrap').removeClass('flex');
-        $('.form-wrap').removeClass('animated slideIn');
+        $('.form-wrap').removeClass('animated');
     });
 });
 
