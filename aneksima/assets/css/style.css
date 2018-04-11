@@ -872,6 +872,9 @@ hr{
     text-decoration: none;
     border: 1px solid #000;
 }
+.owl-carousel {
+    z-index: 0;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
@@ -1164,7 +1167,7 @@ hr{
         font-size: 40px;
     }
     .otzyv {
-        padding-top: 0;
+        padding-top: 40px;
         padding-bottom: 10px;
     }
     .otz-item-wrap {
@@ -1176,5 +1179,10 @@ hr{
     }
     .itz-item:before{
         content: none;
+    }
+    .about {
+        padding-top: 30px;
+        padding-bottom: 0;
+        margin-top: 80px;
     }
 }
