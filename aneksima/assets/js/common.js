@@ -11,6 +11,24 @@ $(document).ready(function () {
             });
         }
     });
+    /* --------------------------------------------------------
+            OTZYVY OWL CARUSEL
+   ----------------------------------------------------------- */
+    $(function() {
+        "use strict";
+        if ( $(".otz-carousel").length > 0 ) {
+
+            $('.otz-carousel').owlCarousel({
+                items:1,
+                nav:true,
+                navText:["",""],
+                dots:false,
+                loop:true,
+                center:true,
+                autoplay:true
+            });
+        }
+    });
 
     /* --------------------------------------------------------
                         MOBILE MENU
