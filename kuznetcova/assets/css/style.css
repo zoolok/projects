@@ -396,14 +396,14 @@ li i:hover:after{
 }
 
 .pochemu-list.vesh-ico li:nth-child(1):before{
-     content: '';
-     position: absolute;
-     width:63px;
-     height: 66px;
-     background: url(../images/vesh-1.png) 0 0 no-repeat;
-     left:0;
-     top: -15px;
- }
+    content: '';
+    position: absolute;
+    width:63px;
+    height: 66px;
+    background: url(../images/vesh-1.png) 0 0 no-repeat;
+    left:0;
+    top: -15px;
+}
 .pochemu-list.vesh-ico  li:nth-child(2):before{
     content: '';
     position: absolute;
@@ -874,7 +874,7 @@ footer li i::after {
     margin-top: 80px;
 }
 .price-item{
-justify-content: space-between;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 .price-item p:first-of-type{
@@ -1028,7 +1028,7 @@ blockquote footer{
     background-color: #fafafa;
     text-align: center;
 }
-    /*********************** MODAL ***************************/
+/*********************** MODAL ***************************/
 .modal-wrap{
     position: fixed;
     top: 0;
@@ -1134,38 +1134,39 @@ blockquote footer{
     font-size: 19px;
     font-weight: 600;
     color: #ef0c27;
-    line-height: 50px;
-    position: relative;
+    line-height: 29px;
     font-style: italic;
+    margin-bottom: 70px;
+    position: relative;
 }
 .comtact-list li:before{
-     content: '';
-     position: absolute;
-     width: 50px;
-     height: 50px;
-     left: -70px;
- }
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -70px;
+}
 .comtact-list li:nth-child(1):before{
     background: url(../images/city.svg) 0 0 no-repeat;
-    top: 30px;
+    top: 7px;
 }
 .comtact-list li:nth-child(2):before{
     background: url(../images/phone.svg) 0 0 no-repeat;
-    top: 50px;
+    top: 13px;
 }
 .comtact-list li:nth-child(3):before{
     background: url(../images/mail.svg) 0 0 no-repeat;
-    top: 55px;
+    top: 10px;
 }
 .comtact-list{
     margin-right: 100px;
 }
 .comtact-list li p>span{
-     display: block;
-     color: #333;
-     font-size: 30px;
+    display: block;
+    color: #333;
+    font-size: 30px;
     font-style: normal;
- }
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
