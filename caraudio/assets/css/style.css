@@ -8,6 +8,18 @@
     url('../fonts/Akrobat-Black.woff') format('woff'),
     url("../fonts/Akrobat-Black.otf") format("truetype");
 }
+@font-face {
+    font-family: "GothamProLight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/GothaProLig.otf");
+}
+@font-face {
+    font-family: "GothamProBold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/GothaProBol.otf");
+}
 
 * {
     box-sizing: border-box;
@@ -17,6 +29,38 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     outline: none;
+}
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+}
+
+::-webkit-scrollbar-track {
+    background-color:#32312e;
+    box-shadow:0px 0px 3px #000 inset;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#ffcb17;
+    box-shadow:0px 1px 1px #fff inset;
+    background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:7px;
+    height:0px
+}
+
+::-webkit-scrollbar{
+    width: 11px;
 }
 :after,
 :before,
@@ -567,6 +611,58 @@ hr{
     -o-transition: left 1s ease-out;
     transition: left 1s ease-out;
 }
+.brand-list h3{
+    font-size: 36px;
+    font-family: "GothamProLight";
+    color: #1a1d22;
+    margin-bottom: 55px;
+}
+.brand-list ul{
+    width: 189px;
+    height: 223px;
+    overflow-y: scroll;
+}
+.cont-text{
+    margin-left: 132px;
+}
+.cont-text h1{
+    font-size: 36px;
+    font-family: "GothamProLight";
+    color: #1a1d22;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.cont-text h1>span{
+    font-size: 36px;
+    font-family: "GothamProBold";
+    color: #1a1d22;
+    display: block;
+}
+.cont-text p{
+    font-size: 18px;
+    font-family: "GothamProLight";
+    color: #1a1d22;
+    line-height: 30px;
+}
+.brand-list li{
+    color: #c4c4c4;
+    text-transform: uppercase;
+    font-family: "GothamProLight";
+    margin-bottom: 30px;
+
+}
+.brand-list li a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.brand-list li img{
+    filter:grayscale(1);
+    margin-right: 20px;
+}
+
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
