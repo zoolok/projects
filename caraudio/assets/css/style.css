@@ -519,6 +519,7 @@ hr{
     color: #1a1d22;
     font-weight: 300;
     padding-left: 17px;
+    text-decoration: line-through;
 }
 .install{
     font-size: 22px;
