@@ -12,7 +12,7 @@ $(document).ready(function () {
         }
     });
     /* --------------------------------------------------------
-         INDEX OWL CARUSEL
+         OWL CARUSEL
 ----------------------------------------------------------- */
     $(function() {
         "use strict";
@@ -28,10 +28,41 @@ $(document).ready(function () {
                 autoplay:true
             });
         }
+        var foto = $(".slider-foto");
 
+        if ( foto.length > 0 ) {
+            foto.slick({
+                autoplay: true,
+                infinite: true
+            });
+        }
+        var vid = $(".slider-video");
+        if ( vid.length > 0 ) {
+            vid.slick({
+
+            });
+        }
     });
 
-
+    /* --------------------------------------------------------
+          FOTO VIDEO TABS
+----------------------------------------------------------- */
+    $('.foto').click(function () {
+        $(this).addClass('active');
+        $('.slider-foto').addClass('visible');
+        $('.slider-foto').removeClass('hidden');
+        $('.video').removeClass('active');
+        $('.slider-video').removeClass('visible');
+        $('.slider-video').addClass('hidden');
+    });
+    $('.video').click(function () {
+        $(this).addClass('active');
+        $('.slider-video').addClass('visible');
+        $('.slider-video').removeClass('hidden');
+        $('.foto').removeClass('active');
+        $('.slider-foto').removeClass('visible');
+        $('.slider-foto').addClass('hidden');
+    });
     /* --------------------------------------------------------
                         MOBILE MENU
 ----------------------------------------------------------- */

@@ -437,6 +437,7 @@ nav{
 p.subheader{
     color: #1a1d22;
     font-size: 18px;
+    white-space: pre-line;
 }
 .asort-wrap{
     justify-content: space-between;
@@ -611,6 +612,9 @@ hr{
     -o-transition: left 1s ease-out;
     transition: left 1s ease-out;
 }
+.main-content{
+    padding-bottom: 43px;
+}
 .brand-list h3{
     font-size: 36px;
     font-family: "GothamProLight";
@@ -643,26 +647,66 @@ hr{
     font-family: "GothamProLight";
     color: #1a1d22;
     line-height: 30px;
+    margin-bottom: 33px;
 }
 .brand-list li{
     color: #c4c4c4;
     text-transform: uppercase;
     font-family: "GothamProLight";
     margin-bottom: 30px;
-
 }
 .brand-list li a{
     display: flex;
     justify-content: start;
     align-items: center;
-
 }
-
 .brand-list li img{
     filter:grayscale(1);
     margin-right: 20px;
 }
-
+.main-banner{
+    padding-bottom: 125px;
+}
+.main-banner .container{
+    background: url(../images/main-plashka-min.jpg) 0 0 no-repeat ;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 116px 0;
+    font-size: 24px;
+    font-weight: 800;
+}
+.main-banner p{
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+.main-banner span{
+    display: block;
+    font-size: 30px;
+}
+.tabs{
+    text-align: center;
+    margin-top: 110px;
+}
+.tabs span{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1d22;
+    cursor: pointer;
+}
+.tabs span.active,
+.tabs span:hover{
+    color: #68132c;
+    border-bottom:2px dashed;
+}
+.news-tab{
+    margin-right: 100px;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
