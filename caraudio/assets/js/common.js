@@ -117,18 +117,38 @@ $(document).ready(function () {
     $('#phone').mask("+7 (999) 999-99-99");
 
     /* --------------------------------------------------------
-        ORDER POP UP
+       GOOD CARD IMAGE
 ----------------------------------------------------------- */
-    $('.popup').click(function () {
-        $('.content-wrap').addClass('blured');
-        $('.popup-wrap').addClass('flex');
-    });
-    $('.close').click(function () {
-        $('.popup-wrap').removeClass('flex');
-        $('.content-wrap').removeClass('blured');
-    });
+// SLICK
+    if ( $('.slider-for').length > 0 ) {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            arrows: false,
+            focusOnSelect: true
+        });
 
+// ZOOM
+        $('.ex1').zoom();
 
+// STYLE GRAB
+        $('.ex2').zoom({on: 'grab'});
+
+// STYLE CLICK
+        $('.ex3').zoom({on: 'click'});
+
+// STYLE TOGGLE
+        $('.ex4').zoom({on: 'toggle'});
+    }
 });
 
 

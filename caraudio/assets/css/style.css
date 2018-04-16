@@ -847,7 +847,28 @@ footer li,
 .B_currentCrumb{
     color: #68132c;
 }
+.good-info h1{
+    font-size: 24px;
+    font-weight: 400;
+}
+.good-info-wrap{
+    margin-top: 10px;
+}
+.good-description{
+    color: #1a1d22;
+}
 
+.slider-wrapper {
+    width:600px;
+}
+.slider-for__item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.slider-nav__item {
+    height: 100px;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
