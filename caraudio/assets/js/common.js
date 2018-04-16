@@ -66,20 +66,16 @@ $(document).ready(function () {
     var sliderarticle =  $('.slider-article');
 
     newstab.click(function () {
-        $(this).addClass('active');
-        slidernews.addClass('visible');
-        slidernews.removeClass('hidden');
-        articlestab.removeClass('active');
-        sliderarticle.removeClass('visible');
-        sliderarticle.addClass('hidden');
+        $(this).toggleClass('active',false);
+        slidernews.toggleClass('visible hidden');
+        articlestab.toggleClass('active',false);
+        sliderarticle.toggleClass('visible hidden');
     });
     articlestab.click(function () {
-        $(this).addClass('active');
-        sliderarticle.addClass('visible');
-        sliderarticle.removeClass('hidden');
-        newstab.removeClass('active');
-        slidernews.removeClass('visible');
-        slidernews.addClass('hidden');
+        $(this).toggleClass('active',false);
+        sliderarticle.toggleClass('visible hidden');
+        newstab.toggleClass('active',false);
+        slidernews.toggleClass('visible hidden');
     });
     /* --------------------------------------------------------
                         MOBILE MENU
@@ -97,46 +93,22 @@ $(document).ready(function () {
     });
 
     /* --------------------------------------------------------
-              SCROLL DOWN
+              SCROLL UP
 ----------------------------------------------------------- */
-    $('.down').click(function () {
-        var hs = $('.main').height();
-        /*console.log(hs);*/
-        $('html, body').stop().animate({
-            scrollTop: hs +'px'
-        },1000);
-    });
-    /* --------------------------------------------------------
-          FOTO VIDEO TABS
------------------------------------------------------------ */
-    $('.foto').click(function () {
-        $(this).addClass('active');
-        $('.slider-foto').addClass('visible');
-        $('.slider-foto').removeClass('hidden');
-        $('.video').removeClass('active');
-        $('.slider-video').removeClass('visible');
-        $('.slider-video').addClass('hidden');
-    });
-    $('.video').click(function () {
-        $(this).addClass('active');
-        $('.slider-video').addClass('visible');
-        $('.slider-video').removeClass('hidden');
-        $('.foto').removeClass('active');
-        $('.slider-foto').removeClass('visible');
-        $('.slider-foto').addClass('hidden');
-    });
+    var arrow = $('.arrow-up');
 
-    /* --------------------------------------------------------
-          NEWS & BLOG MIXITUP
------------------------------------------------------------ */
-
-    if ($("#news-grid").length > 0) {
-        $("#news-grid").mixItUp();
-    }
-
-    $('.controls li').click(function () {
-        $(".controls li").removeClass("active");
-        $(this).addClass("active");
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 350) {
+            arrow.fadeIn();
+        } else {
+            arrow.fadeOut();
+        }
+    });
+    arrow.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
     });
 
     /* --------------------------------------------------------
@@ -155,4 +127,10 @@ $(document).ready(function () {
         $('.popup-wrap').removeClass('flex');
         $('.content-wrap').removeClass('blured');
     });
+
+
 });
+
+
+
+
