@@ -319,7 +319,7 @@ nav{
     text-transform: uppercase;
 }
 .owl-carousel .owl-stage-outer {
-    overflow: visible
+    overflow: visible;
 }
 .main-slider h3>span {
     font-size: 48px;
@@ -688,9 +688,13 @@ hr{
     display: block;
     font-size: 30px;
 }
+.news{
+    padding-bottom: 175px;
+}
 .tabs{
     text-align: center;
     margin-top: 110px;
+    margin-bottom: 40px;
 }
 .tabs span{
     text-transform: uppercase;
@@ -706,6 +710,41 @@ hr{
 }
 .news-tab{
     margin-right: 100px;
+}
+
+.item-desc{
+    background-color: #0f032b;
+    padding:25px 16px 16px;
+}
+.item-desc h3{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.item-desc p{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: unset;
+    color: #999;
+    line-height: 14px;
+    margin: 10px 0;
+}
+.item-desc a{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: unset;
+    color: #e50923;
+    line-height: 14px;
+}
+.news .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+}
+.news .owl-nav {
+    position: unset;
+    bottom: unset;
+    left: unset;
+    margin-top: 42px;
 }
 /*********************** MOBILE ***************************/
 

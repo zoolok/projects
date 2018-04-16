@@ -28,40 +28,58 @@ $(document).ready(function () {
                 autoplay:true
             });
         }
-        var foto = $(".slider-foto");
+        var news = $(".slider-news");
 
-        if ( foto.length > 0 ) {
-            foto.slick({
-                autoplay: true,
-                infinite: true
+        if ( news.length > 0 ) {
+            news.owlCarousel({
+                items:4,
+                nav:true,
+                navText:["",""],
+                dots:false,
+                loop:true,
+                margin:20,
+                autoplay:true
             });
         }
-        var vid = $(".slider-video");
-        if ( vid.length > 0 ) {
-            vid.slick({
 
+        var article = $(".slider-article");
+
+        if ( article.length > 0 ) {
+            article.owlCarousel({
+                items:4,
+                nav:true,
+                navText:["",""],
+                dots:false,
+                loop:true,
+                margin:20,
+                autoplay:true
             });
         }
     });
 
     /* --------------------------------------------------------
-          FOTO VIDEO TABS
+          NEWS ARTICLE TABS
 ----------------------------------------------------------- */
-    $('.foto').click(function () {
+    var newstab = $('.news-tab');
+    var articlestab = $('.article-tab');
+    var slidernews =  $('.slider-news');
+    var sliderarticle =  $('.slider-article');
+
+    newstab.click(function () {
         $(this).addClass('active');
-        $('.slider-foto').addClass('visible');
-        $('.slider-foto').removeClass('hidden');
-        $('.video').removeClass('active');
-        $('.slider-video').removeClass('visible');
-        $('.slider-video').addClass('hidden');
+        slidernews.addClass('visible');
+        slidernews.removeClass('hidden');
+        articlestab.removeClass('active');
+        sliderarticle.removeClass('visible');
+        sliderarticle.addClass('hidden');
     });
-    $('.video').click(function () {
+    articlestab.click(function () {
         $(this).addClass('active');
-        $('.slider-video').addClass('visible');
-        $('.slider-video').removeClass('hidden');
-        $('.foto').removeClass('active');
-        $('.slider-foto').removeClass('visible');
-        $('.slider-foto').addClass('hidden');
+        sliderarticle.addClass('visible');
+        sliderarticle.removeClass('hidden');
+        newstab.removeClass('active');
+        slidernews.removeClass('visible');
+        slidernews.addClass('hidden');
     });
     /* --------------------------------------------------------
                         MOBILE MENU
