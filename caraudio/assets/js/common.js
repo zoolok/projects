@@ -66,15 +66,15 @@ $(document).ready(function () {
     var sliderarticle =  $('.slider-article');
 
     newstab.click(function () {
-        $(this).toggleClass('active',false);
+        $(this).toggleClass('active');
         slidernews.toggleClass('visible hidden');
-        articlestab.toggleClass('active',false);
+        articlestab.toggleClass('active');
         sliderarticle.toggleClass('visible hidden');
     });
     articlestab.click(function () {
-        $(this).toggleClass('active',false);
+        $(this).toggleClass('active');
         sliderarticle.toggleClass('visible hidden');
-        newstab.toggleClass('active',false);
+        newstab.toggleClass('active');
         slidernews.toggleClass('visible hidden');
     });
     /* --------------------------------------------------------

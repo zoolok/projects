@@ -627,6 +627,38 @@ hr{
     position: relative;
     padding-left: 80px;
     overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+.button.checkout,
+.button.click{
+    width: 214px;
+    font-size: 14px;
+    padding-left: 35px;
+    margin: 10px 25px 60px 0;
+}
+.button.click{
+    background-image: none;
+    background-color: transparent;
+    color: #1a1d22;
+    border: 2px solid #7e254d;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    padding-left: unset;
+    justify-content: center;
+}
+.button.click:hover{
+    color: #fff;
+}
+.button.checkout:before {
+    top: calc(50% - 12px);
+    background: url(../images/cart-ico-min.png) 0 0 no-repeat;
+    background-size: 81%;
+;
+}
+.button.click:before {
+    content: none;
 }
 .button:hover{
     text-decoration: none;
@@ -853,6 +885,7 @@ footer li,
 }
 .good-info-wrap{
     margin-top: 10px;
+    margin-bottom: 65px;
 }
 .good-description{
     color: #1a1d22;
@@ -868,6 +901,113 @@ footer li,
 
 .slider-nav__item {
     height: 100px;
+}
+.good-description p{
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.price-good-card{
+    font-weight: 600;
+    font-size: 36px;
+    color: #e50923;
+}
+.old-price-good-card{
+    font-weight: 300;
+    font-size: 24px;
+    text-decoration: line-through;
+    color: #1a1d22;
+}
+.card-install{
+    font-size: 22px;
+    color: #6c6969;
+    margin-top: 5px;
+}
+.icon-card-rap{
+    justify-content: space-between;
+    align-items: center;
+}
+.ico-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ico-card img{
+    display: block;
+    margin: 0 auto;
+}
+.ico-card p{
+    white-space: nowrap;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1a1d22;
+    margin-bottom: unset;
+    text-align: center;
+    margin-top: 15px;
+}
+.ico-card span{
+    display: block;
+    white-space: pre-line;
+    font-size: 12px;
+    color: #1a1d22;
+    text-align: center;
+}
+.slider-nav .slick-slide img {
+    display: block;
+    width: 150px;
+    object-fit: cover;
+}
+.property{
+    margin-bottom: 115px;
+}
+.property h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #68132c;
+    margin-bottom: 45px;
+    display: inline-block;
+    border-bottom: 1px solid;
+}
+.property ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-bottom: 65px;
+}
+
+.property ul li {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.property p>span{
+    color: #68132c;
+}
+.item__label {
+    display: inline-block;
+    position: relative;
+
+}
+
+.item__label:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    right: -9999px;
+    bottom: 0;
+    border-bottom: 1px dotted #888;
+}
+
+.left {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.item__cor {
+    width: 20%;
+    float: right;
 }
 /*********************** MOBILE ***************************/
 
