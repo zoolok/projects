@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
     <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -301,61 +302,57 @@
                         <div class="item-text">
                             <h3>Новый взгляд на привычные вещи</h3>
                             <p>Мы постоянно следим за новыми технологиями и решениями, которые появляются на рынке. И если мы можем предложить вам что-то новое, будьте уверены, мы обязательно это сделаем</p>
-                            <button class="order-button" data="button" style="margin-bottom: 86px;">Оставить заявку</button>
                         </div>
-                        <img class="mobile-none" src="assets/images/dv-1.png" alt="">
+                        <div class="chart">
+                            <div class="graph-container">
+                                <div class="caption">Динамика количства посетителей на сайте</div>
+                                <div id="hero-area-1" class="graph"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="adv-item">
                         <div class="item-text">
                             <h3>только качественный продукт</h3>
                             <p>Мы помогаем нашим клиентам достигнуть максимального присутствия в интернете посредством исключительно эффективного продвижения в поисковых машинах и создания выгодного имиджа рекламируемой компании, персоны или товара</p>
-                            <button class="order-button" data="button">Оставить заявку</button>
                         </div>
-                        <img class="mobile-none" src="assets/images/dv-2.png" alt=""></div>
+                        <div class="chart">
+                            <div class="graph-container">
+                                <div class="caption">Динамика количства посетителей на сайте</div>
+                                <div id="hero-area-2" class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="adv-item">
                         <div class="item-text">
                             <h3>максимальное погружение в проект</h3>
                             <p>Мы не просто берем и "рисуем" сайты, чтобы было "красиво". Перед этим этапом проводится полная аналитика конкурентной среды, товара/услуги, предложения и спроса, конкурентноспособности и преимуществ.
                                 Ведь Вам нужен не просто красивый сайт, а ресурс работающий на Вас</p>
-                            <button class="order-button" data="button">Оставить заявку</button>
                         </div>
-                        <img class="mobile-none" src="assets/images/dv-3.png" alt=""></div>
+                        <div class="chart">
+                            <div class="graph-container">
+                                <div class="caption">Динамика количства посетителей на сайте</div>
+                                <div id="hero-area-3" class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="adv-item abs">
                         <div class="item-text">
                             <h3>точно в срок!</h3>
                             <p>В проекте учавствуют от 4 до 11 человек,и каждый из них профессионал в своей области. Именно это позволяет делать действительно качественный продукт в максимально короткие сроки</p>
-                            <button class="order-button" data="button" style="margin-bottom: 86px;">Оставить заявку</button>
                         </div>
-                        <img class="mobile-none" src="assets/images/dv-4.png" alt=""></div>
-
+                        <div class="chart">
+                            <div class="graph-container">
+                                <div class="caption">Динамика количства посетителей на сайте</div>
+                                <div id="hero-area-4" class="graph"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="order-button" data="button" style="margin: 50px auto;display: block;">Хочу так же</button>
             </div>
         </div>
     </section>
 
-    <section class="garanty">
-        <div class="container">
-            <h2 class="header"><span>guarantee</span></h2>
-            <h3 class="header">гарантия</h3>
-            <p class="sub-header">финансовая и юридическая ответственность</p>
-            <div class="garanty-content flex wrap">
-                <p>В договоре отсутствуют неоднозначные формулировки
-                    и обтекаемые понятия, прописана вся материальная
-                    ответственность в виде финансовых гарантий,
-                    а также все условия сотрудничества без исключения.
-                    Мы не обременяем наших клиентов длительными сроками
-                    действия договоров и штрафными санкциями.</p>
-                <div class="icon-text">
-                    <ul>
-                        <li class="item-1">Возврат денег <br> при отсутствии результата</li>
-                        <li class="item-2">Фиксированная цена <br> на протяжении срока договора</li>
-                        <li class="item-3">Возврат денег при некорректной <br> или несвоевременной отчетности</li>
-                        <li class="item-4">Возврат денег при затягивании <br> сроков</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="letters about">
         <div class="container">
             <h2>Thanksgiving <span>letters</span></h2>
@@ -363,7 +360,7 @@
                 <div class="letter-item ">
                     <div class="letter-img">
                         <a href="assets/images/letter-1.jpg" class="image-popup-no-margins">
-                            <img src="assets/cache/images/letter-1-271x342-867.jpg" alt="благодарственное письмо">
+                            <img src="assets/images/letter-1-thumb.jpg" alt="благодарственное письмо">
                         </a>
                     </div>
                     <div class="letter-content">
@@ -378,7 +375,7 @@
                 </div><div class="letter-item ">
                 <div class="letter-img">
                     <a href="assets/images/letter-1.jpg" class="image-popup-no-margins">
-                        <img src="assets/cache/images/letter-1-271x342-867.jpg" alt="благодарственное письмо">
+                        <img src="assets/images/letter-1-thumb.jpg" alt="благодарственное письмо">
                     </a>
                 </div>
                 <div class="letter-content">
@@ -393,7 +390,7 @@
             </div><div class="letter-item ">
                 <div class="letter-img">
                     <a href="assets/images/letter-1.jpg" class="image-popup-no-margins">
-                        <img src="assets/cache/images/letter-1-271x342-867.jpg" alt="благодарственное письмо">
+                        <img src="assets/images/letter-1-thumb.jpg" alt="благодарственное письмо">
                     </a>
                 </div>
                 <div class="letter-content">
@@ -411,51 +408,54 @@
     </section>
     <section class="nap seo-page">
         <div class="container">
-            <h2 class="header">who<span> are we</span></h2>
-            <h3 class="header">что получаете</h3>
-            <p class="sub-header">В целом для вывода 10-40% запросов в ТОП-10 Google и «Яндекса» <br>
-                необходимо примерно от 3-х до 5-ти месяцев. Чтобы вывести до 80% ключевых слов <br>
-                в ТОП-10 потребуется 5-7 месяцев. Основные задачи по внутренней оптимизации ресурса <br>
-                мы проводим в первые месяцы работы. Далее бюджет на раскрутку перераспределяем с упором на внешнюю оптимизацию.</p>
+            <h2 class="header">same with <span> seo use</span></h2>
+            <h3 class="header">Так же с Seo используют</h3>
+
             <div class="nap-wrap flex wrap">
-                <div class="seo seo-page">
-                    <a class="order-button">
-                        <div class="seo-ico"></div>
-                        <h3>seo / сео реклама:</h3>
-                        <ul>
-                            <li>Вывод сайта в ТОП позиции в Yandex, Google,Mail.ru, Bing, Yahoo, LiveInternet</li>
-                        </ul>
-                    </a>
-                </div>
-                <div class="cont">
-                    <a class="order-button">
-                        <div class="cont-ico"></div>
-                        <h3>Контекстная реклама</h3>
-                        <ul>
-                            <li>Yandex.Direct, Yandex.Market, Google Adwords, MyTarget, Criteo</li>
-                        </ul>
-                    </a>
-                </div>
 
                 <div class="smm" >
                     <a  class="order-button">
                         <div class="smm-ico"></div>
-                        <h3>соц. сети (smm) </h3>
+                        <h3>крауд </h3>
                         <ul>
-                            <li>Создание групп, страниц, блогов,Видео Каналы - YouTube, VK, Facebook,Twitter, Instagram, Mail.Ru</li>
+                            <li>раскрутка сайта + естественное
+                                наращивание ссылочной массы
+                                + крауд-маркетинг</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="email-info" >
+                    <a  class="order-button">
+                        <div class="email-ico"></div>
+                        <h3>E-mail рассылка</h3>
+                        <ul>
+                            <li>семантическое ядро + техническая и внешняя
+                                оптимизация сайта + контент-маркетинг</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="seo seo-page">
+                    <a class="order-button">
+                        <div class="seo-ico"></div>
+                        <h3>sms, viber, whatsapp</h3>
+                        <ul>
+                            <li>seo продвижение + закупка трастовых
+                                ссылок на проверенных ресурсах</li>
                         </ul>
                     </a>
                 </div>
 
-                <div class="email-info" >
-                    <a  class="order-button">
-                        <div class="email-ico"></div>
-                        <h3>Рассылка рекламной информации</h3>
+                <div class="cont">
+                    <a class="order-button">
+                        <div class="cont-ico"></div>
+                        <h3>контекстное продвижение</h3>
                         <ul>
-                            <li>Для генеральных директоров и Юр. компаний Email, SMS, Viber, WhatsApp </li>
+                            <li>раскрутка ресурса + трастовые ссылки
+                                + крауд</li>
                         </ul>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -555,6 +555,8 @@
 <script type="text/javascript" src="assets/js/spincrement.min.js"></script>
 <script type="text/javascript" src="assets/libs/waypoints/waypoints.min.js"></script>
 <script type="text/javascript" src="assets/libs/animate/animate-css.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 <script type="text/javascript" src="assets/js/common.js"></script>
 
 <div class="modal-overlay">

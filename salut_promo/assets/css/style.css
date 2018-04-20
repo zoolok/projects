@@ -574,7 +574,7 @@ p.sub-header{
 
 .seo-ico{
     width: 100%;
-    height: 58px;
+    height: 65px;
     background: url(../images/seo-ico.png) 0 0 no-repeat;
 }
 .seo-page .seo-ico{
@@ -594,12 +594,12 @@ p.sub-header{
 }
 .cont-ico{
     width: 100%;
-    height: 90px;
+    height: 68px;
     background: url(../images/cont-ico.png) 0 0 no-repeat;
 }
 .email-ico{
     width: 100%;
-    height: 65px;
+    height: 67px;
     background: url(../images/email-ico.png) 0 0 no-repeat;
 }
 .portfolio-items{
@@ -1206,9 +1206,9 @@ rotation {
 }
 
 @-o-keyframes  turn-1 {
-0% {-webkit-transform: translate(0%, 0%);}
-50% {-webkit-transform: translate(0%, -30%);}
-100% {-webkit-transform: translate(0%, -10%);}
+    0% {-webkit-transform: translate(0%, 0%);}
+    50% {-webkit-transform: translate(0%, -30%);}
+    100% {-webkit-transform: translate(0%, -10%);}
 }
 
 @media screen and (max-width:550px) {
@@ -1888,7 +1888,7 @@ ul.port-descr li:after{
     -o-border-image: linear-gradient(to right, #ef7575 0%, #e93801 100%);
     border-image: linear-gradient(to right, #ef7575 0%, #e93801 100%);
     border-image-slice: 1;
-    margin: 0 auto;
+    margin: 0 auto 0 105px;
 }
 .order-form:before{
     content: '';
@@ -2175,6 +2175,9 @@ blockquote {
     margin: 56px 0;
     text-align: center;
 }
+.chart{
+    width: 500px;
+}
 
 /* ---------------- Mobile -----------------*/
 
@@ -2366,13 +2369,16 @@ blockquote {
         background: #fff;
     }
     .item-text {
-        max-width: 100%;
+        width: 100%;
     }
     .adv-item h3 {
         font-size: 18px;
         margin: 45px 0 32px;
         text-align: center;
         line-height: 24px;
+    }
+    .adv-item {
+        flex-wrap: wrap;
     }
     .slider-adv-nav .slick-track {
         justify-content: center;
@@ -2499,7 +2505,7 @@ blockquote {
 
     }
     .top-title p {
-        font-size: 40px;
+        font-size: 35px;
     }
     .portfolio-title p.descr {
         font-size: 14px;
@@ -2612,7 +2618,42 @@ blockquote {
         text-align: left;
         z-index: 10;
     }
+    .about-seo .flex:first-of-type{
+        flex-wrap: wrap;
+    }
 
+    blockquote {
+        font-size: 14px;
+        padding: 48px 15px;
+    }
+
+    .chart {
+        width: 100%;
+        display: block;
+    }
+    .icon-text {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 53px 0;
+    }
+    .icon-text ul li {
+        margin-bottom: 60px;
+        width: 100%;
+        white-space: pre-line;
+        padding: 0 12px;
+    }
+    .order-form.page {
+        width: 100%;
+        padding: 50px 10px;
+        margin: 0 auto;
+    }
+    .order-form.page:before {
+        background: none;
+        z-index: -1;
+    }
+    .yandex-img img{
+        width: 100%;
+    }
 }
 @media only screen and (max-width : 320px) {
     .slider-adv-nav .slick-slide {
