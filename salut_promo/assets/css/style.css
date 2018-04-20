@@ -1184,7 +1184,14 @@ header .soc i{
 }
 @-moz-keyframes rotation {
     from {-moz-transform: rotate(0deg);}
+
     to {-moz-transform: rotate(360deg);}
+}
+
+@-o-keyframes
+rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
 
 @-webkit-keyframes turn-1 {
@@ -1196,6 +1203,12 @@ header .soc i{
     0% {-webkit-transform: translate(0%, 0%);}
     50% {-webkit-transform: translate(0%, -30%);}
     100% {-webkit-transform: translate(0%, -10%);}
+}
+
+@-o-keyframes  turn-1 {
+0% {-webkit-transform: translate(0%, 0%);}
+50% {-webkit-transform: translate(0%, -30%);}
+100% {-webkit-transform: translate(0%, -10%);}
 }
 
 @media screen and (max-width:550px) {
@@ -1863,6 +1876,20 @@ ul.port-descr li:after{
     position: relative;
     padding:73px 525px 20px 75px;
 }
+.page-form{
+    padding-bottom: 115px;
+}
+.order-form.page{
+    width: 800px;
+    padding:50px 320px 65px 100px;
+    border: 9px solid transparent;
+    -webkit-border-image: linear-gradient(to right, #ef7575 0%, #e93801 100%);
+    -moz-border-image: linear-gradient(to right, #ef7575 0%, #e93801 100%);
+    -o-border-image: linear-gradient(to right, #ef7575 0%, #e93801 100%);
+    border-image: linear-gradient(to right, #ef7575 0%, #e93801 100%);
+    border-image-slice: 1;
+    margin: 0 auto;
+}
 .order-form:before{
     content: '';
     position: absolute;
@@ -1871,13 +1898,48 @@ ul.port-descr li:after{
     background: url(../images/modal-bg.png) 0 -39px no-repeat;
     width: 100%;
     height: 100%;
-
+}
+.order-form.page:before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -409px;
+    background: url(../images/Mockup.png) 0 0 no-repeat;
+    width: 707px;
+    height: 572px;
 }
 .order-form h3{
     font-family: "GothamProBlack";
     font-size: 30px;
     text-transform: uppercase;
     margin:0 0 10px 0;
+    text-align: center;
+}
+.order-form p{
+    font-family: "GothamPro";
+    font-size: 18px;
+    text-align: center;
+}
+.order-form p>span{
+    font-family: "GothamPro";
+    font-size: 30px;
+    text-align: center;
+}
+.order-form.page h3{
+    font-family: "GothamProBlack";
+    font-size: 27px;
+    text-transform: uppercase;
+    margin:0 0 10px 0;
+    text-align: center;
+}
+.order-form h3>span{
+    font-family: "GothamProBold";
+    font-size: 17px;
+    text-transform: uppercase;
+    display: block;
+}
+.order-form.page button{
+    margin: 0 auto;
 }
 .order-form p{
     font-size: 14px;
@@ -2028,39 +2090,92 @@ label a{
     line-height: 30px;
     width: calc(50% - 10px);
 }
+.icon-text ul{
+    flex-wrap: wrap;
+}
 .icon-text ul li{
     font-family: "GothamProBold";
     font-size: 18px;
     line-height: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.icon-text ul li p{
+    font-family: "GothamProLight";
+    font-size: 16px;
+    line-height: 22px;
 }
 .icon-text ul li{
-    margin-bottom: 45px;
+    margin-bottom: 60px;
+    width: 50%;
+    white-space: pre-line;
 }
-.icon-text ul li.item-1{
-    background: url(../images/seo-item-1.png) 0 0 no-repeat;
-    padding: 10px 0 0 75px;
+.icon-text{
+    border:38px solid #efefef ;
+    margin-left: 130px;
+    margin-right: 115px;
+    padding: 53px 64px 15px 46px;
+    position: relative;
+    background-color: #fff;
 }
-.icon-text ul li.item-2{
-    background: url(../images/seo-item-2.png) 0 0 no-repeat;
-    padding: 10px 0 0 75px;
+.icon-text:after,
+.icon-text:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
 }
-.icon-text ul li.item-3{
-    background: url(../images/seo-item-3.png) 0 0 no-repeat;
-    padding: 10px 0 0 75px;
+.icon-text:before{
+    top: -83px;
+    right: -108px;
+    width: 151px;
+    height: 219px;
+    background: url(../images/horse.png) 0 0 no-repeat;
+    filter: drop-shadow(-44px 24px 73px  rgba(0, 0, 0, 0.2));
 }
-.icon-text ul li.item-4{
-    background: url(../images/seo-item-4.png) 0 0 no-repeat;
-    padding: 10px 0 0 75px;
+.icon-text:after{
+    bottom: -64px;
+    left: -180px;
+    width: 229px;
+    height: 366px;
+    background: url(../images/lampa.png) 0 0 no-repeat;
+    filter: drop-shadow(-87px 49px 73px  rgba(0, 0, 0, 0.2));
 }
 .about-seo{
     padding-top: 56px;
-    padding-bottom: 97px;
 }
 .seo-descr {
     white-space: pre-line;
     line-height: 24px;
     font-family:"GothamProLight";
 }
+.yandex-img{
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.24);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 45px 0;
+
+}
+blockquote {
+    background-color: #efefef;
+    font-family: "GothamProBold";
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 48px 90px;
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+}
+.seo-text p{
+    font-family: "GothamProLight";
+    font-size: 16px;
+    line-height: 30px;
+    margin: 56px 0;
+    text-align: center;
+}
+
 /* ---------------- Mobile -----------------*/
 
 @media only screen and (max-width : 768px) {
