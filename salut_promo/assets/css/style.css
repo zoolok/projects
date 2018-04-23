@@ -1904,7 +1904,7 @@ ul.port-descr li:after{
     position: absolute;
     top: 20px;
     right: -409px;
-    background: url(../images/Mockup.png) 0 0 no-repeat;
+    background: url(../images/mockup.png) 0 0 no-repeat;
     width: 707px;
     height: 572px;
 }
@@ -2178,7 +2178,47 @@ blockquote {
 .chart{
     width: 500px;
 }
-
+.dev-page{
+    padding: 78px 0;
+}
+.type-sites{
+    padding-top: 56px;
+    padding-bottom: 100px;
+}
+.types-wrap{
+    flex-wrap: wrap;
+}
+.type-item{
+    width: 25%;
+    height: 242px;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.type-item h3{
+   white-space: pre-line;
+    text-align: center;
+    font-family: "GothamProBlack";
+    font-size: 18px;
+}
+.type-item p{
+   white-space: pre-line;
+    text-align: center;
+    font-family: "GothamProBlack";
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+.type-item:last-child{
+    border: 1px solid #000;
+}
+.responsibility-wrap{
+    flex-wrap: wrap;
+    background: url(../images/atlant.png) 100% 100% no-repeat;
+}
 /* ---------------- Mobile -----------------*/
 
 @media only screen and (max-width : 768px) {
