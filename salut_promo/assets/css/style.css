@@ -2387,6 +2387,9 @@ blockquote {
     line-height: 30px;
     margin-bottom: 70px;
 }
+.click-price-wrap{
+    justify-content: space-between;
+}
 .click-item ul{
     margin-top: 28px;
     margin-left: 33px;
