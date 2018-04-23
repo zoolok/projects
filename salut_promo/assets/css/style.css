@@ -2444,6 +2444,10 @@ span.label>span{
     max-width: 470px;
     margin-bottom: 45px;
 }
+.calc{
+    width: 50%;
+    max-width: 470px;
+}
 .ui-slider-horizontal {
     height: 3px;
 }
@@ -2467,6 +2471,7 @@ html .ui-button.ui-state-disabled:active {
     width: 31px;
     height: 31px;
     border-radius: 0;
+    outline: none;
 
 }
 .ui-slider-horizontal .ui-slider-handle {
@@ -2479,9 +2484,10 @@ html .ui-button.ui-state-disabled:active {
     text-align: center;
     align-items: center;
     border: 5px solid #f1f1f1;
-    width: 179px;
+    width: 100%;
     height: 68px;
     margin-right: 26px;
+    margin-bottom: 30px;
 }
 .summa{
     font-size: 16px;
@@ -2491,6 +2497,75 @@ html .ui-button.ui-state-disabled:active {
 }
 .wrap-2 span:last-of-type{
     white-space: pre-line;
+}
+.calc-data{
+    margin-top: 90px;
+}
+.calc-data p {
+    font-size: 18px;
+    font-family: "GothamProLight";
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+.calc-data p>span:first-of-type {
+    font-size: 18px;
+    font-family: "GothamProLight";
+    position: relative;
+}
+.calc-data p>span:last-of-type {
+    font-size: 24px;
+    font-family: "GothamProBold";
+    position: relative;
+    margin-left: 20px;
+}
+.calc-data p>span:first-of-type:before{
+    content: '';
+    position: absolute;
+    left: 100%;
+    right: -9999px;
+    bottom: 0;
+    border-bottom: 1px solid #000;
+}
+.itog{
+    margin-left: 85px;
+    width: 50%;
+}
+.itog p{
+    font-size: 24px;
+    font-family: "GothamProBold";
+    margin-bottom: 20px;
+}
+.itog span{
+    font-size: 12px;
+    font-family:"GothamPro";
+    line-height: 24px;
+}
+.price p>b{
+    text-align: center!important;
+    font-size: 18px;
+    font-family: "GothamProBold";
+    margin-bottom: 100px;
+    line-height: 30px;
+    display: block;
+}
+#convert-slider,
+#midsumm-slider{
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+#convert-val,
+#midsumm--val{
+    font-size: 16px;
+    font-family: "GothamProBold";
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    border: 5px solid #f1f1f1;
+    width: 100%;
+    height: 68px;
+    margin-right: 26px;
+    margin-bottom: 30px;
 }
 /* ---------------- Mobile -----------------*/
 

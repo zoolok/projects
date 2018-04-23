@@ -42,37 +42,7 @@ $(document).ready(function () {
         $(this).next().slideToggle();
         $(this).toggleClass('down');
     })
-    /* --------------------------------------------------------
-     PRICE
-    ----------------------------------------------------------- */
-    if ($("#price-slider").length >0){
 
-        $("#price-slider").slider({
-            value:0,
-            min: 0,
-            max: 100000,
-            step: 100,
-            slide: function( event, ui ) {
-                $( "#amount" ).val(number_format(ui.value, 0, '.', ' ') + ' руб' );
-                var arg =  parseInt(ui.value);
-                var prClick =  parseInt($('.radio:checked').next().attr('data-price'));
-
-                $( ".summa" ).html( number_format((arg*prClick), 0, '.', ' ') + ' человек');
-            }
-        });
-
-        $('#amount').on("click",function () {
-            $(this).val("");
-            $("#price-slider").slider({value:0});
-        });
-
-        $('#amount').on("input",function () {
-            var arg =  $(this).val();
-            $("#price-slider").slider({value:arg});
-            $( ".summa" ).html( number_format(arg, 0, '.', ' ') + ' человек');
-        });
-
-    }
     /* --------------------------------------------------------
      INDEX OWL CARUSEL
     ----------------------------------------------------------- */
@@ -388,7 +358,66 @@ ss
         }
     });
 });
+/* --------------------------------------------------------
+    PRICE
+   ----------------------------------------------------------- */
 
+if ($("#price-slider").length >0){
+    $("#price-slider").slider({
+        value:1000,
+        min: 0,
+        max: 100000,
+        step: 100,
+        slide: function( event, ui ) {
+            $( "#amount" ).val(number_format(ui.value, 0, '.', ' ') + ' руб' );
+            arg =  parseInt(ui.value);
+            prClick =  parseInt($('.radio:checked').next().attr('data-price'));
+            $( ".summa" ).html( number_format((arg/prClick), 0, '.', ' ') + ' человек');
+            client_count();
+        }
+    });
+
+    $('#amount').on("click",function () {
+        $(this).val("");
+        $("#price-slider").slider({value:0});
+        client_count();
+    });
+
+    $('#amount').on("input",function () {
+        var arg =  $(this).val();
+        var prClick =  parseInt($('.radio:checked').next().attr('data-price'));
+        $("#price-slider").slider({value:arg});
+        $( ".summa" ).html( number_format(arg/prClick, 0, '.', ' ') + ' человек');
+        client_count();
+    });
+}
+
+if ($("#convert-slider").length >0) {
+    $("#convert-slider").slider({
+        value: 0.5,
+        min: 0.5,
+        max: 10,
+        step: 0.5,
+        slide: function (event, ui) {
+            argConv = parseFloat(ui.value);
+            $("#convert-val").html(number_format(argConv, 1) + ' %');
+            client_count();
+        }
+    });
+}
+
+if ($("#midsumm-slider").length >0) {
+    $("#midsumm-slider").slider({
+        value: 100,
+        min: 100,
+        max: 100000,
+        step: 100,
+        slide: function (event, ui) {
+            argSumm = parseInt(ui.value);
+            $("#midsumm--val").html(number_format(argSumm, 0, '.', ' ')  + ' руб');
+        }
+    });
+}
 /***
  number - исходное число
  decimals - количество знаков после разделителя
@@ -464,3 +493,8 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 //  Пример 14: number_format(1e-8, 8, '.', '');
 //  Результат: '0.00000001'
 
+function client_count(){
+var grossClient = arg/prClick;
+var convert = argConv;
+    $('#client-count').html(number_format(grossClient/convert, 0, '.', ' ')  );
+}

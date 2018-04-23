@@ -303,29 +303,41 @@
                 <div class="calc">
                     <p>Бюджет на рекламу</p>
                     <div id="price-slider"></div>
-                    <div class="wrap-slider flex">
-                        <div class="wrap-1">
-                            <input type="text" id="amount"  value="0 руб." placeholder="Введите значение для рассчета"/>
-                        </div>
+                            <input type="text" id="amount"  value="1000 руб." placeholder="Введите значение для рассчета"/>
                         <div class="wrap-2">
-                            <span class="summa">0 человек</span>
+                            <span class="summa">250 человек</span>
                             <span>Ожидаемое количество посетителей
                                 из контекстной рекламы</span>
                         </div>
+                    <div class="calc-data">
+                        <p><span>Кол-во привлеченных покупателей: </span><span id="client-count"></span></p>
+                        <p><span>Доход от рекламы:</span><span id="gross-margin"></span></p>
+                        <p><span>Чистая прибыль от рекламы:</span><span id="net-margin"></span></p>
+                        <p><span>Возврат инвестиций:</span><span id="roi"></span></p>
                     </div>
                 </div>
-                <div class="itog flex">
-
+                <div class="itog">
+                    <p>Конверсия посетителя в покупателя:</p>
+                    <span>Коэффициент конверсии расчитывется как отношение купивших товар
+к числу посетителей сайта. Как правило, коэффициент конверсии
+колеблется от 0,5% до 2% и зависит от удобства пользования сайтом,
+стоимости товара и многих других факторов.</span>
+                    <div id="convert-slider"></div>
+                    <span id="convert-val">0,5%</span>
+                    <p>Средняя сумма чека</p>
+                    <div id="midsumm-slider"></div>
+                    <span id="midsumm--val">100 руб</span>
                 </div>
             </div>
+            <p><b>Все рассчёты приблизительны и могут отличаться в зависимости от некоторых факторов: сферы, самого сайта,
+                выбранной стратегии и др. Вышлите ссылку на ваш ресурс и мы расскажем всё в деталях и скажем точную стоимость.</b></p>
         </div>
     </section>
 
     <section class="page-form">
         <div class="container">
             <div class="order-form page">
-                <h3>продвинем ваш сайт <span>в ТОП поисковых систем</span></h3>
-                <p>от <span>9 000</span> р./мес.</p>
+                <h3>до прибыльного сайта<span>всего 3 шага</span></h3>
                 <form id="page-form">
                     <input type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
                     <input type="text" name ="phone" placeholder="ваш телефон или e-mail" required>
