@@ -2212,7 +2212,7 @@ blockquote {
     line-height: 24px;
     margin-bottom: 25px;
 }
-.type-item:last-child{
+.dev-page .type-item:last-child{
     border: 1px solid #000;
 }
 .responsibility{
@@ -2359,6 +2359,76 @@ blockquote {
     box-shadow:0 0 29px 0 rgba(0, 0, 0, 0.21);
     margin-top: 18px;
     margin-bottom: 48px;
+}
+.cont-desc p{
+    font-family: "GothamProLight";
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.top-title.cont-page{
+    padding: 92px 0;
+}
+ .order-button.cont-page{
+    display: block;
+    margin: 65px auto 0 auto ;
+}
+ .price{
+     padding-top: 56px;
+ }
+ .price-desc h3{
+     font-size: 24px;
+     font-family: "GothamProBold";
+ }
+.price-desc p{
+    font-family: "GothamProLight";
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 70px;
+}
+.click-item ul{
+    margin-top: 28px;
+    margin-left: 33px;
+}
+.click-item li{
+    font-size: 12px;
+    color: #888;
+    font-family: "GothamPro";
+    margin-bottom: 21px;
+}
+.click-item .radio{
+    display: none;
+}
+.radio-custom {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #e5311f;
+    margin-right: 7px;
+}
+.radio-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+    background-color: #e5311f;
+}
+span.label{
+    font-family: "GothamProBold";
+    font-size: 18px;
+}
+span.label>span{
+    font-family: "GothamProLight";
+
 }
 /* ---------------- Mobile -----------------*/
 
