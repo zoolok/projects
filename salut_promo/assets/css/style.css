@@ -2258,6 +2258,108 @@ blockquote {
     line-height: 22px;
     white-space: pre-line;
 }
+.result-wrap{
+    justify-content: flex-end;
+    background: url(../images/balerina.png) 0 0 no-repeat;
+}
+.result{
+    flex-wrap: wrap;
+    margin-left: 440px;
+    justify-content: space-between;
+}
+.result-item{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 422px;
+    width: 236px;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    white-space: pre-line;
+    margin-bottom: 10px;
+}
+.result-item h3{
+    font-family: "GothamProBlack";
+    font-size: 18px;
+}
+.result-item p{
+    font-family: "GothamPro";
+    font-size: 14px;
+    line-height: 24px;
+}
+.faq{
+    padding-top: 56px;
+    padding-bottom: 80px;
+}
+.faq-wrap{
+    max-width: 726px;
+    margin: 0 auto;
+}
+.faq-item{
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.faq-item span{
+    font-size: 36px;
+    font-family: "GothamProBold";
+    background: linear-gradient(to top, #a80808 0%, #e93801 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #a80808;
+    margin-right: 15px;
+}
+.faq-item p{
+    font-size: 18px;
+    font-family: "GothamProBold";
+    display: inline-block;
+}
+.question{
+    display: flex;
+    align-items: center;
+    position: relative;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.question:before{
+    content: '\f054';
+    position: absolute;
+    font-size: 18px;
+    font-family:'FontAwesome';
+    color: #000;
+    right: 0;
+    top: 15px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.question.down:before{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    color: #e93801;
+}
+.answer{
+    display: none;
+    padding: 35px 27px 40px 32px;
+    box-shadow:0 0 29px 0 rgba(0, 0, 0, 0.21);
+    margin-top: 18px;
+    margin-bottom: 48px;
+}
 /* ---------------- Mobile -----------------*/
 
 @media only screen and (max-width : 768px) {
