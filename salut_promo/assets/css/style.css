@@ -2215,9 +2215,48 @@ blockquote {
 .type-item:last-child{
     border: 1px solid #000;
 }
+.responsibility{
+
+}
+.responsibility .container{
+    background: url(../images/atlant.png) 100% 102% no-repeat;
+    padding-bottom: 90px;
+}
 .responsibility-wrap{
     flex-wrap: wrap;
-    background: url(../images/atlant.png) 100% 100% no-repeat;
+}
+.responsibility-item{
+    width: 50%;
+    position: relative;
+    padding: 27px 57px;
+}
+.responsibility-item:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 110px;
+    color: #f4f4f4;
+    font-family: "GothamProBold";
+    z-index: -1;
+}
+.responsibility-item:nth-child(1):before{
+    content: '01';
+}
+.responsibility-item:nth-child(2):before{
+    content: '02';
+}
+.responsibility-item:nth-child(3):before{
+    content: '03';
+}
+.responsibility-item h3{
+    font-family: "GothamProBold";
+    font-size: 24px;
+}
+.responsibility-item p{
+    font-family: "GothamProLight";
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-line;
 }
 /* ---------------- Mobile -----------------*/
 
