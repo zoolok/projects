@@ -2489,6 +2489,9 @@ html .ui-button.ui-state-disabled:active {
     display: block;
     margin-bottom: 10px;
 }
+.wrap-2 span:last-of-type{
+    white-space: pre-line;
+}
 /* ---------------- Mobile -----------------*/
 
 @media only screen and (max-width : 768px) {
