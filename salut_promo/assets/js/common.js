@@ -41,7 +41,38 @@ $(document).ready(function () {
     $('.question').click(function () {
         $(this).next().slideToggle();
         $(this).toggleClass('down');
-    });
+    })
+    /* --------------------------------------------------------
+     PRICE
+    ----------------------------------------------------------- */
+    if ($("#price-slider").length >0){
+
+        $("#price-slider").slider({
+            value:0,
+            min: 0,
+            max: 100000,
+            step: 100,
+            slide: function( event, ui ) {
+                $( "#amount" ).val(ui.value + ' руб' );
+                var arg =  parseInt(ui.value);
+                var prClick =  parseInt($('.radio:checked').next().attr('data-price'));
+
+                $( ".summa" ).html( (arg*prClick) + ' человек');
+            }
+        });
+
+        $('#amount').on("click",function () {
+            $(this).val("");
+            $("#price-slider").slider({value:0});
+        });
+
+        $('#amount').on("input",function () {
+            var arg =  $(this).val();
+            $("#price-slider").slider({value:arg});
+            $( ".summa" ).html( arg + ' человек');
+        });
+
+    }
     /* --------------------------------------------------------
      INDEX OWL CARUSEL
     ----------------------------------------------------------- */
@@ -270,85 +301,91 @@ $(document).ready(function () {
     /* --------------------------------------------------------
                 CHARTS
 ----------------------------------------------------------- */
-    Morris.Area({
-        element: 'hero-area-1',
-        data: [
-            {period: '2010 Q1', iphone: 2666},
-            {period: '2010 Q2', iphone: 2778},
-            {period: '2010 Q3', iphone: 4912},
-            {period: '2010 Q4', iphone: 3767},
-            {period: '2011 Q1', iphone: 6810},
-            {period: '2011 Q2', iphone: 5670},
-            {period: '2011 Q3', iphone: 4820},
-            {period: '2011 Q4', iphone: 15073},
-            {period: '2012 Q1', iphone: 10687},
-            {period: '2012 Q2', iphone: 8432}
-        ],
-        xkey: 'period',
-        ykeys: ['iphone'],
-        labels: ['iPhone'],
-        pointSize: 2,
-        hideHover: 'auto'
-    });
-    Morris.Area({
-        element: 'hero-area-2',
-        data: [
-            {period: '2010 Q1', iphone: 2666},
-            {period: '2010 Q2', iphone: 2778},
-            {period: '2010 Q3', iphone: 4912},
-            {period: '2010 Q4', iphone: 3767},
-            {period: '2011 Q1', iphone: 6810},
-            {period: '2011 Q2', iphone: 5670},
-            {period: '2011 Q3', iphone: 4820},
-            {period: '2011 Q4', iphone: 15073},
-            {period: '2012 Q1', iphone: 10687},
-            {period: '2012 Q2', iphone: 8432}
-        ],
-        xkey: 'period',
-        ykeys: ['iphone'],
-        labels: ['iPhone'],
-        pointSize: 2,
-        hideHover: 'auto'
-    });
-    Morris.Area({
-        element: 'hero-area-3',
-        data: [
-            {period: '2010 Q1', iphone: 2666},
-            {period: '2010 Q2', iphone: 2778},
-            {period: '2010 Q3', iphone: 4912},
-            {period: '2010 Q4', iphone: 3767},
-            {period: '2011 Q1', iphone: 6810},
-            {period: '2011 Q2', iphone: 5670},
-            {period: '2011 Q3', iphone: 4820},
-            {period: '2011 Q4', iphone: 15073},
-            {period: '2012 Q1', iphone: 10687},
-            {period: '2012 Q2', iphone: 8432}
-        ],
-        xkey: 'period',
-        ykeys: ['iphone'],
-        labels: ['iPhone'],
-        pointSize: 2,
-        hideHover: 'auto'
-    });
-    Morris.Area({
-        element: 'hero-area-4',
-        data: [
-            {period: '2010 Q1', iphone: 2666},
-            {period: '2010 Q2', iphone: 2778},
-            {period: '2010 Q3', iphone: 4912},
-            {period: '2010 Q4', iphone: 3767},
-            {period: '2011 Q1', iphone: 6810},
-            {period: '2011 Q2', iphone: 5670},
-            {period: '2011 Q3', iphone: 4820},
-            {period: '2011 Q4', iphone: 15073},
-            {period: '2012 Q1', iphone: 10687},
-            {period: '2012 Q2', iphone: 8432}
-        ],
-        xkey: 'period',
-        ykeys: ['iphone'],
-        labels: ['iPhone'],
-        pointSize: 2,
-        hideHover: 'auto'
+    $(function() {
+        "use strict";
+        if ( $( ".graph-container" ).length > 0 ) {
+ss
+            Morris.Area({
+                element: 'hero-area-1',
+                data: [
+                    {period: '2010 Q1', iphone: 2666},
+                    {period: '2010 Q2', iphone: 2778},
+                    {period: '2010 Q3', iphone: 4912},
+                    {period: '2010 Q4', iphone: 3767},
+                    {period: '2011 Q1', iphone: 6810},
+                    {period: '2011 Q2', iphone: 5670},
+                    {period: '2011 Q3', iphone: 4820},
+                    {period: '2011 Q4', iphone: 15073},
+                    {period: '2012 Q1', iphone: 10687},
+                    {period: '2012 Q2', iphone: 8432}
+                ],
+                xkey: 'period',
+                ykeys: ['iphone'],
+                labels: ['iPhone'],
+                pointSize: 2,
+                hideHover: 'auto'
+            });
+            Morris.Area({
+                element: 'hero-area-2',
+                data: [
+                    {period: '2010 Q1', iphone: 2666},
+                    {period: '2010 Q2', iphone: 2778},
+                    {period: '2010 Q3', iphone: 4912},
+                    {period: '2010 Q4', iphone: 3767},
+                    {period: '2011 Q1', iphone: 6810},
+                    {period: '2011 Q2', iphone: 5670},
+                    {period: '2011 Q3', iphone: 4820},
+                    {period: '2011 Q4', iphone: 15073},
+                    {period: '2012 Q1', iphone: 10687},
+                    {period: '2012 Q2', iphone: 8432}
+                ],
+                xkey: 'period',
+                ykeys: ['iphone'],
+                labels: ['iPhone'],
+                pointSize: 2,
+                hideHover: 'auto'
+            });
+            Morris.Area({
+                element: 'hero-area-3',
+                data: [
+                    {period: '2010 Q1', iphone: 2666},
+                    {period: '2010 Q2', iphone: 2778},
+                    {period: '2010 Q3', iphone: 4912},
+                    {period: '2010 Q4', iphone: 3767},
+                    {period: '2011 Q1', iphone: 6810},
+                    {period: '2011 Q2', iphone: 5670},
+                    {period: '2011 Q3', iphone: 4820},
+                    {period: '2011 Q4', iphone: 15073},
+                    {period: '2012 Q1', iphone: 10687},
+                    {period: '2012 Q2', iphone: 8432}
+                ],
+                xkey: 'period',
+                ykeys: ['iphone'],
+                labels: ['iPhone'],
+                pointSize: 2,
+                hideHover: 'auto'
+            });
+            Morris.Area({
+                element: 'hero-area-4',
+                data: [
+                    {period: '2010 Q1', iphone: 2666},
+                    {period: '2010 Q2', iphone: 2778},
+                    {period: '2010 Q3', iphone: 4912},
+                    {period: '2010 Q4', iphone: 3767},
+                    {period: '2011 Q1', iphone: 6810},
+                    {period: '2011 Q2', iphone: 5670},
+                    {period: '2011 Q3', iphone: 4820},
+                    {period: '2011 Q4', iphone: 15073},
+                    {period: '2012 Q1', iphone: 10687},
+                    {period: '2012 Q2', iphone: 8432}
+                ],
+                xkey: 'period',
+                ykeys: ['iphone'],
+                labels: ['iPhone'],
+                pointSize: 2,
+                hideHover: 'auto'
+            });
+        }
     });
 });
 

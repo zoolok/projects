@@ -19,7 +19,12 @@
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
     <link rel="stylesheet" href="assets/libs/animate/animate.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
+
+
 </head>
 <body>
 <div class="mobile-menu">
@@ -229,8 +234,8 @@
             <div class="click-price-wrap flex">
                 <div class="click-item">
                     <label>
-                        <input class="radio" type="radio" name="checkbox-click">
-                        <span class="radio-custom"></span>
+                        <input class="radio" type="radio" name="checkbox-click" checked>
+                        <span class="radio-custom" data-price="4"></span>
                         <span class="label">Слабая ~ <span>4 руб/клик:</span></span>
                     </label>
                     <ul>
@@ -244,7 +249,7 @@
                 <div class="click-item">
                     <label>
                         <input class="radio" type="radio" name="checkbox-click">
-                        <span class="radio-custom"></span>
+                        <span class="radio-custom" data-price="15"></span>
                         <span class="label">Средняя ~ <span>15 руб/клик:</span></span>
                     </label>
                     <ul>
@@ -263,7 +268,7 @@
                 <div class="click-item">
                     <label>
                         <input class="radio" type="radio" name="checkbox-click">
-                        <span class="radio-custom"></span>
+                        <span class="radio-custom" data-price="30"></span>
                         <span class="label">Умеренная ~ <span>30 руб/клик:</span></span>
                     </label>
                     <ul>
@@ -283,7 +288,7 @@
                 <div class="click-item">
                     <label>
                         <input class="radio" type="radio" name="checkbox-click">
-                        <span class="radio-custom"></span>
+                        <span class="radio-custom" data-price="350"></span>
                         <span class="label">Сильная ~ <span>350 руб/клик:</span></span>
                     </label>
                     <ul>
@@ -292,6 +297,27 @@
                         <li>раскрутка сайтов</li>
                         <li>авиабилеты</li>
                     </ul>
+                </div>
+            </div>
+            <div class="calculate flex">
+                <div class="calc">
+                    <p>Бюджет на рекламу</p>
+
+
+                            <div id="price-slider"></div>
+                    <div class="wrap-slider flex">
+                        <div class="wrap-1">
+                            <input type="text" id="amount"  value="0 руб." placeholder="Введите значение для рассчета"/>
+                        </div>
+                        <div class="wrap-2">
+                            <span class="summa">0 человек</span>
+                            <span>Ожидаемое количество посетителей
+                                из контекстной рекламы</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="itog flex">
+
                 </div>
             </div>
         </div>
@@ -516,6 +542,7 @@
 <script type="text/javascript" src="assets/libs/animate/animate-css.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script src="assets/libs/jquery-ui-1.12.1/jquery-ui.min.js"></script>s
 <script type="text/javascript" src="assets/js/common.js"></script>
 
 <div class="modal-overlay">
