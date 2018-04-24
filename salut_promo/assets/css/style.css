@@ -3095,17 +3095,55 @@ html .ui-button.ui-state-disabled:active {
         white-space: pre-line;
         padding: 0 12px;
     }
-    .order-form.page {
+    .order-form.page,
+    .content .order-form.page{
         width: 100%;
         padding: 50px 10px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
-    .order-form.page:before {
+    .order-form.page:before,
+    .content .order-form.page:before{
         background: none;
         z-index: -1;
     }
+    .page-form {
+        padding-bottom: 0;
+    }
     .yandex-img img{
         width: 100%;
+    }
+    .type-item {
+        width: 100%;
+    }
+    .responsibility-item {
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .result {
+        margin-left: 0;
+    }
+    .result-item {
+        width: 100%;
+    }
+    .faq-item p {
+        font-size: 14px;
+        padding-right: 25px;
+    }
+    .faq-item span {
+        font-size: 27px;
+    }
+    .place-wrap{
+        flex-wrap: wrap;
+    }
+    .place {
+        padding: 43px 23px;
+        position: relative;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media only screen and (max-width : 320px) {
