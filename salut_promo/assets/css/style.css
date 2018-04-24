@@ -2445,8 +2445,7 @@ span.label>span{
     margin-bottom: 45px;
 }
 .calc{
-    width: 50%;
-    max-width: 470px;
+    width: 60%;
 }
 .ui-slider-horizontal {
     height: 3px;
@@ -2501,24 +2500,28 @@ html .ui-button.ui-state-disabled:active {
 .calc-data{
     margin-top: 90px;
 }
-.calc-data p {
+.calc-data ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-bottom: 65px;
+}
+
+.calc-data ul li {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.item__label {
+    display: inline-block;
+    position: relative;
     font-size: 18px;
     font-family: "GothamProLight";
     margin-bottom: 90px;
-    overflow: hidden;
 }
-.calc-data p>span:first-of-type {
-    font-size: 18px;
-    font-family: "GothamProLight";
-    position: relative;
-}
-.calc-data p>span:last-of-type {
-    font-size: 24px;
-    font-family: "GothamProBold";
-    position: relative;
-    margin-left: 20px;
-}
-.calc-data p>span:first-of-type:before{
+
+.item__label:after {
     content: '';
     position: absolute;
     left: 100%;
@@ -2526,6 +2529,18 @@ html .ui-button.ui-state-disabled:active {
     bottom: 0;
     border-bottom: 1px solid #000;
 }
+
+.calc-data ul li>span {
+    font-size: 24px;
+    font-family: "GothamProBold";
+}
+.left {
+    width: 65%;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
 .itog{
     margin-left: 85px;
     width: 50%;
@@ -2566,6 +2581,18 @@ html .ui-button.ui-state-disabled:active {
     height: 68px;
     margin-right: 26px;
     margin-bottom: 30px;
+}
+.itog-text p{
+    font-family: "GothamPro";
+    font-size: 18px;
+    line-height: 36px;
+    background-color: #ededed;
+    padding: 60px;
+    margin-bottom: 100px;
+}
+.itog-text p>span{
+    font-family: "GothamProBold";
+    font-size: 18px;
 }
 /* ---------------- Mobile -----------------*/
 
