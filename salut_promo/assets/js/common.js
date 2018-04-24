@@ -510,9 +510,9 @@ function calculate(){
     var srSumm = argSumm;
     var budget = arg;
 
-    var clientcount = grossClient*convert;
-    var grossmargin = grossClient*convert*srSumm;
-    var netmargin = (grossClient*convert*srSumm) - budget;
+    var clientcount = (grossClient*convert).toFixed();
+    var grossmargin = clientcount*srSumm;
+    var netmargin = grossmargin - budget;
     var roi = netmargin/budget*100;
 
     $('#client-count').html(number_format(clientcount, 0, '.', ' ') + ' чел.');
@@ -520,11 +520,11 @@ function calculate(){
     $('#net-margin').html(number_format(netmargin, 0, '.', ' ') + ' р.');
     $('#roi').html(number_format(roi, 0, '.', ' ') + '%');
 
-    $('#invest').html(number_format(budget, 0, '.', ' '));
-    $('#srcheck').html(number_format(srSumm, 0, '.', ' '));
-    $('#chistprib').html(number_format(netmargin, 0, '.', ' '));
-    $('#roitext').html(number_format(roi, 0, '.', ' '));
-    $('#celclient').html(number_format(grossClient, 0, '.', ' '));
-    $('#convertclient').html(number_format(clientcount, 0, '.', ' '));
-    $('#converttext').html(number_format(argConv, 1, '.', ' '));
+    $('#invest').html(number_format(budget, 0, '.', '.'));
+    $('#srcheck').html(number_format(srSumm, 0, '.', '.'));
+    $('#chistprib').html(number_format(netmargin, 0, '.', '.'));
+    $('#roitext').html(number_format(roi, 0, '.', '.'));
+    $('#celclient').html(number_format(grossClient, 0, '.', '.'));
+    $('#convertclient').html(number_format(clientcount, 0, '.', '.'));
+    $('#converttext').html(number_format(argConv, 1, '.', '.'));
 }

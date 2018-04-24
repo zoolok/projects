@@ -2196,11 +2196,12 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 .type-item h3{
    white-space: pre-line;
     text-align: center;
-    font-family: "GothamProBlack";
+    font-family: "GothamProBold";
     font-size: 18px;
 }
 .type-item p{
