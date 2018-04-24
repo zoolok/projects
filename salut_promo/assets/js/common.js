@@ -420,9 +420,9 @@ if ($("#convert-slider").length >0) {
 if ($("#midsumm-slider").length >0) {
     $("#midsumm-slider").slider({
         value: 1000,
-        min: 100,
-        max: 100000,
-        step: 100,
+        min: 1000,
+        max: 500000,
+        step: 1000,
         slide: function (event, ui) {
             argSumm = parseInt(ui.value);
             $("#midsumm--val").html(number_format(argSumm, 0, '.', ' ')  + ' руб');
