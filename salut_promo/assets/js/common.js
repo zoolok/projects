@@ -274,6 +274,7 @@ $(document).ready(function () {
     $(function() {
         "use strict";
         if ( $( ".graph-container" ).length > 0 ) {
+ss
             Morris.Area({
                 element: 'hero-area-1',
                 data: [
@@ -356,25 +357,14 @@ $(document).ready(function () {
             });
         }
     });
-
-      arg = 10000;
-      prClick = 4;
-      argConv = 0.5;
-      argSumm = 1000;
-    calculate();
 });
 /* --------------------------------------------------------
     PRICE
    ----------------------------------------------------------- */
-$('.click-item label').click(function () {
-    prClick = $(this).children('span').attr('data-price');
-    $( ".summa" ).html( number_format((arg/prClick), 0, '.', ' ') + ' человек');
-    calculate();
-});
 
 if ($("#price-slider").length >0){
     $("#price-slider").slider({
-        value:10000,
+        value:1000,
         min: 0,
         max: 100000,
         step: 100,
@@ -383,14 +373,14 @@ if ($("#price-slider").length >0){
             arg =  parseInt(ui.value);
             prClick =  parseInt($('.radio:checked').next().attr('data-price'));
             $( ".summa" ).html( number_format((arg/prClick), 0, '.', ' ') + ' человек');
-            calculate();
+            client_count();
         }
     });
 
     $('#amount').on("click",function () {
         $(this).val("");
         $("#price-slider").slider({value:0});
-        calculate();
+        client_count();
     });
 
     $('#amount').on("input",function () {
@@ -398,7 +388,7 @@ if ($("#price-slider").length >0){
         var prClick =  parseInt($('.radio:checked').next().attr('data-price'));
         $("#price-slider").slider({value:arg});
         $( ".summa" ).html( number_format(arg/prClick, 0, '.', ' ') + ' человек');
-        calculate();
+        client_count();
     });
 }
 
@@ -411,21 +401,20 @@ if ($("#convert-slider").length >0) {
         slide: function (event, ui) {
             argConv = parseFloat(ui.value);
             $("#convert-val").html(number_format(argConv, 1) + ' %');
-            calculate();
+            client_count();
         }
     });
 }
 
 if ($("#midsumm-slider").length >0) {
     $("#midsumm-slider").slider({
-        value: 1000,
-        min: 1000,
-        max: 500000,
-        step: 1000,
+        value: 100,
+        min: 100,
+        max: 100000,
+        step: 100,
         slide: function (event, ui) {
             argSumm = parseInt(ui.value);
             $("#midsumm--val").html(number_format(argSumm, 0, '.', ' ')  + ' руб');
-            calculate();
         }
     });
 }
@@ -504,27 +493,8 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 //  Пример 14: number_format(1e-8, 8, '.', '');
 //  Результат: '0.00000001'
 
-function calculate(){
-    var grossClient = arg/prClick;
-    var convert = argConv/100;
-    var srSumm = argSumm;
-    var budget = arg;
-
-    var clientcount = (grossClient*convert).toFixed();
-    var grossmargin = clientcount*srSumm;
-    var netmargin = grossmargin - budget;
-    var roi = netmargin/budget*100;
-
-    $('#client-count').html(number_format(clientcount, 0, '.', ' ') + ' чел.');
-    $('#gross-margin').html(number_format(grossmargin, 0, '.', ' ') + ' р.');
-    $('#net-margin').html(number_format(netmargin, 0, '.', ' ') + ' р.');
-    $('#roi').html(number_format(roi, 0, '.', ' ') + '%');
-
-    $('#invest').html(number_format(budget, 0, '.', '.'));
-    $('#srcheck').html(number_format(srSumm, 0, '.', '.'));
-    $('#chistprib').html(number_format(netmargin, 0, '.', '.'));
-    $('#roitext').html(number_format(roi, 0, '.', '.'));
-    $('#celclient').html(number_format(grossClient, 0, '.', '.'));
-    $('#convertclient').html(number_format(clientcount, 0, '.', '.'));
-    $('#converttext').html(number_format(argConv, 1, '.', '.'));
+function client_count(){
+var grossClient = arg/prClick;
+var convert = argConv*10;
+    $('#client-count').html(number_format(grossClient/convert, 0, '.', ' ')  );
 }
