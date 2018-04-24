@@ -274,7 +274,6 @@ $(document).ready(function () {
     $(function() {
         "use strict";
         if ( $( ".graph-container" ).length > 0 ) {
-            ss
             Morris.Area({
                 element: 'hero-area-1',
                 data: [
