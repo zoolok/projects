@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Light.eot');
+    src: local('Circe Light'), local('Circe-Light'),
+    url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Light.woff') format('woff'),
+    url('../fonts/Circe-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+:after,
+:before,
+:hover{
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+body{
+    font:400 15px 'Circe', sans-serif;
+    background: url(../images/main-bg.png) 0 0 repeat-y;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+.hidden{
+    display: none!important;
+}
+.visible{
+    display: block!important;
+}
+.flex{
+    display: -webkit-flex!important;
+    display: flex!important;
+}
+.container {
+    width: 1100px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+.fixed{
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.top-logo{
+    position: absolute;
+    top: 25px;
+    right: 165px;
+}
+.main{
+    height: 100vh;
+}
+.main .container{
+    justify-content: center;
+    align-items: center;
+}
+.smoke-img{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height:100%;
+}
+.main-img{
+    margin: 0 auto;
+}
+header{
+    background-color: #fff;
+    padding: 12px 0;
+    z-index: 2;
+}
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.fix-menu li,
+.phone{
+    text-transform: uppercase;
+    margin-right: 45px;
+    font-weight: bold;
+}
+.order a{
+    display: inline-flex;
+    height: 40px;
+    width: 128px;
+    background: #cab471 url(../images/key-button.png) 0 0 no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -webkit-border-radius: 40px 0 0 40px;
+    -moz-border-radius: 40px 0 0 40px;
+    border-radius: 40px 0 0 40px;
+    padding-left: 26px;
+    padding-top: 2px;
+}
+.order a:hover{
+    text-decoration: none;
+}
+.peria{
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+/*********************** MOBILE ***************************/
+
+@media only screen and (max-width: 768px){
+
+    .mobile-none {
+        display: none!important;
+    }
+    .container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding:0 15px;
+    }
+
+}
