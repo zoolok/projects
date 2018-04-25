@@ -136,8 +136,15 @@ header .container{
 }
 .peria{
     position: absolute;
-    left: 0;
+    left: -50%;
     top: 0px;
+    z-index: -1;
+}
+.main-lovec{
+    position: absolute;
+    top: -100px;
+    right: 0;
+    z-index: -1;
 }
 /*********************** MOBILE ***************************/
 

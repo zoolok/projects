@@ -1,17 +1,5 @@
 $(document).ready(function () {
-
-    /* --------------------------------------------------------
-          FANCYBOX POP-UP
------------------------------------------------------------ */
-    $(function() {
-        "use strict";
-        if ( $("[data-fancybox]").length > 0 ) {
-            $("[data-fancybox]").fancybox({
-                // Options will go here
-            });
-        }
-    });
-    /* --------------------------------------------------------
+    /* -------------------------------------------------------
          PARALLAX
 ----------------------------------------------------------- */
     $(function() {
@@ -114,4 +102,13 @@ $('#zakaz').submit(function () {
             'Мы свяжемся с Вами в ближайшее время')
     });
     return false;
+});
+/* --------------------------------------------------------
+       FIXED MENU
+----------------------------------------------------------- */
+var nav = $('header');
+var pos = nav.offset().top;
+$(window).scroll(function () {
+    var fix = ($(this).scrollTop() >= pos) ? true : false;
+    nav.toggleClass("fixed", fix);
 });
