@@ -99,9 +99,11 @@ section {
 }
 .container {
     width: 1100px;
+    height: 100%;
     padding: 0;
     margin: 0 auto;
     position: relative;
+    overflow: visible;
 }
 .fixed{
     position: fixed!important;
@@ -190,7 +192,7 @@ header .container{
     position: absolute;
     width: 100%;
     left: 0;
-    top: 772px;
+    top: 960px;
     z-index: -1;
 }
 .key-1{
@@ -214,7 +216,7 @@ header .container{
     font-family: "Calibri";
     text-align: right;
 }
-.scroll-2-content p:last-of-type{
+p.header{
     color: #cab471;
     font-size: 72px;
     text-transform: uppercase;
@@ -226,7 +228,7 @@ header .container{
     text-align: left;
     margin-bottom: 40px;
 }
-.bq{
+.bq, .bq-1{
     white-space: pre-line;
     font-size: 17px;
     font-family:"Lato";
@@ -236,7 +238,7 @@ header .container{
     border-left:1px dashed #cccc66;
     margin-left: 82px;
 }
-.bq span{
+.bq span, .bq-1 span{
     font-family:"Lato-Bold";
     font-style: italic;
 }
@@ -254,24 +256,68 @@ header .container{
 .real-magic{
     margin-top: 200px;
     position: absolute;
-    background: #fff url(../images/scroll-3-peria.png) 50% 0% no-repeat;
+    background: #fff url(../images/scroll-3-peria.png) 56% 0% no-repeat;
     width: 1500px;
     height: 1386px;
     top: 0;
     left: 0;
 }
-/*********************** MOBILE ***************************/
-
-@media only screen and (max-width: 768px){
-
-    .mobile-none {
-        display: none!important;
-    }
-    .container {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding:0 15px;
-    }
-
+.real-magic:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 40px;
+    top:840px;
+    background: url(../images/kepka.png) 0 0 no-repeat;
+}
+.scroll-3 p{
+    margin-left: 35px;
+    margin-top: 260px;
+}
+.bq-1 {
+    color: #000;
+    margin-left: 85px;
+    padding:27px 0 115px 30px;
+}
+.place{
+    position: absolute;
+    font-size: 64px;
+    font-family:"Lato-Bold";
+    font-style: italic;
+    line-height: 62px;
+    color: #cab471;
+    right: 500px;
+    bottom: 100px;
+    white-space:pre-line;
+}
+.smoke-img-3{
+    position: absolute;
+    left: 0;
+    top: 774px;
+}
+.scroll-4{
+    margin-top: 296px;
+    height: 2700px;
+    width: 100%;
+    overflow: hidden;
+}
+.scroll-4:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 1450px;
+    left: 450px;
+    background: url(../images/scroll-4-maska.png) 0% 0% no-repeat;
+}
+.scroll-4 .bq-1{
+    color: #fff;
+    margin-left: 10px;
+    padding-bottom: 217px;
+}
+.smoke-img-4{
+    top: 1300px;
+    position: relative;
+    left: 30%;
 }
