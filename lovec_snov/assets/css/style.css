@@ -7,7 +7,15 @@
     url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Circe-Light.woff') format('woff'),
     url('../fonts/Circe-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri.eot');
+    src: local('Calibri'), local('Calibri'),
+    url('../fonts/calibri.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 * {
@@ -67,6 +75,7 @@ a:hover{
 }
 section {
     position: relative;
+    width: 100%;
 }
 .container {
     width: 1100px;
@@ -163,6 +172,26 @@ header .container{
     left: 0;
     top: 772px;
     z-index: -1;
+}
+.scroll-2 .container{
+    justify-content: flex-end;
+}
+.scroll-2-content p{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Calibri";
+}
+.scroll-2-content p:last-of-type{
+    color: #cab471;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-style: normal;
+    font-family: "Circe";
+    white-space: pre-line;
 }
 /*********************** MOBILE ***************************/
 
