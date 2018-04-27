@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
 
+
 </head>
 <body>
 <div class="mobile-menu">
@@ -220,7 +221,7 @@
             </div>
         </div>
     </section>
-    <section class="price mobile-none">
+    <section class="price">
         <div class="container">
             <h2 class="header">how <span>much</span></h2>
             <h3 class="header">Сколько стоит</h3>
@@ -304,6 +305,7 @@
                     <p>Бюджет на рекламу</p>
                     <div id="price-slider"></div>
                     <input type="text" id="amount"  value="10 000 руб." placeholder="Введите значение для рассчета"/>
+                    <div class="mob-slider"></div>
                     <div class="wrap-2">
                         <span class="summa">2 500 человек</span>
                         <span>Ожидаемое количество посетителей
@@ -339,7 +341,7 @@
                 </div>
                 <div class="itog">
                     <p>Конверсия посетителя в покупателя:</p>
-                    <span>Коэффициент конверсии расчитывется как отношение купивших товар
+                    <span class="mobile-none">Коэффициент конверсии расчитывется как отношение купивших товар
                             к числу посетителей сайта. Как правило, коэффициент конверсии
                             колеблется от 0,5% до 2% и зависит от удобства пользования сайтом,
                             стоимости товара и многих других факторов.</span>
@@ -348,7 +350,7 @@
                     <p>Средняя сумма чека</p>
                     <div id="midsumm-slider"></div>
                     <span id="midsumm--val">1 000 руб</span>
-                    <div class="itog-text">
+                    <div class="itog-text mobile-none">
                         <p> В итоге, вложив <span id="invest">10 000</span> р., при среднем
                             заработке <span id="srcheck">1 000</span> р. с одной продажи
                             вы окупите вложенное и получите   <span id="chistprib">2 500</span> р. чистой прибыли сверху.
@@ -630,6 +632,7 @@
     </div>
 </footer>
 <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http://yastatic.net/jquery/cookie/1.0/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
@@ -640,7 +643,8 @@
 <script type="text/javascript" src="assets/libs/animate/animate-css.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-<script src="assets/libs/jquery-ui-1.12.1/jquery-ui.min.js"></script>s
+<script src="assets/libs/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="assets/libs/jquery-ui-1.12.1/jquery.ui.touch-punch.min.js"></script>
 <script type="text/javascript" src="assets/js/common.js"></script>
 
 <div class="modal-overlay">

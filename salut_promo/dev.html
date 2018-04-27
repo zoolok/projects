@@ -662,6 +662,7 @@
     </div>
 </footer>
 <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http://yastatic.net/jquery/cookie/1.0/jquery.cookie.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
@@ -687,6 +688,25 @@
             <label for="policy">Я согласен с <a href="">Политикой конфиденциальности</a>
                 <input type="checkbox" name="policy" checked required>
             </label>
+        </form>
+    </div>
+</div>
+<div class="popup-modal-overlay">
+    <div class="popup-form">
+        <span class="close"></span>
+        <h3>Бесплатный аудит</h3>
+        <p>вашего сайта</p>
+        <ul>
+            <li>Подскажем как поднять конверсию</li>
+            <li>Анализируем контент</li>
+            <li>Анализируем количество ошибок</li>
+            <li>Анализ качества трафика</li>
+            <li>абсолютно бесплатно</li>
+        </ul>
+        <form id="popup-form" action="https://formspree.io/Sanja.nnov12@gmail.com"  method="POST">
+            <input type="text" name="url" placeholder="Адрес сайта" required>
+            <input type="email" name ="email" placeholder="ваш e-mail (для отчета по аудиту)" required>
+            <button data="button" data-type="audit">провести аудит</button>
         </form>
     </div>
 </div>

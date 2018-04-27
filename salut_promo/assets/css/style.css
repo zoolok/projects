@@ -699,6 +699,17 @@ p.sub-header{
 .slick-slide{
     outline:none;
 }
+.seo-page .slider-adv-nav .slick-slide.slick-current.slick-active {
+    opacity: 1;
+    position: relative;
+    height: unset;
+    padding-top: 20px;
+    width: 130px !important;
+}
+.seo-page .slick-prev {
+    background: url(../images/dv-slider-arrow-left.png) 0 0 no-repeat;
+    left: 228px;
+}
 .slider-adv-nav{
     max-width: 600px;
     min-height: 95px;
@@ -706,12 +717,22 @@ p.sub-header{
     align-items: center;
     background: url(../images/dv-ico-bg.png)61px 5px no-repeat;
 }
+.seo-page .slider-adv-nav{
+     background:none;
+ }
+.seo-page .slider-adv-nav .slick-slide.slick-current.slick-active {
+    padding-top: 0;
+}
 .slider-adv-nav .slick-track{
     display: flex;
     align-content: center;
     align-items: center;
 }
-
+.seo-page .slick-next,
+.seo-page .slick-next:hover{
+    background: url(../images/dv-slider-arrow-right.png) 0 0 no-repeat;
+    right: 164px;
+}
 .adv-item {
     display: flex!important;
     justify-content: space-between;
@@ -1778,6 +1799,10 @@ ul.port-descr li:after{
 }
 .fixed{
     position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 .mobile-menu span {
     font-family: "GothamProBold";
@@ -1867,6 +1892,19 @@ ul.port-descr li:after{
     z-index:100;
 
 }
+.popup-modal-overlay{
+    position: fixed;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index:100;
+
+}
 .order-form{
     display: flex;
     flex-direction: column;
@@ -1875,6 +1913,16 @@ ul.port-descr li:after{
     max-width:930px;
     position: relative;
     padding:73px 525px 20px 75px;
+}
+.popup-form{
+    display: flex;
+    flex-direction: column;
+    background: #fff url(../images/pop_up_bg.jpg) 0 0 no-repeat;
+    overflow: visible;
+    max-width:800px;
+    max-height: 600px;
+    position: relative;
+    padding:47px 54px 75px 413px;
 }
 .page-form{
     padding-bottom: 115px;
@@ -1915,10 +1963,44 @@ ul.port-descr li:after{
     margin:0 0 10px 0;
     text-align: center;
 }
+.popup-form h3{
+    font-family: "GothamProBlack";
+    font-size: 28px;
+    text-transform: uppercase;
+    margin:0 0 15px 0;
+}
 .order-form p{
     font-family: "GothamPro";
     font-size: 18px;
     text-align: center;
+}
+.popup-form p{
+    font-family: "GothamPro";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.popup-form li{
+    font-size: 14px;
+    font-family: "GothamPro";
+    margin-bottom: 24px;
+    position: relative;
+    margin-left: 28px;
+}
+.popup-form li:before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    left: -28px;
+    background-color: #f62e18;
+}
+.popup-form li:last-child{
+    font-size: 14px;
+    font-family: "GothamProBold";
+    margin-bottom: 24px;
+    text-transform: uppercase;
 }
 .order-form p>span{
     font-family: "GothamPro";
@@ -1961,7 +2043,8 @@ span.close:hover{
     transition: all ease 0.3s;
     background: url(../images/modal-close.png) 0 0 no-repeat;
 }
-.order-form form{
+.order-form form,
+.popup-form form{
     display: flex;
     flex-direction: column;
 }
@@ -1978,7 +2061,8 @@ span.close:hover{
 .order-form form:-ms-input-placeholder{
     opacity: 1;
 }
-.order-form input{
+.order-form input,
+.popup-form input{
     height: 55px;
     border:none;
     border-bottom: 1px solid #000;
@@ -1987,10 +2071,19 @@ span.close:hover{
     font-family: "GothamProLight";
     font-size: 11px;
     text-transform: uppercase;
+   outline: none;
+}
+input:focus, textarea:focus, select:focus {
+    outline-offset: 0;
+}
+:focus {
+    outline: none;
 }
 .order-form input:last-of-type{
     margin-bottom: 55px;
-
+}
+.popup-form input:last-of-type{
+    margin-bottom: 45px;
 }
 label{
     font-size: 12px;
@@ -2105,6 +2198,7 @@ label a{
     font-family: "GothamProLight";
     font-size: 16px;
     line-height: 22px;
+    z-index: 2;
 }
 .icon-text ul li{
     margin-bottom: 60px;
@@ -2390,6 +2484,7 @@ blockquote {
 }
 .click-price-wrap{
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .click-item ul{
     margin-top: 28px;
@@ -2725,6 +2820,10 @@ html .ui-button.ui-state-disabled:active {
     .letters {
         margin: 0 0 70px 0;
     }
+    .letters.about {
+        margin-top: 56px;
+        margin-bottom: 0;
+    }
     .letters > .container {
         padding: 0 10px 0 10px;
     }
@@ -2797,13 +2896,14 @@ html .ui-button.ui-state-disabled:active {
         margin: 0 -10px;
     }
     [class^="portfolio-item-"] {
-        height: auto;
+        height: 100%;
         position: relative;
         width: calc(100%/2);
     }
     [class^="portfolio-item-"] img {
         max-width: 100%;
-        /*height: 100%;*/
+        height: auto;
+        display: block;
     }
     [class^="portfolio-item-"] h4 {
         font-size: 14px;
@@ -2820,6 +2920,7 @@ html .ui-button.ui-state-disabled:active {
     }
     .advant {
         background: #fff;
+        padding-top: 56px;
     }
     .item-text {
         width: 100%;
@@ -2850,17 +2951,27 @@ html .ui-button.ui-state-disabled:active {
     .slider-adv-nav img {
         padding: 2px 44px;
     }
-    .slick-next {
+    .slick-next,
+    .seo-page .slick-next {
         right: calc(50% - 90px);
     }
-    .slick-prev {
+    .slick-prev,
+    .seo-page .slick-prev {
         left: calc(50% - 90px);
     }
-    .slick-prev:hover, .slick-prev:focus {
+    .seo-page .slider-adv-nav img {
+        padding: 0;
+    }
+    .slick-prev:hover, .slick-prev:focus,
+    .seo-page .slick-prev:hover, .seo-page .slick-prev:focus {
         left: calc(50% - 95px);
     }
-    .slick-next:hover, .slick-next:focus {
+    .slick-next:hover, .slick-next:focus,
+    .seo-page .slick-next:hover, .seo-page .slick-next:focus {
         right: calc(50% - 95px);
+    }
+    .seo-page .slider-adv-nav .slick-slide.slick-current.slick-active {
+        left: 8px;
     }
     .slider-adv-nav .slick-slide.slick-current.slick-active {
         left: 3px;
@@ -3087,7 +3198,9 @@ html .ui-button.ui-state-disabled:active {
     .icon-text {
         margin-left: 0;
         margin-right: 0;
-        padding: 53px 0;
+        padding: 0;
+        border: none;
+        z-index: 2;
     }
     .icon-text ul li {
         margin-bottom: 60px;
@@ -3095,11 +3208,23 @@ html .ui-button.ui-state-disabled:active {
         white-space: pre-line;
         padding: 0 12px;
     }
+    .icon-text ul li:last-child {
+        margin-bottom:0;
+
+    }
     .order-form.page,
     .content .order-form.page{
         width: 100%;
-        padding: 50px 10px;
+        padding: 25px 10px;
         margin: 20px auto;
+    }
+    .order-form.page h3 {
+        font-family: "GothamProBlack";
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 0px 0 18px 0;
+        text-align: center;
+        line-height: 34px;
     }
     .order-form.page:before,
     .content .order-form.page:before{
@@ -3132,6 +3257,8 @@ html .ui-button.ui-state-disabled:active {
     }
     .faq-item span {
         font-size: 27px;
+        display: inline-block;
+        width: 60px;
     }
     .place-wrap{
         flex-wrap: wrap;
@@ -3144,6 +3271,85 @@ html .ui-button.ui-state-disabled:active {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .popup-form {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        overflow: visible;
+        max-width: 800px;
+        max-height: 500px;
+        position: relative;
+        padding: 15px;
+    }
+    .popup-form li {
+        margin-bottom: 14px;
+    }
+    .popup-form h3 {
+        font-size: 24px;
+        margin: 28px 0 10px 0;
+    }
+    .popup-form input {
+        height: 37px;
+    }
+    .click-item {
+        margin-bottom: 10px;
+    }
+    .click-item ul {
+        display: none;
+    }
+    .place > button {
+        opacity: 1;
+        z-index: 1;
+    }
+    .calculate {
+        margin-top: 42px;
+        flex-wrap: wrap;
+    }
+    .calc{
+        width: 100%;
+    }
+    .itog {
+        margin-left: 0;
+        width: 100%;
+    }
+    .calc p {
+        margin-bottom: 40px;
+    }
+    .item__label {
+        display: inline-block;
+        position: relative;
+        font-size: 14px;
+        font-family: "GothamProLight";
+        margin-bottom: 30px;
+    }
+    .calc-data ul li > span {
+        font-size: 18px;
+        font-family: "GothamProBold";
+    }
+    .calc-data {
+        margin-top: 30px;
+    }
+    .price p > b {
+        font-size: 14px;
+        font-family: "GothamProBold";
+        margin-bottom: 100px;
+        line-height: 25px;
+        display: block;
+        text-align: justify;
+    }
+    .nap {
+        margin-bottom: 56px;
+    }
+    .type-sites {
+        padding-bottom: 56px;
+    }
+    .seo-text p {
+        margin: 56px 0 0 0;
+    }
+    .settings {
+        margin-top: 56px;
+        padding-bottom: 0;
     }
 }
 @media only screen and (max-width : 320px) {

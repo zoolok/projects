@@ -21,6 +21,18 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+input:focus,
+textarea:focus,
+select:focus,
+input,
+textarea,
+select {
+    outline-offset: 0;
+    outline: none;
+}
+:focus {
+    outline: none;
+}
 body{
     font:400 18px 'Open Sans', sans-serif;
     background: #fff;

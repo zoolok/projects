@@ -185,6 +185,28 @@ $(document).ready(function () {
     });
 
     /* --------------------------------------------------------
+                 LEAD POP-UP
+    ----------------------------------------------------------- */
+
+    var popupoverlay = $('.popup-modal-overlay');
+
+    if (!$.cookie('leadpopup')) {
+        setTimeout(function(){
+            popupoverlay.fadeIn();
+            popupoverlay.css('display','flex')
+        }, 10000);
+    }
+    $.cookie('leadpopup', true, {
+        expires: 1,
+        path: '/'
+    });
+
+    $('.popup-form .close').click(function () {
+        popupoverlay.fadeOut();
+        $('#pop-up-form').trigger("reset");
+    });
+
+    /* --------------------------------------------------------
                     BLOG MIXITUP
     ----------------------------------------------------------- */
     $(function($) {
@@ -198,10 +220,14 @@ $(document).ready(function () {
         }
     });
     /* --------------------------------------------------------
-                   ANIMATION
+                   ANIMATION AND ALL HERNYA
     ----------------------------------------------------------- */
 
     $(".animation-1").animated("fadeInUp", "fadeOutDown");
+
+    if(document.body.clientWidth < 768){
+        $('.itog').appendTo('.mob-slider');
+    }
 
     /* --------------------------------------------------------
                     SEND FORM
@@ -528,3 +554,12 @@ function calculate(){
     $('#convertclient').html(number_format(clientcount, 0, '.', '.'));
     $('#converttext').html(number_format(argConv, 1, '.', '.'));
 }
+/* --------------------------------------------------------
+       FIXED MENU
+----------------------------------------------------------- */
+var nav = $('.mobile-header');
+var pos = nav.offset().top;
+$(window).scroll(function () {
+    var fix = ($(this).scrollTop() >= pos) ? true : false;
+    nav.toggleClass("fixed", fix);
+});
