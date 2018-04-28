@@ -175,32 +175,6 @@ header .container{
     top: -454px;
     z-index: -1;
 }
-.main-lovec{
-    position: absolute;
-    top: -100px;
-    right: 0;
-    z-index: -1;
-}
-.smoke-img-2{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 472px;
-    z-index: -1;
-}
-.lovec-2{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 960px;
-    z-index: -1;
-}
-.key-1{
-    position: absolute;
-    right: 75px;
-    top: 260px;
-    z-index: -1;
-}
 .scroll-2 .container{
     justify-content: flex-end;
 }
@@ -238,20 +212,9 @@ p.header{
     border-left:1px dashed #cccc66;
     margin-left: 82px;
 }
-.bq span, .bq-1 span{
-    font-family:"Lato-Bold";
+.bq span, .bq-1 span {
+    font-family: "Lato-Bold";
     font-style: italic;
-}
-.key-2{
-    position: absolute;
-    left: 60px;
-    top: 558px;
-    z-index: -1;
-    -webkit-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    transform: rotate(-15deg);
 }
 .real-magic{
     margin-top: 200px;
@@ -291,14 +254,9 @@ p.header{
     bottom: 100px;
     white-space:pre-line;
 }
-.smoke-img-3{
-    position: absolute;
-    left: 0;
-    top: 774px;
-}
 .scroll-4{
-    margin-top: 296px;
-    height: 2700px;
+    margin-top:1836px;
+    height: auto;
     width: 100%;
     overflow: hidden;
 }
@@ -307,7 +265,7 @@ p.header{
     content: '';
     width: 100%;
     height: 100%;
-    top: 1450px;
+    top:0;
     left: 450px;
     background: url(../images/scroll-4-maska.png) 0% 0% no-repeat;
 }
@@ -316,8 +274,104 @@ p.header{
     margin-left: 10px;
     padding-bottom: 217px;
 }
-.smoke-img-4{
-    top: 1300px;
+.main-slider{
+    margin-top: 490px;
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    top: calc(50% - 45px);
+    width: 100%;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.owl-prev{
+    width: 25px;
+    height: 90px;
+    background: url(../images/arrow-left.png) 0 0 no-repeat!important;
+    position:absolute;
+    left: 0;
+}
+.owl-next{
+    width: 25px;
+    height: 90px;
+    background: url(../images/arrow-right.png) 0 0 no-repeat!important;
+    position: absolute;
+    right: 0;
+}
+.bellisimo{
+    margin-top: 30px;
+    margin-left: -140px;
+    background: #fff url(../images/bellisimo-logo.png) 386px 56px no-repeat;
+    font-size: 64px;
+    font-family: "Lato-Bold";
+    font-style: italic;
+    padding:150px 100px 60px 190px;
+    white-space: pre-line;
+    display: inline-block;
+    color: #cab471;
+    width: 710px;
+    height: 760px;
+    line-height: 62px;
+    margin-bottom: 290px;
+}
+.next-bel{
+    display: inline-block;
+    font-size: 61px;
+    color: #cab471;
+    white-space: pre-line;
+    font-family: "Circe";
+    font-weight: 300;
+    margin-left: 45px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 220px;
+    line-height: 70px;
+}
+.map{
+    border-top:13px solid  #cab471;
+    border-bottom:13px solid  #cab471;
+    margin-top: 20px;
+    padding: 0;
+}
+.map img{
+    display: block;
+}
+.order-section{
+    padding: 130px 0;
+    background: url(../images/order-bg.png) 0 0 no-repeat;
+}
+.order-head{
+    font-size: 100px;
+    font-family: "Circe";
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #cab471;
+    text-align: center;
     position: relative;
-    left: 30%;
+    margin-top: 100px;
+    margin-bottom: 85px;
+}
+.order-head span{
+    display: block;
+    color: #fff;
+}
+.order-head:before {
+    content: '';
+    position: absolute;
+    width: 29px;
+    height: 87px;
+    background: url(../images/order-key.png) 0 0 no-repeat;
+    top: -90px;
+    left: calc(50% - 15px);
 }
