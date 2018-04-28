@@ -428,7 +428,7 @@ footer li>a{
     border-bottom: 1px solid #cab471;
     flex-wrap: wrap;
     position: relative;
-    margin-right: 90px;
+    margin-right: 60px;
 }
  p.legend{
     font-size: 12px;
@@ -486,7 +486,6 @@ footer li>a{
     background: url(../images/cal.png) 0 0 no-repeat;
     top: 10px;
     left: 0;
-    
 }
 #place,
 #name,
@@ -508,4 +507,12 @@ footer li>a{
 }
 .ticket-count.phone-val{
     margin: 93px 0;
+}
+#name,
+#phone{
+    width: 100%;
+}
+.form-wrap img{
+    width: 100%;
+    display: block;
 }
