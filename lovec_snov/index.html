@@ -15,11 +15,15 @@
     <link rel="stylesheet" href="assets/css/hamburgers.css">
     <link rel="stylesheet" href="assets/libs/owl-carusel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/libs/owl-carusel/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui-1.12.1/jquery-ui.theme.css">
     <link rel="stylesheet" href="assets/css/style.css" />
+
 
 </head>
 <body>
-<section class="main">
+<section class="main" id="top">
     <div class="container flex">
         <div class="top-logo js-regaloeb-parallax js-regaloeb-parallax-slower" data-y="-150#0" data-o="0#1"><img src="assets/images/top-logo.png" alt=""></div>
         <div class="main-img js-regaloeb-parallax js-regaloeb-parallax-slower" data-y="-150#250" data-o="0#1"><img src="assets/images/lovec-logo.png" alt=""></div>
@@ -30,9 +34,9 @@
         <div class="fix-logo"><img src="assets/images/logo-fixed-menu.png" alt=""></div>
         <div class="fix-menu">
             <ul class="flex">
-                <li><a href="">главная</a></li>
-                <li><a href="">вечернее шоу</a></li>
-                <li><a href="">предложения</a></li>
+                <li><a href="#top" class="ancor">главная</a></li>
+                <li><a href="#show" class="ancor">вечернее шоу</a></li>
+                <li><a href="#order" class="ancor">предложения</a></li>
             </ul>
         </div>
         <div class="phone"><a href="tel:+79999999999">+7 999 999 99 99</a></div>
@@ -78,7 +82,7 @@
         </div>
     </div>
 </section>
-<section class="scroll-4">
+<section class="scroll-4" id="show">
     <div class="container">
         <p class="header">не
             просыпайся</p>
@@ -129,12 +133,30 @@
         <div class="form-wrap flex">
             <form id="order">
                 <div class="wrap-1 flex">
-                <div class="ticket-count">
+                <div class="ticket-count flex">
                    <span>-</span><span id="count">1</span><span>+</span>
+                    <p class="legend">Количесво билетов</p>
                 </div>
                     <div class="sel-date">
-
+                        <input type="text" id="datepicker" value="4/05/2018">
+                        <p class="legend">Дата</p>
                     </div>
+                </div>
+                    <div class="ticket-count place-val flex">
+                        <span>место</span><input id="place" type="text" value="23">
+                        <p class="legend">Выберите место</p>
+                    </div>
+
+                <div class="ticket-count flex">
+                   <input id="name" type="text" value="-">
+                    <p class="legend">Ваше имя</p>
+                </div>
+                <div class="ticket-count phone-val flex">
+                   <input id="phone" type="text" value="-">
+                    <p class="legend">Ваш контактный телефон</p>
+                </div>
+                <div class="order">
+                    <a href="#order">заказать</a>
                 </div>
             </form>
             <img src="assets/images/order-img.jpg" alt="">
@@ -169,6 +191,7 @@
 <script src="assets/libs/waypoints/waypoints.min.js"></script>
 <script src="assets/js/animate-css.js"></script>
 <script src="assets/libs/owl-carusel/owl.carousel.min.js"></script>
+<script src="assets/libs/jquery-ui-1.12.1/jquery-ui.js"></script>
 <script src="assets/js/common.js"></script>
 </body>
 </html>

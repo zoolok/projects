@@ -349,7 +349,8 @@ p.header{
 }
 .order-section{
     padding: 130px 0;
-    background: url(../images/order-bg.png) 0 0 no-repeat;
+    background: url(../images/order-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
 }
 .order-head{
     font-size: 100px;
@@ -384,6 +385,7 @@ footer{
     padding-top: 72px;
     padding-left: 83px;
     padding-right: 165px;
+    background-size: cover;
 }
 footer .header{
     font-size: 25px;
@@ -419,4 +421,91 @@ footer li>a{
     line-height: 15px;
     white-space: pre-line;
     font-family: "Lato-Bold";
+}
+.ticket-count,
+.sel-date{
+    align-items: center;
+    border-bottom: 1px solid #cab471;
+    flex-wrap: wrap;
+    position: relative;
+    margin-right: 90px;
+}
+ p.legend{
+    font-size: 12px;
+    font-family: "Lato-Bold";
+    color: #fff;
+    font-style: italic;
+    flex-grow: 1;
+    position: absolute;
+    top: 57px;
+    width: 100%;
+     text-align: center;
+     white-space: nowrap;
+}
+.ticket-count span:first-of-type,
+.ticket-count span:last-of-type{
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+}
+#count{
+    font-size: 50px;
+    color: #cab471;
+    font-family: "Circe";
+    font-weight: bold;
+    padding: 0 26px;
+    line-height: 10px;
+}
+#order{
+    min-width: 515px;
+    margin-right: 70px;
+}
+#datepicker{
+    background: transparent;
+    border: none;
+    font-size: 35px;
+    color: #fff;
+    width: 241px;
+    height: 100%;
+    font-family: "Circe";
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+}
+.wrap-1{
+    margin-bottom: 111px;
+}
+.form-wrap .order{
+    text-align: center;
+}
+.sel-date:after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 36px;
+    background: url(../images/cal.png) 0 0 no-repeat;
+    top: 10px;
+    left: 0;
+    
+}
+#place,
+#name,
+#phone{
+    font-size: 50px;
+    color: #cab471;
+    font-family: "Circe";
+    font-weight: bold;
+    padding: 0 26px;
+    line-height: 10px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    width: 132px;
+}
+.ticket-count.place-val{
+    display: inline-flex!important;
+    margin-bottom: 130px;
+}
+.ticket-count.phone-val{
+    margin: 93px 0;
 }
