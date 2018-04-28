@@ -375,3 +375,48 @@ p.header{
     top: -90px;
     left: calc(50% - 15px);
 }
+footer{
+    height: 382px;
+    width: 100%;
+    background: url(../images/footer-bg.jpg) 0 0 no-repeat;
+    margin-bottom: 25px;
+    border-top:13px solid  #cab471;
+    padding-top: 72px;
+    padding-left: 83px;
+    padding-right: 165px;
+}
+footer .header{
+    font-size: 25px;
+    margin-bottom: 38px;
+    line-height: 25px;
+}
+footer .container{
+    justify-content: space-between;
+}
+footer ul{
+    margin-bottom: 18px;
+}
+footer li{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Lato-Bold";
+    color: #cab471;
+}
+footer li>a{
+    color: #525252;
+    font-family: "Lato";
+    text-transform: none;
+}
+.footer-contact span{
+    font-size: 12px;
+    font-family: "Lato-Bold";
+    color: #9b9b9b;
+    font-style: italic;
+}
+.footer-text p:last-of-type{
+    font-size: 12px;
+    color: #000;
+    line-height: 15px;
+    white-space: pre-line;
+    font-family: "Lato-Bold";
+}
