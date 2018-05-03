@@ -16,20 +16,18 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
     $(function() {
         "use strict";
-        if ( $( ".main-slider" ).length > 0 ) {
+        if ( $( ".nacka-slider" ).length > 0 ) {
 
-            $('.main-slider').owlCarousel({
+            $('.nacka-slider').owlCarousel({
                 items:1,
                 nav:true,
                 navText:["",""],
-                dots:true,
-                loop:false,
+                dots:false,
+                loop:true,
                 center:true,
-                dotsContainer: '.dots',
                 autoplay:true
             });
         }
-        $('.owl-dots').wrap("<div class='container'></div>");
     });
 
 

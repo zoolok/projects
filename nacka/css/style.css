@@ -1,21 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic);
 @font-face {
-    font-family: 'Akrobat';
-    src: local('Akrobat'), local('Akrobat-Regular'),
-    url('../fonts/Akrobat.woff2') format('woff2'),
-    url('../fonts/Akrobat.woff') format('woff'),
-    url('../fonts/Akrobat.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    font-family: "GothamPro";
+    src: url("../fonts/GothaProReg.otf");
 }
-
 @font-face {
-    src: local('Akrobat Bold'), local('Akrobat-Bold'),
-    url('../fonts/Akrobatbold.woff2') format('woff2'),
-    url('../fonts/Akrobatbold.woff') format('woff'),
-    url('../fonts/Akrobatbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothaProMed.otf");
+}
+@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothaProLig.otf");
+}
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothaProBol.otf");
+}
+@font-face {
+    font-family: "GothamProBlack";
+    src: url("../fonts/GothaProBla.otf");
 }
 
 * {
@@ -48,12 +50,13 @@ select {
     outline: none;
 }
 body {
-    background: #fff;
+    background: #fff url(../images/lines.png) 0 0 repeat-y;;
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     font: 400 14px 'Open Sans';
+    color: #262c3a;
 }
 ul{
     list-style-type: none;
@@ -68,6 +71,10 @@ a{
     text-decoration: none;
     color: #000;
     outline: none;
+}
+section {
+    position: relative;
+    width: 100%;
 }
 a:hover{
     text-decoration: underline;
@@ -120,7 +127,9 @@ a:hover{
     -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
 }
-
+header{
+    background-color: #fff;
+}
 header .container{
     align-items: center;
     justify-content: space-between;
@@ -183,7 +192,9 @@ header .container{
     filter: brightness(0%);
     -webkit-filter: brightness(0%);
 }
-
+.wrap-1{
+    align-items: center;
+}
 .soc{
     background:url(../images/fb-ico.png) 50% 50% no-repeat;
     width: 47px;
@@ -200,22 +211,32 @@ header .container{
 }
 nav{
     width: 100%;
+    background-color: #006aa7;
+    margin-top: 5px;
 }
+
 nav ul{
     align-items: center;
     justify-content: space-between;
+    max-width: 690px;
 }
 nav ul li{
     padding: 20px 0;
 }
 nav ul li a{
     text-transform: uppercase;
-    font:700 20px 'Akrobat';
+    font-size: 14px;
+    font-family: "GothamProMedium";
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #fecc00;
 }
 button, a.link{
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
-    font:700 18px 'Akrobat';
+    font-size: 16px;
+    font-family: "GothamPro";
     background-color: #fecc00;
     width: 238px;
     height: 58px;
@@ -232,56 +253,96 @@ a.link{
     text-decoration: none;
     padding:18px 54px;
 }
-.slide-text{
-    position: absolute;
-    top: 88px;
-    left: 0;
-}
-.slide-text p{
-    font-size: 24px;
-}
-.slide-text h2{
-    font: 400 55px/60px "Akrobat", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 33px;
-}
-.slide-text h2 span{
-    color: #ed1c24;
-}
-.owl-dots, .dots{
-    position: absolute;
-    bottom: -500px;
-    left: 0;
-    display: flex;
-    align-items: center;
-    z-index: 99;
-}
-.owl-dot{
-    width: 12px;
-    height: 12px;
-    margin-right: 17px;
-    background-color: #ed1c24;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.owl-dot.active{
-    width: 21px;
-    height: 21px;
-}
-.shema{
-    padding:110px 0 147px 0;
-}
-.shema h1,
-.serv-wrap h2,
-.gallery-line h2,
-.price-info h2{
-    font: 400 60px "Akrobat", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
+.main-text{
+    margin-right: 65px;
     position: relative;
-    margin-bottom: 132px;
+}
+.main-text:before{
+    position: absolute;
+    content: 'nacka';
+    text-transform: uppercase;
+    font-family: "GothamProMedium";
+    font-size: 205px;
+    opacity: 0.07;
+    z-index: -1;
+    top: -45px;
+    left: -150px;
+ }
+.main-text h1{
+    font-size: 48px;
+    line-height: 48px;
+    font-family: "GothamProBold";
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: 152px;
+    color: #262c3a;
+}
+.main-text h1>span{
+    display: block;
+    font-family: "GothamPro";
+    font-size: 35px;
+}
+.main-text p{
+    font-family: "GothamPro";
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    color: #262c3a;
+    white-space: pre-line;
+}
+.nacka-slider{
+    position: absolute;
+    top: 0;
+    left: 572px;
+    width: 970px;
+}
+.owl-theme .owl-nav {
+    margin-top: 0;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    bottom: 70px;
+    left: -5px;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius:0;
+}
+.owl-prev{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: url(../images/arrow-left.jpg) 0 0 no-repeat!important;
+    left: 0;
+}
+.owl-next{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: url(../images/arrow-right.jpg) 0 0 no-repeat!important;
+    left: 65px;
+}
+.whychange{
+    margin-top: 275px;
+}
+.header{
+    text-transform: uppercase;
+    font-size: 64px;
+    font-family: "GothamProBold";
+    text-align: center;
+    line-height: 60px;
+}
+.subheader{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "GothamPro";
+    text-align: center;
 }
 .shema h1:before,
 .serv-wrap h2:before,
@@ -802,7 +863,7 @@ a.fb{
 .pricelist tr:nth-child(even){
     background-color: #f1f1f1;
 }
-.worm-wrap{
+.worm-wrap, .worm-wrap-order{
     position: fixed;
     top: 0;
     left: 0;
@@ -813,7 +874,7 @@ a.fb{
     display: none;
     z-index: 1000;
 }
-.worm-wrap:before{
+.worm-wrap:before, .worm-wrap-order:before{
     content: '';
     position: absolute;
     width: 100%;
@@ -822,15 +883,27 @@ a.fb{
     opacity: 0.8  ;
     z-index: -1;
 }
-#pop-up{
+.form-group{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-group input{
+    width: calc(50% - 10px)!important;
+}
+#pop-up, #order{
     background-color: #fff;
     flex-direction: column;
-    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.29);
     padding:45px;
     position: relative;
     align-items: center;
 }
-#pop-up input, #pop-up textarea{
+#order{
+    padding:15px 16px;
+    max-width: 400px;
+}
+#pop-up input, #pop-up textarea, #pop-up select{
     width: 220px;
     height: 50px;
     color: #000;
@@ -839,27 +912,36 @@ a.fb{
     margin-bottom: 20px;
     padding:0 15px;
 }
-#pop-up input[type="checkbox"]{
+#order input, #order textarea, #order select{
+    width: 100%;
+    height: 40px;
+    color: #000;
+    background-color:transparent;
+    border:1px solid #000;
+    margin-bottom: 15px;
+    padding:0 15px;
+}
+#pop-up input[type="checkbox"], #order input[type="checkbox"]{
     margin: 0;
     width: unset;
     height: unset;
     margin-right: 10px;
 }
-#pop-up textarea{
+#pop-up textarea, #order textarea{
     height: 72px;
     padding-top: 15px;
 }
-#pop-up h3{
-    font:400 30px "Akrobat";
+#pop-up h3, #order h3{
+    font:400 30px "GothamProBold";
     text-transform: uppercase;
     text-align: center;
 }
-#pop-up p{
-    font:400 18px "Akrobat";
+#pop-up p, #order p{
+    font:400 18px "GothamPro";
     text-align: center;
 }
 label{
-    font-family: "Akrobat";
+    font-family: "GothamPro";
 }
 .close{
     position: absolute;
@@ -954,7 +1036,7 @@ label{
     margin-bottom: 8px;
 }
 .menu-button p{
-    font: 700 12px/10px "Akrobat";
+    font: 700 12px/10px "GothamPro";
     margin: 0;
     letter-spacing: 1px;
 }
@@ -1002,6 +1084,24 @@ label{
 }
 .mob-header nav ul li:hover  a:before{
     width: 100%;
+}
+.footer-contact img{
+    width: 144px;
+    height: auto;
+}
+.contact-map {
+    flex-grow: 1;
+    height: 310px;
+    margin-left: 50px;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+.blog-post img{
+    min-width: 436px;
+    min-height: 300px;
+    object-fit: cover;
 }
 /* *************** MOBILE **************** */
 
@@ -1185,5 +1285,13 @@ label{
         font: 400 14px "Open Sans";
         padding-left: 10px;
     }
-
+    .contact-map {
+        margin-left: 0;
+    }
+    .post-desc span, .post-desc p {
+        font: 400 16px/25px "Open Sans";
+    }
+    .blog-post-img .date {
+        display: none;
+    }
 }
