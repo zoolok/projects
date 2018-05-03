@@ -68,50 +68,7 @@ $(document).ready(function () {
     if(document.body.clientWidth < 768) {
 
     }
-    /* --------------------------------------------------------
-       SHEMA SLIDER
------------------------------------------------------------ */
 
-    var pi = $('.stage ul li');
-
-    var shema_img = $('[class^="shema-item-"]');
-    /*console.log(shema_img);*/
-
-    pi.click(function () {
-
-        pi.each(function (index) {
-            pi.removeClass('active');
-        });
-
-        $(this).addClass('active');
-        shema_img.fadeOut(0);
-
-        var numit = parseInt($(this).attr('data-shema'));
-
-        /* console.log(numit);*/
-
-        var cur = numit-1;
-
-        /* console.log(cur);*/
-
-        shema_img.each(function (index) {
-            if (index == cur) {
-                $(this).fadeIn(0);
-            }
-        });
-    });
-
-    function nextStepFn () {
-        var ns = $('.stage ul li.active');
-        ns.removeClass('active');
-        if(ns.is('.stage ul li:last')){
-            var nsNext = $('.stage ul li:first');
-        }else{
-            var nsNext = ns.next('.stage ul li');
-        }
-        nsNext.addClass('active').trigger('click');
-    }
-    setInterval(nextStepFn, 8000);
 
     /* --------------------------------------------------------
           MENU
@@ -139,7 +96,9 @@ $(document).ready(function () {
        ANIMATIONS
 ----------------------------------------------------------- */
 
-    $('.shema h1').animated('fadeIn','fadeOut');
+    $('.header').animated('fadeInRight','fadeOutLeft');
+    $('.subheader').animated('fadeInLeft','fadeOutRight');
+    $('.service-item').animated('fadeIn','fadeOut');
     $('.serv-desc h2').animated('fadeIn','fadeOut');
     $('.gallery-line h2').animated('fadeIn','fadeOut');
     $('li[data-shema]').animated('fadeIn','fadeOut');
