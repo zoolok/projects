@@ -539,6 +539,7 @@ a.fb{
 }
 .inner-title{
     padding-top: 45px;
+    padding-bottom: 90px;
 }
 .inner-title .wrap-header{
     margin-bottom: 25px;
@@ -607,107 +608,7 @@ a.fb{
     top: -211px;
     right: -370px;
  }
-[class^="serv-item-"]{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
-}
-.serv-list-1 [class^="serv-item-"]:nth-child(even) div:first-child,
-.serv-list-3 [class^="serv-item-"]:nth-child(even) div:first-child{
-    order: 1;
-}
-.serv-list-2 [class^="serv-item-"]:nth-child(odd) div:first-child{
-    order: 1;
-}
-.serv-desc{
-    max-width: 550px;
-    position: relative;
-}
-.serv-wrap h2 {
-    margin-bottom: 15px;
-    margin-top: 35px;
-    /*text-align: left;*/
-}
-.serv-wrap h2::before {
-  /*  left: -60px;*/
-}
-.serv-desc h3{
-    font:400 36px/42px "Akrobat";
-}
-.serv-desc p{
-    margin-bottom: 56px;
-}
-.serv-img{
-    position: relative;
-}
-[class^="figovina-"]{
-    position: absolute;
-    z-index: -1;
-}
-.figovina-1{
-    width: 378px;
-    height: 224px;
-    right: -143px;
-    bottom: 54px;
-    background: url(../images/el-11.png) 0 0 no-repeat;
-}
-.figovina-2{
-    width: 437px;
-    height: 207px;
-    left: -360px;
-    bottom: -35px;
-    background: url(../images/el-12.png) 0 0 no-repeat;
-}
-.figovina-3,
-.figovina-4{
-    font: 400 60px/10px "Open Sans";
-    color: #000;
-    z-index: 0;
-    margin: 0;
-}
-.figovina-3{
-    right: 0;
-    bottom: 20px;
-}
-.figovina-3:after{
-    content: '';
-    position: absolute;
-    width: 9999px;
-    height: 1px;
-    background-color: #c4c4c4;
-    top: 7px;
-    left: 0;
-    z-index: -1;
-}
-.figovina-4{
-    left: 0;
-    bottom: 0;
-}
-.figovina-4:after{
-    content: '';
-    position: absolute;
-    width: 9999px;
-    height: 1px;
-    background-color: #c4c4c4;
-    top: 7px;
-    right: 0;
-    z-index: -1;
-}
-.figovina-5{
-    width: 494px;
-    height: 283px;
-    right: -360px;
-    bottom: -110px;
-    background: url(../images/el-13.png) 0 0 no-repeat;
-}
-.figovina-6{
-    width: 437px;
-    height: 207px;
-    left: -360px;
-    bottom: -85px;
-    background: url(../images/el-11.png) 0 0 no-repeat;
-}
+
 .info{
     margin-left: 45px;
 }
@@ -750,17 +651,18 @@ a.fb{
     top: -3px;
     background: url(../images/map-marker-ico-contact.png) 0 0 no-repeat;
 }
-.gallery-line{
-    padding:15px 0 60px 0;
-}
+
 .gal-img{
     justify-content:space-between;
     flex-wrap: wrap;
 }
 .gal-img img{
-    width: 280px;
-    height: 280px;
     object-fit: cover;
+    box-shadow: 21px 20px 27px 0 rgba(0, 0, 0, 0.32);
+}
+.gal-img a{
+    width:calc(50% - 25px);
+    margin-bottom: 50px;
 }
 .gal-img img:hover{
     -moz-transform: translateY(-10px);
@@ -771,9 +673,14 @@ a.fb{
     -moz-box-shadow: 0 10px 29px -13px #000;
     box-shadow: 0 10px 29px -13px #000;
 }
+.gallery-line{
+    padding:15px 0 0 0;
+}
 .gallery-line h2 {
-  /*  text-align: left;*/
-    margin-bottom: 11px;
+    font-size: 48px;
+    font-family:"GothamProMedium";
+    margin-bottom: 40px;
+    margin-top: 10px;
 }
 .gallery-line h2::before {
   /*  left: -83px;*/
@@ -785,7 +692,7 @@ a.fb{
     margin-left: 57px;
 }
 .post-desc h3{
-    font:400 36px "Akrobat";
+    font:400 36px "GothamProBold";
     margin-bottom: 10px;
     color: #000;
 }
@@ -804,7 +711,7 @@ a.fb{
     padding:0 43px 24px 34px;
 }
 .calc p{
-    font: 400 24px "Akrobat";
+    font: 400 24px "GothamPro";
 }
 .price-info{
     padding-bottom: 30px;
@@ -848,7 +755,7 @@ a.fb{
     justify-content: center;
 }
 .summa{
-    font: 700 30px "Akrobat";
+    font: 700 30px "GothamPro";
     text-align: center;
     margin-bottom: 20px;
 }
@@ -863,9 +770,9 @@ a.fb{
 }
 .pricelist thead td{
     text-align: center;
-    font: 400 30px "Akrobat";
+    font: 400 30px "GothamPro";
     color: #fff;
-    background-color: #910c11;
+    background-color: #006aa7;
 }
 .pricelist tbody td{
     font: 400 17px "Open Sans";
@@ -998,6 +905,11 @@ label{
 .blog-post-img, .blog-post-img span{
     position: relative;
 }
+.blog-post-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .blog-post-img p, .blog-post-img h2{
     position: absolute;
     color: #fff;
@@ -1121,9 +1033,9 @@ label{
     height: 100%;
 }
 .blog-post img{
-    min-width: 436px;
-    min-height: 300px;
-    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 /* *************** MOBILE **************** */
 
