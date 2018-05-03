@@ -330,101 +330,75 @@ a.link{
 }
 .whychange{
     margin-top: 275px;
+    background: url(../images/scroll-2-bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.wrap-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
 .header{
     text-transform: uppercase;
     font-size: 64px;
     font-family: "GothamProBold";
-    text-align: center;
     line-height: 60px;
+    position: relative;
+    display: inline-block;
 }
 .subheader{
     text-transform: uppercase;
     font-size: 36px;
     font-family: "GothamPro";
+    position: relative;
+    display: inline-block;
+}
+.header:before,
+.subheader:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 70%;
+    background-color: #006aa7;
+    bottom: -8px;
+    left: 15%;
+}
+.service-wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-item img{
+    box-shadow: 21px 20px 27px 0 rgba(0, 0, 0, 0.32);
+    margin-bottom: 30px;
+}
+.service-item{
+    margin-bottom: 115px;
+}
+.service-item h3{
+     text-transform: uppercase;
+     font-size: 24px;
+    font-family: "GothamProBold";
+}
+.service-item p{
+    white-space: pre-line;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "GothamPro";
+}
+.price-button{
     text-align: center;
 }
-.shema h1:before,
-.serv-wrap h2:before,
-.gallery-line h2:before,
-.price-info h2:before{
-    content: attr(data-text);
-    position: absolute;
-    font: 400 95px "Akrobat", sans-serif;
-    text-transform: uppercase;
-    top: -65px;
-    opacity: 0.12;
-    left: 0;
+.map{
+    height: 395px;
+}
+.map iframe{
     width: 100%;
-}
-[class^="shema-item-"] {
-    display: none;
-}
-.shema-item-1{
-    display: flex;
-}
-.stage{
-    margin-right: 122px;
-}
-.stage-img{
-    width: 100%;
-    max-height: 356px;
-    overflow: hidden;
-}
-.stage ul{
-    position: relative;
-}
-.stage ul:after{
-    content: '';
-    position: absolute;
-    width: 1px;
     height: 100%;
-    background-color: #ccc;
-    top: 0;
-    right: -19px;
-    z-index: -1;
-}
-.stage li{
-    cursor: pointer;
-    font: 700 14px "Open Sans";
-    color: #999;
-    margin-bottom: 50px;
-    text-align: right;
-    position: relative;
-}
-.stage li.active, .stage li:hover{
-    color: #000;
-}
-.stage li:before{
-    content: '';
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    background-color: #eaeaea;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    border:2px solid #dcdcdc;
-    top: 0;
-    right: -30px;
-}
-.stage li:after{
-    content: '';
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    background-color:#c0bebe;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    top: 5px;
-    right: -25px;
-}
-.stage li.active:after, .stage li:hover:after{
-    background-color:#ed1c24;
-}
-.stage li.active:before, .stage li:hover:before{
-    background-color:#fff;
+    padding: 0;
+    margin: 0;
 }
 .content{
     padding-right: 48px;
@@ -438,7 +412,7 @@ a.link{
     margin-bottom: 35px;
 }
 footer{
-    background-color: #d8d9da;
+    background-color: #f6f6f6;
 }
 footer .container{
     justify-content: space-between;
@@ -450,11 +424,36 @@ footer p{
     position: relative;
     margin: 0 0 25px 25px;
 }
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo img{
+    margin-bottom: 40px;
+}
+.footer-logo a{
+    font-size: 14px;
+    font-family: "GothamPro";
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.footer-logo p{
+    font-size: 12px;
+    font-family: "GothamPro";
+    text-decoration: underline;
+    display: inline-block;
+    margin:0 0 20px 0;
+    padding: 0;
+}
+.footer-contact{
+    font-family: "GothamPro";
+}
 .foo-hours{
     margin-left: 26px;
 }
 .foo-phone{
-    margin-top: 31px;
+    margin-top: 10px;
 }
 .foo-phone:before{
     position: absolute;
@@ -489,27 +488,18 @@ a.fb{
     display: inline-block;
     background: url(../images/fb-ico-footer.png) 0 0 no-repeat;
 }
-.footer-menu h3{
-    font:700 24px "Akrobat";
-    position: relative;
-    margin-bottom: 15px;
-}
-.footer-menu h3:before{
-    content: '';
-    position: absolute;
-    width: 38px;
-    height: 3px;
-    background-color: #ed1c24;
-    bottom: -6px;
-    left: 0;
-}
+
+
 .footer-menu li a{
-    font:400 16px/30px "Akrobat";
+    font:400 14px/36px "GothamProBold";
+    text-transform: uppercase;
 }
 #footer-form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid #006aa7;
+    padding: 35px 40px;
 }
 #footer-form input, #footer-form textarea{
     width: 220px;
