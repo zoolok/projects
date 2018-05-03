@@ -259,7 +259,21 @@ $(document).ready(function () {
                 'Мы свяжемся с Вами в ближайшее время')
         });
         return false;
+    });
 
+    $('#popup-form').submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: $(this).serialize() + '&action=popup'
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#contact-form').trigger("reset");
+            $('.close').trigger("click");
+            alert('Спасибо за обращение!' +
+                'Отчет по аудиту будет выслан после готовности на указанный e-mail')
+        });
+        return false;
     });
     /* --------------------------------------------------------
                     INDEX COUNTS

@@ -95,6 +95,9 @@ a:hover{
     margin: 0 auto;
     position: relative;
 }
+.content-wrap{
+    overflow: hidden;
+}
 .delay-1{
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
@@ -265,7 +268,7 @@ a.link{
     font-size: 205px;
     opacity: 0.07;
     z-index: -1;
-    top: -45px;
+    top: -25px;
     left: -150px;
  }
 .main-text h1{
@@ -290,7 +293,7 @@ a.link{
     color: #262c3a;
     white-space: pre-line;
 }
-.nacka-slider{
+.slider-wrap{
     position: absolute;
     top: 0;
     left: 572px;
