@@ -99,7 +99,7 @@ $(document).ready(function () {
     $('.header').animated('fadeInRight','fadeOutLeft');
     $('.subheader').animated('fadeInLeft','fadeOutRight');
     $('.service-item').animated('fadeIn','fadeOut');
-    $('.serv-desc h2').animated('fadeIn','fadeOut');
+    $('.serv-list-1 h2').animated('fadeInLeft','fadeOutRight');
     $('.gallery-line h2').animated('fadeIn','fadeOut');
     $('li[data-shema]').animated('fadeIn','fadeOut');
     $('[class^="figovina-"]').animated('slideInDown','slideInUp');
