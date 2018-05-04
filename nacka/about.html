@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
     <meta name="format-detection" content="telephone=no">
-    <title>WOWFLYTT - Om oss</title>
+    <title>NACKA - Om oss</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index, follow" />
@@ -23,8 +23,9 @@
     <header>
         <div class="mob-header desc-none flex">
             <div class="top-ico">
-                <a href="" target="_blank" class="soc"></a>
+                <a href="https://facebook.com/nackaflytt" target="_blank" class="soc"></a>
                 <span class="ling"></span>
+                <a href="index.html"><img src="images/logo-top.png" alt="nacka logo"></a>
             </div>
             <div class="menu-button flex">
                 <span></span><span></span><span></span>
@@ -36,7 +37,7 @@
                     <li><a href="about.html">Om oss</a></li>
                     <li><a href="gallery.html">Fotogalleri</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="price.html">Räkna ut priser</a></li>
+                    <li><a href="price.html">Priser</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
                 <span class="close-menu"></span>
@@ -59,7 +60,7 @@
                     <div class="wrap-1 flex">
                         <div class="order-but"><button name="popup">skicka meddelande</button></div>
                         <div class="top-ico">
-                            <a href="https://facebook.com/nackafly" target="_blank" class="soc"></a>
+                            <a href="https://facebook.com/nackaflytt" target="_blank" class="soc"></a>
                         </div>
                     </div>
                 </div>
@@ -139,18 +140,62 @@
     </footer>
 </div>
 <div class="worm-wrap">
-    <form id="pop-up" class="flex" method="post">
+    <form id="pop-up" class="flex" method="POST" action="https://formspree.io/info@nackaflystad.se" target="_blank">
         <span class="close"></span>
-        <h3>Оставьте заявку</h3>
-        <p>и мы свяжемся с Вами в ближайшее время</p>
-        <input type="text" name="name" placeholder="Namn" required>
-        <input type="email" name="email" placeholder="E-post" required>
+        <h3>Skicka meddelande</h3>
+        <p>och vi kontaktar er så fort som möjligt</p>
+        <input type="text" name="Namn" placeholder="Namn" required>
+        <input type="email" name="E-post" placeholder="E-post" required>
+        <select name="Hur hittade ni oss?" >
+            <option value="0" disabled selected="">Hur hittade ni oss?</option>
+            <option value="önskar ej ange">önskar ej ange</option>
+            <option value="Google" >Google</option>
+            <option value="Hitta.se" >Hitta.se</option>
+            <option value="Facebook" >Facebook</option>
+            <option value="118 800" >118 800</option>
+            <option value="Blocket" >Blocket</option>
+            <option value="Allabolag.se" >Allabolag.se</option>
+            <option value="Offerta.se" >Offerta.se</option>
+            <option value="Tipsad" >Tipsad</option>
+            <option value="Återkommande kund" >Återkommande kund</option>
+        </select>
         <textarea name="message"  cols="30" rows="10" placeholder="Meddelande"></textarea>
-        <button>skicka</button>
+        <button type="submit"> skicka</button>
         <div class="polisy-wrap flex">
             <input type="checkbox" checked required id="policy">
             <label for="policy">Jag håller med integritetspolicy</label>
         </div>
+    </form>
+</div>
+<div class="worm-wrap-order">
+    <form id="order" class="flex" method="POST" action="https://formspree.io/info@nackaflystad.se" target="_blank">
+        <span class="close"></span>
+        <h3>Lämna förfrågan</h3>
+        <p>och vi kontaktar er så fort som möjligt</p>
+        <div class="form-group flex">
+            <input type="text" name="Namn" placeholder="Namn" required>
+            <input type="text" name="Efternamn" placeholder="Efternamn" required>
+            <input type="text" name="Telefon" placeholder="Telefon" required>
+            <input type="email" name="E-post" placeholder="E-post" required>
+        </div>
+        <input type="text" name="Vilket datum önskar du flytta?" placeholder="Vilket datum önskar du flytta?" required>
+        <input type="text" name="Vart flyttar du ifrån?" placeholder="Vart flyttar du ifrån?" required>
+        <input type="text" name="Var flyttar du till?" placeholder="Var flyttar du till?" required>
+        <input type="text" name="Hur stor boyta flyttar du ifrån?" placeholder="Hur stor boyta flyttar du ifrån?" required>
+        <select name="Hur hittade ni oss?" >
+            <option value="0" disabled selected="">Hur hittade ni oss?</option>
+            <option value="önskar ej ange">önskar ej ange</option>
+            <option value="Google" >Google</option>
+            <option value="Hitta.se" >Hitta.se</option>
+            <option value="Facebook" >Facebook</option>
+            <option value="118 800" >118 800</option>
+            <option value="Blocket" >Blocket</option>
+            <option value="Allabolag.se" >Allabolag.se</option>
+            <option value="Offerta.se" >Offerta.se</option>
+            <option value="Tipsad" >Tipsad</option>
+            <option value="Återkommande kund" >Återkommande kund</option>
+        </select>
+        <button  type="submit">skicka</button>
     </form>
 </div>
 <script src="js/jquery-2.1.3.min.js"></script>

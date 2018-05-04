@@ -394,6 +394,12 @@ a.link{
 .price-button{
     text-align: center;
 }
+.price-button.service-list{
+    justify-content: center;
+}
+.price-button.service-list button{
+    margin-left: 50px;
+}
 .map{
     height: 395px;
 }
@@ -627,7 +633,7 @@ a.fb{
     position: absolute;
 }
 .contact-info a{
-    color: #ff3333;
+    color: #006aa7;
     text-transform: uppercase;
 }
 .contact-phone:before{
@@ -703,12 +709,22 @@ a.fb{
     font:400 18px/30px "Open Sans";
 }
 .calculate{
-    margin: 0 auto 105px auto;
+    margin: 0 auto 50px auto;
     max-width: 786px;
-    background-color: #f1f1f1;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding:0 43px 24px 34px;
+    position: relative;
+}
+.calculate:before{
+    content: '';
+    position: absolute;
+    width: 1350px;
+    height: 752px;
+    top: 0;
+    left: -330px;
+    background: url(../images/price-map-bg.png) 0 0 no-repeat;
+    z-index: -1;
 }
 .calc p{
     font: 400 24px "GothamPro";
@@ -716,18 +732,22 @@ a.fb{
 .price-info{
     padding-bottom: 30px;
 }
+.price-info button:first-of-type{
+    display: block;
+    margin: 0 auto 105px ;
+}
 .price-info h2{
-   /* text-align: left;*/
-    margin-bottom: 65px;
+    text-align: center;
+    font-size: 48px;
+    font-family: "GothamProMedium";
+    margin-bottom: 72px;
 }
-.price-info h2::before {
-    /*left: -45px;*/
-}
+
 #amount{
     border: none;
     text-align: center;
-    font: 400 24px "Akrobat";
-    background-color: #fff;
+    font: 400 24px "GothamProMedium";
+    background-color: transparent;
     margin-top: 25px;
     height: 47px;
     width: 326px;
@@ -737,22 +757,28 @@ a.fb{
     -webkit-border-radius: 0!important;
     -moz-border-radius: 0!important;
     border-radius: 0!important;: ;
-    background: #b1b1b1;
+    background: #fecc00;
 }
 .ui-slider-horizontal .ui-slider-handle {
-    margin-left: 0em;
+    margin-left: 0;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
     border: none;
-    background: #fff;
-    -webkit-border-radius: 0!important;
-    -moz-border-radius: 0!important;
-    border-radius: 0!important;: ;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.24);
+   background-image: linear-gradient(to top, #006aa7 0%, #02466d 100%);
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    border-radius: 50%!important;: ;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.24);
+    width: 32px;
+    height: 32px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -11px;
 }
 .order{
     flex-direction: column;
     justify-content: center;
+    margin-left: 82px;
 }
 .summa{
     font: 700 30px "GothamPro";
@@ -915,7 +941,7 @@ label{
     color: #fff;
 }
 .blog-post-img h2{
-    font:700 60px "Akrobat";
+    font:700 60px "GothamPro";
     text-transform: uppercase;
 }
 .date{
@@ -943,7 +969,7 @@ label{
     top: 0;
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 85px;
     background: #fff;
     border-bottom:1px solid #ededed;
     z-index: 100;
@@ -990,6 +1016,11 @@ label{
     background: url(../images/close.png) 0 0 no-repeat;
 
 }
+.mob-header .top-ico a img {
+    width: auto;
+    height: 65px;
+    margin-left: calc(50% - 130px);
+}
 .mob-header nav{
     position: relative;
     background-color: #fff;
@@ -1009,7 +1040,7 @@ label{
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: #ed1c24;
+    background-color: #006aa7;
     bottom: -6px;
     left: 0;
 }
@@ -1049,32 +1080,12 @@ label{
 
     .container{
         width: 100%;
-        padding:0 0 0 0;
+        padding:0 10px;
     }
     .mb-none{
         display: none!important;
     }
-    .top-slider{
-        margin-top: 75px;
-    }
-    .slide-text {
-        position: absolute;
-        top: 0;
-        left: 16px;
-    }
-    .slide-text h2 {
-        font: 400 36px/40px "Akrobat", sans-serif;
-        margin-bottom: 33px;
-    }
-    .owl-carousel .owl-item img {
-        display: block;
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-    }
-    .item{
-        min-height: 500px;
-    }
+
     .owl-dots, .dots {
         bottom: calc(100% - 400px);
         left: 16px;
@@ -1087,11 +1098,11 @@ label{
         padding: 0 16px;
     }
     .shema h1, .serv-wrap h2, .gallery-line h2, .price-info h2 {
-        font: 400 27px "Akrobat", sans-serif;
-        margin-bottom: 90px;
+        font: 400 27px "GothamProBold", sans-serif;
+        margin-bottom: 20px;
     }
     .shema h1::before, .serv-wrap h2::before, .gallery-line h2::before, .price-info h2::before {
-        font: 400 42px "Akrobat", sans-serif;
+        font: 400 42px "GothamProBold", sans-serif;
         top: -25px;
     }
     .stage {
@@ -1141,7 +1152,6 @@ label{
         margin-top: 55px;
     }
     .inner-title {
-        background: url(../images/inner-title-bg.png) 50% 77px no-repeat;
         padding: 90px 16px 10px 16px;
         margin-bottom: 0;
     }
@@ -1156,7 +1166,7 @@ label{
         margin-bottom: 0;
     }
     .serv-desc h3 {
-        font: 400 23px/28px "Akrobat";
+        font: 400 23px/28px "GothamProBold";
         padding: 0 16px;
     }
     .serv-img {
@@ -1169,7 +1179,7 @@ label{
         padding: 0;
     }
     .gal-img img, .blog-post img {
-        width: 100vw;
+        width: 100%;
     }
     .blog-post {
         flex-direction: column;
@@ -1179,7 +1189,8 @@ label{
         padding: 0 16px;
     }
     .post-desc h3 {
-        font: 400 30px "Akrobat";
+        font: 400 27px "GothamPro";
+        margin-top: 25px;
     }
     .blog-post-img img{
         width: 100vw;
@@ -1187,7 +1198,7 @@ label{
         object-fit: cover;
     }
     .blog-post-img h2 {
-        font: 700 38px "Akrobat";
+        font: 700 38px "GothamProBold";
     }
     .blog-post-content p {
         font: 400 16px/30px "Open Sans";
@@ -1227,5 +1238,153 @@ label{
     }
     .blog-post-img .date {
         display: none;
+    }
+    nav ul li a {
+        color: #000;
+    }
+    .top-slider .container{
+        flex-wrap: wrap;
+    }
+    .slider-wrap {
+        position: relative;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        order: -1;
+    }
+    .slider-wrap img{
+        object-fit: cover;
+    }
+    .main-text {
+        margin-right: 0;
+    }
+    .main-text h1 {
+        font-size: 47px;
+        line-height: 50px;
+        text-align: center;
+        margin-top: 0;
+        white-space: unset;
+    }
+
+    .main-text:before {
+        position: absolute;
+        content: 'nacka';
+        text-transform: uppercase;
+        font-family: "GothamProMedium";
+        font-size: 85px;
+        opacity: 0.07;
+        z-index: -1;
+        top: -25px;
+        left: 0;
+    }
+    .main-text h1 > span {
+        font-size: 24px;
+        white-space: pre-line;
+    }
+    .main-text p {
+        font-size: 16px;
+        line-height: 24px;
+        white-space: pre-line;
+        text-align: center;
+    }
+    .main-text button {
+        display: block;
+        margin: 0 auto;
+    }
+    .whychange {
+        margin-top: 60px;
+        background: none;
+        padding-bottom: 60px;
+    }
+    .wrap-header {
+        margin-bottom: 50px;
+    }
+    .header {
+        font-size: 33px;
+        line-height: 33px;
+        text-decoration: underline;
+        text-decoration-color:#006aa7;
+        text-align: center;
+    }
+    .subheader {
+        font-size: 17px;
+        text-decoration: underline;
+        text-decoration-color:#006aa7;
+    }
+    .header:before, .subheader:before {
+        content: none;
+    }
+    .service-item {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .service-item img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .service-item h3 {
+        font-size: 18px;
+    }
+    .service-item p {
+        font-size: 14px;
+    }
+
+    #pop-up input, #pop-up textarea, #pop-up select {
+        margin-bottom: 10px;
+    }
+    #pop-up h3, #order h3{
+        font:400 25px "GothamProBold";
+    }
+    #pop-up p, #order p{
+        font:400 14px "GothamPro";
+    }
+    .breadcrumbs {
+        margin-bottom: 15px;
+    }
+    .serv-list-1 h2:before,
+    .serv-list-2 h2:before {
+        content: none;
+    }
+    .serv-list-1, .serv-list-2 {
+        padding-bottom: 50px;
+    }
+    .serv-list-1 h2,
+    .serv-list-2 h2{
+        margin: 20px 0;
+        font-size: 25px;
+        line-height: 25px;
+        text-decoration: underline;
+        text-decoration-color:#006aa7;
+        text-align: center;
+    }
+    .price-button.service-list{
+        flex-wrap: wrap;
+    }
+    .price-button.service-list>*{
+        flex-grow: 1;
+    }
+    .price-button.service-list button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .gal-img a {
+        width: calc(100%/3 - 5px);
+        margin-bottom: 30px;
+    }
+    .gal-img a>img{
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+    .order {
+        margin-left: 0;
+    }
+    .info {
+        margin-left: 68px;
+    }
+    .contact-info .container {
+        padding: 0 0 45px 0;
     }
 }
