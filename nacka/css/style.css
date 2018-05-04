@@ -687,6 +687,7 @@ a.fb{
     font-family:"GothamProMedium";
     margin-bottom: 40px;
     margin-top: 10px;
+    line-height: 62px;
 }
 .gallery-line h2::before {
   /*  left: -83px;*/
@@ -741,6 +742,7 @@ a.fb{
     font-size: 48px;
     font-family: "GothamProMedium";
     margin-bottom: 72px;
+    line-height: 62px;
 }
 
 #amount{
