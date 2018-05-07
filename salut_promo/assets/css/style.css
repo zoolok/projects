@@ -3398,6 +3398,14 @@ html .ui-button.ui-state-disabled:active {
         text-decoration: underline;
         text-decoration-color: #a80808;
     }
+    #price-slider {
+        max-width: 90%;
+        margin: 0 auto 45px;
+    }
+    #convert-slider, #midsumm-slider {
+        max-width: 90%;
+        margin: 45px auto;
+    }
 }
 @media only screen and (max-width : 320px) {
     .slider-adv-nav .slick-slide {
