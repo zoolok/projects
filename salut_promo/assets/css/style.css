@@ -3355,10 +3355,35 @@ html .ui-button.ui-state-disabled:active {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1001;
+        z-index: -1;
         width: 100%;
         height: 100vh;
         background-color: #eee;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .mob-serv:before{
+        position: absolute;
+        content: '← назад';
+        top: 15px;
+        right: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        pointer-events: all;
+    }
+    .mob-serv ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+    .mob-serv ul li{
+        padding: 10px 0;
+    }
+    .mob-serv ul li a:hover{
+        text-decoration: underline;
+        text-decoration-color: #a80808;
     }
 }
 @media only screen and (max-width : 320px) {

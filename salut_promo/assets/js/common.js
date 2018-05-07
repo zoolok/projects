@@ -140,13 +140,16 @@ $(document).ready(function () {
 
 
     $('.mobile-menu li a[href="/services/"]').on('click touchmove' ,function (e) {
-        var dw = document.body.clientWidth;
+/*        var dw = document.body.clientWidth;
         var wu = 2*dw/3-1;
-        var bm = $('.mobile-menu li a[href^="/services/"]~ul');
+        var bm = $('.mobile-menu li a[href^="/services/"]~ul');*/
+
+        var ms = $('.mob-serv');
 
         e.preventDefault(e);
-
-        $('.mobile-menu~ul').css('position','relative');
+        ms.animate({opacity: "0.95"}, 500);
+        ms.css('z-index','1001');
+/*        $('.mobile-menu~ul').css('position','relative');
         $('.mobile-menu~ul').animate({left: "-999px"}, 1000);
 
         $('.mobile-menu li a[href^="/services/"]~ul').animate({top: "-93px"}, 500);
@@ -165,6 +168,10 @@ $(document).ready(function () {
         $('.back-arrow').on('click  touchmove', function () {
             $('.mobile-menu li a[href^="/services/"]~ul').animate({top: "-5000px"}, 2000);
             $(".back-arrow").remove();
+        });*/
+        ms.click(function () {
+            ms.animate({opacity: "0"}, 500);
+            ms.css('z-index','-1');
         });
     });
 
