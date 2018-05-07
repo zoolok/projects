@@ -1804,7 +1804,8 @@ ul.port-descr li:after{
     left: 0;
     z-index: 1000;
 }
-.mobile-menu span {
+span.back,
+.back-serv{
     font-family: "GothamProBold";
     font-size: 14px;
     text-transform: uppercase;
@@ -1814,6 +1815,12 @@ ul.port-descr li:after{
     background: #fff url(../images/m-menu-back.png) 20% 50% no-repeat;
     cursor: pointer;
     border-bottom: 1px solid #d5d3d5;;
+}
+.back-serv{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
 }
 .mobile-menu ul{
     display: flex;
@@ -3360,9 +3367,9 @@ html .ui-button.ui-state-disabled:active {
         height: 100vh;
         background-color: #eee;
         opacity: 0;
-        pointer-events: none;
+
     }
-    .mob-serv:before{
+/*    .mob-serv:before{
         position: absolute;
         content: '← назад';
         top: 15px;
@@ -3370,7 +3377,7 @@ html .ui-button.ui-state-disabled:active {
         font-size: 15px;
         cursor: pointer;
         pointer-events: all;
-    }
+    }*/
     .mob-serv ul{
         display: flex;
         flex-direction: column;
@@ -3379,7 +3386,7 @@ html .ui-button.ui-state-disabled:active {
         justify-content: center;
     }
     .mob-serv ul li{
-        padding: 10px 0;
+        padding: 15px 0;
     }
     .mob-serv ul li a:hover{
         text-decoration: underline;
