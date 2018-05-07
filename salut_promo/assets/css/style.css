@@ -3391,8 +3391,8 @@ html .ui-button.ui-state-disabled:active {
     .mob-serv ul li{
         padding: 15px 0;
         font-family: "GothamProBold";
-        font-size: 14px;
-        text-transform: uppercase;
+        font-size: 21px;
+
     }
     .mob-serv ul li a:hover{
         text-decoration: underline;
