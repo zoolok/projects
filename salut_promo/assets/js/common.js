@@ -142,7 +142,7 @@ $(document).ready(function () {
 
     $('.mobile-menu li a[href="/services/"]').on('click touchmove' ,function (e) {
         e.preventDefault(e);
-        ms.animate({opacity: "1"}, 500);
+        ms.animate({opacity: "0.95"}, 500);
         ms.css('z-index','1001');
 
     });

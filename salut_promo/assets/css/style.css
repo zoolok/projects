@@ -2733,7 +2733,9 @@ html .ui-button.ui-state-disabled:active {
     color: #888;
     margin-bottom: 15px;
 }
-
+.mob-serv{
+    display: none;
+}
 /* ---------------- Mobile -----------------*/
 
 @media only screen and (max-width : 768px) {
@@ -3367,6 +3369,7 @@ html .ui-button.ui-state-disabled:active {
         height: 100vh;
         background-color: #eee;
         opacity: 0;
+        display: block;
 
     }
 /*    .mob-serv:before{
