@@ -132,42 +132,25 @@ $(document).ready(function () {
         blured.addClass('blured');
     });
 
-    $('.mobile-menu span').click(function () {
+    $('.back').click(function () {
         menu.animate({left: "-999px"}, 300);
         menu.removeClass('fixed');
         blured.removeClass('blured');
     });
 
+    var ms = $('.mob-serv');
 
     $('.mobile-menu li a[href="/services/"]').on('click touchmove' ,function (e) {
-        var dw = document.body.clientWidth;
-        var wu = 2*dw/3-1;
-        var bm = $('.mobile-menu li a[href^="/services/"]~ul');
-
         e.preventDefault(e);
+        ms.animate({opacity: "0.95"}, 500);
+        ms.css('z-index','1001');
 
-        $('.mobile-menu~ul').css('position','relative');
-        $('.mobile-menu~ul').animate({left: "-999px"}, 1000);
-
-        $('.mobile-menu li a[href^="/services/"]~ul').animate({top: "-93px"}, 500);
-
-        bm.css('position','relaive');
-        bm.append('<span class="back-arrow"></span>');
-
-        $('.mobile-menu li a[href^="/services/"]~ul').css({
-            "position": "absolute",
-            "display": "flex",
-            "flex-direction": "column",
-            "width": "300vw",
-            "top": "500px",
-            "left":"-" + wu + "px"
-        });
-        $('.back-arrow').on('click  touchmove', function () {
-            $('.mobile-menu li a[href^="/services/"]~ul').animate({top: "-5000px"}, 2000);
-            $(".back-arrow").remove();
-        });
     });
 
+    $('.back-serv').click(function () {
+        ms.animate({opacity: "0"}, 500);
+        ms.css('z-index','-1');
+    });
     /* --------------------------------------------------------
        XHy&2xAD7$bn             SHOW MODAL ORDER
     ----------------------------------------------------------- */
