@@ -280,7 +280,7 @@ a.link{
     margin-top: 152px;
     color: #262c3a;
 }
-.main-text h1>span{
+.main-text h1>p{
     display: block;
     font-family: "GothamPro";
     font-size: 35px;
@@ -1280,7 +1280,7 @@ label{
         top: -25px;
         left: 0;
     }
-    .main-text h1 > span {
+    .main-text h1 > p {
         font-size: 24px;
         white-space: pre-line;
     }
