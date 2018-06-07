@@ -532,6 +532,7 @@ span.down{
     position: relative;
     margin-bottom: 167px;
     z-index: 2;
+    top: 50px;
 }
 .f-circ {
     position: absolute;
@@ -615,7 +616,6 @@ span.down{
     padding-right: 16px;
 }
 .menu-button{
-    position: fixed;
     width: 60px;
     height: 60px;
     background-color: #000;
@@ -627,6 +627,18 @@ span.down{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.fixed-wrap{
+    top: 23px;
+    position: fixed;
+    right: calc(50% - 564px);
+    z-index:100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-logo{
+    margin-right: 50px;
 }
 .menu-button span{
     width: 23px;
@@ -670,7 +682,7 @@ span.down{
 .service-list{
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 110px;
+    padding: 0 190px;
     /*margin-top:20px;*/
     position: absolute;
     bottom: 20px;
@@ -678,8 +690,8 @@ span.down{
 
 }
 [class^="serv-item-"]{
-    width: 227px;
-    height: 227px;
+    width: 200px;
+    height: 200px;
     padding: 0 20px;
     color: #fff;
     position: relative;
@@ -779,6 +791,10 @@ span.down{
     -webkit-animation-delay: 2.5s;
     animation-delay: 2.5s;
     opacity:0;
+    padding: 0 100px;
+}
+.portfolio-wrap>p {
+    font: 300 14px/30px 'GothamProLight';
 }
 .center-galaktiki{
     position: absolute;
@@ -1171,7 +1187,7 @@ h2.portfolio{
     position: relative;
     overflow: hidden;
 }
-}
+
 .contact-info a{
     text-decoration: none;
     color: #000;
@@ -1619,12 +1635,16 @@ a.next::before {
     padding-top: 60px;
     padding-left: 115px;
     width: 100%;
+
 }
 .about-content .serv-slog{
     opacity: 1;
     flex-direction: column;
     margin-top: 132px;
-    padding: 0 130px;
+    padding: 0 0 0 130px;
+    height: 600px;
+    overflow-y: scroll;
+    justify-content: space-between;
 }
 .serv-slog span{
     font: 400 24px "GothamPro", sans-serif;
