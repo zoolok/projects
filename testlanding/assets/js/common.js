@@ -6,15 +6,14 @@ $(document).ready(function () {
     $(function() {
         "use strict";
         if ( $(".main-slider").length > 0 ) {
-
             $('.main-slider').owlCarousel({
                 items:1,
                 nav:true,
                 navText:["",""],
-                dots:true,
+                dots:false,
                 loop:true,
                 center:true,
-                autoplay:true
+                autoplay:false
             });
         }
 
