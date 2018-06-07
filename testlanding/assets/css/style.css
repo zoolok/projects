@@ -39,6 +39,8 @@ body{
     font-weight: 400;
     line-height: 1.73;
     color: #4F5260;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 ul{
     list-style-type: none;
@@ -125,6 +127,34 @@ nav li a:hover{
 nav .logo{
     margin: 0 10px;
     cursor: pointer;
+}
+.main-content{
+    background: url(../images/splash.png) 50% 50% no-repeat;
+    background-size:contain ;
+    color: #fff;
+    text-align: center;
+    padding: 135px 0;
+    margin-top: 150px;
+}
+.main-content h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 1.24;
+}
+.preheader{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+.subheader{
+    font-size: 26px;
+    font-family: PT Serif;
+    font-style: italic;
+}
+/*********************scroll#2******************************/
+.second{
+    background: url(../images/home-explore.jpg) 50% 100%;
 }
 /*********************** MOBILE ***************************/
 
