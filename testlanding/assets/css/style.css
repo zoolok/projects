@@ -116,6 +116,13 @@ section h3:before{
     position: relative;
     overflow: hidden;
 }
+.mt10{
+    margin-top: 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+
 /*********************scroll#1******************************/
 .main-section{
     width: 100vw;
@@ -315,7 +322,8 @@ nav .logo{
 .places img{
     border-radius: 2px;
     max-width: 115px;
-    height: auto
+    height: auto;
+    cursor: pointer;
 }
 .places-wrap{
     justify-content: space-between;
@@ -354,6 +362,18 @@ nav .logo{
     font-weight: 400;
     text-transform: none;
     font-style: italic;
+}
+.top-devider{
+    position: relative;
+}
+.top-devider:before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    top: -10px;
+    left: 0;
+    background-color: #ebebeb;
 }
 /*********************** MOBILE ***************************/
 

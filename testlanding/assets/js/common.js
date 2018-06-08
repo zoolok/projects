@@ -29,6 +29,7 @@ $(document).ready(function () {
     $('.second-content h5, .second-content p').animated('fadeInLeft','fadeOutLeft');
     $('.section-subheader, .main-slider').animated('fadeInDown','fadeOutUp');
     $('.more-button').animated('fadeInUp','fadeOutDown');
+    $('.places h3, .places-wrap').animated('fadeIn','fadeOut');
 
     /* --------------------------------------------------------
                         MOBILE MENU
