@@ -505,6 +505,17 @@ nav .logo{
     line-height: 1.4;
     font-weight: 500;
 }
+.content-block p {
+    font-weight: 300;
+}
+.center-img{
+    width: 300px;
+    padding-left: 70px;
+}
+.center-img{
+    max-width: 100%;
+    height: auto;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
