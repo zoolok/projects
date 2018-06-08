@@ -516,6 +516,55 @@ nav .logo{
     max-width: 100%;
     height: auto;
 }
+/*********************scroll#6******************************/
+.partners .container{
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 70px 0;
+}
+.partners{
+    padding-bottom: 0;
+}
+.partners-header{
+    align-self: center;
+}
+.partners-wrap{
+    padding-left: 70px;
+}
+
+.partners-wrap a{
+    padding: 20px;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.partners-wrap a:hover {
+    background: #fff;
+    box-shadow: 2px 21px 50px rgba(41, 44, 61, 0.15);
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+/*********************scroll#6******************************/
+.footer{
+    background: url(../images/footer-bg.jpg) 50% 100% no-repeat;
+    position: relative;
+}
+.footer:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #fff 0%,  transparent 100%);
+    opacity:0.99;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
