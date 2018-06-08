@@ -25,6 +25,10 @@ $(document).ready(function () {
 
     $('.subheader').animated('fadeInUp','fadeOutDown');
     $('.preheader, .main-content h1').animated('fadeInDown','fadeOutUp');
+    $('.second h3').animated('fadeInDown','fadeOutUp');
+    $('.second-content h5, .second-content p').animated('fadeInLeft','fadeOutLeft');
+    $('.section-subheader, .main-slider').animated('fadeInDown','fadeOutUp');
+    $('.more-button').animated('fadeInUp','fadeOutDown');
 
     /* --------------------------------------------------------
                         MOBILE MENU
@@ -49,4 +53,23 @@ LOGO REFRESH
 
 $('.logo').click(function () {
     window.location.reload(true);
+});
+
+/* --------------------------------------------------------
+FIXED HEADER
+----------------------------------------------------------- */
+var header = $('header');
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+        header.addClass('fixed');
+    } else {
+        header.removeClass('fixed');
+    }
+
+    if( header.hasClass('fixed')){
+        $('header .logo img').attr('src','assets/images/logo.svg');
+    }else{
+        $('header .logo img').attr('src','assets/images/logo-inverted.svg');
+    }
 });
