@@ -36,13 +36,14 @@ $(document).ready(function () {
                     MOBILE MENU
 ----------------------------------------------------------- */
 
+var mobmenu =  $('.mobile-nav');
 
 $('.mob-menu').click(function () {
-    $('.mobile-nav').css('left','0');
+    mobmenu.css('left','0');
 });
 
 $('.close').click(function () {
-    $('.mobile-nav').css('left','-270px')
+    mobmenu.css('left','-270px')
 });
 
 /* --------------------------------------------------------
