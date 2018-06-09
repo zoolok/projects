@@ -29,23 +29,20 @@ $(document).ready(function () {
     $('.second-content h5, .second-content p').animated('fadeInLeft','fadeOutLeft');
     $('.section-subheader, .main-slider').animated('fadeInDown','fadeOutUp');
     $('.more-button').animated('fadeInUp','fadeOutDown');
-    $('.places h3, .places-wrap, .store h5, .store-wrap').animated('fadeIn','fadeOut');
-
-    /* --------------------------------------------------------
-                        MOBILE MENU
+    $('.places h3, .places-wrap').animated('fadeIn');
+    $('.store h5, .store-wrap').animated('fadeIn','fadeOut');
+});
+/* --------------------------------------------------------
+                    MOBILE MENU
 ----------------------------------------------------------- */
 
-    var menu = $('.mob-menu');
 
-    $('.menu-button').click(function () {
-        menu.fadeToggle(300);
-        menu.addClass('fixed');
-    });
-    $('.m-close-menu').click(function () {
-        menu.fadeToggle(300);
-        menu.removeClass('fixed');
-    });
+$('.mob-menu').click(function () {
+    $('.mobile-nav').css('left','0');
+});
 
+$('.close').click(function () {
+    $('.mobile-nav').css('left','-270px')
 });
 
 /* --------------------------------------------------------
