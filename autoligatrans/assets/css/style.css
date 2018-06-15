@@ -19,6 +19,11 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+:after,
+:before{
+    position: absolute;
+    content: '';
+}
 input:focus,
 textarea:focus,
 select:focus,
@@ -48,6 +53,7 @@ ul{
 h1, h2, h3, h4, h5, p{
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 a{
@@ -171,7 +177,6 @@ nav ul li.active a{
 }
 .buttons-wrap>*{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -179,6 +184,12 @@ nav ul li.active a{
     color: #fff;
     width: calc(100%/3 - 20px);
     height: 100px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid yellow;
+}
+.buttons-wrap img{
+    margin-bottom: 26px;
 }
 footer {
     background-color:#192434;
