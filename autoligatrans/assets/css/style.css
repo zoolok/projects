@@ -73,7 +73,83 @@ a:hover{
     margin: 0 auto;
     position: relative;
 }
+header  {
+    padding: 18px 0 25px;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
 
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.button-top{
+    position: relative;
+    font-size: 16px;
+    padding-left: 36px;
+    width: 271px;
+    height: 71px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ec4c02 url(../images/mobile.png) 23px 50% no-repeat;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.button-top:hover{
+    text-decoration: none;
+    box-shadow:unset;
+}
+.main{
+    padding: 97px 0 108px;
+    background: url(../images/marshrutka.jpg) 90% 22px no-repeat;
+}
+.main h1{
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #ec4c02;
+}
+.main h1>span{
+    font-size: 61px;
+    color: #000;
+    font-weight: 600;
+    display: block;
+}
+.main-content{
+    max-width: 433px;
+
+}
+.subheader{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 106px;
+}
+.qw>*{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    font-size: 14px;
+}
+.qw a{
+    color: #fff;
+    background-color:#ec4c02;
+}
+.qw p{
+    color: #fff;
+    position: relative;
+    text-align: left;
+}
+.qw p:before{
+    position: absolute;
+    content: '';
+    width: 5000px;
+    height: 44px;
+    background-color:#192434;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
