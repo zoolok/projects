@@ -188,7 +188,7 @@ nav ul li.active a{
     padding-bottom: 40px;
     border-bottom: 2px solid yellow;
 }
-.buttons-wrap img{
+.buttons-wrap>div>img{
     margin-bottom: 26px;
 }
 footer {
