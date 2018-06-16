@@ -25,7 +25,8 @@ $(document).ready(function () {
                 dots:false,
                 loop:true,
                 center:true,
-                autoplay:false
+                autoplay:false,
+                margin:107
             });
         }
 
