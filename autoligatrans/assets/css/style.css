@@ -157,6 +157,7 @@ header .container{
     color: #fff;
     position: relative;
     text-align: left;
+    z-index: 0;
 }
 .qw p:before{
     position: absolute;
