@@ -71,9 +71,12 @@ $(document).ready(function () {
 ----------------------------------------------------------- */
 $('#map').change(function (e) {
     e.preventDefault();
-    var mapnumber = $('#map option:selected').val();
     var mapsrc = $('.shema-list img');
+    mapsrc.fadeOut(600);
+    var mapnumber = $('#map option:selected').val();
+    mapsrc.fadeIn(500);
     mapsrc.attr('src','assets/images/map-' + mapnumber + '.jpg');
+
 });
 /* --------------------------------------------------------
             SEND FORM
