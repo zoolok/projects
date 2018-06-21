@@ -223,12 +223,37 @@ nav ul li.active a{
     display: block;
     text-transform: initial;
 }
-.buttons {
-    box-shadow: 0 50px 84px 0px #b8b8b8;
+.content{
+    padding-top: 85px;
+}
+.content h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.content h2:before{
+    content: none ;
+}
+.content p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 43px;
+}
+.buttons,
+.inner-content{
+    box-shadow: 0 50px 84px 0 #b8b8b8;
 }
 .buttons-wrap{
     margin-top: 19px;
     justify-content:space-between;
+}
+.buttons-wrap.inner{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 190px;
+    margin-right: 53px;
+    padding-bottom: 50px;
 }
 .buttons-wrap>*{
     display: flex;
@@ -243,6 +268,11 @@ nav ul li.active a{
     padding-bottom: 40px;
     border-bottom: 3px solid #fff449;
     position: relative;
+    margin-bottom: 20px;
+}
+.buttons-wrap.inner>*{
+    width: 247px;
+    text-align: center;
 }
 .buttons-wrap>div>img{
     margin-bottom: 26px;
