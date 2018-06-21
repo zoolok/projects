@@ -66,7 +66,15 @@ $(document).ready(function () {
         $('.content-wrap').removeClass('blured');
     });
 });
-
+/* --------------------------------------------------------
+                  MAP SELECT
+----------------------------------------------------------- */
+$('#map').change(function (e) {
+    e.preventDefault();
+    var mapnumber = $('#map option:selected').val();
+    var mapsrc = $('.shema-list img');
+    mapsrc.attr('src','assets/images/map-' + mapnumber + '.jpg');
+});
 /* --------------------------------------------------------
             SEND FORM
 ----------------------------------------------------------- */

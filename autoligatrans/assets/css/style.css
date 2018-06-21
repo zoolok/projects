@@ -418,7 +418,31 @@ footer .container{
 .footer-copyright a>span{
     color: #fff449;
 }
-
+.sel-wrap{
+    align-items: center;
+    margin-bottom: 50px;
+}
+.sel-wrap span{
+    font-size: 30px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.shema-select{
+    overflow: hidden;
+    background: #fff url(../images/select-arrow.png) 94% 50% no-repeat;
+    width: 291px;
+    margin-left: 87px;
+    border: 2px solid;
+}
+#map{
+    width: 341px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 40px;
+    background: transparent;
+    border: none;
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 768px){
