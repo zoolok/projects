@@ -274,9 +274,7 @@ header{
     border-radius: 1rem;
     z-index: 0;
 }
-[data-action="back-call"]:hover{
-    color: #fff;
-}
+
 [data-action="back-call"]:hover:before{
     width: 100%;
     z-index: -1;
@@ -314,7 +312,7 @@ header{
 .main-form{
     margin-left: 14.3rem;
 }
-#main{
+#main,#popup{
     position: relative;
     background-color: #fff;
     width: 34.7rem;
@@ -326,7 +324,7 @@ header{
     padding: 3.5rem 4rem 1.5rem;
     z-index: 1;
 }
-#main:before{
+#main:before,#popup:before{
     position: absolute;
     content: '';
     width: 14.5rem;
@@ -339,14 +337,14 @@ header{
     background: #fff url(../images/order-form-ico.png) 50% 25% no-repeat;
     z-index: -1;
 }
-#main h3{
+#main h3,#popup h3{
     font-size: 2.7rem;
     font-family:'Intro Book';
     line-height: 2.8rem;
     margin-bottom: 2.5rem;
     text-transform: unset;
 }
-#main input{
+#main input,#popup input{
     width: 100%;
     height: 4rem;
     border:1px solid #999;
@@ -358,20 +356,20 @@ header{
     font-size: 1.5rem;
     font-family:'Intro Book';
 }
-#main button{
+#main button,#popup button{
     display: block;
     margin:0.6rem auto 2.6rem;
 }
-#main span{
+#main span,#popup span{
     color: #6d6c6c;
     font-size: 1.4rem;
     font-family:'Intro Book';
 }
-#main span>a{
+#main span>a,#popup span>a{
     text-decoration: underline;
     color: #587ec4;
 }
-#main span>a:hover{
+#main span>a:hover,#popup span>a:hover{
     text-decoration: none;
 }
 .order{
@@ -640,6 +638,51 @@ footer .container{
     justify-content:space-between;
     flex-wrap: wrap;
 }
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.close{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    font-size: 12px;
+    color: #000;
+    text-decoration-style: dashed;
+}
+.close:hover{
+    color: tomato;
+}
+.blured{
+    filter:blur(2px);
+}
 /*********************** MOBILE ***************************/
 
 @media only screen and (max-width: 767px) {
@@ -697,12 +740,12 @@ footer .container{
         margin: 65px auto 0;
     }
 
-    #main {
+    #main,#popup {
         width: 100%;
         height: 52rem;
     }
 
-    #main input {
+    #main input ,#popup input{
         height: 7rem;
         font-size: 2.5rem;
     }

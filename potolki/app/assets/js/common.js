@@ -28,9 +28,9 @@ $(document).ready(function () {
         });
 
     }
-    /* --------------------------------------------------------
+/* --------------------------------------------------------
     SLIDERS
-    ----------------------------------------------------------- */
+----------------------------------------------------------- */
 
     $('#cascade-slider').cascadeSlider({
         itemClass: 'cascade-slider_item',
@@ -42,11 +42,24 @@ PHONE MASK
 ----------------------------------------------------------- */
     $(function() {
         "use strict";
-        if ($("#phone").length  || $("#phone-1").length ) {
-            $("#phone, #phone-1").mask("+7(999) 999-99-99");
+        if ($("#phone").length  || $("#phone-1").length || $("#phone-2").length ) {
+            $("#phone, #phone-1, #phone-2").mask("+7(999) 999-99-99");
         }
     })
 });
+    /* --------------------------------------------------------
+POPUP
+----------------------------------------------------------- */
+    $('[data-action="back-call"]').click(function (e) {
+        e.preventDefault();
+        $('.overlay').addClass('active');
+        $('.content').addClass('blured');
+    });
+    $('.close').click(function (e) {
+        e.preventDefault();
+        $('.overlay').removeClass('active');
+        $('.content').removeClass('blured');
+    });
 
 /* --------------------------------------------------------
 NUMBER FORMAT
