@@ -274,7 +274,6 @@ header{
     border-radius: 1rem;
     z-index: 0;
 }
-
 [data-action="back-call"]:hover:before{
     width: 100%;
     z-index: -1;
